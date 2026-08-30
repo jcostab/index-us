@@ -74,6 +74,10 @@ img, svg { display: block; max-width: 100%; }
 .prose h2 { font-size: 1.8rem; }
 .prose a { color: var(--blue); }
 .prose li { margin-block: .45rem; }
+.prose table { width: 100%; margin-block: 2rem; border-collapse: collapse; font-family: var(--sans); font-size: .9rem; line-height: 1.45; }
+.prose th, .prose td { padding: .75rem; border: 1px solid var(--rule); text-align: left; vertical-align: top; }
+.prose th { background: var(--paper-bright); font-weight: 800; }
+.prose th[align="right"], .prose td[align="right"] { text-align: right; }
 .prose blockquote { margin-inline: 0; padding: 1rem 1.5rem; border-left: .4rem solid var(--orange); background: var(--paper-bright); }
 .takeaways { margin: 2.5rem 0; padding: 1.5rem; border: 1px solid var(--ink); background: var(--lime); font-family: var(--sans); font-size: 1rem; }
 .takeaways h2 { margin-top: 0; font-size: 1rem; text-transform: uppercase; letter-spacing: .07em; }
@@ -95,6 +99,7 @@ img, svg { display: block; max-width: 100%; }
   .card { min-height: 19rem; }
   .footer-inner { grid-template-columns: 1fr; }
   .footer-links { justify-content: start; }
+  .prose table { display: block; overflow-x: auto; white-space: nowrap; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

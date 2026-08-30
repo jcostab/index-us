@@ -24,6 +24,9 @@ const schema = {
   author: { "@type": "Organization", name: article.data.author },
   publisher: { "@type": "Organization", name: SITE.name, url: SITE.url },
   keywords: article.data.tags.join(", "),
+  articleSection: article.data.category,
+  isPartOf: { "@type": "Blog", name: `${SITE.name} Articles`, url: new URL("/articles/", SITE.url).href },
+  citation: article.data.sources.map((source) => source.url),
 };
 ---
 <BaseLayout title={`${article.data.title} — Index Us`} description={article.data.description} canonical={canonical} type="article">

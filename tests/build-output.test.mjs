@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { access, readFile, readdir } from "node:fs/promises";
 import test from "node:test";
 
 test("home page has canonical metadata and no client scripts", async () => {
@@ -14,7 +14,41 @@ test("article renders answer-first content and structured data", async () => {
   assert.match(html, /Key takeaways/);
   assert.match(html, /application\/ld\+json/);
   assert.match(html, /BlogPosting/);
+  assert.match(html, /\"citation\":\[/);
   assert.match(html, /Last reviewed/);
+});
+
+test("the complete launch library is generated", async () => {
+  const slugs = await readdir("dist/articles");
+  const expected = [
+    "ai-news-week-24-30-august-2026",
+    "cloudflare-kitesurf-review",
+    "evaluate-ai-model-for-real-work",
+    "how-to-choose-an-ai-model",
+    "mcp-explained-without-protocol-soup",
+    "read-ai-news-without-hype",
+    "verify-ai-tool-announcements",
+    "what-ai-benchmarks-can-tell-you",
+  ];
+
+  assert.deepEqual(slugs.filter((slug) => !slug.includes(".")).sort(), expected);
+});
+
+test("internal article links resolve in the generated site", async () => {
+  const slugs = (await readdir("dist/articles")).filter((slug) => !slug.includes("."));
+
+  for (const slug of slugs) {
+    const html = await readFile(`dist/articles/${slug}/index.html`, "utf8");
+    const links = [...html.matchAll(/href="(\/[^"#?]*)/g)].map((match) => match[1]);
+
+    for (const link of new Set(links)) {
+      const outputPath = link.endsWith("/") ? `${link}index.html` : link;
+      await assert.doesNotReject(
+        access(`dist${outputPath}`),
+        `${slug} links to missing generated path ${link}`,
+      );
+    }
+  }
 });
 
 test("discovery files are generated", async () => {
