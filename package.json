@@ -7,7 +7,7 @@
     "dev": "astro dev",
     "build": "astro check && astro build",
     "preview": "wrangler dev",
-    "check": "astro check && tsc --noEmit && npm run check:content",
+    "check": "npm run cf-typegen && astro check && tsc --noEmit && npm run check:content",
     "check:content": "node scripts/validate-content.mjs",
     "test": "npm run check && astro build && node --test tests/*.test.mjs",
     "deploy": "npm run build && wrangler deploy",
