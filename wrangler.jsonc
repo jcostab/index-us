@@ -12,8 +12,8 @@
       "custom_domain": true
     },
     {
-      "pattern": "www.index-us.com",
-      "custom_domain": true
+      "pattern": "www.index-us.com/*",
+      "zone_name": "index-us.com"
     }
   ],
   "assets": {

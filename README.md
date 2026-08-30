@@ -49,7 +49,7 @@ After those are configured, every push to `main` runs the full test suite and de
 
 ## Domain setup
 
-Wrangler manages `index-us.com` and `www.index-us.com` as Worker custom domains. The Worker permanently redirects `www` requests to the apex in one hop while retaining the path and query string. Cloudflare provisions the associated DNS records and certificates during deployment.
+Wrangler manages `index-us.com` as the canonical Worker custom domain and routes `www.index-us.com/*` to the same Worker. A proxied `www` DNS record activates that route. The Worker permanently redirects `www` requests to the apex in one hop while retaining the path and query string.
 
 ## Pre-launch decisions
 
