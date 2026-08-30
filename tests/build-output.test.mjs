@@ -27,3 +27,9 @@ test("discovery files are generated", async () => {
   assert.match(sitemap, /<sitemapindex/);
   assert.match(robots, /Sitemap: https:\/\/index-us\.com\/sitemap-index\.xml/);
 });
+
+test("a useful 404 page is generated and excluded from search", async () => {
+  const html = await readFile("dist/404.html", "utf8");
+  assert.match(html, /This signal went missing/);
+  assert.match(html, /name="robots" content="noindex, nofollow"/);
+});

@@ -9,7 +9,7 @@ const SECURITY_HEADERS = {
     "img-src 'self' data:",
     "object-src 'none'",
     "script-src 'self' 'unsafe-inline'",
-    "style-src 'self' 'unsafe-inline'",
+    "style-src 'self'",
     "upgrade-insecure-requests",
   ].join("; "),
   "Permissions-Policy": "camera=(), geolocation=(), microphone=(), payment=(), usb=()",
