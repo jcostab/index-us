@@ -1,0 +1,75 @@
+---
+import "../styles/global.css";
+import { SITE } from "../lib/site";
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+  image?: string;
+  type?: "website" | "article";
+}
+
+const {
+  title = SITE.title,
+  description = SITE.description,
+  canonical = Astro.url.pathname,
+  image = "/social-card.svg",
+  type = "website",
+} = Astro.props;
+const canonicalUrl = new URL(canonical, SITE.url);
+const imageUrl = new URL(image, SITE.url);
+---
+<!doctype html>
+<html lang={SITE.language}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f4f0e8" />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" type="application/rss+xml" title="Index Us RSS" href="/rss.xml" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:locale" content={SITE.locale} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={imageUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageUrl} />
+    <title>{title}</title>
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="/" aria-label="Index Us home"><span class="brand-mark" aria-hidden="true">I/U</span>Index Us</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="/articles/">Articles</a>
+          <a href="/about/">About</a>
+          <a href="/editorial-policy/">Editorial policy</a>
+          <a href="/rss.xml">RSS</a>
+        </nav>
+      </div>
+    </header>
+    <main id="content"><slot /></main>
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <p class="footer-title">Stay curious.<br />Check the source.</p>
+        <div class="footer-links">
+          <a href="/about/">About</a>
+          <a href="/editorial-policy/">Editorial policy</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="/rss.xml">RSS</a>
+          <span>© {new Date().getFullYear()} Index Us</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

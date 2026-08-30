@@ -1,0 +1,53 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ArticleCard from "../components/ArticleCard.astro";
+
+const articles = (await getCollection("articles", ({ data }) => !data.draft))
+  .sort((a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf());
+---
+<BaseLayout>
+  <div class="shell hero">
+    <div>
+      <p class="eyebrow">AI, properly indexed</p>
+      <h1>Find the <em>signal</em> in artificial intelligence.</h1>
+    </div>
+    <div class="hero-copy">
+      <p>Independent industry news, tested tools and practical techniques for people who need useful context—not another breathless feed.</p>
+      <div class="signal" aria-label="Our editorial priorities">
+        <div class="signal-row"><span class="signal-num">01</span><span>Evidence</span><span class="signal-bar"></span></div>
+        <div class="signal-row"><span class="signal-num">02</span><span>Context</span><span class="signal-bar"></span></div>
+        <div class="signal-row"><span class="signal-num">03</span><span>Utility</span><span class="signal-bar"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="shell section" aria-labelledby="latest-heading">
+    <div class="section-head">
+      <h2 id="latest-heading">Latest intelligence</h2>
+      <a href="/articles/">View all articles →</a>
+    </div>
+    <div class="article-grid">
+      {articles.slice(0, 3).map((article) => <ArticleCard article={article} />)}
+    </div>
+  </section>
+
+  <section class="shell section" aria-labelledby="topics-heading">
+    <p class="eyebrow" id="topics-heading">The index</p>
+    <div class="topic-strip" aria-label="Coverage topics">
+      <span class="topic">Industry news</span><span class="topic">Tool tests</span><span class="topic">Prompting</span>
+      <span class="topic">Automation</span><span class="topic">Model releases</span><span class="topic">AI safety</span>
+      <span class="topic">Practical guides</span><span class="topic">Open source</span>
+    </div>
+  </section>
+
+  <section class="shell section principles" aria-labelledby="principles-heading">
+    <blockquote id="principles-heading">“Fast enough for the news. Careful enough to be useful.”</blockquote>
+    <div class="principles-list">
+      <p>Primary sources before commentary.</p>
+      <p>Hands-on testing before recommendations.</p>
+      <p>Dates, limitations and uncertainty made visible.</p>
+      <p>Corrections recorded—not quietly erased.</p>
+    </div>
+  </section>
+</BaseLayout>

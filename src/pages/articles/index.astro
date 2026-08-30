@@ -1,0 +1,17 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ArticleCard from "../../components/ArticleCard.astro";
+const articles = (await getCollection("articles", ({ data }) => !data.draft))
+  .sort((a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf());
+---
+<BaseLayout title="All articles — Index Us" description="Browse independent AI news, tool reviews, analysis and practical guides from Index Us.">
+  <header class="shell page-head">
+    <p class="eyebrow">Browse the index</p>
+    <h1 class="page-title">All articles</h1>
+    <p class="dek">Reporting, analysis and field-tested techniques for making sense of a fast-moving AI industry.</p>
+  </header>
+  <section class="shell section" aria-label="Article archive">
+    <div class="article-grid">{articles.map((article) => <ArticleCard article={article} />)}</div>
+  </section>
+</BaseLayout>

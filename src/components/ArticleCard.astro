@@ -1,0 +1,14 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { formatDate } from "../lib/site";
+interface Props { article: CollectionEntry<"articles">; }
+const { article } = Astro.props;
+---
+<a class="card" href={`/articles/${article.id}/`}>
+  <div class="card-meta">
+    <span>{article.data.category}</span>
+    <time datetime={article.data.publishedAt.toISOString()}>{formatDate(article.data.publishedAt)}</time>
+  </div>
+  <h3>{article.data.title}</h3>
+  <p>{article.data.description}</p>
+</a>
