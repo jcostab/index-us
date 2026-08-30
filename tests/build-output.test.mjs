@@ -33,3 +33,10 @@ test("a useful 404 page is generated and excluded from search", async () => {
   assert.match(html, /This signal went missing/);
   assert.match(html, /name="robots" content="noindex, nofollow"/);
 });
+
+test("Cloudflare configuration owns the apex and www custom domains", async () => {
+  const config = await readFile("wrangler.jsonc", "utf8");
+  assert.match(config, /"pattern": "index-us\.com"/);
+  assert.match(config, /"pattern": "www\.index-us\.com"/);
+  assert.equal((config.match(/"custom_domain": true/g) ?? []).length, 2);
+});

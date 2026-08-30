@@ -49,7 +49,7 @@ After those are configured, every push to `main` runs the full test suite and de
 
 ## Domain setup
 
-After the first Worker deployment, add `index-us.com` as a Worker custom domain in Cloudflare. Redirect `www.index-us.com` to the apex at the Cloudflare edge. Confirm DNS, TLS, canonical redirects, the security headers, `robots.txt`, RSS and sitemap before announcing launch.
+Wrangler manages `index-us.com` and `www.index-us.com` as Worker custom domains. The Worker permanently redirects `www` requests to the apex in one hop while retaining the path and query string. Cloudflare provisions the associated DNS records and certificates during deployment.
 
 ## Pre-launch decisions
 
@@ -57,4 +57,3 @@ After the first Worker deployment, add `index-us.com` as a Worker custom domain 
 - Final logo/social image (the current SVG system is production-safe but intentionally foundational)
 - Analytics choice, if any, with consent and privacy review
 - Newsletter provider and double-opt-in flow, if desired
-- Cloudflare secrets and custom-domain connection

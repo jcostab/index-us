@@ -6,6 +6,16 @@
   "compatibility_flags": ["nodejs_compat"],
   "workers_dev": true,
   "preview_urls": true,
+  "routes": [
+    {
+      "pattern": "index-us.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.index-us.com",
+      "custom_domain": true
+    }
+  ],
   "assets": {
     "binding": "ASSETS",
     "directory": "./dist",

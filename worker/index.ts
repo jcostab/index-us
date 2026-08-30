@@ -19,6 +19,8 @@ const SECURITY_HEADERS = {
   "X-Frame-Options": "DENY",
 } as const;
 
+const CANONICAL_HOST = "index-us.com";
+
 function withSecurityHeaders(response: Response): Response {
   const secured = new Response(response.body, response);
 
@@ -36,8 +38,21 @@ function withSecurityHeaders(response: Response): Response {
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const target = new URL(request.url);
+    let shouldRedirect = false;
+
+    if (target.hostname === `www.${CANONICAL_HOST}`) {
+      target.protocol = "https:";
+      target.hostname = CANONICAL_HOST;
+      target.port = "";
+      shouldRedirect = true;
+    }
+
     if (!target.pathname.endsWith("/") && !target.pathname.split("/").at(-1)?.includes(".")) {
       target.pathname += "/";
+      shouldRedirect = true;
+    }
+
+    if (shouldRedirect) {
       return withSecurityHeaders(Response.redirect(target, 308));
     }
 
