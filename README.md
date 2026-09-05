@@ -42,6 +42,8 @@ The initial ten-article queue is in `docs/editorial-roadmap.md`.
 
 ## GitHub → Cloudflare deployment
 
+`npm run build` generates the Cloudflare Worker types before Astro checks the project, so it also works in a fresh Cloudflare Builds checkout. The generated types remain untracked. Quality CI runs the deployment dry run before `npm test` to catch any missing build prerequisites.
+
 The deploy workflow requires two GitHub Actions repository secrets:
 
 - `CLOUDFLARE_ACCOUNT_ID`
