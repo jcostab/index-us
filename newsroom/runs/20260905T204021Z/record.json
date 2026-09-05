@@ -1,0 +1,405 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260905T204021Z",
+  "startedAt": "2026-09-05T20:40:21.597Z",
+  "completedAt": "2026-09-05T20:58:29Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-03T20:40:21.597Z",
+    "end": "2026-09-05T20:40:21.597Z"
+  },
+  "candidates": [
+    {
+      "story": "GitHub Project HydraFusion",
+      "source": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+      "eventDate": "2026-09-04T16:04:14Z",
+      "decision": "selected",
+      "reason": "A consequential runtime model-and-workflow routing preview with an exact primary-source timestamp, public benchmark context and a practical deployment decision."
+    },
+    {
+      "story": "OpenAI GPT-6 Astra",
+      "source": "https://openai.com/index/gpt-6-astra/",
+      "eventDate": "2026-09-03T11:00:00Z",
+      "decision": "rejected",
+      "reason": "The primary RSS timestamp was about 57 hours and 40 minutes before this run, outside the 48-hour publication gate."
+    },
+    {
+      "story": "Cohere Agentic Task Ecosystem",
+      "source": "https://cohere.com/blog/automations-early-footprint",
+      "eventDate": "unknown",
+      "decision": "rejected",
+      "reason": "The page is dated 3 September but an exact primary timestamp inside the 48-hour gate was not verified."
+    },
+    {
+      "story": "AWS MCP Server serverless capability",
+      "source": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-mcp-server-serverless/",
+      "eventDate": "unknown",
+      "decision": "rejected",
+      "reason": "The primary page supplies a date but not an exact event time, and the short capability announcement did not earn a 1,200-word article."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "HydraFusion is a fresh, non-duplicate preview whose vendor evidence and independent routing research support a useful bounded evaluation decision."
+  },
+  "story": {
+    "id": "github-hydrafusion-model-routing",
+    "eventDate": "2026-09-04T16:04:14Z",
+    "canonicalUrls": [
+      "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/"
+    ]
+  },
+  "articlePath": "src/content/articles/github-hydrafusion-model-routing.md",
+  "articleSha256": "f243aac055a7c71f46e44adc51f307894be9f205d6e58740bb53ef739d65a6b4",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+      "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
+      "publisher": "GitHub",
+      "kind": "primary",
+      "independenceGroup": "github",
+      "publishedAt": "2026-09-04T16:04:14Z",
+      "eventDate": "2026-09-04T16:04:14Z",
+      "retrievedAt": "2026-09-05T20:55:02Z",
+      "locator": "Opening; Now available as a research preview; Building HydraFusion; Benchmarking results Table 1; Hill-climbing HydraFusion; Try the research preview"
+    },
+    {
+      "id": "s2",
+      "url": "https://github.blog/feed/",
+      "title": "The GitHub Blog feed",
+      "publisher": "GitHub",
+      "kind": "primary",
+      "independenceGroup": "github",
+      "publishedAt": "2026-09-04T16:04:14Z",
+      "eventDate": "2026-09-04T16:04:14Z",
+      "retrievedAt": "2026-09-05T20:54:30Z",
+      "locator": "HydraFusion item pubDate: Fri, 04 Sep 2026 16:04:14 +0000"
+    },
+    {
+      "id": "s3",
+      "url": "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing",
+      "title": "Models and pricing for GitHub Copilot",
+      "publisher": "GitHub Docs",
+      "kind": "primary",
+      "independenceGroup": "github",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-05T20:55:02Z",
+      "locator": "How model pricing works; pricing tables"
+    },
+    {
+      "id": "s4",
+      "url": "https://github.com/harbor-framework/terminal-bench-2-1",
+      "title": "Terminal-Bench 2.1",
+      "publisher": "Harbor Framework",
+      "kind": "independent",
+      "independenceGroup": "harbor-framework",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-05T20:55:02Z",
+      "locator": "README introduction; Submitting to the leaderboard"
+    },
+    {
+      "id": "s5",
+      "url": "https://arxiv.org/abs/2406.18665",
+      "title": "RouteLLM: Learning to Route LLMs with Preference Data",
+      "publisher": "arXiv",
+      "kind": "independent",
+      "independenceGroup": "routellm-authors",
+      "publishedAt": "2024-06-26T18:10:22Z",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-05T20:55:02Z",
+      "locator": "Abstract; submission history"
+    },
+    {
+      "id": "s6",
+      "url": "https://aclanthology.org/2026.findings-acl.1881/",
+      "title": "LLMRouterBench: A Massive Benchmark and Unified Framework for LLM Routing",
+      "publisher": "Association for Computational Linguistics",
+      "kind": "independent",
+      "independenceGroup": "llmrouterbench-authors",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-05T20:55:02Z",
+      "locator": "Abstract; Findings of ACL 2026 bibliographic record"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c01",
+      "text": "GitHub's RSS timestamps the HydraFusion launch article at 2026-09-04T16:04:14Z.",
+      "type": "fact",
+      "sourceIds": ["s2"],
+      "sourceLocator": "HydraFusion item pubDate",
+      "status": "supported"
+    },
+    {
+      "id": "c02",
+      "text": "GitHub introduced HydraFusion as a research preview in GitHub Copilot CLI.",
+      "type": "fact",
+      "sourceIds": ["s1"],
+      "sourceLocator": "Opening and Now available as a research preview",
+      "status": "supported"
+    },
+    {
+      "id": "c03",
+      "text": "GitHub says the preview is available on all Copilot plans through /experimental.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1"],
+      "sourceLocator": "Now available as a research preview",
+      "status": "supported"
+    },
+    {
+      "id": "c04",
+      "text": "HydraFusion chooses among single, cascade and critique workflows for each request.",
+      "type": "fact",
+      "sourceIds": ["s1"],
+      "sourceLocator": "Three execution patterns",
+      "status": "supported"
+    },
+    {
+      "id": "c05",
+      "text": "In cascade, an efficient model drafts and a quality gate can accept or escalate to a stronger model.",
+      "type": "fact",
+      "sourceIds": ["s1"],
+      "sourceLocator": "Cascade definition",
+      "status": "supported"
+    },
+    {
+      "id": "c06",
+      "text": "In critique, another model family reviews in a read-only, tool-less context and the drafting model revises once.",
+      "type": "fact",
+      "sourceIds": ["s1"],
+      "sourceLocator": "Critique definition and Isolated review",
+      "status": "supported"
+    },
+    {
+      "id": "c07",
+      "text": "GitHub says HydraFusion accounts for all workflow legs and applies no patch after cancellation or failed validation.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1"],
+      "sourceLocator": "Building HydraFusion operating principles",
+      "status": "supported"
+    },
+    {
+      "id": "c08",
+      "text": "Users are charged for tokens used by HydraFusion's component models at each model's standard rate.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1", "s3"],
+      "sourceLocator": "Launch availability paragraph; Copilot pricing method",
+      "status": "supported"
+    },
+    {
+      "id": "c09",
+      "text": "GitHub Copilot converts per-model token costs into AI credits, with one AI credit equal to US$0.01.",
+      "type": "fact",
+      "sourceIds": ["s3"],
+      "sourceLocator": "How model pricing works",
+      "status": "supported"
+    },
+    {
+      "id": "c10",
+      "text": "GitHub reports TerminalBench 2.1 quality 4.9 percentage points above Opus 5 at 67 per cent lower estimated cost.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1"],
+      "sourceLocator": "Benchmarking results Table 1",
+      "status": "supported"
+    },
+    {
+      "id": "c11",
+      "text": "GitHub reports DeepSWE quality 1.5 points below Opus 5 at 36 per cent lower estimated cost.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1"],
+      "sourceLocator": "Benchmarking results Table 1",
+      "status": "supported"
+    },
+    {
+      "id": "c12",
+      "text": "GitHub reports CheckpointBench quality 0.1 points below Opus 5 at 65 per cent lower estimated cost.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1"],
+      "sourceLocator": "Benchmarking results Table 1",
+      "status": "supported"
+    },
+    {
+      "id": "c13",
+      "text": "GitHub says comparisons used the same inputs, tools, execution limits, pricing assumptions, grading and missing-result treatment, with all models at medium reasoning.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1"],
+      "sourceLocator": "Benchmarking results methodology paragraph",
+      "status": "supported"
+    },
+    {
+      "id": "c14",
+      "text": "The reported table shows the best tuned HydraFusion configuration.",
+      "type": "fact",
+      "sourceIds": ["s1"],
+      "sourceLocator": "Text immediately before Table 1",
+      "status": "supported"
+    },
+    {
+      "id": "c15",
+      "text": "CheckpointBench is GitHub's internal multi-turn benchmark based on curated Copilot coding sessions.",
+      "type": "fact",
+      "sourceIds": ["s1"],
+      "sourceLocator": "CheckpointBench and Hill-climbing HydraFusion",
+      "status": "supported"
+    },
+    {
+      "id": "c16",
+      "text": "GitHub says it refined HydraFusion repeatedly across CheckpointBench, DeepSWE and TerminalBench 2.1.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1"],
+      "sourceLocator": "Hill-climbing HydraFusion",
+      "status": "supported"
+    },
+    {
+      "id": "c17",
+      "text": "GitHub disclosed two invalid TerminalBench runs between 11 and 25 August 2026, excluded them, corrected the evaluation-harness failures and continued testing.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1"],
+      "sourceLocator": "Hill-climbing HydraFusion",
+      "status": "supported"
+    },
+    {
+      "id": "c18",
+      "text": "Terminal-Bench 2.1 tests valuable, complex tasks in containers and changed 26 tasks to address bugs, timeouts, resources or reward-hacking robustness.",
+      "type": "fact",
+      "sourceIds": ["s4"],
+      "sourceLocator": "README introduction",
+      "status": "supported"
+    },
+    {
+      "id": "c19",
+      "text": "Terminal-Bench's leaderboard protocol requires at least five trials per task, while GitHub's HydraFusion article does not state a trial count or link a public job or leaderboard row.",
+      "type": "fact",
+      "sourceIds": ["s1", "s4"],
+      "sourceLocator": "Terminal-Bench Submitting to the leaderboard; GitHub benchmark sections",
+      "status": "qualified"
+    },
+    {
+      "id": "c20",
+      "text": "Routing to balance quality and cost predates HydraFusion; RouteLLM proposed learning when to send a request to a stronger or weaker model.",
+      "type": "fact",
+      "sourceIds": ["s5"],
+      "sourceLocator": "Abstract and submission history",
+      "status": "supported"
+    },
+    {
+      "id": "c21",
+      "text": "LLMRouterBench evaluated more than 400,000 instances across 21 datasets and 33 models with 10 routing baselines.",
+      "type": "fact",
+      "sourceIds": ["s6"],
+      "sourceLocator": "Abstract",
+      "status": "supported"
+    },
+    {
+      "id": "c22",
+      "text": "LLMRouterBench found many routers performed similarly and several recent approaches, including commercial routers, did not reliably outperform a simple baseline under its unified evaluation.",
+      "type": "attributed_claim",
+      "sourceIds": ["s6"],
+      "sourceLocator": "Abstract",
+      "status": "supported"
+    },
+    {
+      "id": "c23",
+      "text": "LLMRouterBench found diminishing returns from larger ensembles compared with careful model curation and a persistent gap to an oracle.",
+      "type": "attributed_claim",
+      "sourceIds": ["s6"],
+      "sourceLocator": "Abstract",
+      "status": "supported"
+    },
+    {
+      "id": "c24",
+      "text": "GitHub recommends substantial, well-scoped, first-turn, single-prompt work for the preview and says stronger multi-turn performance is future work.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1"],
+      "sourceLocator": "Try the research preview",
+      "status": "supported"
+    },
+    {
+      "id": "c25",
+      "text": "GitHub says workflow stages are visible but intermediate drafts are withheld until one coherent result is returned.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1"],
+      "sourceLocator": "Showing progress without showing unfinished work",
+      "status": "supported"
+    },
+    {
+      "id": "c26",
+      "text": "GitHub says the preview's results, models, workflows, availability, names and behaviour may change.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1"],
+      "sourceLocator": "Closing paragraph",
+      "status": "supported"
+    },
+    {
+      "id": "c28",
+      "text": "The complete routed workflow, rather than one named model, is the relevant unit for buyer evaluation.",
+      "type": "inference",
+      "sourceIds": ["s1", "s3"],
+      "sourceLocator": "Premises: three execution patterns, workflow accounting, component-model billing and visible stages; boundary: Index Us deployment recommendation",
+      "status": "qualified"
+    },
+    {
+      "id": "c29",
+      "text": "Because GitHub tuned policies across the named benchmarks and presents the best tuned configuration, the results are stronger as development evidence than as proof of performance on unseen repositories.",
+      "type": "inference",
+      "sourceIds": ["s1", "s6"],
+      "sourceLocator": "Premises: best-tuned table and repeated tuning; independent routing-evaluation caution; no claim of overfitting",
+      "status": "qualified"
+    },
+    {
+      "id": "c30",
+      "text": "A bounded trial should compare HydraFusion with one fixed-model baseline on the team's own tasks before wider adoption.",
+      "type": "inference",
+      "sourceIds": ["s1", "s3", "s6"],
+      "sourceLocator": "Premises: preview boundary, documented billing, vendor benchmark limits and independent routing findings; Index Us recommendation",
+      "status": "qualified"
+    }
+  ],
+  "drafting": {
+    "agentId": "/root/draft_research"
+  },
+  "editorial": {
+    "agentId": "/root/voice_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-05T20:52:05Z",
+    "articleSha256": "f243aac055a7c71f46e44adc51f307894be9f205d6e58740bb53ef739d65a6b4",
+    "notes": [
+      "Moved the operational consequence into the opening and organised the article around the complete routed workflow.",
+      "Reduced repeated signposting and symmetrical section patterns while preserving all material evidence and caveats.",
+      "Kept the benchmark figures beside their vendor-run, best-tuned and non-replication qualifications.",
+      "Retained all source links, the documentation-only limitation and the bounded-trial recommendation without adding quotations or personal experience."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/factual_review",
+    "reviewedAt": "2026-09-05T20:55:35Z",
+    "articleSha256": "f243aac055a7c71f46e44adc51f307894be9f205d6e58740bb53ef739d65a6b4",
+    "status": "passed",
+    "claimsCoverage": true
+  },
+  "quality": {
+    "evidence": 33,
+    "context": 18,
+    "originalValue": 18,
+    "voice": 13,
+    "presentation": 9
+  },
+  "riskFlags": [],
+  "quotes": [],
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1440,
+      "notes": "Rendered locally at 1440 by 900; title, byline, disclosure, artwork, heading hierarchy, article navigation and six sources were present; document width matched the viewport with no horizontal overflow."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered locally at 390 by 844; title, metadata, disclosure, artwork, body, navigation and source labels wrapped clearly; DOM geometry found no elements outside the viewport and no horizontal overflow."
+    }
+  }
+}
