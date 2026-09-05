@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { access, readFile, readdir } from "node:fs/promises";
 import test from "node:test";
+import { parse } from "yaml";
 
 test("home page keeps canonical metadata and a small first-party enhancement budget", async () => {
   const html = await readFile("dist/index.html", "utf8");
@@ -27,20 +28,22 @@ test("article renders answer-first content and structured data", async () => {
   assert.match(html, /Last reviewed/);
 });
 
-test("the complete launch library is generated", async () => {
+test("every published article is generated and drafts are excluded", async () => {
   const slugs = await readdir("dist/articles");
-  const expected = [
-    "ai-news-week-24-30-august-2026",
-    "cloudflare-kitesurf-review",
-    "evaluate-ai-model-for-real-work",
-    "how-to-choose-an-ai-model",
-    "mcp-explained-without-protocol-soup",
-    "read-ai-news-without-hype",
-    "verify-ai-tool-announcements",
-    "what-ai-benchmarks-can-tell-you",
-  ];
+  const files = (await readdir("src/content/articles")).filter((file) => /\.mdx?$/.test(file));
+  const expected = [];
+  for (const file of files) {
+    const source = await readFile(`src/content/articles/${file}`, "utf8");
+    const metadata = parse(source.match(/^---\s*\n([\s\S]*?)\n---/)?.[1] ?? "");
+    if (!metadata.draft) expected.push(file.replace(/\.mdx?$/, ""));
+    if (metadata.newsroom && !metadata.draft) {
+      const html = await readFile(`dist/articles/${file.replace(/\.mdx?$/, "")}/index.html`, "utf8");
+      assert.ok(html.includes(metadata.newsroom.disclosure), `${file}: missing automation disclosure`);
+      assert.match(html, /How this article was produced/);
+    }
+  }
 
-  assert.deepEqual(slugs.filter((slug) => !slug.includes(".")).sort(), expected);
+  assert.deepEqual(slugs.filter((slug) => !slug.includes(".")).sort(), expected.sort());
 });
 
 test("internal article links resolve in the generated site", async () => {

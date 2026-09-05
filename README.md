@@ -40,6 +40,19 @@ Read `EDITORIAL.md`, then add a Markdown file under `src/content/articles/`. The
 
 The initial ten-article queue is in `docs/editorial-roadmap.md`.
 
+## Automated newsroom
+
+The [editorial workflow](docs/newsroom-editorial-workflow.md) covers four daily research opportunities, original long-form writing, the required `edit-johns-content` edit and independent AI source review. Articles publish only after evidence, disclosure, final-copy hashes, rendering and repository checks pass. The publisher opens and merges a scoped PR and verifies Cloudflare's live output.
+
+Use the [runbook](docs/newsroom-runbook.md) to operate or recover a run. The [scheduled-task prompt](docs/newsroom-task-prompt.md) is ready for Codex Scheduled at 00:00, 06:00, 12:00 and 18:00 Melbourne time. Saving repository configuration does not register that task; confirm activation in Codex. Desktop runs require the computer and app to remain running.
+
+```sh
+npm run newsroom -- status
+npm run check:newsroom
+```
+
+`newsroom/config.json` contains source starting points and the pause switch. Reviewed publication records live in `newsroom/runs/`; temporary drafts are ignored. New articles must carry matching newsroom provenance. Human-directed exceptions to this publication contract require an explicit repository change.
+
 ## GitHub → Cloudflare deployment
 
 `npm run build` generates the Cloudflare Worker types before Astro checks the project, so it also works in a fresh Cloudflare Builds checkout. The generated types remain untracked. Quality CI runs the deployment dry run before `npm test` to catch any missing build prerequisites.

@@ -52,6 +52,9 @@ const schema = {
         <div class="reading-author"><span class="reading-author-mark" aria-hidden="true">I/U</span><span>By <strong>{article.data.author}</strong></span></div>
         <time datetime={article.data.publishedAt.toISOString()}>Published {formatDate(article.data.publishedAt)}</time>
       </div>
+      {article.data.newsroom && <aside class="reading-disclosure" aria-label="How this article was produced">
+        <p>{article.data.newsroom.disclosure} <a href="/editorial-policy/">How we work and correct errors.</a></p>
+      </aside>}
     </header>
     <figure class="shell reading-cover">
       <ArticleArtwork id={article.id} category={article.data.category} />
@@ -126,6 +129,9 @@ const schema = {
   .reading-author { display: flex; gap: .7rem; align-items: center; }
   .reading-author strong { font-weight: 600; color: var(--ink); }
   .reading-author-mark { display: grid; place-items: center; width: 2.2rem; aspect-ratio: 1; border: 1px solid var(--rule); border-radius: 50%; font-size: .7rem; letter-spacing: -.07em; color: var(--ink); }
+  .reading-disclosure { margin-top: 1.75rem; padding: 1rem 1.15rem; border-left: 2px solid var(--rule); background: var(--paper); max-width: 48rem; color: var(--muted); font: .78rem/1.65 var(--sans); }
+  .reading-disclosure p { margin: 0; }
+  .reading-disclosure a { color: var(--ink); text-underline-offset: .2em; }
   .reading-cover { margin-block: 0 3.5rem; }
   .reading-cover :global(.article-artwork) { aspect-ratio: 2.5 / 1; height: auto; }
   .reading-cover figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .75rem; padding-block: .75rem; border-bottom: 1px solid var(--rule); color: var(--muted); font-size: .6rem; letter-spacing: .08em; text-transform: uppercase; }
