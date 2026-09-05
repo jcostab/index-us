@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "enabled": true,
+  "repository": "jcostab/index-us",
+  "siteUrl": "https://index-us.com",
+  "timeZone": "Australia/Melbourne",
+  "schedule": {
+    "hours": [0, 6, 12, 18],
+    "rrule": "RRULE:FREQ=DAILY;BYHOUR=0,6,12,18;BYMINUTE=0;BYSECOND=0"
+  },
+  "maximumArticlesPerRun": 1,
+  "discoveryWindowHours": 48,
+  "priorityWindowHours": 24,
+  "newArticleWords": { "minimum": 1200, "maximum": 2400 },
+  "evidenceDirectory": "newsroom/runs",
+  "draftDirectory": ".newsroom-work",
+  "requiredSkill": "/Users/john/.codex/skills/edit-johns-content/SKILL.md",
+  "legacyArticles": [
+    "ai-news-week-24-30-august-2026",
+    "cloudflare-kitesurf-review",
+    "evaluate-ai-model-for-real-work",
+    "how-to-choose-an-ai-model",
+    "mcp-explained-without-protocol-soup",
+    "read-ai-news-without-hype",
+    "verify-ai-tool-announcements",
+    "what-ai-benchmarks-can-tell-you"
+  ],
+  "discoverySeeds": {
+    "primary": [
+      "https://openai.com/news/",
+      "https://www.anthropic.com/news",
+      "https://deepmind.google/discover/blog/",
+      "https://ai.meta.com/blog/",
+      "https://mistral.ai/news",
+      "https://huggingface.co/blog",
+      "https://blog.cloudflare.com/tag/ai/"
+    ],
+    "context": [
+      "https://www.reuters.com/technology/artificial-intelligence/",
+      "https://www.technologyreview.com/topic/artificial-intelligence/",
+      "https://arstechnica.com/ai/",
+      "https://artificialanalysis.ai/",
+      "https://epoch.ai/"
+    ]
+  }
+}

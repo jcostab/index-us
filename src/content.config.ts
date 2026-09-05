@@ -20,6 +20,11 @@ const articles = defineCollection({
       label: z.string(),
       url: z.url(),
     })).min(1),
+    newsroom: z.object({
+      runId: z.string().regex(/^\d{8}T\d{6}Z$/),
+      storyId: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
+      disclosure: z.string().min(80),
+    }).optional(),
   }),
 });
 

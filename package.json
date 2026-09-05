@@ -7,17 +7,21 @@
     "dev": "astro dev",
     "build": "npm run cf-typegen && astro check && astro build",
     "preview": "wrangler dev",
-    "check": "npm run cf-typegen && astro check && tsc --noEmit && npm run check:content",
+    "check": "npm run cf-typegen && astro check && tsc --noEmit && npm run check:content && npm run check:newsroom",
     "check:content": "node scripts/validate-content.mjs",
     "test": "npm run check && astro build && node --test tests/*.test.mjs",
     "deploy": "npm run build && wrangler deploy",
     "deploy:dry": "npm run build && wrangler deploy --dry-run",
-    "cf-typegen": "wrangler types"
+    "cf-typegen": "wrangler types",
+    "newsroom": "node scripts/newsroom.mjs",
+    "check:newsroom": "node scripts/newsroom.mjs validate",
+    "newsroom:publish": "node scripts/newsroom-publish.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "latest",
     "@astrojs/sitemap": "latest",
-    "astro": "latest"
+    "astro": "latest",
+    "yaml": "2.9.0"
   },
   "devDependencies": {
     "@astrojs/check": "latest",

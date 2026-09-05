@@ -1,5 +1,6 @@
 import { readFile, readdir } from "node:fs/promises";
 import { join } from "node:path";
+import { countArticleWords } from "./newsroom-validation.mjs";
 
 const directory = new URL("../src/content/articles/", import.meta.url);
 const files = (await readdir(directory)).filter((file) => file.endsWith(".md"));
@@ -9,13 +10,7 @@ const maximumWords = 6_000;
 
 for (const file of files) {
   const source = await readFile(join(directory.pathname, file), "utf8");
-  const body = source.replace(/^---\s*\n[\s\S]*?\n---\s*\n/, "");
-  const countableBody = body
-    .replace(/```[\s\S]*?```/g, " ")
-    .replace(/`[^`]*`/g, " ")
-    .replace(/https?:\/\/\S+/g, " ")
-    .replace(/\]\([^)]*\)/g, "]");
-  const wordCount = countableBody.match(/\b[\p{L}\p{N}][\p{L}\p{N}’'-]*\b/gu)?.length ?? 0;
+  const wordCount = countArticleWords(source);
   const readingMinutes = Number(source.match(/^readingMinutes:\s*(\d+)\s*$/m)?.[1]);
 
   if (banned.test(source)) throw new Error(`${file}: contains hype language`);
