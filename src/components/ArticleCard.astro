@@ -1,14 +1,16 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import { formatDate } from "../lib/site";
-interface Props { article: CollectionEntry<"articles">; }
-const { article } = Astro.props;
+import ArticleArtwork from "./ArticleArtwork.astro";
+interface Props { article: CollectionEntry<"articles">; variant?: "default" | "compact"; headingLevel?: "h2" | "h3"; }
+const { article, variant = "default", headingLevel: Heading = "h3" } = Astro.props;
 ---
-<a class="card" href={`/articles/${article.id}/`}>
-  <div class="card-meta">
-    <span>{article.data.category}</span>
-    <time datetime={article.data.publishedAt.toISOString()}>{formatDate(article.data.publishedAt)}</time>
+<a class:list={["card", { "card-compact": variant === "compact" }]} href={`/articles/${article.id}/`}>
+  <div class="card-art"><ArticleArtwork id={article.id} category={article.data.category} /><span class="art-arrow" aria-hidden="true">↗</span></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="category-label">{article.data.category}</span><span>{article.data.readingMinutes} min read</span></div>
+    <Heading class="card-title">{article.data.title}</Heading>
+    {variant !== "compact" && <p>{article.data.description}</p>}
+    <div class="card-date"><time datetime={article.data.publishedAt.toISOString()}>{formatDate(article.data.publishedAt)}</time><span aria-hidden="true">↗</span></div>
   </div>
-  <h3>{article.data.title}</h3>
-  <p>{article.data.description}</p>
 </a>

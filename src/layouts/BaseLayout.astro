@@ -19,6 +19,14 @@ const {
 } = Astro.props;
 const canonicalUrl = new URL(canonical, SITE.url);
 const imageUrl = new URL(image, SITE.url);
+const pathname = Astro.url.pathname;
+const navigation = [
+  { label: "All articles", href: "/articles/" },
+  { label: "News", href: "/articles/?category=News" },
+  { label: "Analysis", href: "/articles/?category=Analysis" },
+  { label: "Guides", href: "/articles/?category=Guides" },
+  { label: "About", href: "/about/" },
+];
 ---
 <!doctype html>
 <html lang={SITE.language}>
@@ -27,7 +35,9 @@ const imageUrl = new URL(image, SITE.url);
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
-    <meta name="theme-color" content="#f4f0e8" />
+    <meta name="theme-color" content="#f5f3ed" />
+    <link rel="preload" href="/fonts/newsreader-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" type="application/rss+xml" title="Index Us RSS" href="/rss.xml" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -43,33 +53,70 @@ const imageUrl = new URL(image, SITE.url);
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={imageUrl} />
     <title>{title}</title>
+    <script is:inline>
+      try {
+        if (sessionStorage.getItem('index-us-motion') === 'paused') document.documentElement.dataset.motion = 'paused';
+      } catch {}
+    </script>
     <slot name="head" />
   </head>
   <body>
     <a class="skip-link" href="#content">Skip to content</a>
     <header class="site-header">
       <div class="shell header-inner">
-        <a class="brand" href="/" aria-label="Index Us home"><span class="brand-mark" aria-hidden="true">I/U</span>Index Us</a>
+        <a class="brand" href="/" aria-label="Index Us home"><span class="brand-mark" aria-hidden="true">✳</span>Index Us<span class="brand-stop">.</span></a>
         <nav class="site-nav" aria-label="Primary navigation">
-          <a href="/articles/">Articles</a>
-          <a href="/about/">About</a>
-          <a href="/editorial-policy/">Editorial policy</a>
-          <a href="/rss.xml">RSS</a>
+          {navigation.map(({ label, href }) => <a href={href} aria-current={pathname === href ? "page" : undefined}>{label}</a>)}
         </nav>
+        <div class="header-actions">
+          <button class="motion-toggle" type="button" hidden aria-pressed="false" aria-label="Pause decorative motion">
+            <svg viewBox="0 0 20 20" width="16" height="16" fill="none" aria-hidden="true"><path class="motion-pause" d="M7 5v10M13 5v10" stroke="currentColor" stroke-width="2"/><path class="motion-play" d="m7 4 9 6-9 6Z" fill="currentColor"/></svg>
+            <span>Motion on</span>
+          </button>
+          <a class="rss-link" href="/rss.xml">Follow via RSS <span aria-hidden="true">↗</span></a>
+          <details class="mobile-menu">
+            <summary>Menu <span aria-hidden="true">+</span></summary>
+            <nav aria-label="Mobile navigation">
+              {navigation.map(({ label, href }) => <a href={href}>{label}<span aria-hidden="true">↗</span></a>)}
+              <a href="/rss.xml">Follow via RSS <span aria-hidden="true">↗</span></a>
+            </nav>
+          </details>
+        </div>
       </div>
     </header>
     <main id="content"><slot /></main>
     <footer class="site-footer">
-      <div class="shell footer-inner">
-        <p class="footer-title">Stay curious.<br />Check the source.</p>
-        <div class="footer-links">
-          <a href="/about/">About</a>
-          <a href="/editorial-policy/">Editorial policy</a>
-          <a href="/privacy/">Privacy</a>
-          <a href="/rss.xml">RSS</a>
-          <span>© {new Date().getFullYear()} Index Us</span>
+      <div class="shell">
+        <div class="footer-inner">
+          <div><p class="eyebrow">An independent perspective</p><p class="footer-title">Stay curious.<br /><em>Check the source.</em></p></div>
+          <div class="footer-discover"><p>Useful context for a changing world.</p><a class="text-link" href="/articles/">Explore the index <span aria-hidden="true">↗</span></a></div>
         </div>
+        <div class="footer-bottom"><a class="brand" href="/" aria-label="Index Us home">Index Us<span class="brand-stop">.</span></a><div class="footer-links"><a href="/about/">About</a><a href="/editorial-policy/">Editorial policy</a><a href="/privacy/">Privacy</a><a href="/rss.xml">RSS feed</a></div><span>© {new Date().getFullYear()} Index Us</span></div>
       </div>
     </footer>
+    <script>
+      const motionButton = document.querySelector<HTMLButtonElement>('.motion-toggle');
+      const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+      let manuallyPaused = document.documentElement.dataset.motion === 'paused';
+      function updateMotion() {
+        const paused = manuallyPaused || motionPreference.matches;
+        document.documentElement.dataset.motion = paused ? 'paused' : 'playing';
+        if (!motionButton) return;
+        motionButton.hidden = false;
+        motionButton.setAttribute('aria-pressed', String(paused));
+        motionButton.setAttribute('aria-label', motionPreference.matches ? 'Motion off: follows your reduced-motion preference' : paused ? 'Play decorative motion' : 'Pause decorative motion');
+        motionButton.setAttribute('aria-disabled', String(motionPreference.matches));
+        const label = motionButton.querySelector('span');
+        if (label) label.textContent = paused ? 'Motion off' : 'Motion on';
+      }
+      updateMotion();
+      motionPreference.addEventListener('change', updateMotion);
+      motionButton?.addEventListener('click', () => {
+        if (motionPreference.matches) return;
+        manuallyPaused = !manuallyPaused;
+        try { sessionStorage.setItem('index-us-motion', manuallyPaused ? 'paused' : 'playing'); } catch {}
+        updateMotion();
+      });
+    </script>
   </body>
 </html>

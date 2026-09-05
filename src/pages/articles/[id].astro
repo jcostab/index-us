@@ -1,6 +1,8 @@
 ---
 import { getCollection, render, type CollectionEntry } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import ArticleArtwork from "../../components/ArticleArtwork.astro";
+import ArticleCard from "../../components/ArticleCard.astro";
 import { SITE, formatDate } from "../../lib/site";
 
 export async function getStaticPaths() {
@@ -10,7 +12,16 @@ export async function getStaticPaths() {
 
 interface Props { article: CollectionEntry<"articles">; }
 const { article } = Astro.props;
-const { Content } = await render(article);
+const { Content, headings } = await render(article);
+const contents = headings.filter((heading) => heading.depth === 2);
+const related = (await getCollection("articles", ({ data }) => !data.draft))
+  .filter((candidate) => candidate.id !== article.id)
+  .sort((a, b) => {
+    const relevance = (candidate: CollectionEntry<"articles">) =>
+      Number(candidate.data.category === article.data.category) * 3 + candidate.data.tags.filter((tag) => article.data.tags.includes(tag)).length;
+    return relevance(b) - relevance(a) || b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf();
+  })
+  .slice(0, 3);
 const canonical = `/articles/${article.id}/`;
 const schema = {
   "@context": "https://schema.org",
@@ -31,28 +42,130 @@ const schema = {
 ---
 <BaseLayout title={`${article.data.title} — Index Us`} description={article.data.description} canonical={canonical} type="article">
   <script is:inline slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
-  <article>
-    <header class="shell article-head">
-      <p class="eyebrow">{article.data.category}</p>
+  <div class="reading-progress" aria-hidden="true"><span data-reading-progress></span></div>
+  <article data-reading-article>
+    <header class="shell reading-head">
+      <div class="reading-kicker"><a class="eyebrow" href={`/articles/?category=${article.data.category}`}>{article.data.category}</a><span aria-hidden="true">/</span><span>{article.data.readingMinutes} min read</span></div>
       <h1>{article.data.title}</h1>
-      <p class="article-dek">{article.data.description}</p>
-      <div class="article-byline">
-        <span>By {article.data.author}</span>
+      <p class="reading-dek">{article.data.description}</p>
+      <div class="reading-byline">
+        <div class="reading-author"><span class="reading-author-mark" aria-hidden="true">I/U</span><span>By <strong>{article.data.author}</strong></span></div>
         <time datetime={article.data.publishedAt.toISOString()}>Published {formatDate(article.data.publishedAt)}</time>
-        <span>{article.data.readingMinutes} min read</span>
       </div>
     </header>
-    <div class="prose">
-      <aside class="takeaways" aria-labelledby="takeaways-title">
-        <h2 id="takeaways-title">Key takeaways</h2>
-        <ul>{article.data.keyTakeaways.map((item) => <li>{item}</li>)}</ul>
+    <figure class="shell reading-cover">
+      <ArticleArtwork id={article.id} category={article.data.category} />
+      <figcaption><span>Index Us / {article.data.category}</span><span>Independent AI intelligence</span></figcaption>
+    </figure>
+    <div class="shell reading-layout">
+      <aside class="reading-sidebar" aria-label="Article navigation">
+        <nav class="reading-contents" aria-label="On this page">
+          <p class="eyebrow">In this article</p>
+          <a href="#takeaways-title">Key takeaways</a>
+          {contents.map((heading) => <a href={`#${heading.slug}`}>{heading.text}</a>)}
+          <a href="#article-sources">Sources</a>
+          <a class="reading-back" href="/articles/">← Back to the index</a>
+        </nav>
       </aside>
-      <Content />
-      <h2>Sources</h2>
-      <ol class="source-list">
-        {article.data.sources.map((source) => <li><a href={source.url} rel="noreferrer">{source.label}</a></li>)}
-      </ol>
-      <p><small>Last reviewed: <time datetime={article.data.updatedAt.toISOString()}>{formatDate(article.data.updatedAt)}</time>. See our <a href="/editorial-policy/">editorial policy</a> for how we test, source and correct our work.</small></p>
+      <div class="prose reading-body" data-reading-body>
+        <aside class="reading-takeaways" aria-labelledby="takeaways-title">
+          <div class="reading-takeaways-label"><span aria-hidden="true">↗</span><h2 id="takeaways-title">Key takeaways</h2></div>
+          <ul>{article.data.keyTakeaways.map((item) => <li>{item}</li>)}</ul>
+        </aside>
+        <Content />
+        <section class="reading-sources" aria-labelledby="article-sources">
+          <h2 id="article-sources">Sources</h2>
+          <ol class="source-list">
+            {article.data.sources.map((source) => <li><a href={source.url} rel="noreferrer">{source.label}</a></li>)}
+          </ol>
+          <p class="reading-review"><small>Last reviewed: <time datetime={article.data.updatedAt.toISOString()}>{formatDate(article.data.updatedAt)}</time>. See our <a href="/editorial-policy/">editorial policy</a> for how we test, source and correct our work.</small></p>
+        </section>
+      </div>
     </div>
   </article>
+  <section class="shell reading-related" aria-labelledby="related-title">
+    <div class="reading-related-head"><div><p class="eyebrow">Follow your curiosity</p><h2 id="related-title">Keep reading.</h2></div><a href="/articles/">Explore the index <span aria-hidden="true">↗</span></a></div>
+    <div class="reading-related-grid">{related.map((relatedArticle) => <ArticleCard article={relatedArticle} />)}</div>
+  </section>
 </BaseLayout>
+
+<script>
+  const body = document.querySelector<HTMLElement>("[data-reading-body]");
+  const progress = document.querySelector<HTMLElement>("[data-reading-progress]");
+  if (body && progress) {
+    let scheduled = false;
+    const update = () => {
+      const rect = body.getBoundingClientRect();
+      const distance = rect.height - window.innerHeight;
+      const proportion = distance > 0 ? Math.min(1, Math.max(0, -rect.top / distance)) : Number(rect.top <= 0);
+      progress.style.transform = `scaleX(${proportion})`;
+      scheduled = false;
+    };
+    const schedule = () => {
+      if (!scheduled) {
+        scheduled = true;
+        window.requestAnimationFrame(update);
+      }
+    };
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("resize", schedule);
+    update();
+  }
+</script>
+
+<style>
+  .reading-progress { position: fixed; inset: 0 0 auto; height: 3px; z-index: 100; pointer-events: none; }
+  .reading-progress span { display: block; width: 100%; height: 100%; background: var(--accent, #ed512f); transform: scaleX(0); transform-origin: left; }
+  .reading-head { padding-block: clamp(3rem, 6vw, 5rem) 2.75rem; max-width: 68rem; }
+  .reading-kicker { display: flex; gap: .85rem; align-items: center; margin-bottom: 1.75rem; font: .7rem var(--sans); text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }
+  .reading-kicker .eyebrow { margin: 0; text-decoration: none; }
+  .reading-kicker .eyebrow:hover { text-decoration: underline; }
+  .reading-head h1 { max-width: 21ch; margin: 0; font-family: var(--serif); font-weight: 400; font-size: clamp(2.9rem, 5.9vw, 5.8rem); line-height: 1.04; letter-spacing: -.045em; text-wrap: balance; }
+  .reading-dek { max-width: 46rem; margin-block: 1.75rem 2rem; font-size: clamp(1.1rem, 1.8vw, 1.3rem); color: var(--muted); line-height: 1.6; }
+  .reading-byline { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 2rem; font-size: .75rem; color: var(--muted); }
+  .reading-author { display: flex; gap: .7rem; align-items: center; }
+  .reading-author strong { font-weight: 600; color: var(--ink); }
+  .reading-author-mark { display: grid; place-items: center; width: 2.2rem; aspect-ratio: 1; border: 1px solid var(--rule); border-radius: 50%; font-size: .7rem; letter-spacing: -.07em; color: var(--ink); }
+  .reading-cover { margin-block: 0 3.5rem; }
+  .reading-cover :global(.article-artwork) { aspect-ratio: 2.5 / 1; height: auto; }
+  .reading-cover figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .75rem; padding-block: .75rem; border-bottom: 1px solid var(--rule); color: var(--muted); font-size: .6rem; letter-spacing: .08em; text-transform: uppercase; }
+  .reading-layout { display: grid; grid-template-columns: minmax(9rem, .75fr) minmax(0, 2.5fr) minmax(0, .3fr); gap: clamp(1.5rem, 5vw, 5rem); padding-bottom: 5rem; }
+  .reading-sidebar { min-width: 0; }
+  .reading-contents { position: sticky; top: 7rem; display: flex; flex-direction: column; gap: .85rem; max-height: calc(100vh - 9rem); overflow-y: auto; padding: .25rem .25rem .25rem 0; }
+  .reading-contents .eyebrow { margin-bottom: .4rem; font-size: .62rem; color: var(--ink); }
+  .reading-contents a { text-decoration: none; font-size: .73rem; line-height: 1.55; color: var(--muted); }
+  .reading-contents a:hover { color: var(--ink); text-decoration: underline; }
+  .reading-contents .reading-back { border-top: 1px solid var(--rule); margin-top: .5rem; padding-top: 1.15rem; font-size: .7rem; }
+  .reading-body { width: 100%; max-width: 46rem; padding: 0; margin: 0; min-width: 0; }
+  .reading-takeaways { background: #e7ebe0; padding: clamp(1.5rem, 3vw, 2.25rem); margin-bottom: 2.5rem; border-top: 2px solid var(--ink); font-family: var(--sans); }
+  .reading-takeaways-label { display: flex; align-items: center; gap: .65rem; }
+  .reading-takeaways-label > span { font-size: 1.5rem; line-height: 1; }
+  .reading-takeaways h2 { margin: 0; font: 600 .7rem var(--sans); text-transform: uppercase; letter-spacing: .1em; }
+  .reading-takeaways ul { margin-bottom: 0; padding-left: 1.1rem; font-size: .91rem; line-height: 1.7; }
+  .reading-takeaways li { padding-left: .35rem; margin-block: .8rem; }
+  .reading-takeaways li:last-child { margin-bottom: 0; }
+  .reading-sources { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); }
+  .reading-sources h2 { margin-top: 1rem; }
+  .reading-sources .source-list { padding-left: 1.2rem; font-family: var(--sans); font-size: .82rem; overflow-wrap: anywhere; }
+  .reading-review { color: var(--muted); font-family: var(--sans); line-height: 1.7; }
+  .reading-review small { font-size: .75rem; }
+  .reading-related { padding-block: 3rem 5rem; border-top: 1px solid var(--ink); }
+  .reading-related-head { display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: end; justify-content: space-between; margin-bottom: 2rem; }
+  .reading-related-head h2 { margin: 0; font-family: var(--serif); font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1; font-weight: 400; letter-spacing: -.04em; }
+  .reading-related-head > a { font-size: .8rem; text-decoration: none; border-bottom: 1px solid var(--rule); padding-bottom: .35rem; }
+  .reading-related-head > a > span { margin-left: 1rem; }
+  .reading-related-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.75rem; }
+  @media (max-width: 1050px) { .reading-layout { grid-template-columns: minmax(9rem, .75fr) minmax(0, 2.5fr); } }
+  @media (max-width: 760px) {
+    .reading-layout { grid-template-columns: 1fr; padding-bottom: 3rem; gap: 2rem; }
+    .reading-sidebar { border-block: 1px solid var(--rule); padding-block: 1rem; }
+    .reading-contents { position: static; max-height: none; display: grid; grid-template-columns: 1fr 1fr; gap: .65rem 1.5rem; overflow: visible; }
+    .reading-contents .eyebrow { grid-column: 1 / -1; }
+    .reading-contents .reading-back { display: none; }
+    .reading-body { max-width: none; }
+    .reading-cover { margin-bottom: 2rem; }
+    .reading-cover :global(.article-artwork) { aspect-ratio: 1.6 / 1; }
+    .reading-related-grid { grid-template-columns: 1fr; gap: 2rem; }
+  }
+  @media (prefers-reduced-motion: reduce) { .reading-progress { display: none; } }
+</style>

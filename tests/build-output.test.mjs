@@ -2,11 +2,20 @@ import assert from "node:assert/strict";
 import { access, readFile, readdir } from "node:fs/promises";
 import test from "node:test";
 
-test("home page has canonical metadata and no client scripts", async () => {
+test("home page keeps canonical metadata and a small first-party enhancement budget", async () => {
   const html = await readFile("dist/index.html", "utf8");
   assert.match(html, /<link rel="canonical" href="https:\/\/index-us\.com\/"/);
   assert.match(html, /Latest intelligence/);
-  assert.doesNotMatch(html, /<script[^>]+src=/);
+  const scripts = [...html.matchAll(/<script[^>]+src="([^"]+)"/g)].map((match) => match[1]);
+  let scriptBytes = [...html.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/g)]
+    .filter((match) => !match[1].includes('application/ld+json'))
+    .reduce((total, match) => total + Buffer.byteLength(match[2]), 0);
+  for (const script of scripts) {
+    assert.match(script, /^\/_astro\/[^/]+\.js$/, 'Client scripts must be bundled and served locally');
+    scriptBytes += (await readFile(`dist${script}`)).byteLength;
+  }
+  assert.ok(scriptBytes < 5000, `Home enhancement scripts exceed 5 KB: ${scriptBytes} bytes`);
+  assert.doesNotMatch(html, /<astro-island/, 'Reading must not depend on hydrated components');
 });
 
 test("article renders answer-first content and structured data", async () => {

@@ -7,7 +7,7 @@ An independent, static-first AI publication for `index-us.com`, built with Astro
 - Prerendered HTML keeps pages fast, resilient and indexable.
 - Markdown content collections validate editorial metadata at build time.
 - The Worker streams Cloudflare assets and applies one security-header policy to every response.
-- There is no client-side JavaScript, analytics, CMS or database in the launch scaffold.
+- Small, first-party scripts enhance motion controls, article search and reading progress. All articles remain available without JavaScript. There is no analytics, CMS or database.
 - GitHub Actions tests every change and deploys every merge to `main`.
 
 ## Local development
@@ -33,6 +33,8 @@ npm run preview
 ```
 
 ## Publishing
+
+The magazine design, motion behaviour and refresh validation are documented in [`docs/design-refresh.md`](docs/design-refresh.md). Typography is self-hosted; the font licences live in `public/fonts/`.
 
 Read `EDITORIAL.md`, then add a Markdown file under `src/content/articles/`. The validated frontmatter drives listings, dates, source links, social metadata, RSS and structured data.
 

@@ -2,52 +2,54 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ArticleCard from "../components/ArticleCard.astro";
+import ArticleArtwork from "../components/ArticleArtwork.astro";
+import { formatDate } from "../lib/site";
 
 const articles = (await getCollection("articles", ({ data }) => !data.draft))
-  .sort((a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf());
+  .sort((a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf() || a.id.localeCompare(b.id));
+const lead = articles.find((article) => article.data.featured) ?? articles[0];
+const latest = articles.filter((article) => article.id !== lead?.id).slice(0, 3);
+const essentials = ["how-to-choose-an-ai-model", "mcp-explained-without-protocol-soup", "read-ai-news-without-hype"]
+  .map((id) => articles.find((article) => article.id === id)).filter((article) => article !== undefined);
+const categories = [
+  { name: "News", description: "What changed. Why it matters.", number: "01" },
+  { name: "Tools", description: "A closer look at what works.", number: "02" },
+  { name: "Analysis", description: "The context behind the claims.", number: "03" },
+  { name: "Guides", description: "A useful place to begin.", number: "04" },
+  { name: "Techniques", description: "Put understanding into practice.", number: "05" },
+];
 ---
 <BaseLayout>
-  <div class="shell hero">
-    <div>
-      <p class="eyebrow">AI, properly indexed</p>
-      <h1>Find the <em>signal</em> in artificial intelligence.</h1>
-    </div>
-    <div class="hero-copy">
-      <p>Independent industry news, tested tools and practical techniques for people who need useful context—not another breathless feed.</p>
-      <div class="signal" aria-label="Our editorial priorities">
-        <div class="signal-row"><span class="signal-num">01</span><span>Evidence</span><span class="signal-bar"></span></div>
-        <div class="signal-row"><span class="signal-num">02</span><span>Context</span><span class="signal-bar"></span></div>
-        <div class="signal-row"><span class="signal-num">03</span><span>Utility</span><span class="signal-bar"></span></div>
-      </div>
-    </div>
-  </div>
+  <section class="shell magazine-intro" aria-labelledby="intro-heading">
+    <div class="edition-line"><span>Independent intelligence</span><span>Technology. People. Possibility.</span><span>Est. 2026</span></div>
+    <div class="masthead" aria-hidden="true"><span>Index Us<span class="masthead-period">.</span></span><svg class="masthead-symbol" viewBox="0 0 100 100" fill="none"><g stroke="currentColor" stroke-width="9">{[0,30,60,90,120,150].map((angle) => <path d="M50 4v92" transform={`rotate(${angle} 50 50)`}/>)}</g></svg></div>
+    <div class="intro-line"><h1 id="intro-heading">AI, <em>in perspective.</em></h1><p>Independent news, considered analysis and practical guides.<br class="desktop-break" /> For people making sense of what comes next.</p></div>
+  </section>
+
+  {lead && <section class="shell lead-section" aria-labelledby="lead-heading">
+    <div class="section-kicker"><span><span class="status-dot" aria-hidden="true"></span> In focus</span><span>The latest edition / {formatDate(lead.data.publishedAt)}</span></div>
+    <a class="lead-story" href={`/articles/${lead.id}/`}>
+      <div class="lead-art"><ArticleArtwork id={lead.id} category={lead.data.category} /><div class="cover-caption" aria-hidden="true"><span>THE SIGNAL REPORT</span><span>INDEX US — 01</span></div><span class="lead-art-arrow" aria-hidden="true">↗</span></div>
+      <div class="lead-copy"><div class="card-meta"><span class="category-label">{lead.data.category}</span><span>{lead.data.readingMinutes} min read</span></div><h2 id="lead-heading">{lead.data.title}</h2><p>{lead.data.description}</p><span class="text-link">Read the story <span aria-hidden="true">↗</span></span></div>
+    </a>
+  </section>}
 
   <section class="shell section" aria-labelledby="latest-heading">
-    <div class="section-head">
-      <h2 id="latest-heading">Latest intelligence</h2>
-      <a href="/articles/">View all articles →</a>
-    </div>
-    <div class="article-grid">
-      {articles.slice(0, 3).map((article) => <ArticleCard article={article} />)}
-    </div>
+    <div class="section-head"><div><p class="eyebrow">Fresh perspectives</p><h2 id="latest-heading">Latest intelligence<span class="accent">.</span></h2></div><a class="text-link" href="/articles/">View all articles <span aria-hidden="true">↗</span></a></div>
+    <div class="article-grid">{latest.map((article) => <ArticleCard article={article} />)}</div>
   </section>
 
-  <section class="shell section" aria-labelledby="topics-heading">
-    <p class="eyebrow" id="topics-heading">The index</p>
-    <div class="topic-strip" aria-label="Coverage topics">
-      <span class="topic">Industry news</span><span class="topic">Tool tests</span><span class="topic">Prompting</span>
-      <span class="topic">Automation</span><span class="topic">Model releases</span><span class="topic">AI safety</span>
-      <span class="topic">Practical guides</span><span class="topic">Open source</span>
-    </div>
+  <section class="perspective-band" aria-labelledby="perspective-heading">
+    <div class="shell perspective-inner"><div class="perspective-graphic" aria-hidden="true"><svg viewBox="0 0 320 320" fill="none"><g class="perspective-orbits" stroke="currentColor" stroke-width="1">{[0,30,60,90,120,150].map((angle) => <ellipse cx="160" cy="160" rx="139" ry="53" transform={`rotate(${angle} 160 160)`} />)}</g><circle cx="160" cy="160" r="22" fill="currentColor"/></svg></div><div class="perspective-copy"><p class="eyebrow">The Index Us approach</p><h2 id="perspective-heading">A little less noise.<br /><em>A lot more perspective.</em></h2><p>We follow the sources, examine the claims and make the limitations visible. So you can form your own view.</p><a class="text-link" href="/editorial-policy/">How we work <span aria-hidden="true">↗</span></a></div></div>
   </section>
 
-  <section class="shell section principles" aria-labelledby="principles-heading">
-    <blockquote id="principles-heading">“Fast enough for the news. Careful enough to be useful.”</blockquote>
-    <div class="principles-list">
-      <p>Primary sources before commentary.</p>
-      <p>Hands-on testing before recommendations.</p>
-      <p>Dates, limitations and uncertainty made visible.</p>
-      <p>Corrections recorded—not quietly erased.</p>
-    </div>
+  <section class="shell section reading-section" aria-labelledby="essentials-heading">
+    <div class="section-head"><div><p class="eyebrow">Build your understanding</p><h2 id="essentials-heading">The essential reads<span class="accent">.</span></h2></div><span class="section-note">Good questions start here.</span></div>
+    <div class="essentials-list">{essentials.map((article, index) => <a class="essential-item" href={`/articles/${article.id}/`}><span class="essential-number">0{index + 1}</span><div class="essential-art"><ArticleArtwork id={article.id} category={article.data.category}/></div><div class="essential-copy"><div class="card-meta"><span class="category-label">{article.data.category}</span><span>{article.data.readingMinutes} min read</span></div><h3>{article.data.title}</h3></div><span class="essential-arrow" aria-hidden="true">↗</span></a>)}</div>
+  </section>
+
+  <section class="shell section browse-section" aria-labelledby="topics-heading">
+    <div class="section-head"><div><p class="eyebrow">Follow your curiosity</p><h2 id="topics-heading">Explore the index<span class="accent">.</span></h2></div></div>
+    <div class="topic-grid">{categories.map(({ name, description, number }) => <a class="topic" href={`/articles/?category=${name}`}><span class="topic-number">{number}<span aria-hidden="true">↗</span></span><h3>{name}</h3><p>{description}</p><span class="topic-count">{articles.filter((article) => article.data.category === name).length} {articles.filter((article) => article.data.category === name).length === 1 ? 'article' : 'articles'}</span></a>)}</div>
   </section>
 </BaseLayout>

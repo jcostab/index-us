@@ -1,0 +1,223 @@
+---
+interface Props {
+  id: string;
+  category?: string;
+  class?: string;
+}
+
+const { id, category = "Analysis", class: className } = Astro.props;
+const variants: Record<string, string> = {
+  News: "signal",
+  Analysis: "connections",
+  Tools: "structure",
+  Guides: "possibility",
+  Techniques: "measure",
+};
+const variant = id.includes("benchmark")
+  ? "measure"
+  : id.includes("hype")
+    ? "signal"
+    : variants[category] ?? "connections";
+const grid = Array.from({ length: 17 }, (_, index) => index * 50);
+const rings = Array.from({ length: 12 }, (_, index) => index);
+const blocks = Array.from({ length: 16 }, (_, index) => ({
+  x: 162 + (index % 4) * 119,
+  y: 71 + Math.floor(index / 4) * 107,
+  rotation: [0, 90, 180, 270][(index + Math.floor(index / 4)) % 4],
+}));
+---
+
+<div class:list={["article-artwork", `artwork--${variant}`, className]} aria-hidden="true">
+  <svg viewBox="0 0 800 560" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false">
+    {variant === "signal" && (
+      <>
+        <rect width="800" height="560" fill="#ed512f" />
+        <g stroke="#20221f" stroke-width=".7" opacity=".17">
+          {grid.map((position) => <path d={`M${position} 0V560M0 ${position}H800`} />)}
+        </g>
+        <path d="M0 453H800M120 0V560M681 0V560" stroke="#20221f" stroke-width=".8" opacity=".5" />
+        <circle cx="400" cy="280" r="226" fill="#f5f3ed" />
+        <g transform="translate(400 280) rotate(-32)">
+          <g class="orbit-motion">
+            {rings.map((ring) => (
+              <ellipse rx={278 - ring * 15} ry={191 - ring * 13} stroke="#20221f" stroke-width={ring === 11 ? 12 : 7.5} />
+            ))}
+            <path d="M-304 0H304" stroke="#20221f" stroke-width="1" />
+            <circle cx="278" r="18" fill="#20221f" />
+            <circle cx="-278" r="8" fill="#f5f3ed" stroke="#20221f" stroke-width="2" />
+          </g>
+        </g>
+        <circle cx="400" cy="280" r="18" fill="#ed512f" />
+        <path d="M377 280H423M400 257V303" stroke="#20221f" stroke-width="1" />
+        <path d="M66 86H110M88 64V108M692 460H734M713 439V481" stroke="#20221f" stroke-width="1.2" />
+        <g fill="#20221f">
+          <rect x="42" y="504" width="72" height="5" />
+          <rect x="42" y="515" width="36" height="2" />
+          <rect x="687" y="43" width="5" height="24" />
+          <rect x="697" y="43" width="2" height="24" />
+          <rect x="704" y="43" width="8" height="24" />
+          <rect x="717" y="43" width="2" height="24" />
+          <rect x="724" y="43" width="4" height="24" />
+        </g>
+      </>
+    )}
+
+    {variant === "connections" && (
+      <>
+        <rect width="800" height="560" fill="#cbd3c0" />
+        <g stroke="#20221f" stroke-width=".7" opacity=".18">
+          {grid.map((position) => <path d={`M${position} 0V560M0 ${position}H800`} />)}
+        </g>
+        <circle cx="537" cy="270" r="183" fill="#f5f3ed" />
+        <path d="M112 92H681V468H112ZM112 280H681M400 92V468" stroke="#20221f" stroke-width="1" />
+        <g class="connection-motion" stroke="#20221f">
+          <path d="M155 378L286 154L405 366L548 177L659 371M155 378L548 177M286 154L659 371M155 378L405 366L659 371M286 154L548 177" stroke-width="2.5" />
+          <path d="M286 154L405 366M548 177L659 371" stroke-width="13" />
+          <circle cx="155" cy="378" r="34" fill="#20221f" stroke-width="2" />
+          <circle cx="286" cy="154" r="45" fill="#ed512f" stroke-width="2" />
+          <circle cx="405" cy="366" r="52" fill="#f5f3ed" stroke-width="2" />
+          <circle cx="548" cy="177" r="36" fill="#20221f" stroke-width="2" />
+          <circle cx="659" cy="371" r="24" fill="#ed512f" stroke-width="2" />
+          <circle cx="405" cy="366" r="23" stroke-width="1" />
+          <path d="M389 366H421M405 350V382" stroke-width="1" />
+          <circle cx="286" cy="154" r="7" fill="#20221f" />
+          <circle cx="155" cy="378" r="6" fill="#f5f3ed" stroke="none" />
+        </g>
+        <g stroke="#20221f" stroke-width="1">
+          <path d="M50 50H90M70 30V70M710 490H750M730 470V510" />
+          <path d="M113 493H194M113 499H165M113 505H184" />
+        </g>
+        <circle cx="680" cy="93" r="7" fill="#20221f" />
+      </>
+    )}
+
+    {variant === "structure" && (
+      <>
+        <rect width="800" height="560" fill="#345dcc" />
+        <g stroke="#f5f3ed" stroke-width=".65" opacity=".22">
+          {grid.map((position) => <path d={`M${position} 0V560M0 ${position}H800`} />)}
+        </g>
+        <circle cx="642" cy="115" r="54" fill="#cbd3c0" />
+        <g class="structure-motion">
+          <path d="M134 393L381 67L660 167L413 493Z" fill="#20221f" />
+          <path d="M174 367L395 80L647 172L426 459Z" fill="#f5f3ed" />
+          <path d="M221 337L409 94L631 175L443 418Z" fill="#345dcc" />
+          <path d="M268 307L423 108L615 178L460 377Z" fill="#f5f3ed" />
+          <path d="M315 277L437 122L599 181L477 336Z" fill="#20221f" />
+          <path d="M362 247L451 136L583 184L494 295Z" fill="#cbd3c0" />
+          <path d="M409 217L465 150L567 187L511 254Z" fill="#345dcc" />
+          <path d="M456 187L479 164L551 190L528 213Z" fill="#f5f3ed" />
+          <path d="M134 393L413 493M174 367L426 459M221 337L443 418M268 307L460 377M315 277L477 336" stroke="#20221f" stroke-width="1" />
+        </g>
+        <g stroke="#f5f3ed" stroke-width="1">
+          <path d="M49 91H90M69 71V111M711 448H752M731 428V468M69 440V491H120" />
+          <path d="M635 497H711M635 504H680" />
+        </g>
+        <path d="M69 253V299M64 253H74M64 299H74" stroke="#f5f3ed" stroke-width="1" />
+      </>
+    )}
+
+    {variant === "possibility" && (
+      <>
+        <rect width="800" height="560" fill="#e9dfcd" />
+        <g stroke="#20221f" stroke-width=".7" opacity=".22">
+          <path d="M145 54H637V510H145ZM145 168H637M145 282H637M145 396H637M268 54V510M391 54V510M514 54V510" />
+        </g>
+        <g class="possibility-motion">
+          {blocks.map(({ x, y, rotation }, index) => (
+            <g transform={`translate(${x} ${y})`}>
+              <g transform={`rotate(${rotation} 46 46)`}>
+                <path d="M0 92V46A46 46 0 0 1 92 46V92Z" fill={index === 6 || index === 12 ? "#ed512f" : "#20221f"} />
+                <path d="M25 92V47A21 21 0 0 1 67 47V92Z" fill="#e9dfcd" />
+              </g>
+            </g>
+          ))}
+        </g>
+        <g stroke="#20221f" stroke-width="1">
+          <path d="M59 76H99M79 56V96M679 477H719M699 457V497" />
+          <path d="M675 57V131M683 57V102M691 57V116" />
+        </g>
+        <circle cx="81" cy="478" r="7" fill="#ed512f" />
+        <circle cx="102" cy="478" r="7" stroke="#20221f" />
+      </>
+    )}
+
+    {variant === "measure" && (
+      <>
+        <rect width="800" height="560" fill="#e7e9e1" />
+        <g stroke="#20221f" stroke-width=".65" opacity=".2">
+          {grid.map((position) => <path d={`M${position} 0V560M0 ${position}H800`} />)}
+        </g>
+        <circle cx="412" cy="283" r="207" fill="#f5f3ed" stroke="#20221f" stroke-width="1" />
+        <g transform="translate(412 283)">
+          {Array.from({ length: 60 }, (_, index) => (
+            <path d={index % 5 === 0 ? "M0 -186V-165" : "M0 -186V-178"} transform={`rotate(${index * 6})`} stroke="#20221f" stroke-width={index % 5 === 0 ? "2" : "1"} />
+          ))}
+          <circle r="132" stroke="#20221f" stroke-width="1" />
+          <circle r="104" stroke="#20221f" stroke-width="1" />
+          <path d="M-132 0H132M0 -132V132" stroke="#20221f" stroke-width="1" />
+          <g class="measure-motion">
+            <path d="M0 0L-98 -153A182 182 0 0 1 180 27Z" fill="#ed512f" />
+            <path d="M0 0L147 -107" stroke="#20221f" stroke-width="5" />
+            <circle cx="147" cy="-107" r="8" fill="#20221f" />
+          </g>
+          <circle r="21" fill="#20221f" />
+          <circle r="5" fill="#f5f3ed" />
+        </g>
+        <path d="M57 96H155M57 105H129M57 114H143M665 460H736M665 469H710" stroke="#20221f" stroke-width="1.5" />
+        <path d="M76 432V488H132M678 67H734V123" stroke="#20221f" stroke-width="1" />
+        <circle cx="704" cy="96" r="7" fill="#ed512f" />
+      </>
+    )}
+  </svg>
+</div>
+
+<style>
+  .article-artwork {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #e7e9e1;
+    isolation: isolate;
+  }
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    transition: transform 650ms cubic-bezier(.2, .7, .2, 1);
+  }
+
+  :global(a:hover) .article-artwork svg,
+  :global(a:focus-visible) .article-artwork svg {
+    transform: scale(1.035);
+  }
+
+  .orbit-motion { animation: orbit-intro 4.6s cubic-bezier(.2, .7, .2, 1) both; }
+  .connection-motion { animation: connection-intro 2.8s cubic-bezier(.2, .7, .2, 1) both; }
+  .structure-motion { animation: structure-intro 3.4s cubic-bezier(.2, .7, .2, 1) both; }
+  .possibility-motion { animation: possibility-intro 2.6s cubic-bezier(.2, .7, .2, 1) both; }
+  .measure-motion { animation: measure-intro 3.8s cubic-bezier(.2, .7, .2, 1) both; }
+
+  @keyframes orbit-intro { from { transform: rotate(-22deg); } to { transform: rotate(0); } }
+  @keyframes connection-intro { from { transform: translateY(17px); } to { transform: translateY(0); } }
+  @keyframes structure-intro { from { transform: translate(-14px, 18px); } to { transform: translate(0, 0); } }
+  @keyframes possibility-intro { from { transform: translateY(13px); } to { transform: translateY(0); } }
+  @keyframes measure-intro { from { transform: rotate(-42deg); } to { transform: rotate(0); } }
+
+  :global(html[data-motion="paused"]) .article-artwork :is(.orbit-motion, .connection-motion, .structure-motion, .possibility-motion, .measure-motion),
+  :global(html[data-motion="paused"]) .article-artwork svg {
+    animation-play-state: paused !important;
+    transition: none !important;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .article-artwork :is(.orbit-motion, .connection-motion, .structure-motion, .possibility-motion, .measure-motion),
+    .article-artwork svg {
+      animation: none !important;
+      transition: none !important;
+      transform: none !important;
+    }
+  }
+</style>
