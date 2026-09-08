@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260908T024749Z",
+  "startedAt": "2026-09-08T02:47:49.338Z",
+  "completedAt": "2026-09-08T03:55:19Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-06T02:47:49.338Z",
+    "end": "2026-09-08T02:47:49.338Z"
+  },
+  "candidates": [
+    {
+      "story": "Harbor Adapters and Harbor-Index paper",
+      "source": "https://arxiv.org/abs/2609.04298",
+      "eventDate": "2026-09-07T04:00:00Z",
+      "decision": "selected",
+      "reason": "arXiv's cs.AI RSS gives an exact public-announcement time inside the 24-hour priority window. The preprint and released artifacts support a consequential analysis of benchmark portability, task validity and versioned agent evaluation."
+    },
+    {
+      "story": "OpenAI research-agent activity measurement",
+      "source": "https://openai.com/index/research-acceleration-view-inside-openai/",
+      "eventDate": "2026-09-06T08:00:00Z",
+      "decision": "rejected",
+      "reason": "The still-unpublished story was 42 hours 47 minutes 49 seconds old at run start, outside the priority window and only 5 hours 12 minutes from the hard gate. Harbor is fresher, distinct and equally consequential."
+    },
+    {
+      "story": "UK Government agentic-AI incident-response capability",
+      "source": "https://questions-statements.parliament.uk/written-statements/detail/2026-09-07/hcws314",
+      "eventDate": "unknown",
+      "decision": "deferred",
+      "reason": "The statement and API are dated 7 September, but the API supplies dateMade 2026-09-07T00:00:00 without a timezone and does not establish the exact event or publication time required for automatic publication."
+    },
+    {
+      "story": "UiPath LLM-as-Judge guardrail preview",
+      "source": "https://docs.uipath.com/agents/automation-cloud/latest/release-notes/september-2026",
+      "eventDate": "unknown",
+      "decision": "rejected",
+      "reason": "The release note gives a date but not an exact time and the incremental preview does not earn a 1,200-word article."
+    },
+    {
+      "story": "OpenAI An Alien Mind",
+      "source": "https://openai.com/index/an-alien-mind/",
+      "eventDate": "2026-09-06T09:00:00Z",
+      "decision": "rejected",
+      "reason": "The post is fresh and exact-timestamped but is an authored outlook on recursive self-improvement rather than a discrete shipped capability, policy instrument or evaluation result."
+    },
+    {
+      "story": "GPT-6 Astra benchmark revisions and harness gap",
+      "source": "https://arcprize.org/results/openai-gpt-6-astra",
+      "eventDate": "unknown",
+      "decision": "rejected",
+      "reason": "The model launch, ARC Prize tests and first reporting of changed benchmark figures predate this run's 48-hour window; 7 September summaries do not establish a new correction event."
+    },
+    {
+      "story": "GitHub HydraFusion and OpenAI wiki-incident disclosure",
+      "source": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+      "eventDate": "unknown",
+      "decision": "already covered",
+      "reason": "Both developments have published newsroom records. Fresh live checks found no material correction or distinct follow-on event."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "The Harbor paper is an exact-timestamped, non-duplicate preprint announcement inside the priority window. Its released artifacts and independent benchmark-method research support a useful, bounded decision about versioning and locally validating agent scores."
+  },
+  "story": {
+    "id": "harbor-agent-benchmark-versioning",
+    "eventDate": "2026-09-07T04:00:00Z",
+    "canonicalUrls": ["https://arxiv.org/abs/2609.04298"]
+  },
+  "articlePath": "src/content/articles/harbor-agent-benchmark-versioning.md",
+  "articleSha256": "80318d3474a915392e26678c8c6fdcf7fb4f619d05d4a4d707ee78ba200302a1",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://rss.arxiv.org/rss/cs.AI",
+      "title": "cs.AI updates on arXiv.org",
+      "publisher": "arXiv",
+      "kind": "primary",
+      "independenceGroup": "arxiv",
+      "publishedAt": "2026-09-07T04:00:00Z",
+      "eventDate": "2026-09-07T04:00:00Z",
+      "retrievedAt": "2026-09-08T02:56:04Z",
+      "locator": "RSS channel lastBuildDate and Harbor paper item pubDate: Mon, 07 Sep 2026 00:00:00 -0400. Establishes the exact public announcement time, not the paper's findings."
+    },
+    {
+      "id": "s2",
+      "url": "https://arxiv.org/abs/2609.04298",
+      "title": "Harbor Adapters and Harbor-Index: Infrastructure and a Curated Meta-Dataset for Large-Scale Agentic Evaluation",
+      "publisher": "Harbor project authors",
+      "kind": "primary",
+      "independenceGroup": "harbor-project",
+      "publishedAt": "2026-09-03T16:26:20Z",
+      "eventDate": "2026-09-07T04:00:00Z",
+      "retrievedAt": "2026-09-08T02:56:04Z",
+      "locator": "arXiv v1 submission history; abstract; HTML sections 1-6; Tables 1-4; Appendices D, E, G, H and I. Public announcement time comes from s1."
+    },
+    {
+      "id": "s3",
+      "url": "https://harbor-index.org/",
+      "title": "Introducing Harbor-Index",
+      "publisher": "Harbor project",
+      "kind": "primary",
+      "independenceGroup": "harbor-project",
+      "publishedAt": "2026-07-07",
+      "eventDate": "2026-07-07",
+      "retrievedAt": "2026-09-08T02:56:04Z",
+      "locator": "Opening, purpose boundary, 82-task launch results, selection funnel, quality rubric and audit-and-fix loop. Same project family as s2."
+    },
+    {
+      "id": "s4",
+      "url": "https://raw.githubusercontent.com/harbor-framework/harbor-index/main/README.md",
+      "title": "Harbor Index README on main",
+      "publisher": "Harbor project",
+      "kind": "primary",
+      "independenceGroup": "harbor-project",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-08T02:56:04Z",
+      "locator": "Lines 0-8 and 27-44: current 80-task description, at least five public trials and current leaderboard target. Mutable main-branch artifact."
+    },
+    {
+      "id": "s5",
+      "url": "https://raw.githubusercontent.com/harbor-framework/harbor-index/main/job-config.yaml",
+      "title": "Harbor Index job configuration on main",
+      "publisher": "Harbor project",
+      "kind": "primary",
+      "independenceGroup": "harbor-project",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-08T02:56:04Z",
+      "locator": "Lines 0-40 and 59-80: attempt count, model/harness notes, current three votes from Claude Opus 5, earlier judge configurations and dataset latest target. Mutable main-branch artifact."
+    },
+    {
+      "id": "s6",
+      "url": "https://arxiv.org/abs/2511.04703",
+      "title": "Measuring what Matters: Construct Validity in Large Language Model Benchmarks",
+      "publisher": "NeurIPS 2025 research team",
+      "kind": "independent",
+      "independenceGroup": "construct-validity-review",
+      "publishedAt": "2025-11-03T17:39:40Z",
+      "eventDate": "2025-11-03T17:39:40Z",
+      "retrievedAt": "2026-09-08T02:56:04Z",
+      "locator": "Abstract and metadata: 29 expert reviewers, 445-benchmark systematic review and recurring construct-validity problems. Does not evaluate Harbor."
+    },
+    {
+      "id": "s7",
+      "url": "https://arxiv.org/abs/2503.15223",
+      "title": "Are Solved Issues in SWE-bench Really Solved Correctly? An Empirical Study",
+      "publisher": "You Wang, Michael Pradel and Zhongxin Liu",
+      "kind": "independent",
+      "independenceGroup": "swebench-patch-audit",
+      "publishedAt": "2025-09-09T02:59:54Z",
+      "eventDate": "2025-03-19T14:02:21Z",
+      "retrievedAt": "2026-09-08T02:56:04Z",
+      "locator": "Abstract: developer-test failures, behavioural differences and estimated resolution-rate inflation. Does not evaluate Harbor."
+    },
+    {
+      "id": "s8",
+      "url": "https://arxiv.org/abs/2405.14782",
+      "title": "Lessons from the Trenches on Reproducible Evaluation of Language Models",
+      "publisher": "EleutherAI evaluation researchers",
+      "kind": "independent",
+      "independenceGroup": "lm-eval-methods",
+      "publishedAt": "2026-05-31T00:04:33Z",
+      "eventDate": "2024-05-23T16:50:49Z",
+      "retrievedAt": "2026-09-08T02:56:04Z",
+      "locator": "Abstract and submission history: setup sensitivity, comparison, transparency and reproducibility guidance. Does not evaluate Harbor."
+    }
+  ],
+  "claims": [
+    {"id":"c01","text":"arXiv cs.AI RSS timestamped the paper announcement at 2026-09-07T04:00:00Z.","type":"fact","sourceIds":["s1"],"sourceLocator":"Channel lastBuildDate and item pubDate","status":"supported"},
+    {"id":"c02","text":"The announcement was 22 hours 47 minutes 49 seconds old when the run began.","type":"fact","sourceIds":["s1"],"sourceLocator":"RSS pubDate compared with record.startedAt","status":"supported"},
+    {"id":"c03","text":"The arXiv submission history records v1 lodged at 2026-09-03T16:26:20Z.","type":"fact","sourceIds":["s2"],"sourceLocator":"Submission history","status":"supported"},
+    {"id":"c04","text":"The work is a preprint.","type":"fact","sourceIds":["s2"],"sourceLocator":"arXiv metadata","status":"supported"},
+    {"id":"c05","text":"Harbor reports more than 80 adapters and a large evaluation covering 54 benchmarks, 6,627 tasks, eight models and 16 model-harness configurations.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Abstract and sections 1-2","status":"supported"},
+    {"id":"c06","text":"The large evaluation used three trials per configuration, about 0.3 million trajectories, 226B tokens and more than US$300,000 compute.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Introduction and evaluation protocol","status":"supported"},
+    {"id":"c07","text":"Harbor's task abstraction covers instruction, environment, test and solution, reducing pairwise integration burden.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Section 2 overview","status":"supported"},
+    {"id":"c08","text":"In this experiment the model fixed-effect range was 5.2 times the harness range, while harness and tool differences still affected behaviour.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Sections 3.2 and 3.4","status":"qualified"},
+    {"id":"c09","text":"After filtering and automated audit, a three-member human panel selected 100 tasks; the audit-and-fix loop then produced the final 82 spanning 29 benchmarks.","type":"fact","sourceIds":["s2","s3"],"sourceLocator":"Paper sections 4.1-4.3 and launch selection funnel","status":"supported"},
+    {"id":"c10","text":"The paper reports roughly one-third of the hardest candidates across more than 30 benchmarks were rejected as broken rather than difficult.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Section 4.1","status":"supported"},
+    {"id":"c11","text":"The leading Harbor-Index 1.0 paper result was 28.0% for GPT-5.5 with Codex.","type":"fact","sourceIds":["s2"],"sourceLocator":"Table 1","status":"supported"},
+    {"id":"c12","text":"The 28.0% result is not a general deployment success rate because the index deliberately selects hard frontier tasks.","type":"inference","sourceIds":["s2","s3"],"sourceLocator":"Paper sections 4.1-4.3 and launch purpose; no inference that the result lacks value","status":"qualified"},
+    {"id":"c13","text":"After 12 benchmarks were selected, remaining model rankings correlated at least 0.7 with one selected benchmark.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Section 3.1","status":"supported"},
+    {"id":"c14","text":"For benchmarks with at least ten tasks, three representative tasks recovered system rankings at mean correlation about 0.923.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Section 3.1","status":"supported"},
+    {"id":"c15","text":"The redundancy findings support cheaper screening but do not prove a compact set represents a buyer's local tasks.","type":"inference","sourceIds":["s2","s6"],"sourceLocator":"Paper sections 3.1 and 6 plus construct-validity boundary","status":"qualified"},
+    {"id":"c16","text":"On 8 September 2026 the current README described 80 tasks, required at least five public trials per task for leaderboard submissions and pointed submissions to the Harbor-Index 1.3 leaderboard.","type":"fact","sourceIds":["s4"],"sourceLocator":"README lines 1-5, 7-25 and 30-41","status":"supported"},
+    {"id":"c17","text":"On 8 September 2026 the current config used three votes from Claude Opus 5 and documented earlier judge configurations.","type":"fact","sourceIds":["s5"],"sourceLocator":"job-config lines 59-69","status":"supported"},
+    {"id":"c18","text":"The paper's 82-task result and current 80-task repository state are not interchangeable without a version.","type":"inference","sourceIds":["s2","s3","s4","s5"],"sourceLocator":"Observed project-state difference; no claim that either release is wrong","status":"qualified"},
+    {"id":"c19","text":"An independent SWE-bench audit found 7.8% of benchmark-passing patches failed developer tests, 29.6% differed behaviourally, and estimated inflation was 6.2 percentage points.","type":"fact","sourceIds":["s7"],"sourceLocator":"Abstract","status":"supported"},
+    {"id":"c20","text":"The SWE-bench audit supports the false-pass premise; Harbor's over-specified-verifier examples support the separate false-failure premise. The SWE-bench study does not evaluate Harbor.","type":"inference","sourceIds":["s2","s7"],"sourceLocator":"s7 abstract for false passes; s2 section 4.1 for false failures; comparison boundary stated in article","status":"qualified"},
+    {"id":"c21","text":"A systematic review used 29 expert reviewers across 445 benchmarks and found recurring construct-validity problems.","type":"fact","sourceIds":["s6"],"sourceLocator":"Abstract","status":"supported"},
+    {"id":"c22","text":"The lm-eval authors document sensitivity to setup, comparability, transparency and reproducibility.","type":"fact","sourceIds":["s8"],"sourceLocator":"Abstract","status":"supported"},
+    {"id":"c23","text":"Harbor-Index is appropriate as a versioned screening stage followed by representative local outcome testing.","type":"inference","sourceIds":["s2","s3","s4","s5","s6","s7","s8"],"sourceLocator":"Index Us recommendation from benchmark-purpose and reproducibility limits","status":"qualified"},
+    {"id":"c24","text":"A reproducible agent result should retain task release, model, harness, verifier, attempts, tools, sandbox and budget.","type":"inference","sourceIds":["s2","s4","s5","s8"],"sourceLocator":"Index Us recommendation from documented evaluation variables","status":"qualified"},
+    {"id":"c25","text":"Harbor releases benchmark adapters, evaluation tooling and execution trajectories.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Section 1, especially HTML line 204","status":"supported"},
+    {"id":"c26","text":"Harbor tasks can use a model judge, unit tests, exact matching or a threshold applied to a continuous metric.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Section 4.2, HTML lines 278-279","status":"supported"},
+    {"id":"c27","text":"The current README points leaderboard submissions to Harbor-Index 1.3.","type":"fact","sourceIds":["s4"],"sourceLocator":"README lines 30-41","status":"supported"},
+    {"id":"c28","text":"Native harnesses allowed iterative correction, whereas Terminus-2 followed a one-way plan-to-execution-to-completion flow and lacked built-in image and web tools.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Section 3.4 and outcome discussion, HTML lines 258-264 and 296-298","status":"supported"},
+    {"id":"c29","text":"Specialised domains could resist cross-benchmark prediction, and the 54-benchmark experiment did not span every model, agent architecture or setting.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Sections 3.1 and 6, HTML lines 224-236 and 312-319","status":"supported"}
+  ],
+  "drafting": {"agentId": "/root/draft_research"},
+  "editorial": {
+    "agentId": "/root/voice_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-08T03:41:49Z",
+    "articleSha256": "80318d3474a915392e26678c8c6fdcf7fb4f619d05d4a4d707ee78ba200302a1",
+    "notes": [
+      "Renewed the complete publication edit after factual corrections and accepted the corrected 100-to-82 selection sequence.",
+      "Confirmed the added clause-level citations preserve the natural evidence-led flow and source-family boundaries.",
+      "Rechecked every preservation-list figure, qualification, metadata field, byline and the exact automation disclosure.",
+      "No article wording changed in this renewed pass; the corrected copy already satisfied the voice and pattern tests."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/factual_review",
+    "reviewedAt": "2026-09-08T03:48:51Z",
+    "articleSha256": "80318d3474a915392e26678c8c6fdcf7fb4f619d05d4a4d707ee78ba200302a1",
+    "status": "passed",
+    "claimsCoverage": true
+  },
+  "quality": {
+    "evidence": 33,
+    "context": 18,
+    "originalValue": 18,
+    "voice": 14,
+    "presentation": 9
+  },
+  "riskFlags": [],
+  "quotes": [],
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered in the local site at 1280x900. Title, description, byline, exact disclosure, artwork, navigation, headings, all eight source links, related content and footer were present and readable. No images were broken, the browser console had no warnings or errors, and document scroll width matched the viewport with no horizontal overflow."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered in the local site at 390x844. The title, metadata and disclosure wrapped cleanly, navigation collapsed correctly, artwork, article sections, all eight source links, related content and footer remained readable. No images were broken, the browser console had no warnings or errors, and document scroll width matched the viewport with no page-level horizontal overflow."
+    }
+  },
+  "researchTooling": {
+    "firecrawl": "CLI available through npx but unauthenticated; keyless search refused the current IP before creating an output file.",
+    "fallback": "Live public web extraction, official RSS and direct public HTTP reachability checks."
+  }
+}
