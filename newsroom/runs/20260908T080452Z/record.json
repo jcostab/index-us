@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260908T080452Z",
+  "startedAt": "2026-09-08T08:04:52.606Z",
+  "completedAt": "2026-09-08T09:06:30Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-06T08:04:52.606Z",
+    "end": "2026-09-08T08:04:52.606Z"
+  },
+  "candidates": [
+    {
+      "story": "Arm AI Portal",
+      "source": "https://newsroom.arm.com/news/arm-unveils-arm-ai-portal",
+      "eventDate": "2026-09-08T02:00:02Z",
+      "decision": "selected",
+      "reason": "The launch page has an exact primary timestamp 6 hours 4 minutes 50.606 seconds before the run began. The public catalogue, comparison interface and deployment resources are available to inspect, early-access boundaries are explicit, and independent sustained edge-inference research supports a consequential decision about local validation."
+    },
+    {
+      "story": "Arm CSS for Mobile 2",
+      "source": "https://newsroom.arm.com/news/arm-css-for-mobile-2-agentic-ai-mobile-graphics",
+      "eventDate": "unknown",
+      "decision": "rejected",
+      "reason": "This is part of the same Arm launch event and source family. Treating it as a separate article would duplicate the portal's hardware-fit analysis and broaden the story into hardware-platform claims without stronger independent product evidence."
+    },
+    {
+      "story": "OpenAI research-agent activity measurement",
+      "source": "https://openai.com/index/research-acceleration-view-inside-openai/",
+      "eventDate": "2026-09-06T08:00:00Z",
+      "decision": "rejected",
+      "reason": "OpenAI's RSS timestamp is 48 hours 4 minutes 52.606 seconds before this run began, outside the hard 48-hour event gate."
+    },
+    {
+      "story": "GPT-6 Astra launch",
+      "source": "https://openai.com/index/gpt-6-astra/",
+      "eventDate": "2026-09-03T11:00:00Z",
+      "decision": "rejected",
+      "reason": "OpenAI's RSS timestamp places the launch well outside this run's 48-hour window, and no new correction or separate event was found."
+    },
+    {
+      "story": "Harbor Adapters and Harbor-Index paper",
+      "source": "https://arxiv.org/abs/2609.04298",
+      "eventDate": "2026-09-07T04:00:00Z",
+      "decision": "already covered",
+      "reason": "Published and verified under newsroom run 20260908T024749Z. Fresh checks found no material correction or distinct follow-on event."
+    },
+    {
+      "story": "OpenAI wiki-incident disclosure framework and GitHub HydraFusion",
+      "source": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+      "eventDate": "unknown",
+      "decision": "already covered",
+      "reason": "Both developments have published newsroom records. No material correction or separate follow-on event was found in this run."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "Arm AI Portal is a fresh, exact-timestamped and non-duplicate developer-tool launch. The live catalogue and MCP documentation support a bounded account of what is available, while independent sustained-load research supports a practical decision: shortlist by model, runtime and target, then test the complete deployment system."
+  },
+  "story": {
+    "id": "arm-ai-portal-hardware-fit",
+    "eventDate": "2026-09-08T02:00:02Z",
+    "canonicalUrls": ["https://newsroom.arm.com/news/arm-unveils-arm-ai-portal"]
+  },
+  "articlePath": "src/content/articles/arm-ai-portal-hardware-fit.md",
+  "articleSha256": "3f0ccd7ebded6e9a608b1282e95127e81f6ff7b5f7b00e103ff7e862eb0d8ed6",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://newsroom.arm.com/news/arm-unveils-arm-ai-portal",
+      "title": "Arm unveils Arm AI Portal to accelerate optimized AI apps across the Arm compute platform",
+      "publisher": "Arm",
+      "kind": "primary",
+      "independenceGroup": "arm-ai-portal",
+      "publishedAt": "2026-09-08T02:00:02Z",
+      "eventDate": "2026-09-08T02:00:02Z",
+      "retrievedAt": "2026-09-08T08:18:44Z",
+      "locator": "Page structured data datePublished; launch highlights; availability paragraphs; Start faster and performance-gain sections. The page establishes the exact event time and Arm's claims, not independent performance confirmation."
+    },
+    {
+      "id": "s2",
+      "url": "https://developer.arm.com/ai/models?page=1&compareX=latency&compareY=peakMemoryMb&compareSize=sizeMb&view=compare",
+      "title": "Arm AI Portal model comparison",
+      "publisher": "Arm Developer",
+      "kind": "primary",
+      "independenceGroup": "arm-ai-portal",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-08T08:18:44Z",
+      "locator": "Live Explore/Compare view: 84 results, comparison axes and published MCP setup commands and endpoint. Mutable catalogue snapshot from the same Arm source family as s1."
+    },
+    {
+      "id": "s3",
+      "url": "https://developer.arm.com/community/arm-community-blogs/b/ai-blog/posts/meet-arm-ai-portal-the-launchpad-for-your-next-ai-application",
+      "title": "Meet Arm AI Portal: The launchpad for your next AI application",
+      "publisher": "Arm Community",
+      "kind": "primary",
+      "independenceGroup": "arm-ai-portal",
+      "publishedAt": "2026-09-08T01:00:00Z",
+      "eventDate": "2026-09-08T01:00:00Z",
+      "retrievedAt": "2026-09-08T08:18:44Z",
+      "locator": "Structured data datePublished; model-filter and provenance sections; optimisation-process explanation; performance examples; early-access and deployment-workflow sections. Same Arm source family as s1."
+    },
+    {
+      "id": "s4",
+      "url": "https://arxiv.org/abs/2603.23640",
+      "title": "LLM Inference at the Edge: Mobile, NPU, and GPU Performance Efficiency Trade-offs Under Sustained Load",
+      "publisher": "Pranay Tummalapalli, Sahil Arayakandy, Ritam Pal and Kautuk Kundan",
+      "kind": "independent",
+      "independenceGroup": "conscious-engines-edge-inference",
+      "publishedAt": "2026-06-07T18:38:40Z",
+      "eventDate": "2026-03-24T18:28:38Z",
+      "retrievedAt": "2026-09-08T08:18:44Z",
+      "locator": "arXiv v2 abstract; methods and results for 20 warm-condition iterations; sections 4 and 5.4-5.5 on platform outcomes, framework heterogeneity, power measurement and threats to validity. Independent context only; the preprint does not evaluate Arm AI Portal."
+    }
+  ],
+  "claims": [
+    {
+      "id": "c01",
+      "text": "Arm's launch page was published at 2026-09-08T02:00:02Z.",
+      "type": "fact",
+      "sourceIds": ["s1"],
+      "sourceLocator": "Structured data datePublished",
+      "status": "supported"
+    },
+    {
+      "id": "c02",
+      "text": "The event was 6 hours 4 minutes 50.606 seconds old when the run began.",
+      "type": "fact",
+      "sourceIds": ["s1"],
+      "sourceLocator": "s1 datePublished compared with record.startedAt",
+      "status": "supported"
+    },
+    {
+      "id": "c03",
+      "text": "Arm AI Portal brings together optimized models, target information, performance data, code examples and deployment workflows.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1", "s2", "s3"],
+      "sourceLocator": "s1 opening and launch scope; s2 live model comparison; s3 model and deployment sections",
+      "status": "supported"
+    },
+    {
+      "id": "c04",
+      "text": "The public comparison view showed 84 results when checked on 8 September 2026.",
+      "type": "fact",
+      "sourceIds": ["s2"],
+      "sourceLocator": "Live Explore/Compare view text: 84 results",
+      "status": "qualified"
+    },
+    {
+      "id": "c05",
+      "text": "The portal supports filtering by task, device class, runtime and format, and comparison using benchmark score, latency, peak memory and average memory.",
+      "type": "attributed_claim",
+      "sourceIds": ["s2", "s3"],
+      "sourceLocator": "s2 filter and compare view; s3 model-comparison section",
+      "status": "supported"
+    },
+    {
+      "id": "c06",
+      "text": "Arm says individual model entries can include training-data provenance, benchmark conditions, runtime and test-device information.",
+      "type": "attributed_claim",
+      "sourceIds": ["s3"],
+      "sourceLocator": "Model comparison and provenance section",
+      "status": "supported"
+    },
+    {
+      "id": "c07",
+      "text": "Launch examples include Qwen, Gemma and YOLO model families using ExecuTorch, LiteRT and ONNX Runtime.",
+      "type": "fact",
+      "sourceIds": ["s1", "s3"],
+      "sourceLocator": "s1 Start faster section; s3 initial models section",
+      "status": "supported"
+    },
+    {
+      "id": "c08",
+      "text": "Arm reports more than a fourfold Qwen3-TTS speed-up on a vivo X300 using single-thread execution, a Q8_0 talker with a code predictor, mixed quantisation and SME2 acceleration.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1"],
+      "sourceLocator": "Start faster performance bullets",
+      "status": "qualified"
+    },
+    {
+      "id": "c09",
+      "text": "Arm reports more than 40 percent performance improvement for YOLO26n using single-thread FP16 versus FP32 on vivo X300 with SME2, and mixed FP16 and INT8 quantisation versus FP32 on Raspberry Pi 5 with NEON.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1"],
+      "sourceLocator": "Start faster performance bullets",
+      "status": "qualified"
+    },
+    {
+      "id": "c10",
+      "text": "Index Us did not reproduce Arm's reported performance figures.",
+      "type": "fact",
+      "sourceIds": ["s1", "s3"],
+      "sourceLocator": "Declared reporting limitation; sources contain Arm measurements only",
+      "status": "supported"
+    },
+    {
+      "id": "c11",
+      "text": "Bring-your-own-model optimization is offered through an early-access program rather than as general availability.",
+      "type": "fact",
+      "sourceIds": ["s1", "s3"],
+      "sourceLocator": "s1 availability paragraph; s3 early-access sections",
+      "status": "supported"
+    },
+    {
+      "id": "c12",
+      "text": "The public portal page publishes MCP setup commands for Codex, Claude Code and GitHub Copilot and a Streamable HTTP endpoint.",
+      "type": "fact",
+      "sourceIds": ["s2"],
+      "sourceLocator": "MCP Server section of live model comparison view",
+      "status": "supported"
+    },
+    {
+      "id": "c13",
+      "text": "Arm's launch announcement describes agent-ready AI resources as early access ahead of general release.",
+      "type": "fact",
+      "sourceIds": ["s1"],
+      "sourceLocator": "Opening availability paragraph",
+      "status": "supported"
+    },
+    {
+      "id": "c14",
+      "text": "The Arm technical post describes optimization as involving model export, operator mapping, graph changes, kernel selection and quantization, with runtime choice affecting performance.",
+      "type": "attributed_claim",
+      "sourceIds": ["s3"],
+      "sourceLocator": "Optimization workflow section",
+      "status": "supported"
+    },
+    {
+      "id": "c15",
+      "text": "The independent preprint tested one 4-bit Qwen 2.5 1.5B model on four platforms for 20 warm-condition iterations.",
+      "type": "fact",
+      "sourceIds": ["s4"],
+      "sourceLocator": "v2 abstract and methods",
+      "status": "supported"
+    },
+    {
+      "id": "c16",
+      "text": "In the independent experiment, iPhone throughput fell 41.5 percent from peak and settled near 23.7 tokens per second, while a tuned S24 configuration declined about 15 percent and settled near 10 tokens per second.",
+      "type": "fact",
+      "sourceIds": ["s4"],
+      "sourceLocator": "Results and conclusion; iPhone and S24 sections",
+      "status": "qualified"
+    },
+    {
+      "id": "c17",
+      "text": "The independent experiment's NPU configuration was slower but stable under sustained load, while the laptop result was constrained by battery power.",
+      "type": "fact",
+      "sourceIds": ["s4"],
+      "sourceLocator": "Results, deployment-suitability discussion and conclusion",
+      "status": "qualified"
+    },
+    {
+      "id": "c18",
+      "text": "The paper used different inference frameworks and quantization formats across devices and different power-measurement boundaries, limiting direct platform comparisons.",
+      "type": "fact",
+      "sourceIds": ["s4"],
+      "sourceLocator": "Section 5.4 Framework heterogeneity and Power measurement methodology",
+      "status": "supported"
+    },
+    {
+      "id": "c19",
+      "text": "The independent paper does not evaluate Arm AI Portal and cannot confirm Arm's portal-specific optimization claims.",
+      "type": "inference",
+      "sourceIds": ["s1", "s3", "s4"],
+      "sourceLocator": "Different studied systems and dates; boundary stated explicitly in the article",
+      "status": "qualified"
+    },
+    {
+      "id": "c20",
+      "text": "A portal result should be treated as evidence for a shortlist, not proof that the model will meet production requirements on another device or software stack.",
+      "type": "inference",
+      "sourceIds": ["s2", "s3", "s4"],
+      "sourceLocator": "Portal comparison scope plus s4's platform, framework and sustained-load limitations",
+      "status": "qualified"
+    },
+    {
+      "id": "c21",
+      "text": "A reproducible local evaluation should retain the source checkpoint, converted artifact, runtime and backend, quantization, target device and workload conditions.",
+      "type": "inference",
+      "sourceIds": ["s2", "s3", "s4"],
+      "sourceLocator": "Synthesis of s3 optimization steps and s4 validity limits",
+      "status": "qualified"
+    },
+    {
+      "id": "c22",
+      "text": "Local acceptance testing should include task quality, cold and warm latency, sustained throughput, memory, power or battery effects, temperature and failures where those measures matter to the product.",
+      "type": "inference",
+      "sourceIds": ["s2", "s3", "s4"],
+      "sourceLocator": "Index Us recommendation based on portal comparison dimensions and s4 sustained-load methodology",
+      "status": "qualified"
+    },
+    {
+      "id": "c23",
+      "text": "The independent edge-inference preprint was originally submitted on 24 March 2026 and last revised on 7 June 2026.",
+      "type": "fact",
+      "sourceIds": ["s4"],
+      "sourceLocator": "arXiv submission history for v1 and v2",
+      "status": "supported"
+    }
+  ],
+  "drafting": {
+    "agentId": "/root/draft_research"
+  },
+  "editorial": {
+    "agentId": "/root/voice_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-08T08:53:18Z",
+    "articleSha256": "3f0ccd7ebded6e9a608b1282e95127e81f6ff7b5f7b00e103ff7e862eb0d8ed6",
+    "notes": [
+      "Renewed the complete publication edit after factual corrections and made no further article change.",
+      "Confirmed that the added local links, exact benchmark conditions and preprint version framing remain natural and proportionate.",
+      "Confirmed that replacing the twenty-minute example with sustained continuous use preserves the practical limitation without unsupported specificity.",
+      "Preserved all metadata, source boundaries, testing limits, the original evaluation sequence and the exact automation disclosure."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/factual_review",
+    "reviewedAt": "2026-09-08T08:58:11Z",
+    "articleSha256": "3f0ccd7ebded6e9a608b1282e95127e81f6ff7b5f7b00e103ff7e862eb0d8ed6",
+    "status": "passed",
+    "claimsCoverage": true
+  },
+  "quality": {
+    "evidence": 32,
+    "context": 19,
+    "originalValue": 18,
+    "voice": 14,
+    "presentation": 9
+  },
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered at 1280x900. Title, metadata, Index Us Editorial byline, exact disclosure, artwork, navigation, heading hierarchy, all four source labels, related content and footer were present; document width matched the viewport, images loaded and no browser warnings or errors were recorded."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered at 390x844. Title, metadata, byline, exact disclosure, artwork, headings, all four source labels, related content and footer were present; document width matched the viewport, images loaded, the collapsed menu opened to all navigation links and no browser warnings or errors were recorded."
+    }
+  },
+  "riskFlags": [],
+  "quotes": []
+}
