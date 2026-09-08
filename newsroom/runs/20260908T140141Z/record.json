@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260908T140141Z",
+  "startedAt": "2026-09-08T14:01:41.440Z",
+  "completedAt": "2026-09-08T14:51:25Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {"start":"2026-09-06T14:01:41.440Z","end":"2026-09-08T14:01:41.440Z"},
+  "candidates": [
+    {"story":"GTIG adversarial-AI report","source":"https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai/","eventDate":"2026-09-08T14:00:00Z","decision":"selected","reason":"Google's RSS supplies an exact time inside the priority window. The report supports a consequential, non-duplicate decision about workspace trust, agent identity and AI-infrastructure monitoring, with independent context bounding autonomy claims."},
+    {"story":"Arm AI Portal","source":"https://newsroom.arm.com/news/arm-unveils-arm-ai-portal","eventDate":"2026-09-08T02:00:02Z","decision":"already covered","reason":"Published under run 20260908T080452Z; no correction or distinct follow-on event found."},
+    {"story":"Harbor agent benchmark","source":"https://arxiv.org/abs/2609.04298","eventDate":"2026-09-07T04:00:00Z","decision":"already covered","reason":"Published under run 20260908T024749Z; no material correction found."},
+    {"story":"OpenAI research-agent activity measurement","source":"https://openai.com/index/research-acceleration-view-inside-openai/","eventDate":"2026-09-06T08:00:00Z","decision":"rejected","reason":"Verified event time was outside this run's 48-hour discovery window."},
+    {"story":"Google May adversarial-AI tracker","source":"https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access","eventDate":"2026-05-11T14:00:00Z","decision":"rejected","reason":"Older report from the same source family; context only, not a new event."}
+  ],
+  "decision": {"kind":"new","reason":"The exact-timestamped GTIG report is fresh, consequential and non-duplicate. Its reported agent-assisted credential harvesting, workspace-directed manipulation and stolen AI infrastructure support a bounded operational-security article, while Google and independent context constrain any claim of fully autonomous attacks."},
+  "story": {"id":"google-adversarial-ai-security-boundary","eventDate":"2026-09-08T14:00:00Z","canonicalUrls":["https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai/"]},
+  "articlePath": "src/content/articles/google-adversarial-ai-security-boundary.md",
+  "articleSha256": "9e20427a479da30e3ea1195a7477e768a9070964ed7fb97f41ea1f513184247d",
+  "sources": [
+    {"id":"s1","url":"https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v","title":"Google Threat Intelligence RSS","publisher":"Google Threat Intelligence","kind":"primary","independenceGroup":"google-threat-intelligence","publishedAt":"2026-09-08T14:00:00Z","eventDate":"2026-09-08T14:00:00Z","retrievedAt":"2026-09-08T14:15:13Z","locator":"Report item title, canonical URL and pubDate; exact event-time authority only."},
+    {"id":"s2","url":"https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai/","title":"GTIG AI Threat Tracker: From Prompting to Autonomy – The Evolution of Adversarial AI","publisher":"Google Threat Intelligence Group","kind":"primary","independenceGroup":"google-threat-intelligence","publishedAt":"2026-09-08T14:00:00Z","eventDate":"2026-09-08T14:00:00Z","retrievedAt":"2026-09-08T14:15:13Z","locator":"Executive summary; Tables 1-2; agentic-AI, vulnerability-research and infrastructure-compromise sections; Table 11. Attributed Google/Mandiant observations only."},
+    {"id":"s3","url":"https://www.sysdig.com/blog/llmjacking-evolved-attackers-are-using-stolen-ai-compute-to-build-offensive-agentic-tools","title":"LLMjacking evolved: Attackers are using stolen AI compute to build offensive agentic tools","publisher":"Sysdig Threat Research Team","kind":"independent","independenceGroup":"sysdig-trt","publishedAt":"2026-06-17","eventDate":"2026-06-12T15:43:00Z","retrievedAt":"2026-09-08T14:15:13Z","locator":"Opening, observation, development and private-practice-target sections. Context only; does not verify Google's incidents."},
+    {"id":"s4","url":"https://www.nccoe.nist.gov/sites/default/files/2026-02/accelerating-the-adoption-of-software-and-ai-agent-identity-and-authorization-concept-paper.pdf","title":"Accelerating the Adoption of Software and AI Agent Identity and Authorization","publisher":"NIST National Cybersecurity Center of Excellence","kind":"independent","independenceGroup":"nist-nccoe","publishedAt":"2026-02-04","eventDate":"2026-02-04","retrievedAt":"2026-09-08T14:15:13Z","locator":"PDF metadata; February 2026 draft; questions 2-5 and Areas of Interest on identity, authorization, delegation, logging and data provenance. Draft concept, not completed standard."},
+    {"id":"s5","url":"https://www.nist.gov/blogs/caisi-research-blog/insights-ai-agent-security-large-scale-red-teaming-competition","title":"Insights into AI Agent Security from a Large-Scale Red-Teaming Competition","publisher":"NIST Center for AI Standards and Innovation","kind":"independent","independenceGroup":"nist-caisi","publishedAt":"2026-03-23","eventDate":"2026-03-23","retrievedAt":"2026-09-08T14:15:13Z","locator":"Background and Key Findings: models, attempts, participants, successful hijacks and capability-correlation boundary."},
+    {"id":"s6","url":"https://siliconangle.com/2026/09/08/google-says-attackers-used-ai-agents-to-steal-credentials-in-under-six-hours/","title":"Google says attackers used AI agents to steal credentials in under six hours","publisher":"SiliconANGLE","kind":"independent","independenceGroup":"siliconangle","publishedAt":"2026-09-08T12:00:51Z","eventDate":"2026-09-08","retrievedAt":"2026-09-08T14:15:13Z","locator":"Independent release reporting and attributed GTIG summary; not exact event-time authority or incident confirmation."}
+  ],
+  "claims": [
+    {"id":"c01","text":"The RSS timestamp is 2026-09-08T14:00:00Z, 1 minute 41.440 seconds before run start.","type":"fact","sourceIds":["s1"],"sourceLocator":"Report item pubDate compared with startedAt","status":"supported"},
+    {"id":"c02","text":"Google says the actor used compromised cloud infrastructure and an AI coding system to plan, build and execute credential harvesting in less than six hours.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Executive summary and Bespoke Vulnerability Scanning and Credential Harvesting Campaign","status":"supported"},
+    {"id":"c03","text":"Google says the framework managed scanning, troubleshooting, credential harvesting and IP rotation and compromised thousands of third-party credentials.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Bespoke Vulnerability Scanning and Credential Harvesting Campaign","status":"supported"},
+    {"id":"c04","text":"Google separately describes a dashboard managing more than 23,800 harvested secrets.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Automated Reconnaissance and Credential Management Framework","status":"supported"},
+    {"id":"c05","text":"The report does not establish that the under-six-hour campaign and the dashboard are the same incident.","type":"inference","sourceIds":["s2"],"sourceLocator":"Separately labelled examples; article keeps them separate","status":"qualified"},
+    {"id":"c06","text":"Google says a PRC-linked agentic framework effort stayed at the build stage and associated assets were disabled.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Automated Pentesting Framework","status":"supported"},
+    {"id":"c07","text":"GTIG says it has not observed fully autonomous pipelines deployed against targets in the wild.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"AI-Augmented Vulnerability Research","status":"supported"},
+    {"id":"c08","text":"Sysdig observed an exposed Ollama server powering a staged offensive tool aimed only at private practice ranges while still under development, with ultimate intent uncertain.","type":"fact","sourceIds":["s3"],"sourceLocator":"Opening, development, targets and intent sections","status":"supported"},
+    {"id":"c09","text":"Google says DUSTMAKER modified hidden .claude, .vscode and .cursor paths and could establish build or startup execution.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Tables 1-2","status":"supported"},
+    {"id":"c10","text":"Google assesses that adversarial JavaScript comments were intended to trigger refusals or skipped analysis by LLM security scanners.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Table 2","status":"qualified"},
+    {"id":"c11","text":"Google says the DUSTMAKER activity triggered Gemini safety responses.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Mitigations following Table 2","status":"supported"},
+    {"id":"c12","text":"NIST CAISI reports more than 250,000 attempts from over 400 participants across 13 models, with at least one successful hijack against every target and no uniform correlation with general capability.","type":"fact","sourceIds":["s5"],"sourceLocator":"Key Findings","status":"supported"},
+    {"id":"c13","text":"Google says an exposed GitHub PAT enabled an April intrusion involving unauthorized AI infrastructure, privilege changes, credential discovery and quota requests.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Illicit Account Procurement and Infrastructure Compromise; Table 11","status":"supported"},
+    {"id":"c14","text":"NIST's draft concept proposes distinct agent identities, managed authorization and delegation, action visibility and data provenance.","type":"fact","sourceIds":["s4"],"sourceLocator":"Areas of Interest","status":"supported"},
+    {"id":"c15","text":"The practical security boundary is the model plus instructions, tools, identities, data paths and infrastructure.","type":"inference","sourceIds":["s2","s3","s4","s5"],"sourceLocator":"Index Us synthesis from incident paths and control context","status":"qualified"},
+    {"id":"c16","text":"Agents should have bounded identities, tools and privileged operations.","type":"inference","sourceIds":["s2","s4"],"sourceLocator":"Index Us recommendation from Table 11 and NIST control areas","status":"qualified"},
+    {"id":"c17","text":"Workspaces, instruction files, hooks and tool descriptions should be treated as untrusted inputs.","type":"inference","sourceIds":["s2","s5"],"sourceLocator":"Index Us recommendation from DUSTMAKER and hijacking evidence","status":"qualified"},
+    {"id":"c18","text":"Agent, identity, credential, network and compute records should be connected for investigation and containment.","type":"inference","sourceIds":["s2","s4"],"sourceLocator":"Index Us recommendation from incident paths and NIST logging/transparency","status":"qualified"},
+    {"id":"c19","text":"Independent context does not independently verify Google's incident telemetry.","type":"fact","sourceIds":["s3","s4","s5","s6"],"sourceLocator":"Source-scope comparison retained in brief and article limitation","status":"supported"}
+  ],
+  "drafting": {"agentId":"/root/draft_research"},
+  "editorial": {
+    "agentId": "/root/voice_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-08T14:35:16Z",
+    "articleSha256": "9e20427a479da30e3ea1195a7477e768a9070964ed7fb97f41ea1f513184247d",
+    "notes": [
+      "Recast repeated contrast formulas into direct evidence-and-consequence reasoning, especially in the opening and control recommendations.",
+      "Tightened the autonomy boundary and kept Google's under-six-hour campaign separate from its separately described 23,800-secret dashboard.",
+      "Reduced thesis repetition in the close while preserving the six practical controls, every attribution and caveat, and Australian English.",
+      "Reviewed the final inline SVG against ArticleArtwork.astro and rendered existing artwork; it is original, responsive, accessible, script-free and clearly labelled as conceptual rather than evidence."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/factual_review",
+    "reviewedAt": "2026-09-08T14:46:07Z",
+    "articleSha256": "9e20427a479da30e3ea1195a7477e768a9070964ed7fb97f41ea1f513184247d",
+    "status": "passed",
+    "claimsCoverage": true
+  },
+  "quality": {"evidence":33,"context":18,"originalValue":18,"voice":13,"presentation":9},
+  "riskFlags": [],
+  "quotes": [],
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered the final article at 1280x900. Title, byline, exact disclosure, headings, source list and original SVG were present; the SVG scaled to 1184x473.594 pixels within its figure, document scrollWidth equalled clientWidth, and browser logs contained no warnings or errors."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered the final article at 390x844. Title, byline, exact disclosure, article navigation, sources and accessible original SVG were present; the SVG scaled to 350x218.75 pixels within the viewport without clipping, document scrollWidth equalled clientWidth, and browser logs contained no warnings or errors."
+    }
+  }
+}
