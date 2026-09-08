@@ -1,0 +1,16 @@
+# Allow the repository's guarded newsroom publisher to complete unattended runs.
+# The publisher enforces article scope, evidence records, reviews, validation,
+# pull-request checks, squash merge, production deployment, and live verification.
+prefix_rule(
+    pattern = ["npm", "run", "newsroom:publish"],
+    decision = "allow",
+    justification = "Allow only the repository's guarded newsroom publication workflow to run unattended.",
+    match = [
+        "npm run newsroom:publish -- 20260908T120000Z",
+    ],
+    not_match = [
+        "npm run newsroom -- publish 20260908T120000Z",
+        "npm run deploy",
+        "npm run newsroom:publish-preview -- 20260908T120000Z",
+    ],
+)
