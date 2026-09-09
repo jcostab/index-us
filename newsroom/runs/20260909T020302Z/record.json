@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260909T020302Z",
+  "startedAt": "2026-09-09T02:03:02.876Z",
+  "completedAt": "2026-09-09T03:18:22Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {"start":"2026-09-07T02:03:02.876Z","end":"2026-09-09T02:03:02.876Z"},
+  "candidates": [
+    {"story":"Meta Muse personal AI agent","source":"https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/","eventDate":"2026-09-08T19:00:51Z","decision":"selected","reason":"An exact-timestamped launch after the prior run with a consequential new authority surface across personal services. Meta published architectural detail, while independent reporting and Australian-led joint guidance support a bounded adoption decision."},
+    {"story":"ChatGPT Images 2.5","source":"https://openai.com/index/introducing-chatgpt-images-2-5/","eventDate":"2026-09-08T11:30:00Z","decision":"superseded","reason":"The retained story remains eligible in principle, but Muse is 7 hours 30 minutes 51 seconds newer, appeared after that run and presents a broader immediate decision about delegated authority over personal systems. No earlier review attestation was reused."},
+    {"story":"CISA, NSA and FBI knowledge-distillation advisory","source":"https://www.cisa.gov/news-events/news/cisa-nsa-and-fbi-warn-china-based-ai-companies-targeting-us-ai-models-industrial-scale-knowledge","eventDate":"unknown","decision":"rejected","reason":"The fresh page did not supply a source-verified exact event timestamp in this investigation and its state-linked allegations require deeper independent corroboration."},
+    {"story":"OpenAI Navier-Stokes proposed solution","source":"https://openai.com/index/navier-stokes-solution","eventDate":"2026-09-08T10:00:00Z","decision":"deferred","reason":"The proposed proof and public priority dispute require specialist mathematical verification that this automatic run did not complete."},
+    {"story":"OpenAI The Work Now Within Reach","source":"https://openai.com/index/the-work-now-within-reach","eventDate":"2026-09-08T13:00:00Z","decision":"rejected","reason":"A company thesis about economic potential rather than a discrete new product, evaluation or deployment change."},
+    {"story":"OpenAI and Hugging Face agent incident follow-up","source":"https://openai.com/index/hugging-face-incident-and-the-road-ahead/","eventDate":"unknown","decision":"already covered","reason":"The site's OpenAI wiki-incident disclosure article carries the relevant story identity; fresh reporting did not establish a separate correction for this run."},
+    {"story":"Google adversarial-AI report","source":"https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai/","eventDate":"2026-09-08T14:00:00Z","decision":"already covered","reason":"Published under run 20260908T140141Z; no correction found."},
+    {"story":"Arm AI Portal","source":"https://newsroom.arm.com/news/arm-unveils-arm-ai-portal","eventDate":"2026-09-08T02:00:02Z","decision":"already covered","reason":"Published under run 20260908T080452Z; no correction found."},
+    {"story":"Harbor agent benchmark","source":"https://arxiv.org/abs/2609.04298","eventDate":"2026-09-07T04:00:00Z","decision":"already covered","reason":"Published under run 20260908T024749Z; no correction found."}
+  ],
+  "decision": {"kind":"new","reason":"Meta Muse is a fresh, exact-timestamped and non-duplicate consumer-agent launch. Meta's architecture and product documentation plus independent launch reporting and Australian-led government guidance support a practical decision about staged permissions without presenting vendor claims as Index Us test results."},
+  "story": {"id":"meta-muse-permission-scope","eventDate":"2026-09-08T19:00:51Z","canonicalUrls":["https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/"]},
+  "articlePath": "src/content/articles/meta-muse-permission-scope.md",
+  "articleSha256": "42588a67a0cb3c5a299acaf1c8a059655a657245c16def366f6a486078ac48dc",
+  "sources": [
+    {"id":"s1","url":"https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/","title":"Introducing Muse: The World's First Personal AI Agent Built for Everyone","publisher":"Meta","kind":"primary","independenceGroup":"meta","publishedAt":"2026-09-08T19:00:51Z","eventDate":"2026-09-08T19:00:51Z","retrievedAt":"2026-09-09T02:07:49Z","locator":"Page metadata and visible timestamp; Takeaways; How It Works; Built to be Private, Safe, and Secure; Looking Ahead. Vendor account only."},
+    {"id":"s2","url":"https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse","title":"How We Built Safety Into Muse","publisher":"Meta Research","kind":"primary","independenceGroup":"meta","publishedAt":"2026-09-08","eventDate":"2026-09-08T19:00:51Z","retrievedAt":"2026-09-09T02:07:52Z","locator":"Muse Secure VM; A Built-In Sentinel; Human in the Loop; Least Privilege; Browser; Bug Bounties; Coming Soon: Muse Confidential VM; Our Policy Around Data. Vendor design, not an audit."},
+    {"id":"s3","url":"https://introducing.muse.ai/","title":"How We Designed Muse","publisher":"Meta","kind":"primary","independenceGroup":"meta","publishedAt":"unknown","eventDate":"2026-09-08T19:00:51Z","retrievedAt":"2026-09-09T02:07:51Z","locator":"Muse Is an Agent That Can Actually Do Things; Getting Things Done With Muse; deterministic UI, approvals, secure storage and browser-control paragraphs."},
+    {"id":"s4","url":"https://www.cyber.gov.au/business-government/secure-design/artificial-intelligence/careful-adoption-of-agentic-ai-services","title":"Careful adoption of agentic AI services","publisher":"ASD ACSC with CISA, NSA, CCCS, NCSC-NZ and NCSC-UK","kind":"independent","independenceGroup":"five-eyes-government-guidance","publishedAt":"2026-05-01","eventDate":"2026-05-01","retrievedAt":"2026-09-09T02:09:20Z","locator":"Introduction; Increased attack surface; Privilege risks; Behaviour risks; Best practices for securing agentic AI systems. General guidance; does not evaluate Muse."},
+    {"id":"s5","url":"https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/","title":"Meta debuts its Muse AI agent. Will consumers trust it?","publisher":"TechCrunch","kind":"independent","independenceGroup":"techcrunch","publishedAt":"2026-09-08T19:00:00Z","eventDate":"2026-09-08T19:00:51Z","retrievedAt":"2026-09-09T02:07:15Z","locator":"Timestamp metadata; rollout and Muse Secure VM sections; connector paragraph describing built-in services, custom API connections and browser fallback. Reports launch context and product claims, not independently validated architecture."}
+  ],
+  "claims": [
+    {"id":"c01","text":"Meta's canonical launch page was published at 2026-09-08T19:00:51Z.","type":"fact","sourceIds":["s1"],"sourceLocator":"Page metadata and visible offset timestamp","status":"supported"},
+    {"id":"c02","text":"Meta says Muse is rolling out in the US across iOS, Android, web and WhatsApp.","type":"attributed_claim","sourceIds":["s1","s5"],"sourceLocator":"s1 Looking Ahead; s5 rollout paragraphs","status":"supported"},
+    {"id":"c03","text":"Meta says Muse can use connected services and a browser and continue tasks after the app closes.","type":"attributed_claim","sourceIds":["s1","s3"],"sourceLocator":"s1 How It Works; s3 capability and background-work sections","status":"supported"},
+    {"id":"c04","text":"Meta says Muse can send email, fill forms, book travel and make purchases on a user's behalf.","type":"attributed_claim","sourceIds":["s1","s3"],"sourceLocator":"s1 How It Works; s3 agent capability section","status":"supported"},
+    {"id":"c05","text":"Meta says the default browser flow stops for hard-to-reverse actions such as sending email and purchasing.","type":"attributed_claim","sourceIds":["s3"],"sourceLocator":"Browser and critical-action paragraph","status":"supported"},
+    {"id":"c06","text":"Meta says services are connected individually and read and write access can be separated where supported.","type":"attributed_claim","sourceIds":["s1","s2"],"sourceLocator":"s1 security controls; s2 Least Privilege","status":"supported"},
+    {"id":"c07","text":"Untrusted email, documents and web pages can steer an agent that has authority elsewhere.","type":"fact","sourceIds":["s2","s4"],"sourceLocator":"s2 Defense in Depth and Browser; s4 inherited risks and increased attack surface","status":"supported"},
+    {"id":"c08","text":"Meta describes a dedicated per-user cloud VM with the main agent and tools inside a restricted runtime cell.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"An agent in your own cloud computer; Muse Secure VM","status":"supported"},
+    {"id":"c09","text":"Meta says credentials and built-in connector services remain outside the runtime cell and the agent uses surrogate tokens.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Muse Secure VM; Network egress; Least Privilege","status":"supported"},
+    {"id":"c10","text":"Meta says Sentinel is the sole permission authority for connector actions and network access.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"A Built-In Sentinel","status":"supported"},
+    {"id":"c11","text":"Meta says approval grants can be one-time, session-scoped, task-scoped or time-scoped and are presented outside the agent conversation.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Human in the Loop","status":"supported"},
+    {"id":"c12","text":"Index Us did not independently test or audit Meta's security architecture.","type":"fact","sourceIds":["s1","s2","s3"],"sourceLocator":"Research method and documentation-only limitation","status":"supported"},
+    {"id":"c13","text":"Meta says it opened its previously private Muse bug-bounty program to anyone at launch.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Bug Bounties","status":"supported"},
+    {"id":"c14","text":"Meta says Muse VM conversations and data are not shared with ads systems, while sanitised trajectories may be used for training unless users opt out.","type":"attributed_claim","sourceIds":["s1","s2"],"sourceLocator":"s1 privacy section; s2 Our Policy Around Data","status":"supported"},
+    {"id":"c15","text":"Confidential VM is planned for later and is not a launch capability.","type":"fact","sourceIds":["s1","s2"],"sourceLocator":"s1 later-this-year paragraph; s2 Coming Soon","status":"supported"},
+    {"id":"c16","text":"ASD ACSC and partners recommend low-risk, non-sensitive initial uses and avoiding broad access to sensitive systems.","type":"fact","sourceIds":["s4"],"sourceLocator":"Introduction and recommended best practices","status":"supported"},
+    {"id":"c17","text":"The joint guidance identifies prompt injection, privilege risk, ambiguous goals and incomplete visibility into agent and tool actions as connected agent risks.","type":"fact","sourceIds":["s4"],"sourceLocator":"Inherited risks; Privilege risks; Behaviour risks; operating guidance","status":"supported"},
+    {"id":"c18","text":"A staged trial with one minimum-scope permission at a time is a proportionate adoption approach for Muse.","type":"inference","sourceIds":["s1","s2","s4"],"sourceLocator":"Index Us synthesis of product controls and joint guidance","status":"qualified"},
+    {"id":"c19","text":"High-impact actions need an approval that exposes destination, scope and consequence rather than a generic confirmation.","type":"inference","sourceIds":["s2","s4"],"sourceLocator":"Index Us synthesis of scoped capability approvals and oversight guidance","status":"qualified"},
+    {"id":"c20","text":"A useful trial record should link request, permissions, approvals, actions, errors and outcome.","type":"inference","sourceIds":["s1","s2","s4"],"sourceLocator":"Index Us synthesis of activity-log and visibility guidance","status":"qualified"},
+    {"id":"c21","text":"Wider use should follow independent testing, connector-scope evidence and review of the planned Confidential VM.","type":"inference","sourceIds":["s2","s4"],"sourceLocator":"Index Us decision rule from vendor limits and independent guidance","status":"qualified"},
+    {"id":"c22","text":"Muse is a newer and more consequential candidate for this run than the retained Images 2.5 story.","type":"inference","sourceIds":["s1","s4"],"sourceLocator":"Exact timestamps, product authority surface and retained candidate comparison","status":"qualified"},
+    {"id":"c23","text":"TechCrunch reports that Muse can use built-in connectors, create a connection to a public API or use its browser when an API is unavailable.","type":"attributed_claim","sourceIds":["s5"],"sourceLocator":"Connector paragraph describing built-in services, custom API connections and browser fallback","status":"supported"}
+  ],
+  "drafting": {"agentId":"/root/draft_research"},
+  "editorial": {
+    "agentId": "/root/voice_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-09T03:03:58Z",
+    "articleSha256": "42588a67a0cb3c5a299acaf1c8a059655a657245c16def366f6a486078ac48dc",
+    "notes": [
+      "Removed repeated opposition formulas and rhetorical-question sequencing without changing claims, caveats, links or source boundaries.",
+      "Reworked abstract transitions into a clearer evidence chain from vendor design through staged adoption and wider-use criteria.",
+      "Preserved the exact byline, disclosure, event time, geography, testing limits, privacy boundaries and all five sources.",
+      "Applied the earlier four source-boundary corrections without changing the recommendation, illustration or remaining metadata.",
+      "Retargeted the public-API and browser-fallback clause to TechCrunch's connector report and renewed the publication edit on the new digest."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/factual_review",
+    "reviewedAt": "2026-09-09T03:11:10Z",
+    "articleSha256": "42588a67a0cb3c5a299acaf1c8a059655a657245c16def366f6a486078ac48dc",
+    "status": "passed",
+    "claimsCoverage": true
+  },
+  "quality": {
+    "evidence": 33,
+    "context": 18,
+    "originalValue": 18,
+    "voice": 13,
+    "presentation": 9
+  },
+  "riskFlags": [],
+  "quotes": [],
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered the final article at 1280x900. Title, metadata, Index Us Editorial byline, exact automation disclosure, heading hierarchy, five sources and the original story SVG were present. The SVG rendered at 736x515.2 pixels with an accessible title and description, no scripts or external references, no horizontal overflow, no browser warnings or errors, and a visible conceptual-not-evidence caption."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered the final article at 390x844. Title, metadata, byline, disclosure, headings, five sources and the original SVG were present. The SVG rendered at 350x245 pixels inside 20-370 viewport bounds without clipping; document scrollWidth equalled clientWidth, browser logs had no warnings or errors, the caption wrapped cleanly, and the mobile navigation expanded with all six links."
+    }
+  }
+}
