@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260909T140320Z",
+  "startedAt": "2026-09-09T14:03:20.161Z",
+  "completedAt": "2026-09-09T15:03:22Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-07T14:03:20.161Z",
+    "end": "2026-09-09T14:03:20.161Z"
+  },
+  "candidates": [
+    {
+      "story": "OpenAI and MIT agentic calibration of superconducting qubits",
+      "source": "https://openai.com/index/codex-quantum-computing-experiments/",
+      "eventDate": "2026-09-08T17:00:00Z",
+      "decision": "selected",
+      "reason": "OpenAI's live RSS provides an exact timestamp inside the 24-hour priority window at run start. The case documents a general-purpose Codex agent operating live hardware, includes specific intervention and failure boundaries, has meaningful independent context and is not covered by an existing Index Us story."
+    },
+    {
+      "story": "ChatGPT Images 2.5 workflow evaluation",
+      "source": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "eventDate": "2026-09-08T11:30:00Z",
+      "decision": "already covered",
+      "reason": "Published and verified under run 20260909T091029Z; current site and record inspection found no correction requiring an update."
+    },
+    {
+      "story": "Meta Muse personal-agent permission scope",
+      "source": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+      "eventDate": "2026-09-08T19:00:51Z",
+      "decision": "already covered",
+      "reason": "Published and verified under run 20260909T020302Z; current site and record inspection found no correction requiring an update."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "The OpenAI/MIT quantum-laboratory case is fresh, consequential and non-duplicate. Its live-hardware result and documented weak-signal failure boundary support practical analysis of the complete control loop. Independent 2025 superconducting-qubit work prevents a false first claim, while independent 2026 instrument-agent research supplies concrete architectural controls without pretending to reproduce GPT-5.6 Sol's result."
+  },
+  "story": {
+    "id": "openai-codex-quantum-lab-control-loop",
+    "eventDate": "2026-09-08T17:00:00Z",
+    "canonicalUrls": ["https://openai.com/index/codex-quantum-computing-experiments/"]
+  },
+  "articlePath": "src/content/articles/openai-codex-quantum-lab-control-loop.md",
+  "articleSha256": "980c4f027d30930fc25da5f7b95c4927b45c17ddec2beba531fadb30c408bddf",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://openai.com/news/rss.xml",
+      "title": "OpenAI News RSS",
+      "publisher": "OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai-mit-quantum-case",
+      "publishedAt": "2026-09-08T17:00:00Z",
+      "eventDate": "2026-09-08T17:00:00Z",
+      "retrievedAt": "2026-09-09T14:10:45Z",
+      "locator": "Canonical item How GPT-5.6 Sol helps run quantum computing experiments; pubDate Tue, 08 Sep 2026 17:00:00 GMT. Exact event-time authority only."
+    },
+    {
+      "id": "s2",
+      "url": "https://openai.com/index/codex-quantum-computing-experiments/",
+      "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+      "publisher": "OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai-mit-quantum-case",
+      "publishedAt": "2026-09-08",
+      "eventDate": "2026-09-08T17:00:00Z",
+      "retrievedAt": "2026-09-09T14:10:45Z",
+      "locator": "Launch-page lines 25-36 and 43-52: six-qubit setup, vendor account of routine autonomous measurements, weak/noisy-signal limits, regular use and researcher working pattern."
+    },
+    {
+      "id": "s3",
+      "url": "https://cdn.openai.com/pdf/case-study-agentic-calibration-of-superconducting-qubits.pdf",
+      "title": "Case Study: Agentic Calibration of Superconducting Qubits",
+      "publisher": "Massachusetts Institute of Technology and OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai-mit-quantum-case",
+      "publishedAt": "2026-09-04",
+      "eventDate": "2026-09-08T17:00:00Z",
+      "retrievedAt": "2026-09-09T14:10:45Z",
+      "locator": "PDF pages 1-2 and 4-10: model and reasoning level; workflow; months-refined context and skills; six-qubit hardware; 40 fixed-qubit targets and four interventions; noisy tunable-qubit sequence; overnight loop; limits, implications and author contributions."
+    },
+    {
+      "id": "s4",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12546452/",
+      "title": "Automating quantum computing laboratory experiments with an agent-based AI framework",
+      "publisher": "Patterns",
+      "kind": "independent",
+      "independenceGroup": "oxford-toronto-quantum-agent-research",
+      "publishedAt": "2025-09-23",
+      "eventDate": "2025-09-23",
+      "retrievedAt": "2026-09-09T14:10:45Z",
+      "locator": "Results and Discussion paragraphs p0110-p0185: 97 per cent translation benchmark, 16-qubit processor and three-qubit subset, automated single- and two-qubit calibration, GHZ-state work, structured-knowledge dependency and whole-program-only interruption limit."
+    },
+    {
+      "id": "s5",
+      "url": "https://www.nature.com/articles/s41524-026-02005-0",
+      "title": "Operating advanced scientific instruments with AI agents that learn on the job",
+      "publisher": "npj Computational Materials",
+      "kind": "independent",
+      "independenceGroup": "argonne-instrument-agent-research",
+      "publishedAt": "2026-03-06",
+      "eventDate": "2026-03-06",
+      "retrievedAt": "2026-09-09T14:10:45Z",
+      "locator": "Results lines 151-165 and Methods lines 178-183: human approval, complexity-related performance decline, missing-parameter handling, restricted function libraries, linting, administrator execution and deterministic validated low-level control."
+    }
+  ],
+  "claims": [
+    {"id":"c01","text":"OpenAI RSS timestamped publication of the quantum-computing experiment case at 2026-09-08T17:00:00Z.","type":"fact","sourceIds":["s1"],"sourceLocator":"Canonical RSS item and pubDate","status":"supported"},
+    {"id":"c02","text":"The technical case study is authored by MIT and OpenAI researchers, dated 4 September 2026, with MIT authors developing the infrastructure and running experiments and OpenAI authors advising on agent infrastructure and text.","type":"fact","sourceIds":["s3"],"sourceLocator":"PDF title page and Contributions, pages 1 and 10","status":"supported"},
+    {"id":"c03","text":"The reported agent used GPT-5.6 Sol at Ultra reasoning level through Codex, EQuS orchestration software and a simple in-house Jupyter MCP.","type":"fact","sourceIds":["s3"],"sourceLocator":"PDF pages 2 and 5","status":"supported"},
+    {"id":"c04","text":"The tested previously unmeasured chip contained six uncoupled qubits, four fixed-frequency and two tunable, each paired with a readout resonator.","type":"fact","sourceIds":["s2","s3"],"sourceLocator":"Launch-page lines 34-36; PDF page 5","status":"supported"},
+    {"id":"c05","text":"The agent found all six resonators and suitable initial readout powers.","type":"attributed_claim","sourceIds":["s3"],"sourceLocator":"PDF page 5 and Figure 4","status":"supported"},
+    {"id":"c06","text":"Across 40 target measurements for four fixed-frequency qubits, researchers report intervening to improve four.","type":"attributed_claim","sourceIds":["s3"],"sourceLocator":"PDF pages 5-6, immediately before Figure 5","status":"supported"},
+    {"id":"c07","text":"The completed fixed-qubit sequence included transition-frequency, pulse-calibration, readout and coherence measurements.","type":"fact","sourceIds":["s2","s3"],"sourceLocator":"Launch-page lines 31-36; PDF pages 5-6 and Figure 5 caption","status":"supported"},
+    {"id":"c08","text":"The reported work controlled live laboratory hardware rather than a simulation.","type":"fact","sourceIds":["s2","s3"],"sourceLocator":"Launch-page lines 26-35; PDF pages 2 and 5","status":"supported"},
+    {"id":"c09","text":"The case-study authors describe the chip as relatively simple and the measurements as standard and much simpler than a novel multi-qubit experiment.","type":"attributed_claim","sourceIds":["s3"],"sourceLocator":"PDF page 9, Implications","status":"supported"},
+    {"id":"c10","text":"The case study says an experienced researcher can probably reach suitable calibration settings faster while working continuously.","type":"attributed_claim","sourceIds":["s2","s3"],"sourceLocator":"Launch-page line 50; PDF page 9","status":"supported"},
+    {"id":"c11","text":"Researchers spent several months refining the setup context, chip designs, measurement-specific skills and source-code access used by the agent.","type":"fact","sourceIds":["s3"],"sourceLocator":"PDF pages 4-5","status":"supported"},
+    {"id":"c12","text":"Measurement skills could include template code, prerequisites, parameter-selection advice, likely physical failure modes, success and failure criteria and example plots.","type":"fact","sourceIds":["s3"],"sourceLocator":"PDF pages 4-5","status":"supported"},
+    {"id":"c13","text":"OpenAI says EQuS now regularly uses agents to help with routine chip characterisation.","type":"attributed_claim","sourceIds":["s2","s3"],"sourceLocator":"Launch-page line 44; PDF page 9","status":"supported"},
+    {"id":"c14","text":"For a weak tunable-qubit signal, the agent needed substantial researcher guidance. A wider-sweep prompt and suggested parameters preceded a finer scan that the agent incorrectly accepted; the final improvement followed a separate request for another fine scan, identification that the spectrum had likely fallen outside the scanned range, and wider follow-up scans.","type":"fact","sourceIds":["s3"],"sourceLocator":"PDF pages 7-8, Figure 6 panels B-G and caption","status":"supported"},
+    {"id":"c15","text":"The case study says agents were anecdotally slower than experienced researchers even when they converged, and serial physical acquisition limits parallel brute-force exploration.","type":"attributed_claim","sourceIds":["s3"],"sourceLocator":"PDF page 9, Implications","status":"supported"},
+    {"id":"c16","text":"An independent 2025 Patterns paper predates the OpenAI/MIT case and reported a different agent framework for superconducting-qubit experiments.","type":"fact","sourceIds":["s3","s4"],"sourceLocator":"OpenAI/MIT references page 10; Patterns publication date and Results","status":"supported"},
+    {"id":"c17","text":"The Patterns experiment used a 16-qubit processor and selected three adjacent qubits for its demonstration.","type":"fact","sourceIds":["s4"],"sourceLocator":"Results paragraph p0120","status":"supported"},
+    {"id":"c18","text":"The Patterns paper reported automated single-qubit recalibration, two-qubit gate calibration and a three-qubit GHZ-state experiment.","type":"attributed_claim","sourceIds":["s4"],"sourceLocator":"Results paragraphs p0115-p0155","status":"supported"},
+    {"id":"c19","text":"The Patterns paper reported 97 per cent accuracy for GPT-4o on one instruction-translation benchmark, with failed code retried in practice.","type":"attributed_claim","sourceIds":["s4"],"sourceLocator":"Results paragraph p0110","status":"supported"},
+    {"id":"c20","text":"The Patterns system depended on orderly code and procedure documentation, which the authors identified as a human-effort and transfer limitation.","type":"attributed_claim","sourceIds":["s4"],"sourceLocator":"Discussion paragraph p0180","status":"supported"},
+    {"id":"c21","text":"The Patterns implementation allowed termination of the whole program on an external or emergency signal but lacked fine-grained interruption inside execution.","type":"fact","sourceIds":["s4"],"sourceLocator":"Discussion paragraph p0185","status":"supported"},
+    {"id":"c22","text":"The Argonne instrument-agent paper constrained model variability through restricted instrument-specific functions, automated linting, human oversight and administrator execution while keeping low-level control deterministic and validated.","type":"fact","sourceIds":["s5"],"sourceLocator":"Discussion lines 163-168 and Methods lines 178-183","status":"supported"},
+    {"id":"c23","text":"The Argonne system handled omitted required parameters through approved defaults or a clarification request rather than model inference.","type":"fact","sourceIds":["s5"],"sourceLocator":"Discussion line 165","status":"supported"},
+    {"id":"c24","text":"The transferable deployment result is the complete model, skills, orchestration, data-access, write and intervention loop rather than GPT-5.6 Sol in isolation.","type":"inference","sourceIds":["s3","s4","s5"],"sourceLocator":"Index Us synthesis from the three systems' documented context, tool and control dependencies","status":"qualified"},
+    {"id":"c25","text":"A practical laboratory evaluation should separately test model decision scope, executable actions, persisted state, stop and clarification conditions, intervention burden and robustness to environmental change.","type":"inference","sourceIds":["s3","s4","s5"],"sourceLocator":"Index Us recommendation derived from weak-signal failures, interruption limits and independent constrained-control architecture","status":"qualified"},
+    {"id":"c26","text":"The case supports evaluating GPT-5.6 Sol as a component for bounded routine laboratory work, but does not establish a ready-made autonomous scientist.","type":"inference","sourceIds":["s2","s3","s4","s5"],"sourceLocator":"Index Us conclusion bounded by reported routine success, ambiguous-signal failures and prior independent work","status":"qualified"}
+  ],
+  "quotes": [],
+  "sourceUse": [
+    {"sourceId":"s1","quotedWords":0,"estimatedDerivedWords":18,"allowance":"Exact event-time metadata only; no quotation."},
+    {"sourceId":"s2","quotedWords":0,"estimatedDerivedWords":115,"allowance":"Original summary and attribution from the public launch page; no quotation."},
+    {"sourceId":"s3","quotedWords":0,"estimatedDerivedWords":610,"allowance":"Original synthesis across a 10-page joint technical case study; no quotation or copied structure."},
+    {"sourceId":"s4","quotedWords":0,"estimatedDerivedWords":260,"allowance":"Original comparison of prior independent work and its limits; no quotation."},
+    {"sourceId":"s5","quotedWords":0,"estimatedDerivedWords":215,"allowance":"Original architectural comparison from an open-access independent paper; no quotation."}
+  ],
+  "drafting": {"agentId":"/root/draft_research"},
+  "editorial": {
+    "agentId": "/root/voice_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-09T14:51:44Z",
+    "articleSha256": "980c4f027d30930fc25da5f7b95c4927b45c17ddec2beba531fadb30c408bddf",
+    "notes": [
+      "Renewed the publication edit after the factual chronology correction in the weak-signal sequence.",
+      "Confirmed the revised paragraph reads naturally and matches claim c14 without changing the source meaning or deployment conclusion.",
+      "Confirmed all earlier preservation, artwork, accessibility, attribution and no-quotation judgements remain valid.",
+      "Made no article change; independent factual review, quality scoring and responsive rendering remain pending."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/factual_review",
+    "reviewedAt": "2026-09-09T14:54:28Z",
+    "articleSha256": "980c4f027d30930fc25da5f7b95c4927b45c17ddec2beba531fadb30c408bddf",
+    "status": "passed",
+    "claimsCoverage": true
+  },
+  "quality": {
+    "evidence": 33,
+    "context": 19,
+    "originalValue": 18,
+    "voice": 14,
+    "presentation": 9
+  },
+  "riskFlags": [],
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "height": 900,
+      "notes": "Rendered in the Codex in-app browser at 1280 x 900. The headline, disclosure, navigation, original inline SVG, article body and five external sources remained legible with no horizontal overflow. The SVG exposed an accessible role, title and description. Browser console warnings and errors: none."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "height": 844,
+      "notes": "Rendered in the Codex in-app browser at 390 x 844. The headline, disclosure, 350 px-wide responsive SVG, article navigation and source links remained legible with no horizontal overflow. The mobile menu opened and displayed all six navigation links. Browser console warnings and errors: none."
+    }
+  }
+}
