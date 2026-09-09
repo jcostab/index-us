@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260909T091029Z",
+  "startedAt": "2026-09-09T09:10:29.217Z",
+  "completedAt": "2026-09-09T09:48:13Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-07T09:10:29.217Z",
+    "end": "2026-09-09T09:10:29.217Z"
+  },
+  "candidates": [
+    {
+      "story": "ChatGPT Images 2.5",
+      "source": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "eventDate": "2026-09-08T11:30:00Z",
+      "decision": "selected",
+      "reason": "OpenAI's RSS reconfirmed an exact in-window timestamp. The shipped ChatGPT controls and two available API models support a practical, non-duplicate decision about evaluating multi-round editing, accepted-asset cost and provenance. All volatile product, API, safety and availability details were freshly checked for this run."
+    },
+    {
+      "story": "Google DeepMind AlphaGenome Atlas",
+      "source": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "eventDate": "2026-09-08T14:00:15.406594Z",
+      "decision": "deferred",
+      "reason": "The page's article:published_time and JSON-LD datePublished supply an exact in-window timestamp, resolving the date-only discovery uncertainty. The 1-petabyte prediction atlas is consequential, but automatic coverage of its biological and rare-disease claims would benefit from specialist independent scrutiny beyond the source set available in this run; the page states it is not validated or approved for clinical use."
+    },
+    {
+      "story": "Meta Muse personal agent",
+      "source": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+      "eventDate": "2026-09-08T19:00:51Z",
+      "decision": "already covered",
+      "reason": "Published and verified under run 20260909T020302Z; the live article and record were inspected and no material correction was found."
+    },
+    {
+      "story": "OpenAI Navier-Stokes proposed solution",
+      "source": "https://openai.com/index/navier-stokes-solution",
+      "eventDate": "2026-09-08T10:00:00Z",
+      "decision": "deferred",
+      "reason": "The proof and related priority questions require specialist mathematical verification that this automatic run cannot supply safely."
+    },
+    {
+      "story": "Google Gemini 3.8 Flash and Flash Cyber",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+      "eventDate": "2026-09-02T15:00:00Z",
+      "decision": "rejected",
+      "reason": "Google's RSS timestamp places the release outside the 48-hour discovery window despite its resurfacing near the top of the DeepMind news page."
+    },
+    {
+      "story": "Google adversarial-AI report",
+      "source": "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai/",
+      "eventDate": "2026-09-08T14:00:00Z",
+      "decision": "already covered",
+      "reason": "Published and verified under run 20260908T140141Z; no material correction was found."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "ChatGPT Images 2.5 remains the strongest publishable candidate after fresh comparison. It has an exact event time, shipped user and API surfaces, no existing article, current primary documentation and two independent source groups that support a useful workflow-evaluation frame without presenting vendor claims as Index Us test results. The stable story identity from the retained unpublished run is preserved; no earlier review attestation is reused."
+  },
+  "story": {
+    "id": "chatgpt-images-2-5-workflow-evaluation",
+    "eventDate": "2026-09-08T11:30:00Z",
+    "canonicalUrls": [
+      "https://openai.com/index/introducing-chatgpt-images-2-5/"
+    ]
+  },
+  "articlePath": "src/content/articles/chatgpt-images-2-5-workflow-evaluation.md",
+  "articleSha256": "fcbed111024f6240cc208e27f25fb33055294bee74c2641d35226f7d9947f7a7",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://openai.com/news/rss.xml",
+      "title": "OpenAI News RSS",
+      "publisher": "OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "2026-09-08T11:30:00Z",
+      "eventDate": "2026-09-08T11:30:00Z",
+      "retrievedAt": "2026-09-09T09:18:09Z",
+      "locator": "Canonical item Introducing ChatGPT Images 2.5; pubDate Tue, 08 Sep 2026 11:30:00 GMT. Exact event-time authority only."
+    },
+    {
+      "id": "s2",
+      "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "title": "Introducing ChatGPT Images 2.5",
+      "publisher": "OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "2026-09-08",
+      "eventDate": "2026-09-08T11:30:00Z",
+      "retrievedAt": "2026-09-09T09:18:09Z",
+      "locator": "Launch-page lines 44-50, 57-76, 77-101 and 123-130: vendor quality and latency claims, controls, API positioning, safety and availability."
+    },
+    {
+      "id": "s3",
+      "url": "https://deploymentsafety.openai.com/chatgpt-images-2-5",
+      "title": "ChatGPT Images 2.5 system card",
+      "publisher": "OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "2026-09-08",
+      "eventDate": "2026-09-08T11:30:00Z",
+      "retrievedAt": "2026-09-09T09:18:09Z",
+      "locator": "Sections 3.1-3.3.1.1 and 4; safety stack, Tables 1-2, statistical and sample limitations, C2PA and SynthID."
+    },
+    {
+      "id": "s4",
+      "url": "https://developers.openai.com/api/docs/models/gpt-image-2.5-flare",
+      "title": "GPT-Image-2.5 Flare model",
+      "publisher": "OpenAI Developers",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "unknown",
+      "eventDate": "2026-09-08T11:30:00Z",
+      "retrievedAt": "2026-09-09T09:18:09Z",
+      "locator": "Model summary lines 817-872 and model IDs lines 983-994; positioning, modalities, qualities, current token rates and dated snapshot."
+    },
+    {
+      "id": "s5",
+      "url": "https://developers.openai.com/api/docs/models/gpt-image-2.5-sunburst",
+      "title": "GPT-Image-2.5 Sunburst model",
+      "publisher": "OpenAI Developers",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "unknown",
+      "eventDate": "2026-09-08T11:30:00Z",
+      "retrievedAt": "2026-09-09T09:18:09Z",
+      "locator": "Model summary lines 817-872 and model IDs lines 983-994; editing-precision positioning, modalities, qualities, rates and dated snapshot."
+    },
+    {
+      "id": "s6",
+      "url": "https://developers.openai.com/api/docs/guides/image-generation",
+      "title": "Image generation guide",
+      "publisher": "OpenAI Developers",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "unknown",
+      "eventDate": "2026-09-08T11:30:00Z",
+      "retrievedAt": "2026-09-09T09:18:09Z",
+      "locator": "Overview and Choosing the right API lines 827-852; GPT Image 2.5 costs lines 5559-5586."
+    },
+    {
+      "id": "s7",
+      "url": "https://arxiv.org/abs/2606.15570",
+      "title": "An Extensive Benchmark for Single-round and Multi-round Instruction-based Image Editing",
+      "publisher": "Ma and colleagues",
+      "kind": "independent",
+      "independenceGroup": "xiamen-nus-image-editing-research",
+      "publishedAt": "2026-06-14T03:26:56Z",
+      "eventDate": "2026-06-14T03:26:56Z",
+      "retrievedAt": "2026-09-09T09:18:09Z",
+      "locator": "Abstract lines 16-20 and submission history: separate single-round and multi-round precision/consistency evaluation with 16 and seven dimensions; predates and does not test Images 2.5."
+    },
+    {
+      "id": "s8",
+      "url": "https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content",
+      "title": "Reducing Risks Posed by Synthetic Content",
+      "publisher": "NIST",
+      "kind": "independent",
+      "independenceGroup": "nist",
+      "publishedAt": "2024-11-20",
+      "eventDate": "2024-11-20",
+      "retrievedAt": "2026-09-09T09:18:09Z",
+      "locator": "Report pages 1 and 5-7 (PDF pages 6 and 10-12): transparency does not guarantee trust, no technique is comprehensive alone, and robustness must cover compression, filtering, cropping, scaling and tampering."
+    }
+  ],
+  "claims": [
+    {"id":"c01","text":"OpenAI RSS timestamped the Images 2.5 announcement at 2026-09-08T11:30:00Z.","type":"fact","sourceIds":["s1"],"sourceLocator":"Canonical RSS item and pubDate","status":"supported"},
+    {"id":"c02","text":"OpenAI says Images 2.5 generation latency is up to 50 per cent lower than Images 2.0.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Launch page lines 44-45 and 99-101","status":"supported"},
+    {"id":"c03","text":"OpenAI says Images 2.5 better preserves subjects, composition and details through selective and repeated edits.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Launch page lines 53-76","status":"supported"},
+    {"id":"c04","text":"ChatGPT adds Sketch, templates, comments on images and optional prompt sharing.","type":"fact","sourceIds":["s2"],"sourceLocator":"Launch page lines 46-47 and 77-94","status":"supported"},
+    {"id":"c05","text":"OpenAI says Images 2.5 is rolling out across ChatGPT, ChatGPT Work and Codex on desktop, mobile and web.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Launch page lines 48 and 126-130","status":"supported"},
+    {"id":"c06","text":"OpenAI positions Flare for fast everyday image generation and Sunburst for workflows where editing precision matters.","type":"attributed_claim","sourceIds":["s2","s4","s5","s6"],"sourceLocator":"Launch page lines 99-101; model summaries; guide lines 827-829","status":"supported"},
+    {"id":"c07","text":"Both API models accept text and image inputs, produce image outputs and support low, medium, high, xhigh, max and auto quality settings.","type":"fact","sourceIds":["s4","s5"],"sourceLocator":"Both model summaries lines 817-838 and modalities","status":"supported"},
+    {"id":"c08","text":"Both models expose dated 2026-09-08 snapshot identifiers.","type":"fact","sourceIds":["s4","s5"],"sourceLocator":"Both model pages lines 983-994","status":"supported"},
+    {"id":"c09","text":"The Image API handles generation or edits from a prompt, while the Responses API adds conversational and multi-step editing.","type":"fact","sourceIds":["s6"],"sourceLocator":"Guide lines 827-849","status":"supported"},
+    {"id":"c10","text":"OpenAI lists equal token rates for Flare and Sunburst but warns that equal rates do not mean equal cost per image because consumption varies by model and quality.","type":"fact","sourceIds":["s4","s5","s6"],"sourceLocator":"Model pricing lines 840-872; guide lines 5559-5566","status":"supported"},
+    {"id":"c11","text":"The launch page does not publish an independent Images 2.5 benchmark for selective or multi-round editing.","type":"fact","sourceIds":["s2"],"sourceLocator":"Full launch-page inspection; examples and customer statements are company-selected","status":"supported"},
+    {"id":"c12","text":"I2EBench2.0 separates single-round and multi-round evaluation and uses 16 single-round and seven multi-round dimensions.","type":"fact","sourceIds":["s7"],"sourceLocator":"Abstract lines 16-20","status":"supported"},
+    {"id":"c13","text":"I2EBench2.0 predates and does not evaluate Images 2.5.","type":"fact","sourceIds":["s1","s7"],"sourceLocator":"Paper submission 14 June 2026 versus release 8 September 2026","status":"supported"},
+    {"id":"c14","text":"A useful adoption trial should score both the requested change and declared invariants after every edit.","type":"inference","sourceIds":["s2","s7"],"sourceLocator":"Index Us recommendation from vendor preservation claims and independent evaluation dimensions","status":"qualified"},
+    {"id":"c15","text":"Cost and time per accepted asset are more decision-relevant than first-response latency alone.","type":"inference","sourceIds":["s2","s6","s7"],"sourceLocator":"Index Us recommendation from latency, token-consumption and multi-round evaluation evidence","status":"qualified"},
+    {"id":"c16","text":"The system card says greater realism could enable more convincing deepfakes without safeguards.","type":"attributed_claim","sourceIds":["s3"],"sourceLocator":"System card section 3.1 lines 58-62","status":"supported"},
+    {"id":"c17","text":"OpenAI describes upstream checks, input monitoring and output blocking in the safety stack.","type":"fact","sourceIds":["s3"],"sourceLocator":"System card section 3.2 lines 63-78","status":"supported"},
+    {"id":"c18","text":"On OpenAI's fixed adversarial set, unsafe images presented were 1.09 per cent for Sunburst, 1.41 per cent for Flare and 1.64 per cent for Images 2.0.","type":"fact","sourceIds":["s3"],"sourceLocator":"System card Table 1 lines 93-105","status":"supported"},
+    {"id":"c19","text":"No unsafe-presented difference met OpenAI's significance threshold; automated labels may be wrong and sample sizes affect precision.","type":"fact","sourceIds":["s3"],"sourceLocator":"System card lines 143-148","status":"supported"},
+    {"id":"c20","text":"The system-card figures establish a bounded vendor test, not uniform safety across workflows.","type":"inference","sourceIds":["s3"],"sourceLocator":"Index Us interpretation of evaluation design and stated limitations","status":"qualified"},
+    {"id":"c21","text":"OpenAI says Images 2.5 uses C2PA metadata and SynthID invisible watermarking across ChatGPT, Codex and the API.","type":"attributed_claim","sourceIds":["s3"],"sourceLocator":"System card section 4 lines 161-167","status":"supported"},
+    {"id":"c22","text":"NIST says provenance does not guarantee trust, no technique is comprehensive alone and robustness must cover ordinary transformations and tampering.","type":"fact","sourceIds":["s8"],"sourceLocator":"NIST report pages 1 and 5-7","status":"supported"},
+    {"id":"c23","text":"Teams should inspect provenance at each real delivery transformation instead of assuming generator-level marking survives.","type":"inference","sourceIds":["s3","s8"],"sourceLocator":"Index Us recommendation from the system card and NIST robustness boundaries","status":"qualified"},
+    {"id":"c24","text":"Images 2.5 earns a controlled workflow trial but not an automatic switch.","type":"inference","sourceIds":["s2","s3","s6","s7","s8"],"sourceLocator":"Index Us conclusion from shipped availability, evidence limits and measurable adoption criteria","status":"qualified"}
+  ],
+  "quotes": [],
+  "drafting": {
+    "agentId": "/root/draft_research"
+  },
+  "editorial": {
+    "agentId": "/root/voice_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-09T09:29:12Z",
+    "articleSha256": "fcbed111024f6240cc208e27f25fb33055294bee74c2641d35226f7d9947f7a7",
+    "notes": [
+      "Replaced an awkward opening phrase and a formulaic mirrored opposition with direct statements of the release promise and workflow consequence.",
+      "Removed generic signposting and tightened the ending around the proportionate decision: a controlled trial using the team's own assets and delivery chain.",
+      "Preserved all metadata, dates, figures, source links, attributed vendor claims, independent-source boundaries, technical distinctions, caveats, testing limitations and the exact automation disclosure.",
+      "Reviewed the story-specific inline SVG against the shared artwork system and recent article illustrations; its style, originality, accessibility and conceptual-not-evidence caption passed the editorial check."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/factual_review",
+    "reviewedAt": "2026-09-09T09:38:54Z",
+    "articleSha256": "fcbed111024f6240cc208e27f25fb33055294bee74c2641d35226f7d9947f7a7",
+    "status": "passed",
+    "claimsCoverage": true
+  },
+  "quality": {
+    "evidence": 32,
+    "context": 18,
+    "originalValue": 18,
+    "voice": 14,
+    "presentation": 9
+  },
+  "riskFlags": [],
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered the exact approved article at 1280x900. Title, description, Index Us Editorial byline, exact disclosure, heading hierarchy and all eight source links were present. The original story SVG rendered at 736x515.2 pixels with its accessible title and description, visible conceptual-not-evidence caption, no scripts or external resources, no clipping or horizontal overflow, and no browser warnings or errors."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered the exact approved article at 390x844. Title, body, disclosure, headings, sources and caption wrapped cleanly. The original story SVG rendered at 350x245 pixels inside the 20-370 viewport bounds without clipping; document scrollWidth equalled clientWidth, browser logs contained no warnings or errors, and the mobile menu expanded to expose all six navigation links before being collapsed."
+    }
+  }
+}
