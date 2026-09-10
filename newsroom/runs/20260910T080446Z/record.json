@@ -1,0 +1,500 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260910T080446Z",
+  "startedAt": "2026-09-10T08:04:46.425Z",
+  "completedAt": "2026-09-10T08:43:23Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-08T08:04:46.425Z",
+    "end": "2026-09-10T08:04:46.425Z"
+  },
+  "candidates": [
+    {
+      "story": "Cisco Integrated AI Security and Safety Framework v2",
+      "source": "https://blogs.cisco.com/ai/security-framework-v2",
+      "eventDate": "2026-09-09T17:59:22Z",
+      "decision": "selected-update",
+      "reason": "Exact Cisco Open Graph and JSON-LD timestamp was freshly reverified. At run start the event was 14 hours 5 minutes 24 seconds old, inside both the 24-hour priority and 48-hour publication windows. The causal split materially sharpens the existing security-boundary story without duplicating Google’s incident report."
+    },
+    {
+      "story": "Red Hat AI 3.5",
+      "source": "https://www.redhat.com/en/blog/red-hat-ai-35-scaling-and-governing-ai-agents-production",
+      "eventDate": "2026-09-09",
+      "decision": "rejected",
+      "reason": "The primary page is date-only; no verified time and timezone establishes the 48-hour automatic-publication gate. Product and governance claims would also require deeper documentation and independent context."
+    },
+    {
+      "story": "Mistral legacy-code modernisation case study",
+      "source": "https://mistral.ai/news/legacy-code-modernization/",
+      "eventDate": "2026-09-09",
+      "decision": "rejected",
+      "reason": "Date-only primary event and vendor case-study limits. Index Us cannot independently inspect the code, parity harness or client results, so it is not a qualifying automatic news event."
+    },
+    {
+      "story": "Paul Christiano joins OpenAI Foundation Board",
+      "source": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
+      "eventDate": "2026-09-09",
+      "decision": "rejected",
+      "reason": "The primary announcement is date-only and the governance appointment is too thin for the required long-form operational article. Independent reporting cannot replace the missing primary event time."
+    },
+    {
+      "story": "Meta Muse permission scope",
+      "source": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+      "eventDate": "2026-09-08T19:00:51Z",
+      "decision": "already-covered",
+      "reason": "Published under run 20260909T020302Z; no correction or distinct follow-on event found."
+    },
+    {
+      "story": "ChatGPT Images 2.5 workflow evaluation",
+      "source": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "eventDate": "2026-09-08T11:30:00Z",
+      "decision": "already-covered",
+      "reason": "Published under run 20260909T091029Z; no material correction found."
+    },
+    {
+      "story": "OpenAI Codex quantum lab control loop",
+      "source": "https://openai.com/index/codex-quantum-computing-experiments/",
+      "eventDate": "2026-09-08T17:00:00Z",
+      "decision": "already-covered",
+      "reason": "Published under run 20260909T140320Z; no correction or distinct event found."
+    },
+    {
+      "story": "Google adversarial-AI security boundary",
+      "source": "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai/",
+      "eventDate": "2026-09-08T14:00:00Z",
+      "decision": "update-target",
+      "reason": "Published under run 20260908T140141Z. Cisco's newly timestamped taxonomy changes the practical incident-diagnosis and control framing while the original claims remain reverified."
+    }
+  ],
+  "decision": {
+    "kind": "update",
+    "reason": "Cisco v2 remains a fresh, exact-timestamped development that adds a useful causal distinction to the existing article: external goal redirection versus autonomy failure without an identifiable external instruction. OWASP and NIST provide meaningful independent context rather than confirmation, no conflicting evidence was found, and the original Google incident boundaries were freshly reverified."
+  },
+  "story": {
+    "id": "google-adversarial-ai-security-boundary",
+    "eventDate": "2026-09-09T17:59:22Z",
+    "canonicalUrls": [
+      "https://blogs.cisco.com/ai/security-framework-v2"
+    ]
+  },
+  "articlePath": "src/content/articles/google-adversarial-ai-security-boundary.md",
+  "articleSha256": "a008e55c54bb5fb0023db8aa4d34c67e6c611713a1587fe87b7338d5b42304d2",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://blogs.cisco.com/ai/security-framework-v2",
+      "title": "Evolving With Agentic Risk: Updating Our Integrated AI Security & Safety Framework",
+      "publisher": "Cisco",
+      "kind": "primary",
+      "independenceGroup": "cisco",
+      "publishedAt": "2026-09-09T17:59:22Z",
+      "eventDate": "2026-09-09T17:59:22Z",
+      "retrievedAt": "2026-09-10T08:09:53Z",
+      "locator": "HTML Open Graph and JSON-LD timestamps; Merging prompt injection and jailbreak; A new objective; Turning definitions into decisions; What this means for you."
+    },
+    {
+      "id": "s2",
+      "url": "https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v",
+      "title": "Google Threat Intelligence RSS",
+      "publisher": "Google Threat Intelligence",
+      "kind": "primary",
+      "independenceGroup": "google-threat-intelligence",
+      "publishedAt": "2026-09-08T14:00:00Z",
+      "eventDate": "2026-09-08T14:00:00Z",
+      "retrievedAt": "2026-09-10T08:07:55Z",
+      "locator": "Matching report item title, canonical URL and pubDate; exact event-time authority only."
+    },
+    {
+      "id": "s3",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai/",
+      "title": "GTIG AI Threat Tracker: From Prompting to Autonomy – The Evolution of Adversarial AI",
+      "publisher": "Google Threat Intelligence Group",
+      "kind": "primary",
+      "independenceGroup": "google-threat-intelligence",
+      "publishedAt": "2026-09-08T14:00:00Z",
+      "eventDate": "2026-09-08T14:00:00Z",
+      "retrievedAt": "2026-09-10T08:09:53Z",
+      "locator": "Executive summary; Tables 1-2; agentic-AI and AI-augmented vulnerability-research sections; Table 11. Attributed Google/Mandiant observations only."
+    },
+    {
+      "id": "s4",
+      "url": "https://www.sysdig.com/blog/llmjacking-evolved-attackers-are-using-stolen-ai-compute-to-build-offensive-agentic-tools",
+      "title": "LLMjacking evolved: Attackers are using stolen AI compute to build offensive agentic tools",
+      "publisher": "Sysdig Threat Research Team",
+      "kind": "independent",
+      "independenceGroup": "sysdig-trt",
+      "publishedAt": "2026-06-17",
+      "eventDate": "2026-06-12T15:43:00Z",
+      "retrievedAt": "2026-09-10T08:07:28Z",
+      "locator": "Opening; The tool was under active development; The targets were a private practice range; intent boundary. Context only; does not verify Google."
+    },
+    {
+      "id": "s5",
+      "url": "https://www.nccoe.nist.gov/sites/default/files/2026-02/accelerating-the-adoption-of-software-and-ai-agent-identity-and-authorization-concept-paper.pdf",
+      "title": "Accelerating the Adoption of Software and AI Agent Identity and Authorization",
+      "publisher": "NIST National Cybersecurity Center of Excellence",
+      "kind": "independent",
+      "independenceGroup": "nist-nccoe",
+      "publishedAt": "2026-02-04",
+      "eventDate": "2026-02-04",
+      "retrievedAt": "2026-09-10T08:07:28Z",
+      "locator": "PDF pages 4-7: authorization questions and Areas of Interest on identity, delegation, logging and data provenance. Draft concept, not completed standard."
+    },
+    {
+      "id": "s6",
+      "url": "https://www.nist.gov/blogs/caisi-research-blog/insights-ai-agent-security-large-scale-red-teaming-competition",
+      "title": "Insights into AI Agent Security from a Large-Scale Red-Teaming Competition",
+      "publisher": "NIST Center for AI Standards and Innovation",
+      "kind": "independent",
+      "independenceGroup": "nist-caisi",
+      "publishedAt": "2026-03-23",
+      "eventDate": "2026-03-23",
+      "retrievedAt": "2026-09-10T08:07:28Z",
+      "locator": "Background and Key Findings: target models, attempts, participants, successful hijacks and capability-correlation boundary."
+    },
+    {
+      "id": "s7",
+      "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/",
+      "title": "OWASP Top 10 for Agentic Applications for 2026",
+      "publisher": "OWASP GenAI Security Project",
+      "kind": "independent",
+      "independenceGroup": "owasp-genai",
+      "publishedAt": "2025-12-09",
+      "eventDate": "2025-12-09",
+      "retrievedAt": "2026-09-10T08:07:28Z",
+      "locator": "Specific resource page and its current 57-page report Download: pages 7-15 cover least agency and observability, ASI01 Agent Goal Hijack and its ASI10 boundary, ASI02 Tool Misuse and ASI03 Identity and Privilege Abuse."
+    }
+  ],
+  "claims": [
+    {
+      "id": "c01",
+      "text": "Cisco published framework v2 at 2026-09-09T17:59:22Z, inside this run's priority window.",
+      "type": "fact",
+      "sourceIds": [
+        "s1"
+      ],
+      "sourceLocator": "Open Graph article:published_time and JSON-LD datePublished compared with startedAt",
+      "status": "supported"
+    },
+    {
+      "id": "c02",
+      "text": "Cisco v2 merges prompt injection and jailbreak under Goal Hijacking.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s1"
+      ],
+      "sourceLocator": "Merging prompt injection and jailbreak",
+      "status": "supported"
+    },
+    {
+      "id": "c03",
+      "text": "Cisco v2 adds Agentic Autonomy Failures with three techniques and eight subtechniques.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s1"
+      ],
+      "sourceLocator": "Announcement paragraph and A new objective",
+      "status": "supported"
+    },
+    {
+      "id": "c04",
+      "text": "Cisco defines the three techniques as Excessive Agency, Goal Drift and Reward Hacking.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s1"
+      ],
+      "sourceLocator": "A new objective: OB-002",
+      "status": "supported"
+    },
+    {
+      "id": "c05",
+      "text": "Cisco distinguishes external goal redirection from divergence without an identifiable external instruction.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s1"
+      ],
+      "sourceLocator": "A new objective and Goal Drift boundary",
+      "status": "supported"
+    },
+    {
+      "id": "c06",
+      "text": "The taxonomy changes the relevant investigation path but is not proof that a control or agent is safe.",
+      "type": "inference",
+      "sourceIds": [
+        "s1",
+        "s5",
+        "s7"
+      ],
+      "sourceLocator": "Index Us synthesis from category boundaries and independent control frameworks; explicit evidence limitation",
+      "status": "qualified"
+    },
+    {
+      "id": "c07",
+      "text": "OWASP's framework independently distinguishes attacker-controlled goal hijacking from autonomous misalignment without active attacker control.",
+      "type": "fact",
+      "sourceIds": [
+        "s7"
+      ],
+      "sourceLocator": "Linked report page 9, ASI01 description and boundary with ASI10",
+      "status": "supported"
+    },
+    {
+      "id": "c08",
+      "text": "OWASP separately treats tool misuse, identity and privilege abuse, and unexpected code execution.",
+      "type": "fact",
+      "sourceIds": [
+        "s7"
+      ],
+      "sourceLocator": "Linked report table of contents and pages 12-15",
+      "status": "supported"
+    },
+    {
+      "id": "c09",
+      "text": "Input provenance, explicit authority and independent outcome verification are practical controls derived from the two-path distinction.",
+      "type": "inference",
+      "sourceIds": [
+        "s1",
+        "s5",
+        "s7"
+      ],
+      "sourceLocator": "Cisco What this means for you; NIST areas of interest; OWASP pages 10 and 13-15",
+      "status": "qualified"
+    },
+    {
+      "id": "c10",
+      "text": "Google's RSS timestamp for its report is 2026-09-08T14:00:00Z.",
+      "type": "fact",
+      "sourceIds": [
+        "s2"
+      ],
+      "sourceLocator": "Matching report item pubDate",
+      "status": "supported"
+    },
+    {
+      "id": "c11",
+      "text": "Google says an actor used compromised cloud infrastructure and an AI coding system to plan, build and execute credential harvesting in less than six hours.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s3"
+      ],
+      "sourceLocator": "Executive summary and Bespoke Vulnerability Scanning and Credential Harvesting Campaign",
+      "status": "supported"
+    },
+    {
+      "id": "c12",
+      "text": "Google says the framework managed scanning, troubleshooting, credential harvesting and IP rotation and compromised thousands of third-party credentials.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s3"
+      ],
+      "sourceLocator": "Bespoke Vulnerability Scanning and Credential Harvesting Campaign",
+      "status": "supported"
+    },
+    {
+      "id": "c13",
+      "text": "Google separately describes a dashboard managing more than 23,800 harvested secrets.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s3"
+      ],
+      "sourceLocator": "Automated Reconnaissance and Credential Management Framework",
+      "status": "supported"
+    },
+    {
+      "id": "c14",
+      "text": "The Google report does not establish that the under-six-hour campaign and 23,800-secret dashboard are the same incident.",
+      "type": "inference",
+      "sourceIds": [
+        "s3"
+      ],
+      "sourceLocator": "Separately labelled examples; article keeps them separate",
+      "status": "qualified"
+    },
+    {
+      "id": "c15",
+      "text": "Google says a PRC-linked agentic framework effort stayed at the build stage and associated assets were disabled.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s3"
+      ],
+      "sourceLocator": "Automated Pentesting Framework",
+      "status": "supported"
+    },
+    {
+      "id": "c16",
+      "text": "GTIG says it had not observed fully autonomous pipelines deployed against targets in the wild.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s3"
+      ],
+      "sourceLocator": "AI-Augmented Vulnerability Research",
+      "status": "supported"
+    },
+    {
+      "id": "c17",
+      "text": "Sysdig observed a staged offensive tool using exposed Ollama capacity against private practice ranges while still under development; ultimate intent remained uncertain.",
+      "type": "fact",
+      "sourceIds": [
+        "s4"
+      ],
+      "sourceLocator": "Opening; The tool was under active development; The targets were a private practice range",
+      "status": "supported"
+    },
+    {
+      "id": "c18",
+      "text": "Google says DUSTMAKER modified hidden .claude, .vscode and .cursor paths and could establish build or startup execution.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s3"
+      ],
+      "sourceLocator": "Tables 1-2",
+      "status": "supported"
+    },
+    {
+      "id": "c19",
+      "text": "Google assesses adversarial JavaScript comments were intended to trigger refusals or skipped analysis by LLM security scanners.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s3"
+      ],
+      "sourceLocator": "Table 2",
+      "status": "qualified"
+    },
+    {
+      "id": "c20",
+      "text": "Google says the DUSTMAKER activity triggered Gemini safety responses.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s3"
+      ],
+      "sourceLocator": "Mitigations following Table 2",
+      "status": "supported"
+    },
+    {
+      "id": "c21",
+      "text": "NIST CAISI reports more than 250,000 attempts from over 400 participants across 13 models, with at least one successful hijack against every target and no uniform correlation with general capability.",
+      "type": "fact",
+      "sourceIds": [
+        "s6"
+      ],
+      "sourceLocator": "Key Findings",
+      "status": "supported"
+    },
+    {
+      "id": "c22",
+      "text": "Google says an exposed GitHub PAT enabled an April intrusion involving unauthorized AI infrastructure, privilege changes, credential discovery and quota requests.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s3"
+      ],
+      "sourceLocator": "Illicit Account Procurement and Infrastructure Compromise; Table 11",
+      "status": "supported"
+    },
+    {
+      "id": "c23",
+      "text": "NIST's draft concept proposes distinct agent identities, managed authorization and delegation, action visibility and data provenance.",
+      "type": "fact",
+      "sourceIds": [
+        "s5"
+      ],
+      "sourceLocator": "PDF pages 4-7, Areas of Interest",
+      "status": "supported"
+    },
+    {
+      "id": "c24",
+      "text": "The practical security boundary spans the model, instructions, tools, identities, data paths and infrastructure.",
+      "type": "inference",
+      "sourceIds": [
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ],
+      "sourceLocator": "Index Us synthesis from incident paths and independent control context",
+      "status": "qualified"
+    },
+    {
+      "id": "c26",
+      "text": "The independent sources provide adjacent control and threat context; they were not treated as independent verification of Cisco's taxonomy implementation or Google's incident telemetry.",
+      "type": "inference",
+      "sourceIds": [
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ],
+      "sourceLocator": "Index Us reporting-scope judgement from the distinct subject and evidence boundaries of the cited sources; retained in the published testing limitation",
+      "status": "qualified"
+    }
+  ],
+  "drafting": {
+    "agentId": "/root/draft_research",
+    "draftedAt": "2026-09-10T08:12:00Z",
+    "originalDraftPath": ".newsroom-work/20260910T080446Z/draft.md",
+    "preservationPath": ".newsroom-work/20260910T080446Z/preservation.md"
+  },
+  "editorial": {
+    "agentId": "/root/voice_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-10T08:26:12Z",
+    "articleSha256": "a008e55c54bb5fb0023db8aa4d34c67e6c611713a1587fe87b7338d5b42304d2",
+    "notes": [
+      "Removed generic signposting and tightened the causal path from Cisco's taxonomy to incident diagnosis and control selection.",
+      "Joined an isolated punch sentence to its evidence and replaced the generic Google section heading with a specific operational consequence.",
+      "Preserved every material claim, qualification, date, number, source link, frontmatter field, exact automation disclosure and source-independence boundary.",
+      "Retained the article's inline SVG byte-for-byte; its bounded agent-loop concept remains accurate, relevant, accessible, visually distinct from the current examples and clearly labelled as conceptual rather than measured evidence."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/factual_review",
+    "reviewedAt": "2026-09-10T08:37:07Z",
+    "articleSha256": "a008e55c54bb5fb0023db8aa4d34c67e6c611713a1587fe87b7338d5b42304d2",
+    "status": "passed",
+    "claimsCoverage": true
+  },
+  "quality": {
+    "evidence": 33,
+    "context": 19,
+    "originalValue": 18,
+    "voice": 14,
+    "presentation": 9
+  },
+  "riskFlags": [],
+  "quotes": [],
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered the exact approved digest at 1280 by 900 in the local Astro preview. The title, 12-minute metadata, Index Us Editorial byline, automation disclosure, ISO update label, headings, eight source links and retained inline SVG rendered correctly. The document and body scroll widths matched the 1280-pixel viewport, no element overflow or broken image was found, and the browser recorded no warning or error."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered the exact approved digest at 390 by 844 in the local Astro preview. The title and disclosure wrapped correctly; the retained 800-by-560 SVG scaled to the 350-pixel article column at 350 by 219 without clipping or overflow; its accessible title, description and conceptual caption remained available. The mobile menu expanded to expose six navigation links and collapsed correctly. No oversized element, horizontal overflow, broken image, browser warning or error was found."
+    }
+  },
+  "artwork": {
+    "status": "retained-approved",
+    "concept": "A bounded agent workflow crossing code, identity and compute controls.",
+    "referencesInspected": [
+      "src/components/ArticleArtwork.astro",
+      "Existing inline SVG in src/content/articles/google-adversarial-ai-security-boundary.md",
+      "Live published generic category artwork",
+      "Live published article-specific inline diagram and caption",
+      "Inline artwork sources in current article and recent newsroom snapshots"
+    ],
+    "notes": "The retained 800-by-560 figure is byte-identical to the published story illustration. Its established grid, registration marks, bold geometry, palette, accessible title/description and conceptual caption remain accurate and relevant to the expanded security-boundary story. It is not Cisco taxonomy art or measured incident evidence. The current-run editor and factual reviewer approved it, and desktop and mobile rendering passed without clipping or overflow."
+  },
+  "sourceUse": {
+    "quotes": [],
+    "notes": [
+      "No verbatim source quotations in the draft.",
+      "Conservative substantive-use estimates: Cisco 210 words; retained Google report/RSS synthesis 620; Sysdig 75; NIST identity 90; NIST CAISI 75; OWASP 115; SiliconANGLE 0 body words."
+    ]
+  },
+  "tooling": {
+    "firecrawl": "The Firecrawl skill plus search, scrape and security references were read completely. firecrawl --status failed because the CLI is not installed on this execution host.",
+    "directRetrieval": "Used current public web search/retrieval and narrowly filtered public curl output as the documented fallback. Cisco returned HTTP 200 and matching Open Graph/JSON-LD timestamps; all source content was treated as untrusted evidence. The specific OWASP resource page and web retrieval resolved the 57-page report, while unauthenticated curl to the transient direct download redirected to a no-access page; the article therefore links the stable resource page."
+  }
+}
