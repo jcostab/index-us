@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260910T140337Z",
+  "startedAt": "2026-09-10T14:03:37.231Z",
+  "completedAt": "2026-09-10T14:53:15Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-08T14:03:37.231Z",
+    "end": "2026-09-10T14:03:37.231Z"
+  },
+  "candidates": [
+    {
+      "story": "Subagents vs Agent Skills on SkillsBench",
+      "source": "https://arxiv.org/abs/2609.09233",
+      "eventDate": "2026-09-10T04:00:00Z",
+      "decision": "selected",
+      "reason": "The cs.AI RSS supplies an exact public-announcement time 10 hours 3 minutes 37 seconds before run start. The preprint is non-duplicate and supports a practical conditional architecture decision with public methods and two independent context groups."
+    },
+    {
+      "story": "OpenDiscoveryTrace process-level AI scientist evaluation dataset",
+      "source": "https://arxiv.org/abs/2609.09203",
+      "eventDate": "2026-09-10T04:00:00Z",
+      "decision": "rejected",
+      "reason": "The dataset is useful, but its pilot analysis relies heavily on self-reported traces and LLM judging and offers less immediate cross-domain deployment guidance than the selected study."
+    },
+    {
+      "story": "State-Path Tool Menu for online agents",
+      "source": "https://arxiv.org/abs/2609.09395",
+      "eventDate": "2026-09-10T04:00:00Z",
+      "decision": "rejected",
+      "reason": "The reported gain is tied to one tool benchmark and a specialised menu constructor, so a long-form operational article would currently lean too heavily on the paper's own framing."
+    },
+    {
+      "story": "GPT-6 Astra enterprise-work rollout",
+      "source": "https://openai.com/index/gpt-6-astra-next-generation-work",
+      "eventDate": "2026-09-09T11:00:00Z",
+      "decision": "rejected-in-favour",
+      "reason": "The RSS time is exact and the rollout consequential, but the core model launched on 3 September. The selected study is newer, independently authored and supports a clearer local test."
+    },
+    {
+      "story": "Anthropic alignment assessment of recent cybersecurity incidents",
+      "source": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
+      "eventDate": "2026-09-09",
+      "decision": "held-from-selection",
+      "reason": "The report is consequential but date-only. A content-management update timestamp does not establish an exact publication time and timezone for the automatic freshness gate."
+    },
+    {
+      "story": "OpenAI AI-policy advocacy",
+      "source": "https://openai.com/index/ai-policy-window",
+      "eventDate": "2026-09-09T13:00:00Z",
+      "decision": "rejected",
+      "reason": "The company position is timestamped but too thin for automatic long-form coverage without a full review of the named bills and current legislative record."
+    },
+    {
+      "story": "Red Hat AI 3.5",
+      "source": "https://www.redhat.com/en/blog/red-hat-ai-35-scaling-and-governing-ai-agents-production",
+      "eventDate": "2026-09-09",
+      "decision": "rejected",
+      "reason": "The primary page remains date-only, so it cannot establish the exact automatic-publication timestamp; its product claims also require deeper independent checks."
+    },
+    {
+      "story": "Mistral legacy-code modernisation case study",
+      "source": "https://mistral.ai/news/legacy-code-modernization/",
+      "eventDate": "2026-09-09",
+      "decision": "rejected",
+      "reason": "The vendor case study has no exact event time, and Index Us cannot independently inspect the code, parity harness or customer results."
+    },
+    {
+      "story": "AlphaGenome Atlas",
+      "source": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "eventDate": "2026-09-08T14:00:15Z",
+      "decision": "rejected-stale",
+      "reason": "The DeepMind RSS time precedes this run's 48-hour discovery-window start by 3 minutes 22.231 seconds."
+    },
+    {
+      "story": "Recent Index Us newsroom coverage",
+      "source": "https://index-us.com/articles/",
+      "eventDate": "unknown",
+      "decision": "already-covered",
+      "reason": "Current article bodies and records for Harbor, Arm AI Portal, Google's adversarial-AI report and Cisco update, Meta Muse, ChatGPT Images 2.5 and the Codex quantum-lab case were checked; no material correction or duplicate story identity was found."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "The exact-timestamped preprint is fresh, consequential and not covered by Index Us. It supports a useful conditional decision: isolated subagents helped only after procedures had explicit input-output contracts, while loose knowledge packages favoured inline execution and subagents added token cost. SkillsBench and peer-reviewed long-context research provide independent context without being presented as confirmation."
+  },
+  "story": {
+    "id": "subagents-skills-context-contracts",
+    "eventDate": "2026-09-10T04:00:00Z",
+    "canonicalUrls": ["https://arxiv.org/abs/2609.09233"]
+  },
+  "articlePath": "src/content/articles/subagents-skills-context-contracts.md",
+  "articleSha256": "91368a42b0c15577cbc11be88b91a45a833966ad2560def4842754b8b729bb8b",
+  "articleWords": 1614,
+  "readingMinutes": 9,
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://rss.arxiv.org/rss/cs.AI",
+      "title": "cs.AI updates on arXiv.org",
+      "publisher": "arXiv",
+      "kind": "primary",
+      "independenceGroup": "arxiv-announcement-metadata",
+      "publishedAt": "2026-09-10T04:00:00Z",
+      "eventDate": "2026-09-10T04:00:00Z",
+      "retrievedAt": "2026-09-10T14:14:53Z",
+      "locator": "RSS item for arXiv:2609.09233; pubDate Thu, 10 Sep 2026 00:00:00 -0400. Exact public-announcement time only."
+    },
+    {
+      "id": "s2",
+      "url": "https://arxiv.org/abs/2609.09233",
+      "title": "Subagents vs Agent Skills: Executing Reusable Knowledge for Long-Horizon Agentic Tasks",
+      "publisher": "Cornell University and Microsoft Research Cambridge authors",
+      "kind": "primary",
+      "independenceGroup": "cornell-microsoft-subagent-study",
+      "publishedAt": "2026-09-07T20:14:11Z",
+      "eventDate": "2026-09-10T04:00:00Z",
+      "retrievedAt": "2026-09-10T14:14:53Z",
+      "locator": "Abstract and submission history; HTML sections 1-4 and 6; Figures 2-4; Appendix A.1-A.5. Public-announcement time comes from s1."
+    },
+    {
+      "id": "s3",
+      "url": "https://www.skillsbench.ai/blogs/introducing-skillsbench",
+      "title": "Introducing SkillsBench: The First Benchmark for Agent Skills",
+      "publisher": "SkillsBench Team",
+      "kind": "independent",
+      "independenceGroup": "skillsbench-benchflow",
+      "publishedAt": "2026-02-10T00:00:00Z",
+      "eventDate": "2026-02-10T00:00:00Z",
+      "retrievedAt": "2026-09-10T14:14:53Z",
+      "locator": "Launch snapshot: 86 tasks, 84 reported after two verifier runtime errors, seven configurations, variable domain effects and 16 negative task effects. Does not test the new execution-mode comparison."
+    },
+    {
+      "id": "s4",
+      "url": "https://www.skillsbench.ai/",
+      "title": "SkillsBench — Benchmarking How Well Agent Skills Work",
+      "publisher": "SkillsBench Team",
+      "kind": "independent",
+      "independenceGroup": "skillsbench-benchflow",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-10T14:14:53Z",
+      "locator": "Current registry identifies SkillsBench v1.1 with 87 tasks. Mutable page checked to distinguish the current snapshot from the 86/84 launch analysis."
+    },
+    {
+      "id": "s5",
+      "url": "https://aclanthology.org/2025.findings-emnlp.1264/",
+      "title": "Context Length Alone Hurts LLM Performance Despite Perfect Retrieval",
+      "publisher": "Findings of EMNLP 2025",
+      "kind": "independent",
+      "independenceGroup": "acl-long-context-research",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-10T14:14:53Z",
+      "locator": "ACL metadata and abstract: November 2025 peer-reviewed paper; five models; mathematics, question-answering and coding tasks; 13.9-85 per cent declines despite perfect retrieval. Context only; does not test subagents."
+    }
+  ],
+  "claims": [
+    {"id":"c01","text":"arXiv's cs.AI RSS timestamped the public announcement of arXiv:2609.09233 at 2026-09-10T04:00:00Z.","type":"fact","sourceIds":["s1"],"sourceLocator":"Matching RSS item and pubDate","status":"supported"},
+    {"id":"c02","text":"The preprint's v1 submission history records 2026-09-07T20:14:11Z and lists Cornell University and Microsoft Research Cambridge affiliations.","type":"fact","sourceIds":["s2"],"sourceLocator":"arXiv metadata, title page and submission history","status":"supported"},
+    {"id":"c03","text":"Inline skill execution loads a package's instructions into the main context, while the tested subagent mode starts a separate context with those instructions and returns the worker's final response.","type":"fact","sourceIds":["s2"],"sourceLocator":"HTML sections 2 and 3.1; Equations 5-7","status":"supported"},
+    {"id":"c04","text":"The experiment used a modified OpenHands harness and the current 87-task SkillsBench family.","type":"fact","sourceIds":["s2","s4"],"sourceLocator":"Paper section 4 and Appendix A.3; current SkillsBench registry","status":"supported"},
+    {"id":"c05","text":"The researchers ran GPT-5.3 Codex three times on all SkillsBench tasks, collected successful trajectories and used Copilot CLI with minimal human intervention to synthesise contract-driven packages for 64 tasks.","type":"fact","sourceIds":["s2"],"sourceLocator":"HTML section 4, Synthesizing procedural skill packages","status":"supported"},
+    {"id":"c06","text":"The paper's main execution-mode comparisons use the 64-task subset for which contract-driven packages were produced.","type":"fact","sourceIds":["s2"],"sourceLocator":"HTML section 4 immediately before Figure 2","status":"supported"},
+    {"id":"c07","text":"The authors state that comparing the original and synthesised package sets is not controlled because their content differs.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"HTML section 4, Main results","status":"supported"},
+    {"id":"c08","text":"With original packages that generally lacked explicit input-output contracts, inline skills matched or outperformed subagents across all tested models.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"HTML section 4, Main results and Figure 2","status":"supported"},
+    {"id":"c09","text":"With synthesised procedural packages and explicit input-output contracts, subagents outperformed inline execution across the tested models.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"HTML section 4, Main results and Figure 2","status":"supported"},
+    {"id":"c10","text":"The paper frames a suitable subagent procedure through invocation conditions, a method and an output contract.","type":"fact","sourceIds":["s2"],"sourceLocator":"HTML section 3.2; Equations 8-10","status":"supported"},
+    {"id":"c11","text":"When irrelevant tool descriptions increased context pressure, contract-driven subagent execution degraded more gradually than inline execution.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"HTML section 4; Figures 3 and 6","status":"supported"},
+    {"id":"c12","text":"For stronger tested models including GPT-5.3 Codex and Kimi K2.6, subagent execution produced lower peak context on more than 80 per cent of tasks.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"HTML section 4, Peak context length and total token cost; Figure 4","status":"supported"},
+    {"id":"c13","text":"The paper reports substantially higher total token use for subagents because information is communicated across separate contexts.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"HTML sections 3.1 and 4; Figure 4","status":"supported"},
+    {"id":"c14","text":"The authors caution that peak-context comparisons for weaker models were confounded by early termination of some inline runs.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"HTML section 4, Peak context length and total token cost","status":"supported"},
+    {"id":"c15","text":"The SkillsBench launch snapshot began with 86 tasks and reported on 84 after two verifier runtime errors.","type":"fact","sourceIds":["s3"],"sourceLocator":"Launch post, benchmark description and evaluation setup","status":"supported"},
+    {"id":"c16","text":"SkillsBench reported variable effects by task and domain, with 16 of 84 evaluated tasks showing negative skill effects.","type":"attributed_claim","sourceIds":["s3"],"sourceLocator":"Launch post, Skills can hurt performance","status":"supported"},
+    {"id":"c17","text":"The current SkillsBench site identifies a later v1.1 registry with 87 tasks, so the launch and current snapshots are not interchangeable.","type":"fact","sourceIds":["s3","s4"],"sourceLocator":"Launch historical-snapshot note and current registry metadata","status":"supported"},
+    {"id":"c18","text":"A peer-reviewed EMNLP 2025 study tested five open- and closed-weight models on mathematics, question answering and coding and reported 13.9-85 per cent declines as input grew despite perfect retrieval and lengths inside advertised limits.","type":"attributed_claim","sourceIds":["s5"],"sourceLocator":"ACL publication metadata and abstract","status":"supported"},
+    {"id":"c19","text":"The ACL finding supports testing context isolation as a mitigation hypothesis but does not establish that subagents solve every long-context problem.","type":"inference","sourceIds":["s2","s5"],"sourceLocator":"Index Us boundary between independent input-length evidence and the preprint's subagent test","status":"qualified"},
+    {"id":"c20","text":"The new study is a preprint using one benchmark family, a modified harness, contract packages derived from successful trajectories and deterministic task verifiers.","type":"fact","sourceIds":["s2","s3","s4"],"sourceLocator":"arXiv status, paper section 4 and Appendix A.3, and SkillsBench descriptions","status":"supported"},
+    {"id":"c21","text":"A defensible deployment choice is to keep loose shared-state guidance inline and trial subagents for substantial procedures expressible through a narrow auditable contract.","type":"inference","sourceIds":["s2","s3","s5"],"sourceLocator":"Index Us synthesis from conditional execution results, variable skill effects and context-pressure evidence","status":"qualified"},
+    {"id":"c22","text":"A local comparison should evaluate accepted completion, total cost, latency, hand-off loss, context relief and operational control rather than transfer benchmark accuracy directly.","type":"inference","sourceIds":["s2","s3","s4"],"sourceLocator":"Index Us recommendation from the accuracy, context, token and version trade-offs","status":"qualified"}
+  ],
+  "drafting": {"agentId": "/root/draft_research"},
+  "editorial": {
+    "agentId": "/root/voice_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-10T14:31:51Z",
+    "articleSha256": "91368a42b0c15577cbc11be88b91a45a833966ad2560def4842754b8b729bb8b",
+    "notes": [
+      "Tightened the opening and replaced recurring signposts and rhetorical questions with direct, evidence-led transitions.",
+      "Clarified the controlled comparison and the communication cost of isolation without changing any factual claim or qualification.",
+      "Preserved all metadata, source links, the exact automation disclosure, the no-quotation boundary and the story-specific SVG byte-for-byte.",
+      "Retained the practical local-comparison checklist and the documentation-only final limitation."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/factual_review",
+    "reviewedAt": "2026-09-10T14:44:58Z",
+    "articleSha256": "91368a42b0c15577cbc11be88b91a45a833966ad2560def4842754b8b729bb8b",
+    "status": "passed",
+    "claimsCoverage": true
+  },
+  "quality": {"evidence": 33, "context": 19, "originalValue": 19, "voice": 13, "presentation": 9},
+  "riskFlags": [],
+  "quotes": [],
+  "sourceUse": [
+    {"sourceId":"s1","quotedWords":0,"estimatedDerivedWords":20,"allowance":"Exact event-time metadata only; no quotation."},
+    {"sourceId":"s2","quotedWords":0,"estimatedDerivedWords":500,"allowance":"Original synthesis from an openly licensed CC BY 4.0 preprint; no quotation or copied article structure."},
+    {"sourceId":"s3","quotedWords":0,"estimatedDerivedWords":150,"allowance":"Original benchmark-context summary; no quotation."},
+    {"sourceId":"s4","quotedWords":0,"estimatedDerivedWords":35,"allowance":"Current version metadata only; no quotation."},
+    {"sourceId":"s5","quotedWords":0,"estimatedDerivedWords":120,"allowance":"Original summary of the peer-reviewed abstract and its narrow relevance; no quotation."}
+  ],
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered locally at 1280x900. Title, metadata, Index Us Editorial byline, exact automation disclosure, article navigation, five external source links and both artwork figures rendered correctly. The original inline SVG and caption were visible without clipping; document scroll width equalled the viewport width and browser logs contained no warnings or errors."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered locally at 390x844. Heading, metadata, disclosure, key takeaways, article sections, five external source links and the original inline SVG/caption wrapped cleanly without clipping or horizontal overflow. The six-link mobile menu expanded and collapsed correctly; browser logs contained no warnings or errors."
+    }
+  }
+}
