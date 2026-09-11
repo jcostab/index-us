@@ -1,0 +1,507 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260910T200259Z",
+  "startedAt": "2026-09-10T20:02:59.992Z",
+  "completedAt": "2026-09-11T02:06:59Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-08T20:02:59.992Z",
+    "end": "2026-09-10T20:02:59.992Z"
+  },
+  "candidates": [
+    {
+      "story": "GPT-Live-1 API release",
+      "source": "https://openai.com/index/introducing-gpt-live-1-in-the-api/",
+      "eventDate": "2026-09-10T00:00:00Z",
+      "decision": "selected",
+      "reason": "OpenAI News RSS supplies an exact timestamp 20 hours 2 minutes 59.992 seconds before run start. The API release is fresh, consequential, not covered by Index Us and supports a specific systems decision using current documentation and three independent research groups."
+    },
+    {
+      "story": "OpenAI Data agent in ChatGPT Work",
+      "source": "https://openai.com/index/put-data-to-work/",
+      "eventDate": "2026-09-10T15:00:00Z",
+      "decision": "rejected-in-favour",
+      "reason": "The exact-timestamped data-agent launch is consequential, but current evidence is dominated by vendor and partner material and its permission-scope lesson overlaps the recent Meta Muse article more closely than the selected voice-control boundary."
+    },
+    {
+      "story": "OpenAI Agents API public beta",
+      "source": "https://openai.com/index/introducing-the-agents-api/",
+      "eventDate": "2026-09-10",
+      "decision": "held-from-selection",
+      "reason": "The page is consequential but date-only and absent from OpenAI News RSS at research time. No exact event time and timezone was verified for the automatic freshness gate."
+    },
+    {
+      "story": "ChatGPT for Financial Services",
+      "source": "https://openai.com/index/introducing-chatgpt-financial-services/",
+      "eventDate": "2026-09-10T07:00:00Z",
+      "decision": "rejected",
+      "reason": "The exact-timestamped launch is primarily vertical packaging. Safe long-form guidance would require deeper examination of financial-data sources, entitlements, citations and regulated workflow controls."
+    },
+    {
+      "story": "OpenAI antimicrobial workflow case study",
+      "source": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials/",
+      "eventDate": "2026-09-10T16:00:00Z",
+      "decision": "rejected",
+      "reason": "The exact-timestamped page describes a laboratory workflow but announces no new research result; long-form coverage would lean on promotional case-study claims."
+    },
+    {
+      "story": "OpenAI government access and cyber-defence offer",
+      "source": "https://openai.com/index/expanding-ai-access-us-government/",
+      "eventDate": "2026-09-10T07:00:00Z",
+      "decision": "rejected",
+      "reason": "The US-specific commercial and policy offer is less broadly useful to Index Us readers than the selected technical deployment boundary."
+    },
+    {
+      "story": "IBM Granite Time Series PatchTST-FM-r2",
+      "source": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+      "eventDate": "2026-09-09T15:36:24Z",
+      "decision": "rejected-in-favour",
+      "reason": "The exact-timestamped specialist forecasting model has promising open artifacts and licensing, but GPT-Live-1 creates a broader and more immediate control problem for deployed agents."
+    },
+    {
+      "story": "Recent Index Us newsroom coverage",
+      "source": "https://index-us.com/articles/",
+      "eventDate": "unknown",
+      "decision": "already-covered",
+      "reason": "Article bodies and run records for Harbor, Arm AI Portal, Google and Cisco agent security, Meta Muse, ChatGPT Images 2.5, the Codex quantum-lab system and subagent/skill contracts were checked. No voice-agent story, duplicate canonical event or material correction was found."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "GPT-Live-1 is a fresh, exact-timestamped API release with a consequential control boundary: OpenAI documents that spoken interruption does not automatically cancel delegated backend work. Independent voice-agent research supports a useful, bounded evaluation framework without being presented as confirmation of the product claims."
+  },
+  "story": {
+    "id": "gpt-live-1-interruption-control-loop",
+    "eventDate": "2026-09-10T00:00:00Z",
+    "canonicalUrls": [
+      "https://openai.com/index/introducing-gpt-live-1-in-the-api/"
+    ]
+  },
+  "articlePath": "src/content/articles/gpt-live-1-interruption-control-loop.md",
+  "articleSha256": "785996bac61ca0520f280ec0423c419728ee49ecc195d6e567da494a36f31e0d",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://openai.com/news/rss.xml",
+      "title": "OpenAI News RSS",
+      "publisher": "OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "2026-09-10T00:00:00Z",
+      "eventDate": "2026-09-10T00:00:00Z",
+      "retrievedAt": "2026-09-10T20:08:36Z",
+      "locator": "RSS item Build more natural voice experiences with GPT-Live-1 in the API; pubDate Thu, 10 Sep 2026 00:00:00 GMT. Exact public-release timestamp only."
+    },
+    {
+      "id": "s2",
+      "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api/",
+      "title": "Build more natural voice experiences with GPT-Live-1 in the API",
+      "publisher": "OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "2026-09-10T00:00:00Z",
+      "eventDate": "2026-09-10T00:00:00Z",
+      "retrievedAt": "2026-09-10T20:08:36Z",
+      "locator": "Launch page sections Simplify your voice-agent architecture, Measuring the full-duplex advantage, What customers are saying, New voice options, and Pricing & Availability. Capability, benchmark and partner-result statements remain attributed to OpenAI or the named partner."
+    },
+    {
+      "id": "s3",
+      "url": "https://developers.openai.com/api/docs/guides/live",
+      "title": "Getting started with GPT-Live",
+      "publisher": "OpenAI Developers",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-10T20:08:36Z",
+      "locator": "Understand the two parts and Choose how to run the backend: separate voice and backend responsibilities; application-owned permissions, confirmations, private function execution and durable task state; spoken interruption does not automatically cancel backend work. Mutable documentation checked for the current API boundary."
+    },
+    {
+      "id": "s4",
+      "url": "https://developers.openai.com/api/docs/models/gpt-live-1",
+      "title": "GPT-Live 1 model",
+      "publisher": "OpenAI Developers",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-10T20:08:36Z",
+      "locator": "Model overview and Pricing: full-duplex audio input/output, backend delegation, US$0.05 per session minute billed per second, and separate backend Responses/tool billing. Mutable documentation checked for current pricing and availability."
+    },
+    {
+      "id": "s5",
+      "url": "https://arxiv.org/abs/2503.04721",
+      "title": "Full-Duplex-Bench: A Benchmark to Evaluate Full-duplex Spoken Dialogue Models on Turn-taking Capabilities",
+      "publisher": "Lin and colleagues",
+      "kind": "independent",
+      "independenceGroup": "full-duplex-bench-authors",
+      "publishedAt": "2025-03-06T18:59:16Z",
+      "eventDate": "2025-03-06T18:59:16Z",
+      "retrievedAt": "2026-09-10T20:08:36Z",
+      "locator": "arXiv metadata and abstract: ASRU 2025 acceptance; benchmark separates pause handling, backchanneling, turn-taking and interruption management. Context only; it predates and does not evaluate GPT-Live-1."
+    },
+    {
+      "id": "s6",
+      "url": "https://arxiv.org/abs/2604.04847",
+      "title": "Full-Duplex-Bench-v3: Benchmarking Tool Use for Full-Duplex Voice Agents Under Real-World Disfluency",
+      "publisher": "Lin and colleagues",
+      "kind": "independent",
+      "independenceGroup": "full-duplex-bench-authors",
+      "publishedAt": "2026-04-06T16:46:52Z",
+      "eventDate": "2026-04-06T16:46:52Z",
+      "retrievedAt": "2026-09-10T20:08:36Z",
+      "locator": "arXiv metadata and abstract: work in progress; real human audio, five disfluency categories, chained API calls in four domains, six evaluated configurations and reported accuracy/latency/turn-taking trade-offs. Does not evaluate GPT-Live-1."
+    },
+    {
+      "id": "s7",
+      "url": "https://arxiv.org/abs/2603.13686",
+      "title": "Tau-Voice: Benchmarking Full-Duplex Voice Agents on Real-World Domains",
+      "publisher": "Ray and colleagues",
+      "kind": "independent",
+      "independenceGroup": "tau-voice-authors",
+      "publishedAt": "2026-03-14T01:46:52Z",
+      "eventDate": "2026-03-14T01:46:52Z",
+      "retrievedAt": "2026-09-10T20:08:36Z",
+      "locator": "arXiv metadata and abstract: preprint; 278 grounded tasks; reported text and voice completion ranges, realistic-audio degradation and failure attribution. Context only; does not evaluate GPT-Live-1."
+    },
+    {
+      "id": "s8",
+      "url": "https://arxiv.org/abs/2609.03423",
+      "title": "DuplexSpeechBench-IFEval: Evaluating Implicit Instruction Following in Full-Duplex Voice Agents",
+      "publisher": "Mathur and Manocha",
+      "kind": "independent",
+      "independenceGroup": "duplex-speech-bench-authors",
+      "publishedAt": "2026-09-03T06:28:02Z",
+      "eventDate": "2026-09-03T06:28:02Z",
+      "retrievedAt": "2026-09-10T20:08:36Z",
+      "locator": "arXiv metadata and abstract: under-submission preprint; 1,038 cases, eight roles, five conditioning protocols, architecture-dependent persona-only gaps and safety-conflict limitations. Does not evaluate GPT-Live-1."
+    }
+  ],
+  "claims": [
+    {
+      "id": "c01",
+      "text": "OpenAI's News RSS timestamped the GPT-Live-1 API release at 2026-09-10T00:00:00Z.",
+      "type": "fact",
+      "sourceIds": [
+        "s1"
+      ],
+      "sourceLocator": "Matching RSS item and pubDate",
+      "status": "supported"
+    },
+    {
+      "id": "c02",
+      "text": "GPT-Live-1 is available in the API as a front-end voice layer at US$0.05 per minute, billed by the second, while backend model and tool use is billed separately.",
+      "type": "fact",
+      "sourceIds": [
+        "s2",
+        "s4"
+      ],
+      "sourceLocator": "Launch Pricing & Availability; model-page Pricing",
+      "status": "supported"
+    },
+    {
+      "id": "c03",
+      "text": "OpenAI describes GPT-Live-1 as a full-duplex model that listens and speaks at the same time and can delegate deeper reasoning and tool use to a backend model, agent or service.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "sourceLocator": "Launch opening and architecture sections; guide Understand the two parts; model overview",
+      "status": "supported"
+    },
+    {
+      "id": "c04",
+      "text": "OpenAI's guide separates conversation handling from the backend that performs delegated tasks and keeps detailed business rules and tool workflows.",
+      "type": "fact",
+      "sourceIds": [
+        "s3"
+      ],
+      "sourceLocator": "Understand the two parts",
+      "status": "supported"
+    },
+    {
+      "id": "c05",
+      "text": "The application remains responsible for permissions, confirmations, private function execution and durable task state.",
+      "type": "fact",
+      "sourceIds": [
+        "s3"
+      ],
+      "sourceLocator": "Understand the two parts, application-responsibility sentence",
+      "status": "supported"
+    },
+    {
+      "id": "c06",
+      "text": "Interrupting GPT-Live speech does not automatically cancel backend work.",
+      "type": "fact",
+      "sourceIds": [
+        "s3"
+      ],
+      "sourceLocator": "Understand the two parts, explicit interruption boundary",
+      "status": "supported"
+    },
+    {
+      "id": "c07",
+      "text": "OpenAI says GPT-Live-1 natively provides ASR transcripts and response text, supports keyword biasing and exposes turn detection.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s2"
+      ],
+      "sourceLocator": "Simplify your voice-agent architecture section",
+      "status": "supported"
+    },
+    {
+      "id": "c08",
+      "text": "OpenAI reports a 30-percentage-point Full Duplex Bench improvement over GPT-Realtime-2.1 and a first-place Tau3 result when GPT-Live-1 is paired with GPT-6 Astra at medium reasoning effort.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s2"
+      ],
+      "sourceLocator": "Measuring the full-duplex advantage",
+      "status": "qualified"
+    },
+    {
+      "id": "c09",
+      "text": "OpenAI reports that Speak's early evaluation found almost 80 per cent fewer interruptions during learners' thinking pauses than its previous turn-based systems.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s2"
+      ],
+      "sourceLocator": "Launch introduction and Speak customer statement",
+      "status": "qualified"
+    },
+    {
+      "id": "c10",
+      "text": "The ASRU 2025 Full-Duplex-Bench separates pause handling, backchanneling, turn-taking and interruption management.",
+      "type": "fact",
+      "sourceIds": [
+        "s5"
+      ],
+      "sourceLocator": "arXiv metadata and abstract",
+      "status": "supported"
+    },
+    {
+      "id": "c11",
+      "text": "Full-Duplex-Bench-v3 uses real human audio annotated for five disfluency categories and multi-step API tasks across four domains, and evaluates six model configurations.",
+      "type": "fact",
+      "sourceIds": [
+        "s6"
+      ],
+      "sourceLocator": "arXiv abstract",
+      "status": "supported"
+    },
+    {
+      "id": "c12",
+      "text": "The Full-Duplex-Bench-v3 authors report trade-offs between accuracy, latency and turn-taking, with self-correction handling and hard multi-step scenarios remaining recurring failures.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s6"
+      ],
+      "sourceLocator": "arXiv abstract",
+      "status": "supported"
+    },
+    {
+      "id": "c13",
+      "text": "Tau-Voice evaluates 278 grounded tasks and reports 85 per cent completion for a text reasoning baseline, 31-51 per cent for voice agents in clean conditions and 26-38 per cent in realistic conditions.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s7"
+      ],
+      "sourceLocator": "arXiv abstract",
+      "status": "supported"
+    },
+    {
+      "id": "c14",
+      "text": "The Tau-Voice authors report that tested voice agents retained 30-45 per cent of the text capability and that 79-90 per cent of failures arose from agent behaviour under their evaluation setup.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s7"
+      ],
+      "sourceLocator": "arXiv abstract",
+      "status": "qualified"
+    },
+    {
+      "id": "c15",
+      "text": "DuplexSpeechBench-IFEval tests 1,038 cases across eight assistant roles and five instruction-conditioning protocols.",
+      "type": "fact",
+      "sourceIds": [
+        "s8"
+      ],
+      "sourceLocator": "arXiv abstract",
+      "status": "supported"
+    },
+    {
+      "id": "c16",
+      "text": "The DuplexSpeechBench-IFEval authors report architecture-dependent gaps when expected floor behaviour is implied rather than explicit and continuing difficulty with safety conflicts.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s8"
+      ],
+      "sourceLocator": "arXiv abstract",
+      "status": "supported"
+    },
+    {
+      "id": "c17",
+      "text": "A spoken interruption and cancellation of delegated work are separate control events and should be designed, instrumented and tested separately.",
+      "type": "inference",
+      "sourceIds": [
+        "s3",
+        "s5",
+        "s6",
+        "s7"
+      ],
+      "sourceLocator": "Index Us synthesis from the documented cancellation boundary and independent interaction/task evaluation dimensions",
+      "status": "qualified"
+    },
+    {
+      "id": "c18",
+      "text": "A local voice-agent evaluation should join floor behaviour, backend task result, authority, recovery, latency and total cost on one timeline rather than transfer a single benchmark score.",
+      "type": "inference",
+      "sourceIds": [
+        "s2",
+        "s3",
+        "s5",
+        "s6",
+        "s7",
+        "s8"
+      ],
+      "sourceLocator": "Index Us deployment recommendation from the distinct published evaluation and control boundaries",
+      "status": "qualified"
+    }
+  ],
+  "drafting": {
+    "agentId": "/root/draft_research",
+    "draftedAt": "2026-09-10T20:08:36Z",
+    "originalDraftSha256": "0dcbf5e85a17d95565df9ee7c055d0a4d1d4e9676ae394495e1539f842fa16a3",
+    "bodyWords": 1615,
+    "readingMinutes": 9
+  },
+  "editorial": {
+    "agentId": "/root/voice_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-10T20:23:50Z",
+    "articleSha256": "785996bac61ca0520f280ec0423c419728ee49ecc195d6e567da494a36f31e0d",
+    "notes": [
+      "Renewed the publication edit after the factual reviewer requested a qualified description and nearby links for three launch-derived claim clusters.",
+      "The description now says spoken interruption does not automatically cancel backend work, preserving the documented scope without changing the central argument.",
+      "Added descriptive OpenAI launch links beside the feature, Full Duplex Bench and Tau3, and Speak result claims without altering their attribution or qualifications.",
+      "Preserved the exact disclosure, all other metadata, claims, source URLs, testing limits, six-part evaluation and untouched original draft; factual review and responsive rendering remain pending.",
+      "Reassessed the unchanged SVG; its accessibility, story-specific composition and conceptual-not-evidence labelling remain valid."
+    ]
+  },
+  "factCheck": {
+    "status": "passed",
+    "agentId": "/root/factual_review",
+    "reviewedAt": "2026-09-10T20:27:12Z",
+    "articleSha256": "785996bac61ca0520f280ec0423c419728ee49ecc195d6e567da494a36f31e0d",
+    "claimsCoverage": true,
+    "notes": [
+      "Fresh live-public fallback checks covered all eight registered sources; Firecrawl remained unavailable.",
+      "All claims c01-c18 passed as supported, attributed or explicitly bounded inference, with accurate zero-quotation counts.",
+      "The corrected description and nearby launch links for c07-c09 resolve the initial review requests.",
+      "The unchanged story-specific SVG passed source-level style, originality, accessibility and misleading-implication review; responsive rendering remains pending separately."
+    ]
+  },
+  "quality": {
+    "evidence": 33,
+    "context": 18,
+    "originalValue": 18,
+    "voice": 13,
+    "presentation": 9
+  },
+  "reviewStatus": "passed",
+  "riskFlags": [],
+  "quotes": [
+    {
+      "sourceId": "s1",
+      "words": 0,
+      "estimatedDerivedWords": 24,
+      "allowance": "Exact event-time metadata only; no quotation."
+    },
+    {
+      "sourceId": "s2",
+      "words": 0,
+      "estimatedDerivedWords": 190,
+      "allowance": "Original summary of launch architecture, attributed evaluations and availability; no quotation."
+    },
+    {
+      "sourceId": "s3",
+      "words": 0,
+      "estimatedDerivedWords": 180,
+      "allowance": "Original summary and analysis of documented responsibility and cancellation boundaries; no quotation."
+    },
+    {
+      "sourceId": "s4",
+      "words": 0,
+      "estimatedDerivedWords": 65,
+      "allowance": "Current pricing and model-support facts; no quotation."
+    },
+    {
+      "sourceId": "s5",
+      "words": 0,
+      "estimatedDerivedWords": 55,
+      "allowance": "Original benchmark-scope summary; no quotation."
+    },
+    {
+      "sourceId": "s6",
+      "words": 0,
+      "estimatedDerivedWords": 80,
+      "allowance": "Original abstract-level methods and findings summary; no quotation."
+    },
+    {
+      "sourceId": "s7",
+      "words": 0,
+      "estimatedDerivedWords": 110,
+      "allowance": "Original abstract-level task and limitation summary; no quotation."
+    },
+    {
+      "sourceId": "s8",
+      "words": 0,
+      "estimatedDerivedWords": 90,
+      "allowance": "Original abstract-level instruction-following summary; no quotation."
+    }
+  ],
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered locally at 1280x900. Title, metadata, Index Us Editorial byline, exact automation disclosure, story-specific illustration, heading hierarchy, navigation, eight source labels, related content and footer were present and readable. The original 800x560 SVG rendered at 736px wide without clipping; document scroll width equalled the viewport width, no images were broken and browser logs contained no warnings or errors."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered locally at 390x844. The title, description, metadata, byline and exact disclosure wrapped clearly; the mobile menu expanded to all six site links; headings and all eight source labels were present. The original 800x560 SVG rendered at 350x245 without clipping or overflow; document scroll width equalled the viewport width, no images were broken and browser logs contained no warnings or errors."
+    }
+  },
+  "artwork": {
+    "status": "passed",
+    "concept": "Two overlapping audio lanes share an interruption marker above a separate delegated-task lane and explicit stop gate.",
+    "referencesInspected": [
+      "src/components/ArticleArtwork.astro",
+      "src/content/articles/subagents-skills-context-contracts.md",
+      "src/content/articles/openai-codex-quantum-lab-control-loop.md",
+      "src/content/articles/meta-muse-permission-scope.md"
+    ],
+    "requirements": {
+      "viewBox": "0 0 800 560",
+      "selfContained": true,
+      "scriptFree": true,
+      "externalResources": false,
+      "animation": false,
+      "accessibleTitleAndDescription": true,
+      "visibleOriginalCaption": true
+    },
+    "notes": "New story-specific composition in the established grid, registration-mark and palette system. The distinct overlapping audio lanes, separate delegated-task path and stop gate were approved by both reviewers as original, accessible and non-misleading. It is conceptual, not a product UI, recording, benchmark chart or measured evidence. Desktop 1280x900 and mobile 390x844 rendering confirmed the SVG has no clipping or horizontal overflow."
+  },
+  "research": {
+    "method": "Direct public RSS, public pages, developer documentation and browser research fallback.",
+    "firecrawl": "Firecrawl was not installed on this execution host, as recorded by the preceding completed run. The documented fallback was used and all fetched material was treated as untrusted evidence.",
+    "duplicateCheck": "Recent article bodies, frontmatter source URLs and public run records were checked. No voice-agent duplicate or correction target was found.",
+    "limits": [
+      "Index Us did not call GPT-Live-1 or independently assess its voices.",
+      "OpenAI's benchmark and partner results remain attributed and were not reproduced.",
+      "Independent benchmark papers establish evaluation context and do not test GPT-Live-1."
+    ]
+  }
+}
