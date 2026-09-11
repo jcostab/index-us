@@ -1,0 +1,524 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260911T080412Z",
+  "startedAt": "2026-09-11T08:04:12.597Z",
+  "completedAt": "2026-09-11T08:41:52Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-09T08:04:12.597Z",
+    "end": "2026-09-11T08:04:12.597Z"
+  },
+  "candidates": [
+    {
+      "story": "OpenAI Agents API public beta",
+      "source": "https://openai.com/index/introducing-the-agents-api/",
+      "eventDate": "2026-09-10T00:00:00Z",
+      "decision": "selected",
+      "reason": "OpenAI News RSS now supplies an exact timestamp 32 hours 4 minutes 12.597 seconds before run start. The release is consequential, non-duplicate and supports a distinct adoption decision about managed orchestration, execution boundaries, data controls and outcome verification. The preceding run held this candidate because the RSS timestamp was not yet available; the newly available primary record resolves that gate."
+    },
+    {
+      "story": "Anthropic September 2026 misuse report",
+      "source": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "eventDate": "unknown",
+      "decision": "held-from-selection",
+      "reason": "The report is consequential and inside the discovery period by date, but the accessible primary page and PDF did not establish an exact publication time and timezone. Relative search age and a date encoded in a PDF filename cannot satisfy the automatic freshness gate."
+    },
+    {
+      "story": "OpenAI Data agent in ChatGPT Work",
+      "source": "https://openai.com/index/put-data-to-work/",
+      "eventDate": "2026-09-10T15:00:00Z",
+      "decision": "rejected",
+      "reason": "The RSS timestamp is exact and the launch is fresh, but available evidence remains dominated by OpenAI and named partner material. Its permission and connected-data consequence also overlaps recent Index Us coverage more closely than the selected managed-harness boundary."
+    },
+    {
+      "story": "ChatGPT for Financial Services",
+      "source": "https://openai.com/index/introducing-chatgpt-financial-services/",
+      "eventDate": "2026-09-10T07:00:00Z",
+      "decision": "rejected",
+      "reason": "The RSS timestamp is exact, but this is specialised vertical packaging. Responsible long-form coverage would require a deeper review of included datasets, entitlements, citation behaviour, regulated workflow controls and current contractual availability than this run could establish."
+    },
+    {
+      "story": "OpenAI US government access and cyber-defence offer",
+      "source": "https://openai.com/index/expanding-ai-access-us-government/",
+      "eventDate": "2026-09-10T07:00:00Z",
+      "decision": "rejected",
+      "reason": "The RSS time is exact, but the US-specific commercial and policy offer is less broadly useful to Index Us readers and would require separate verification of eligibility and government procurement terms."
+    },
+    {
+      "story": "GPT-6 Astra model launch",
+      "source": "https://openai.com/index/gpt-6-astra/",
+      "eventDate": "2026-09-03T11:00:00Z",
+      "decision": "rejected-stale",
+      "reason": "Fresh search results misleadingly presented the page as hours old, but OpenAI News RSS dates the underlying model launch to 3 September 2026, outside the 48-hour window. The 9 September enterprise-work page is follow-on positioning rather than a new model release."
+    },
+    {
+      "story": "Ory Agent Security general availability",
+      "source": "https://www.ory.com/blog/ory-launches-ory-agent-security",
+      "eventDate": "unknown",
+      "decision": "rejected",
+      "reason": "The vendor page presents a date but no source-verified exact event time and timezone, and the launch evidence is too vendor-led to support a broad automatic article."
+    },
+    {
+      "story": "Recent Index Us newsroom coverage and corrections",
+      "source": "https://index-us.com/articles/",
+      "eventDate": "unknown",
+      "decision": "already-covered",
+      "reason": "Recent article bodies and run records were checked for Harbor, Arm AI Portal, Google and Cisco agent security, Meta Muse, ChatGPT Images 2.5, the Codex quantum-lab case, subagent/skill contracts and GPT-Live-1. No material correction was found. The Agents API release is a separate managed developer platform, not a duplicate of the subagent study or voice-control article."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "The Agents API public beta is now backed by an exact within-window primary timestamp, creates a consequential non-duplicate operating boundary and earns long-form analysis. OpenAI documentation establishes what the platform manages and its current constraints; three independent research groups show why harness, horizon and task shape must be tested without being presented as confirmation of OpenAI's claims."
+  },
+  "story": {
+    "id": "openai-agents-api-managed-harness-boundary",
+    "eventDate": "2026-09-10T00:00:00Z",
+    "canonicalUrls": [
+      "https://openai.com/index/introducing-the-agents-api/"
+    ]
+  },
+  "articlePath": "src/content/articles/openai-agents-api-managed-harness-boundary.md",
+  "articleSha256": "34ef7cf945e0a7817158b7b7265c4be8b09748712b23baa9bcef401b50ce5f98",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://openai.com/news/rss.xml",
+      "title": "OpenAI News RSS",
+      "publisher": "OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "2026-09-10T00:00:00Z",
+      "eventDate": "2026-09-10T00:00:00Z",
+      "retrievedAt": "2026-09-11T08:09:14Z",
+      "locator": "RSS item Introducing the Agents API; pubDate Thu, 10 Sep 2026 00:00:00 GMT. Exact release timestamp only."
+    },
+    {
+      "id": "s2",
+      "url": "https://openai.com/index/introducing-the-agents-api/",
+      "title": "Introducing the Agents API",
+      "publisher": "OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "2026-09-10T00:00:00Z",
+      "eventDate": "2026-09-10T00:00:00Z",
+      "retrievedAt": "2026-09-11T08:09:14Z",
+      "locator": "Opening; Build cloud agents with a single API call; Choose your agent environment; OpenAI hosted sandboxes; Keep agents working across long sessions; Start building. Vendor account and customer examples only."
+    },
+    {
+      "id": "s3",
+      "url": "https://developers.openai.com/api/docs/guides/agents-api/overview",
+      "title": "Agents API overview",
+      "publisher": "OpenAI Developers",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "unknown",
+      "eventDate": "2026-09-10T00:00:00Z",
+      "retrievedAt": "2026-09-11T08:09:14Z",
+      "locator": "Overview lines 855-912 and data-controls note lines 1401-1402: managed responsibilities, concepts, capabilities, pricing, US-only residency and no ZDR. Mutable beta documentation rechecked during drafting."
+    },
+    {
+      "id": "s4",
+      "url": "https://developers.openai.com/api/docs/guides/agents-api/environments/openai-hosted",
+      "title": "OpenAI-hosted sandboxes",
+      "publisher": "OpenAI Developers",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-11T08:09:14Z",
+      "locator": "Configure the sandbox; Control network access; Files and lifetime; Sandbox expiry; Pricing. Mutable beta documentation rechecked during drafting."
+    },
+    {
+      "id": "s5",
+      "url": "https://developers.openai.com/api/docs/guides/agents-api/environments/self-hosted",
+      "title": "Self-hosted sandboxes",
+      "publisher": "OpenAI Developers",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-11T08:09:14Z",
+      "locator": "How the connection works; Prepare your environment; Network access; Authentication. Mutable beta documentation rechecked during drafting."
+    },
+    {
+      "id": "s6",
+      "url": "https://developers.openai.com/api/docs/guides/agents-api/environments/security",
+      "title": "Sandbox security",
+      "publisher": "OpenAI Developers",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-11T08:09:14Z",
+      "locator": "Lines 855-887: workload isolation, restricted network access, separated credentials and third-party credential brokering. Mutable beta documentation rechecked during drafting."
+    },
+    {
+      "id": "s7",
+      "url": "https://developers.openai.com/api/docs/guides/agents-api/sessions/manage",
+      "title": "Manage sessions",
+      "publisher": "OpenAI Developers",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-11T08:09:14Z",
+      "locator": "Handle required actions; Delete a session; line 1212 separates cancelling an active turn from deleting a session. Mutable beta documentation rechecked during drafting."
+    },
+    {
+      "id": "s8",
+      "url": "https://developers.openai.com/api/docs/guides/agents-api/observability",
+      "title": "Observability and usage",
+      "publisher": "OpenAI Developers",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-11T08:09:14Z",
+      "locator": "Overview lines 855-876; trace limits and model usage and cost lines 1467-1495. Mutable beta documentation rechecked during drafting."
+    },
+    {
+      "id": "s9",
+      "url": "https://arxiv.org/abs/2605.10912",
+      "title": "WildClawBench: A Benchmark for Real-World, Long-Horizon Agent Evaluation",
+      "publisher": "Ding and colleagues via arXiv",
+      "kind": "independent",
+      "independenceGroup": "wildclawbench-authors",
+      "publishedAt": "2026-05-11T17:49:43Z",
+      "eventDate": "2026-05-11T17:49:43Z",
+      "retrievedAt": "2026-09-11T08:09:14Z",
+      "locator": "Abstract and submission history: 60 tasks, average wall time and tool calls, 19 models, hybrid grading, best reported score and harness-effect boundary. Preprint; does not evaluate Agents API."
+    },
+    {
+      "id": "s10",
+      "url": "https://arxiv.org/abs/2609.01660",
+      "title": "How Fast Do Agents Rot? An Empirical Study of Long-Horizon Degradation in LLM Agents for Production Decision-Making",
+      "publisher": "Shubhra Mittal via arXiv",
+      "kind": "independent",
+      "independenceGroup": "mittal-long-horizon-study",
+      "publishedAt": "2026-08-31T19:11:47Z",
+      "eventDate": "2026-08-31T19:11:47Z",
+      "retrievedAt": "2026-09-11T08:09:14Z",
+      "locator": "Abstract and submission history: 10,664 trajectories, nine models, four task families, step-count degradation and limitations. Single-author preprint; does not evaluate Agents API."
+    },
+    {
+      "id": "s11",
+      "url": "https://metr.org/time-horizons/",
+      "title": "Task-Completion Time Horizons of Frontier AI Models",
+      "publisher": "METR",
+      "kind": "independent",
+      "independenceGroup": "metr",
+      "publishedAt": "2026-05-08",
+      "eventDate": "2026-05-08",
+      "retrievedAt": "2026-09-11T08:09:14Z",
+      "locator": "Definition and methodological details; lines 25-31, 47-76 and 114-123: time horizon meaning, task distribution, above-16-hour reliability warning and evaluation process. Does not evaluate Agents API."
+    }
+  ],
+  "claims": [
+    {
+      "id": "c01",
+      "text": "OpenAI News RSS timestamped the Agents API public-beta release at 2026-09-10T00:00:00Z.",
+      "type": "fact",
+      "sourceIds": ["s1"],
+      "sourceLocator": "RSS item pubDate",
+      "status": "supported"
+    },
+    {
+      "id": "c02",
+      "text": "OpenAI says the Agents API is available in public beta to all developers with no additional API fee, while models, tools and hosted sandbox compute retain their applicable charges.",
+      "type": "attributed_claim",
+      "sourceIds": ["s2", "s3", "s4"],
+      "sourceLocator": "s2 Start building; s3 Pricing; s4 Pricing",
+      "status": "supported"
+    },
+    {
+      "id": "c03",
+      "text": "The Agents API manages sessions, orchestration, context compaction and recovery while the application provides tools and chooses the execution environment.",
+      "type": "fact",
+      "sourceIds": ["s3"],
+      "sourceLocator": "s3 opening overview and core concepts",
+      "status": "supported"
+    },
+    {
+      "id": "c04",
+      "text": "The application remains responsible for deciding which data, tools and actions are available and for checking external state to determine whether work actually succeeded.",
+      "type": "inference",
+      "sourceIds": ["s3", "s5", "s6", "s7"],
+      "sourceLocator": "Premises: application-provided tools and environment; application-handled required actions; sandbox code access; separate external systems. Boundary: operational design inference, not an OpenAI guarantee.",
+      "status": "qualified"
+    },
+    {
+      "id": "c05",
+      "text": "Cancelling an active turn is distinct from deleting a session, and closing a hosted-sandbox event stream does not cancel the task.",
+      "type": "fact",
+      "sourceIds": ["s4", "s7"],
+      "sourceLocator": "s4 Sandbox expiry; s7 Delete a session note",
+      "status": "supported"
+    },
+    {
+      "id": "c06",
+      "text": "OpenAI-hosted sandboxes enable outbound network access by default unless a template supplies another policy, and support disabled or exact-host restricted modes.",
+      "type": "fact",
+      "sourceIds": ["s4"],
+      "sourceLocator": "s4 Control network access table",
+      "status": "supported"
+    },
+    {
+      "id": "c07",
+      "text": "In a self-hosted setup, OpenAI runs the harness while an executor in the builder's environment receives commands over an outbound connection using a restricted environment key.",
+      "type": "fact",
+      "sourceIds": ["s5"],
+      "sourceLocator": "s5 How the connection works; Authentication",
+      "status": "supported"
+    },
+    {
+      "id": "c08",
+      "text": "Agents API session state currently supports only United States data residency and does not support Zero Data Retention, including with a self-hosted sandbox.",
+      "type": "fact",
+      "sourceIds": ["s3"],
+      "sourceLocator": "s3 data-controls note lines 1401-1402",
+      "status": "supported"
+    },
+    {
+      "id": "c09",
+      "text": "Agent-generated code can access the files, credentials and network exposed to its environment; OpenAI recommends isolated workloads, separated keys and brokered third-party access.",
+      "type": "fact",
+      "sourceIds": ["s6"],
+      "sourceLocator": "s6 lines 861-887",
+      "status": "supported"
+    },
+    {
+      "id": "c10",
+      "text": "Detailed trace retrieval and external trace exporters are not part of the public-beta customer API, and usage values are best-effort rather than a final bill.",
+      "type": "fact",
+      "sourceIds": ["s8"],
+      "sourceLocator": "s8 lines 1467-1495",
+      "status": "supported"
+    },
+    {
+      "id": "c11",
+      "text": "The WildClawBench preprint reports 60 human-authored tasks averaging more than 20 tool calls, a best overall result of 62.2 per cent across 19 models, and up to an 18-point change for one model when the harness changed.",
+      "type": "attributed_claim",
+      "sourceIds": ["s9"],
+      "sourceLocator": "s9 abstract",
+      "status": "supported"
+    },
+    {
+      "id": "c12",
+      "text": "Mittal's preprint reports analysis of 10,664 trajectories across nine models and four task families, with the agentic task falling from near-perfect success to near zero within 16 dependent steps.",
+      "type": "attributed_claim",
+      "sourceIds": ["s10"],
+      "sourceLocator": "s10 abstract",
+      "status": "supported"
+    },
+    {
+      "id": "c13",
+      "text": "METR defines time horizon by the human-expert duration of a task at a given predicted success probability, not by agent connection time, and warns that current measurements above 16 hours are unreliable.",
+      "type": "fact",
+      "sourceIds": ["s11"],
+      "sourceLocator": "s11 definition, measurement warning and FAQ",
+      "status": "supported"
+    },
+    {
+      "id": "c14",
+      "text": "A managed harness may reduce orchestration work, but the adoption decision should be based on repeated end-to-end outcomes, failure recovery, authority, cancellation, data fit and total accepted-result cost.",
+      "type": "inference",
+      "sourceIds": ["s3", "s4", "s6", "s8", "s9", "s10", "s11"],
+      "sourceLocator": "Premises: managed capabilities and constraints plus independent evidence that harness and horizon affect outcomes. Boundary: proposed evaluation framework, not measured Agents API performance.",
+      "status": "qualified"
+    },
+    {
+      "id": "c15",
+      "text": "A session can receive input, stream or expose progress through webhooks, stop for required application action, continue or be steered, delegate to subagents and resume where it left off; skills, MCP, web search and programmatic tool calling are configurable capabilities.",
+      "type": "fact",
+      "sourceIds": ["s3", "s7"],
+      "sourceLocator": "s3 A session from start to finish and What the managed harness provides; s7 Handle required actions. Final copy uses the supported wording 'resume a session where it left off'.",
+      "status": "supported"
+    },
+    {
+      "id": "c16",
+      "text": "Standardising session state, compaction, reconnection and delegated-work mechanics can reduce an application's orchestration burden, but the benefit depends on the existing implementation.",
+      "type": "inference",
+      "sourceIds": ["s2", "s3", "s5"],
+      "sourceLocator": "Premises: s2 and s3 describe the managed harness and session lifecycle; s5 documents executor reconnection. Boundary: Index Us engineering inference, not measured effort reduction.",
+      "status": "qualified"
+    },
+    {
+      "id": "c17",
+      "text": "OpenAI describes three compute routes for the Agents API: an OpenAI-managed sandbox, the builder's own infrastructure and supported sandbox partners.",
+      "type": "attributed_claim",
+      "sourceIds": ["s2"],
+      "sourceLocator": "s2 Choose your agent environment. Final copy acknowledges all three routes and explicitly limits the detailed comparison to OpenAI-hosted and self-hosted options.",
+      "status": "supported"
+    },
+    {
+      "id": "c18",
+      "text": "Beginning a pilot with a minimal environment, narrow network access, separate workloads and brokered or revocable credentials is a risk-reduction recommendation rather than a tested Agents API result.",
+      "type": "inference",
+      "sourceIds": ["s4", "s5", "s6"],
+      "sourceLocator": "Premises: s4 network modes and configurable files/packages; s5 restricted executor key; s6 isolation, approved endpoints and credential brokering. Boundary: Index Us deployment recommendation.",
+      "status": "qualified"
+    },
+    {
+      "id": "c19",
+      "text": "The current United States-only session-state residency and lack of ZDR can make the API unsuitable for some regulated, contractual or highly sensitive workloads.",
+      "type": "inference",
+      "sourceIds": ["s3"],
+      "sourceLocator": "Premise: s3 data-controls note, linked adjacent to the final claim. Boundary: workload-fit inference; requirements vary by organisation and jurisdiction.",
+      "status": "qualified"
+    },
+    {
+      "id": "c20",
+      "text": "OpenAI says session events and saved history expose progress, outcomes and delegated work, while detailed traces remain dashboard-only and usage is best-effort, can change and is not a final bill.",
+      "type": "attributed_claim",
+      "sourceIds": ["s8"],
+      "sourceLocator": "s8 Overview, Inspect a turn trace, What contributes to cost and Understand token usage; the final trace/export clause carries an adjacent s8 link.",
+      "status": "supported"
+    },
+    {
+      "id": "c21",
+      "text": "The cited independent work supports testing complete outcomes across task horizons and harness choices, but it does not independently verify the Agents API or establish that managed compaction improves a particular workflow.",
+      "type": "inference",
+      "sourceIds": ["s9", "s10", "s11"],
+      "sourceLocator": "Premises: s9 reports harness sensitivity; s10 reports step-count degradation; s11 defines task-completion horizons and scope limits. Boundary is explicit in the final article.",
+      "status": "qualified"
+    }
+  ],
+  "drafting": {
+    "agentId": "/root/draft_research"
+  },
+  "editorial": {
+    "agentId": "/root/voice_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-11T08:34:54Z",
+    "articleSha256": "34ef7cf945e0a7817158b7b7265c4be8b09748712b23baa9bcef401b50ce5f98",
+    "notes": [
+      "Renewed editorial review replaced disconnection-causal wording with the documented capability to resume a session where it left off.",
+      "The environment comparison now acknowledges OpenAI-hosted, builder-hosted and supported partner routes while limiting detailed analysis to the two documented options examined.",
+      "Added adjacent overview and observability links for the volatile data-control and trace/exporter claims without changing their factual boundaries.",
+      "All other metadata, source links, limitations and prose were preserved; the inline SVG remains byte-identical and editorially acceptable."
+    ]
+  },
+  "factCheck": {
+    "status": "passed",
+    "agentId": "/root/factual_review",
+    "reviewedAt": "2026-09-11T08:37:36Z",
+    "articleSha256": "34ef7cf945e0a7817158b7b7265c4be8b09748712b23baa9bcef401b50ce5f98",
+    "claimsCoverage": true,
+    "notes": [
+      "Fresh live-public fallback checks reconfirmed the OpenAI RSS, launch, overview, hosted-sandbox, session-management and observability boundaries after the renewed edit; Firecrawl remained keyless-rate-limited.",
+      "All 21 material claims pass as supported, attributed or explicitly bounded inference on the exact final digest; the four initial review requests are resolved.",
+      "The source-use ledger records zero quoted words for all 11 sources and conservative derived-word estimates; independent research is used only as contextual evaluation evidence, not product confirmation.",
+      "The byte-identical story-specific SVG retains its approved style, originality, accessibility and non-evidentiary framing; formal responsive QA remains pending separately."
+    ]
+  },
+  "quality": {
+    "evidence": 33,
+    "context": 18,
+    "originalValue": 18,
+    "voice": 13,
+    "presentation": 9
+  },
+  "reviewStatus": "passed",
+  "riskFlags": [],
+  "quotes": [
+    {
+      "sourceId": "s1",
+      "words": 0,
+      "estimatedDerivedWords": 22,
+      "allowance": "Exact release timestamp and item identity only; no quotation."
+    },
+    {
+      "sourceId": "s2",
+      "words": 0,
+      "estimatedDerivedWords": 135,
+      "allowance": "Original summary of release, availability, compute choices and vendor reliability positioning; no quotation or customer-example reuse."
+    },
+    {
+      "sourceId": "s3",
+      "words": 0,
+      "estimatedDerivedWords": 250,
+      "allowance": "Original summary of managed responsibilities, session lifecycle, capabilities, pricing and data controls; no quotation."
+    },
+    {
+      "sourceId": "s4",
+      "words": 0,
+      "estimatedDerivedWords": 165,
+      "allowance": "Original summary of hosted-sandbox configuration, network defaults, lifecycle and container pricing; no quotation."
+    },
+    {
+      "sourceId": "s5",
+      "words": 0,
+      "estimatedDerivedWords": 100,
+      "allowance": "Original summary of self-hosted executor placement, outbound connection and restricted-key boundary; no quotation."
+    },
+    {
+      "sourceId": "s6",
+      "words": 0,
+      "estimatedDerivedWords": 120,
+      "allowance": "Original summary and recommendations derived from isolation, network and credential guidance; no quotation."
+    },
+    {
+      "sourceId": "s7",
+      "words": 0,
+      "estimatedDerivedWords": 58,
+      "allowance": "Original summary of required actions, turn cancellation and session deletion; no quotation."
+    },
+    {
+      "sourceId": "s8",
+      "words": 0,
+      "estimatedDerivedWords": 170,
+      "allowance": "Original summary of events, traces, usage uncertainty and cost accounting; no quotation."
+    },
+    {
+      "sourceId": "s9",
+      "words": 0,
+      "estimatedDerivedWords": 92,
+      "allowance": "Original abstract-level methods, figures and harness-sensitivity summary; no quotation."
+    },
+    {
+      "sourceId": "s10",
+      "words": 0,
+      "estimatedDerivedWords": 96,
+      "allowance": "Original abstract-level methods and step-count degradation summary; no quotation."
+    },
+    {
+      "sourceId": "s11",
+      "words": 0,
+      "estimatedDerivedWords": 115,
+      "allowance": "Original definition, reliability warning and task-distribution summary; no quotation."
+    }
+  ],
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered at 1280 by 900 in the local Astro preview. Title, 10-minute metadata, Index Us Editorial byline, exact automation disclosure, article headings and source section were present. Document and body scroll widths matched the 1280-pixel viewport. The original inline SVG rendered at 736 pixels wide with viewBox 0 0 800 560, accessible title and description, complete caption, no clipping or horizontal overflow, and no browser warnings or errors."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered at 390 by 844 in the local Astro preview. Document and body scroll widths matched the 390-pixel viewport. The original inline SVG rendered responsively at 350 by 245 pixels inside the article with its complete caption, no clipping or horizontal overflow, and no browser warnings or errors. The title, byline, disclosure and source section remained present; the mobile menu opened to six links and closed normally."
+    }
+  },
+  "artwork": {
+    "concept": "A vermilion managed session loop sits between a cobalt application boundary and two sage execution environments, with a separate stop gate. It shows the service-owned orchestration layer without implying that tools, authority or results are controlled automatically.",
+    "referencesInspected": [
+      "src/components/ArticleArtwork.astro",
+      "src/content/articles/gpt-live-1-interruption-control-loop.md",
+      "src/content/articles/subagents-skills-context-contracts.md",
+      "src/content/articles/openai-codex-quantum-lab-control-loop.md",
+      "src/content/articles/chatgpt-images-2-5-workflow-evaluation.md"
+    ],
+    "status": "passed editorial and factual review plus formal mobile and desktop render checks",
+    "requirements": {
+      "viewBox": "0 0 800 560",
+      "selfContained": true,
+      "scriptFree": true,
+      "externalResources": false,
+      "animation": false,
+      "accessibleTitleAndDescription": true,
+      "visibleOriginalCaption": true
+    },
+    "notes": "The byte-identical final SVG remains a distinct story-specific managed-harness composition in the established grid, registration-mark and palette system. It is explicitly labelled as a conceptual illustration rather than product architecture or measured evidence. Formal checks at 1280 by 900 and 390 by 844 confirmed responsive rendering without clipping, horizontal overflow or browser warnings and errors."
+  }
+}
