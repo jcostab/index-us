@@ -1,0 +1,498 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260912T021235Z",
+  "startedAt": "2026-09-12T02:12:35.500Z",
+  "completedAt": "2026-09-12T02:54:29Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-10T02:12:35.500Z",
+    "end": "2026-09-12T02:12:35.500Z"
+  },
+  "candidates": [
+    {
+      "story": "A2ABreak systematic security analysis of the A2A protocol",
+      "source": "https://arxiv.org/abs/2609.10871",
+      "eventDate": "2026-09-11T04:00:00Z",
+      "decision": "selected",
+      "reason": "The cs.CR RSS event is exact and 22 hours 12 minutes 35.5 seconds old at run start. The paper, released artifacts and current versioned specification support a consequential and bounded deployment decision. No existing article, source ledger or newsroom story covers A2ABreak, arXiv 2609.10871 or A2A context ownership."
+    },
+    {
+      "story": "MCP Registry usability paper retained from the prior run",
+      "source": "https://arxiv.org/abs/2609.10962",
+      "eventDate": "2026-09-10T01:33:53Z",
+      "decision": "rejected-stale",
+      "reason": "Its previously verified event time was 48 hours 38 minutes 42.5 seconds old at this run's start, outside the hard 48-hour publication window. A retained draft cannot override freshness."
+    },
+    {
+      "story": "Anthropic September 2026 threat intelligence report",
+      "source": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "eventDate": "unknown",
+      "decision": "rejected",
+      "reason": "The report is fresh by date, but the accessible primary material does not establish an unambiguous exact main-event time and timezone. Its operational-security theme also overlaps recent Index Us coverage more closely than the selected protocol-invariant analysis."
+    },
+    {
+      "story": "No-Box MCP paper",
+      "source": "https://arxiv.org/abs/2609.10854",
+      "eventDate": "2026-09-11T04:00:00Z",
+      "decision": "rejected-in-favour",
+      "reason": "The paper is fresh but substantially overlaps the held MCP Registry story. A2ABreak provides a more distinct reader decision with current specification evidence and released formal artifacts."
+    },
+    {
+      "story": "Autonomous penetration-testing agents paper",
+      "source": "https://arxiv.org/abs/2609.10780",
+      "eventDate": "2026-09-11T04:00:00Z",
+      "decision": "rejected",
+      "reason": "The study changes model, harness, autonomy and memory together, so an automatic long-form article could not attribute the result cleanly enough for a practical deployment recommendation."
+    },
+    {
+      "story": "Salesforce AI harness and job-ready agents announcement",
+      "source": "https://www.salesforce.com/news/stories/ai-agent-harness/",
+      "eventDate": "unknown",
+      "decision": "rejected",
+      "reason": "Available evidence is announcement-led and too thin for a defensible independent long-form claim about job readiness or harness performance."
+    },
+    {
+      "story": "OpenAI storage engineering post",
+      "source": "https://openai.com/index/scaling-postgresql/",
+      "eventDate": "unknown",
+      "decision": "rejected-in-favour",
+      "reason": "The post describes substantive infrastructure work but is not the strongest current AI deployment decision. The selected A2A analysis has a fresher exact event, primary artifacts and a clearer cross-organisation security consequence."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "A2ABreak is an exact-timestamped, priority-window and non-duplicate protocol-security development. The paper and artifacts identify testable missing invariants, while the current A2A specification supplies important countervailing evidence that authorisation is already mandatory. A2ASecBench adds independent implementation-oriented context without being presented as confirmation."
+  },
+  "story": {
+    "id": "a2a-protocol-security-invariants",
+    "eventDate": "2026-09-11T04:00:00Z",
+    "canonicalUrls": [
+      "https://arxiv.org/html/2609.10871"
+    ]
+  },
+  "articlePath": "src/content/articles/a2a-protocol-security-invariants.md",
+  "articleSha256": "b2a00d24320972b42b810d760cd9c6ee87cb26dab313e9befeb9040196039517",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://rss.arxiv.org/rss/cs.CR",
+      "title": "arXiv cs.CR updates RSS",
+      "publisher": "arXiv",
+      "kind": "primary",
+      "independenceGroup": "arxiv",
+      "publishedAt": "2026-09-11T04:00:00Z",
+      "eventDate": "2026-09-11T04:00:00Z",
+      "retrievedAt": "2026-09-12T02:23:59Z",
+      "locator": "Item title A2ABreak: Systematic Security Analysis of the A2A Protocol; guid oai:arXiv.org:2609.10871v1; pubDate Fri, 11 Sep 2026 00:00:00 -0400, equivalent to 2026-09-11T04:00:00Z. Timestamp and announcement identity only."
+    },
+    {
+      "id": "s2",
+      "url": "https://arxiv.org/html/2609.10871",
+      "title": "A2ABreak: Systematic Security Analysis of the A2A Protocol",
+      "publisher": "Lotfi, Rahman, Karim and Bertino via arXiv",
+      "kind": "primary",
+      "independenceGroup": "a2abreak-authors",
+      "publishedAt": "2026-09-09T22:18:36Z",
+      "eventDate": "2026-09-11T04:00:00Z",
+      "retrievedAt": "2026-09-12T02:23:59Z",
+      "locator": "Abstract; Sections III-A to III-C; V RQ1-RQ5; Table I; Section VI and Table III; conclusion and future work. Public arXiv v1 preprint."
+    },
+    {
+      "id": "s3",
+      "url": "https://github.com/arlotfi79/A2ABreak",
+      "title": "A2ABreak artifact repository",
+      "publisher": "A2ABreak authors",
+      "kind": "primary",
+      "independenceGroup": "a2abreak-authors",
+      "publishedAt": "2026-09-09T21:53:24Z",
+      "eventDate": "2026-09-09T21:53:24Z",
+      "retrievedAt": "2026-09-12T02:23:59Z",
+      "locator": "README repository layout and current main commit 71d88838164e18f922dafdfdc20271be300359b2; outputs/final_verified.json curated 11-finding list; pipeline source and outputs. Repository is author-produced evidence, not independent replication."
+    },
+    {
+      "id": "s4",
+      "url": "https://github.com/arlotfi79/A2ABreak/tree/main/formal_verification",
+      "title": "Formal Verification of the Detailed Findings",
+      "publisher": "A2ABreak authors",
+      "kind": "primary",
+      "independenceGroup": "a2abreak-authors",
+      "publishedAt": "2026-09-09T21:53:24Z",
+      "eventDate": "2026-09-09T21:53:24Z",
+      "retrievedAt": "2026-09-12T02:24:01Z",
+      "locator": "README What each model proves, Why two tools and Tool versions; Alloy context_receipt.json and skill_receipt.json; TLA+ finding9 result files. Three representative author models, not all 11 findings and not deployment tests."
+    },
+    {
+      "id": "s5",
+      "url": "https://github.com/a2aproject/A2A/blob/f63dbb48271940ca5bd421f87e27e4d6ec002795/docs/specification.md",
+      "title": "A2A Protocol Specification at f63dbb482719",
+      "publisher": "A2A Project",
+      "kind": "primary",
+      "independenceGroup": "a2a-project",
+      "publishedAt": "2026-08-28T13:17:33Z",
+      "eventDate": "2026-08-28T13:17:33Z",
+      "retrievedAt": "2026-09-12T02:24:01Z",
+      "locator": "Commit f63dbb48271940ca5bd421f87e27e4d6ec002795; Sections 3.4.1 and 3.4.3 context semantics; Sections 7.3-7.6.4 authentication, delegation and scope; Sections 8.3-8.7 Agent Card and signatures; Section 13.1 mandatory per-operation authorization and caller scoping; a2a.proto Task, Message, AgentSkill and AgentCard fields."
+    },
+    {
+      "id": "s6",
+      "url": "https://github.com/a2aproject/A2A/commits/main/docs/specification.md",
+      "title": "A2A specification commit history",
+      "publisher": "A2A Project contributors",
+      "kind": "primary",
+      "independenceGroup": "a2a-project",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-12T02:24:02Z",
+      "locator": "Specification history through f63dbb482719; commit 6550d344b39c dated 2026-07-30 clarifies in-task authorization scope; later August documentation fixes establish why this article pins an immutable current revision."
+    },
+    {
+      "id": "s8",
+      "url": "https://github.com/a2aproject/A2A/blob/f63dbb48271940ca5bd421f87e27e4d6ec002795/specification/a2a.proto",
+      "title": "A2A protocol data model at f63dbb482719",
+      "publisher": "A2A Project",
+      "kind": "primary",
+      "independenceGroup": "a2a-project",
+      "publishedAt": "2026-08-28T13:17:33Z",
+      "eventDate": "2026-08-28T13:17:33Z",
+      "retrievedAt": "2026-09-12T02:33:15Z",
+      "locator": "Task and Message context_id fields; AgentCard skills and signatures; AgentSkill id, name, description, tags, examples, input_modes, output_modes and security_requirements. The data model contains no Context entity with an owner, creator or access token."
+    },
+    {
+      "id": "s7",
+      "url": "https://safo-lab.github.io/A2ASecBench/",
+      "title": "A2ASecBench: A Protocol-Aware Security Benchmark for Agent-to-Agent Multi-Agent Systems",
+      "publisher": "Li, Chu, Zheng, Zhang, Gong and Xiao",
+      "kind": "independent",
+      "independenceGroup": "a2asecbench-authors",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-12T02:24:04Z",
+      "locator": "Project page title, author and affiliation block, ICLR 2026 status and abstract; taxonomy, six attack families, dynamic adapter, joint safety-utility method and evaluation on official A2A Project demos in travel, healthcare and finance. Independent context only; it does not evaluate A2ABreak."
+    }
+  ],
+  "claims": [
+    {
+      "id": "c01",
+      "text": "The arXiv cs.CR RSS feed announced A2ABreak at exactly 2026-09-11T04:00:00Z.",
+      "type": "fact",
+      "sourceIds": ["s1"],
+      "sourceLocator": "s1 item pubDate and guid",
+      "status": "supported"
+    },
+    {
+      "id": "c02",
+      "text": "The public A2ABreak text reviewed here is arXiv v1, submitted at 2026-09-09T22:18:36Z.",
+      "type": "fact",
+      "sourceIds": ["s2"],
+      "sourceLocator": "s2 header and arXiv submission history",
+      "status": "supported"
+    },
+    {
+      "id": "c03",
+      "text": "A2ABreak uses an LLM-assisted specification pipeline and reports 929 verified statements, a 37-state/76-transition A2A finite-state machine and 11 final findings under a full-compliance adversary.",
+      "type": "attributed_claim",
+      "sourceIds": ["s2", "s3"],
+      "sourceLocator": "s2 abstract, Sections III-IV, Section VI and Table III; s3 README and final_verified.json",
+      "status": "supported"
+    },
+    {
+      "id": "c04",
+      "text": "The paper does not verify specific agent implementations or production deployments and does not establish that every A2A implementation is vulnerable.",
+      "type": "fact",
+      "sourceIds": ["s2"],
+      "sourceLocator": "s2 Section III-A scope; the universal implementation conclusion is explicitly withheld in the final article",
+      "status": "supported"
+    },
+    {
+      "id": "c05",
+      "text": "At commit f63dbb482719, A2A section 13.1 requires authorization checks on every protocol-operation request and caller-scoped access boundaries, with specific checks for task listing, retrieval, cancellation, subscription and push-notification configuration.",
+      "type": "fact",
+      "sourceIds": ["s5"],
+      "sourceLocator": "s5 Section 13.1 Data Access and Authorization Scoping",
+      "status": "supported"
+    },
+    {
+      "id": "c06",
+      "text": "The current A2A specification defines contextId as an optional grouping value, permits context-only creation of a new task in an existing context, and allows an agent to maintain state or LLM context across interactions sharing that identifier.",
+      "type": "fact",
+      "sourceIds": ["s5", "s8"],
+      "sourceLocator": "s5 Sections 3.4.1 and 3.4.3; s8 Task and Message fields",
+      "status": "supported"
+    },
+    {
+      "id": "c07",
+      "text": "The protocol data model does not define a context owner, creator or context access token, while each agent defines its own authorization model.",
+      "type": "fact",
+      "sourceIds": ["s5", "s8"],
+      "sourceLocator": "s5 Section 13.1 Implementation Requirements; s8 Task and Message context_id fields; absence checked across the pinned specification and data model",
+      "status": "supported"
+    },
+    {
+      "id": "c08",
+      "text": "A2ABreak's context finding is best read as a missing required context-admission relationship within the general authorization model, not as evidence that A2A lacks authorization or that safe implementations cannot reject cross-boundary admission.",
+      "type": "inference",
+      "sourceIds": ["s2", "s4", "s5"],
+      "sourceLocator": "Premises: s2 Section VI context finding; s4 GapSurvivesSection131 model description; s5 Section 13.1 and context semantics. Boundary: Index Us reconciliation of the paper and current spec, not a maintainer ruling.",
+      "status": "qualified"
+    },
+    {
+      "id": "c09",
+      "text": "The A2A specification history includes a 30 July 2026 clarification of in-task authorization scope and further documentation changes through the pinned 28 August commit.",
+      "type": "fact",
+      "sourceIds": ["s6"],
+      "sourceLocator": "s6 commits 6550d344b39c and f63dbb482719",
+      "status": "supported"
+    },
+    {
+      "id": "c10",
+      "text": "The visible A2ABreak article refers to A2A v1.0 and a live specification URL but does not identify an immutable specification commit, so this article pins the comparison to f63dbb482719.",
+      "type": "fact",
+      "sourceIds": ["s2", "s5"],
+      "sourceLocator": "s2 Sections II-A and references; no commit identifier in visible article; s5 immutable commit used for current comparison",
+      "status": "supported"
+    },
+    {
+      "id": "c11",
+      "text": "The paper's cross-client context scenario assumes an authenticated caller knows another contextId and the server uses shared context state; the new task can then influence or receive a response informed by that state without directly retrieving the victim's task.",
+      "type": "attributed_claim",
+      "sourceIds": ["s2", "s3"],
+      "sourceLocator": "s2 Section VI finding 3; s3 final_verified.json context finding",
+      "status": "supported"
+    },
+    {
+      "id": "c12",
+      "text": "The released bounded Alloy context model records a counterexample while its encoded section 13.1 task rule holds and records no counterexample for its mitigation check after a context-owner relation is added.",
+      "type": "attributed_claim",
+      "sourceIds": ["s4"],
+      "sourceLocator": "s4 README What each model proves and results/finding3/context_receipt.json commands GapSurvivesSection131 and Mitigated",
+      "status": "supported"
+    },
+    {
+      "id": "c13",
+      "text": "Binding contexts to explicit principals, tenants, projects or authorized sets and checking admission before state access is a practical implementation control; opaque identifiers alone are not authorization.",
+      "type": "inference",
+      "sourceIds": ["s2", "s4", "s5"],
+      "sourceLocator": "Premises: context semantics, section 13.1 agent-defined authorization models, and author model's ownership mitigation. Boundary: Index Us implementation recommendation, not protocol requirement or tested result.",
+      "status": "qualified"
+    },
+    {
+      "id": "c14",
+      "text": "A2A permits chains of tasks in AUTH_REQUIRED, warns that in-band credentials can be exposed to agents along the chain, recommends binding credentials to the originating agent, and leaves authorization scope and representation to implementations, issuers or extensions.",
+      "type": "fact",
+      "sourceIds": ["s5"],
+      "sourceLocator": "s5 Sections 7.6.2, 7.6.3 and 7.6.4",
+      "status": "supported"
+    },
+    {
+      "id": "c15",
+      "text": "A2ABreak argues that the protocol lacks a standard origin and delegation-lineage object, and its TLA+ artifacts treat origin propagation and credential audience-binding as separate protections.",
+      "type": "attributed_claim",
+      "sourceIds": ["s2", "s4"],
+      "sourceLocator": "s2 Section VI finding 9; s4 README Multi-Hop Identity Loss and TLA configurations",
+      "status": "supported"
+    },
+    {
+      "id": "c16",
+      "text": "A multi-hop authorization deployment should retain auditable origin, chain and requested scope and issue credentials for narrow audiences and operations.",
+      "type": "inference",
+      "sourceIds": ["s4", "s5"],
+      "sourceLocator": "Premises: s5 chain exposure and credential-binding guidance; s4 provenance and binding model. Boundary: Index Us deployment recommendation, not current A2A guarantee.",
+      "status": "qualified"
+    },
+    {
+      "id": "c17",
+      "text": "AgentSkill contains descriptive capability fields, while AgentCard supports JWS signatures; with a trusted verification key, a card signature can authenticate an assertion's publisher and integrity but does not demonstrate capability truth or quality.",
+      "type": "inference",
+      "sourceIds": ["s4", "s5", "s8"],
+      "sourceLocator": "Premises: s8 AgentSkill, AgentCard and AgentCardSignature; s5 Agent Card sections; s4 README Unattested Skill Claims. Boundary: cryptographic distinction and deployment interpretation, not a performance test.",
+      "status": "qualified"
+    },
+    {
+      "id": "c18",
+      "text": "The released bounded Alloy skill model records a counterexample for a signed but false capability assertion and records no counterexample for its signed-attestation restoration check within the tested scope.",
+      "type": "attributed_claim",
+      "sourceIds": ["s4"],
+      "sourceLocator": "s4 README and results/finding1/skill_receipt.json commands SignedCapabilityHonored and SignedAttestationRestores",
+      "status": "supported"
+    },
+    {
+      "id": "c19",
+      "text": "Across five A2ABreak analysis runs, 17 unique candidates were found, 16 passed the authors' adversarial stage, and expert manual review removed one duplicate and four false positives, producing 11 final findings with reported precision 73.3 per cent and F1 84.6 per cent.",
+      "type": "attributed_claim",
+      "sourceIds": ["s2"],
+      "sourceLocator": "s2 Section V RQ2, lines describing candidate and expert-review counts",
+      "status": "supported"
+    },
+    {
+      "id": "c20",
+      "text": "For FSM extraction validation the authors used TCP and PSMBench as a proxy, recovering 11 of 11 states and 19 of 20 transitions while extracting 25 transitions in total, because no equivalent A2A ground truth exists.",
+      "type": "attributed_claim",
+      "sourceIds": ["s2", "s3"],
+      "sourceLocator": "s2 Section V RQ2 and Table I; s3 PSM_Benchmark artifacts",
+      "status": "supported"
+    },
+    {
+      "id": "c21",
+      "text": "The released repository contains the curated 11-finding file and formal artifacts for only three detailed findings: context ownership, skill attestation and multi-hop identity loss.",
+      "type": "fact",
+      "sourceIds": ["s3", "s4"],
+      "sourceLocator": "s3 repository layout and outputs/final_verified.json; s4 README findings table",
+      "status": "supported"
+    },
+    {
+      "id": "c22",
+      "text": "The released bounded models can demonstrate counterexamples and mitigation properties under their encoded assumptions, but they do not measure exploit prevalence, implementation quality or unmodelled production behaviour.",
+      "type": "inference",
+      "sourceIds": ["s2", "s4"],
+      "sourceLocator": "Premises: s2 scope and future simulation work; s4 bounded Alloy and TLA+ model descriptions. Boundary: formal-method interpretation explicitly stated in the article.",
+      "status": "qualified"
+    },
+    {
+      "id": "c23",
+      "text": "The accepted ICLR 2026 A2ASecBench work defines six A2A attack families, pairs adversarial and benign evaluation, and evaluates official A2A demonstration systems across travel, healthcare and finance.",
+      "type": "attributed_claim",
+      "sourceIds": ["s7"],
+      "sourceLocator": "s7 venue line and abstract",
+      "status": "supported"
+    },
+    {
+      "id": "c24",
+      "text": "A2ASecBench is independent context for implementation-oriented security and utility testing, but it does not confirm A2ABreak's 11 specification findings.",
+      "type": "inference",
+      "sourceIds": ["s2", "s7"],
+      "sourceLocator": "Premises: the papers examine different methods, attack families and evidence objects. Boundary: explicit non-confirmation statement in final article.",
+      "status": "qualified"
+    },
+    {
+      "id": "c25",
+      "text": "A deployment evaluation should convert context admission, delegation lineage, capability assurance and lifecycle risks into acceptance tests and run matched benign tasks to measure compatibility costs.",
+      "type": "inference",
+      "sourceIds": ["s2", "s5", "s7"],
+      "sourceLocator": "Premises: paper findings, current mandatory controls and A2ASecBench joint safety-utility method. Boundary: Index Us practical evaluation framework, not a measured result.",
+      "status": "qualified"
+    }
+  ],
+  "drafting": {
+    "agentId": "/root/draft_research"
+  },
+  "editorial": {
+    "agentId": "/root/editorial_review",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-12T02:47:18Z",
+    "articleSha256": "b2a00d24320972b42b810d760cd9c6ee87cb26dab313e9befeb9040196039517",
+    "notes": [
+      "Completed the publication edit after reading the full edit-johns-content skill and both required references; preserved the complete claims, source and limitation ledger while tightening the opening, transitions and conclusion.",
+      "Removed concentrated generic-launch, signpost and mirrored-opposition patterns; retained the three-finding sequence and five acceptance tests because each carries distinct technical meaning.",
+      "Inspected the original 800x560 inline SVG against ArticleArtwork.astro and the two required rendered-example source compositions; changed verified transport to authenticated transport to avoid implying a test result.",
+      "Approved the 1,762-word first edited copy for independent factual review and rendered QA, with the preprint, replication, specification-version and non-testing limitations kept explicit.",
+      "Renewed the editorial review after adding the factual reviewer's required trusted-verification-key condition to the Agent Card signature claim. The five-word qualification is coherent with the surrounding cryptographic distinction, introduces no new stylistic pattern and leaves the following capability-attestation boundary intact."
+    ]
+  },
+  "factCheck": {
+    "status": "passed",
+    "agentId": "/root/factual_review",
+    "reviewedAt": "2026-09-12T02:48:48Z",
+    "articleSha256": "b2a00d24320972b42b810d760cd9c6ee87cb26dab313e9befeb9040196039517",
+    "claimsCoverage": true,
+    "notes": [
+      "Independently reopened all eight final sources and rechecked the complete final copy after the trusted-verification-key correction; all exact URLs returned HTTP 200 through direct live retrieval after Firecrawl remained keyless-rate-limited.",
+      "All 25 material claims pass as supported, attributed or explicitly bounded inference on the exact final digest, including the 17-to-16-to-11 accounting, TCP proxy figures, section 13.1 counterweight and immutable specification provenance.",
+      "A2ASecBench is a distinct ICLR 2026 evidence family used only for implementation-level safety and utility context, not as replication of A2ABreak; the source-use ledger contains no quotations.",
+      "The final 800x560 SVG passed independent factual, originality, accessibility and non-evidentiary review; formal responsive desktop and mobile QA remains pending separately."
+    ]
+  },
+  "quality": {
+    "evidence": 33,
+    "context": 18,
+    "originalValue": 18,
+    "voice": 14,
+    "presentation": 9
+  },
+  "reviewStatus": "passed",
+  "riskFlags": [],
+  "quotes": [
+    {
+      "sourceId": "s1",
+      "words": 0,
+      "estimatedDerivedWords": 24,
+      "allowance": "Event timestamp and item identity only; no quotation."
+    },
+    {
+      "sourceId": "s2",
+      "words": 0,
+      "estimatedDerivedWords": 430,
+      "allowance": "Original synthesis of method, counts, findings and limitations across the paper; no quotation and no reproduced attack trace."
+    },
+    {
+      "sourceId": "s3",
+      "words": 0,
+      "estimatedDerivedWords": 105,
+      "allowance": "Original summary of repository contents and curated output; no quotation or copied source."
+    },
+    {
+      "sourceId": "s4",
+      "words": 0,
+      "estimatedDerivedWords": 230,
+      "allowance": "Original summary of three formal models, receipts and limitations; no quotation or model reproduction."
+    },
+    {
+      "sourceId": "s5",
+      "words": 0,
+      "estimatedDerivedWords": 370,
+      "allowance": "Original specification analysis covering authorization, context, delegation, credentials and Agent Cards; no quotation. Code identifiers and RFC keywords are technical terms."
+    },
+    {
+      "sourceId": "s6",
+      "words": 0,
+      "estimatedDerivedWords": 45,
+      "allowance": "Commit subjects and dates used only to explain revision pinning; no quotation."
+    },
+    {
+      "sourceId": "s7",
+      "words": 0,
+      "estimatedDerivedWords": 125,
+      "allowance": "Original abstract-level summary of benchmark scope, attack families and joint safety-utility context; no quotation and no numeric performance claims."
+    },
+    {
+      "sourceId": "s8",
+      "words": 0,
+      "estimatedDerivedWords": 75,
+      "allowance": "Data-model field inspection for context and capability claims; no quotation. Identifiers and field names are technical terms."
+    }
+  ],
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered the exact approved digest in a fresh local Astro preview and isolated headless Chrome session at 1280 by 900. The full title, description, 9-minute metadata, Index Us Editorial byline, publication date, exact disclosure, heading hierarchy and eight-source section were present and readable. Document and body scroll widths equalled the 1280-pixel viewport with no overflowing elements or broken images. The original inline SVG rendered at 736 by 515.19 pixels with viewBox 0 0 800 560, accessible title and description, complete conceptual caption and no clipping. Primary navigation exposed five links. Browser events contained only Vite connection debug messages and no warnings, errors or exceptions."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered the exact approved digest in the same fresh preview using Chrome device-metrics emulation at 390 by 844. The title, description, byline, date and exact disclosure wrapped cleanly; document and body scroll widths equalled 390 pixels with no overflowing elements or broken images. The original SVG rendered responsively at 350 by 245 pixels inside 20-to-370-pixel bounds with its accessible metadata and complete non-evidentiary caption. The Sources section listed all eight links. Opening the mobile menu exposed All articles, News, Analysis, Guides, About and Follow via RSS, then it closed normally. Browser events contained only Vite connection debug messages and no warnings, errors or exceptions."
+    }
+  },
+  "artwork": {
+    "concept": "Four cross-organisation agent nodes share an authenticated cobalt transport path. Three distinct vertical gates represent context ownership, delegation lineage and capability assurance. Open vermilion tokens show trust information point-to-point authentication does not supply; bounded sage tokens show controls made explicit by the application.",
+    "referencesInspected": [
+      "src/components/ArticleArtwork.astro",
+      "src/content/articles/subagents-skills-context-contracts.md",
+      "src/content/articles/openai-agents-api-managed-harness-boundary.md"
+    ],
+    "status": "passed editorial and factual review plus formal mobile and desktop render checks",
+    "requirements": {
+      "viewBox": "0 0 800 560",
+      "selfContained": true,
+      "scriptFree": true,
+      "externalResources": false,
+      "animation": false,
+      "accessibleTitleAndDescription": true,
+      "visibleOriginalCaption": true
+    },
+    "notes": "The drafting agent inspected the shared artwork component and the two required article SVGs before authoring this distinct composition. The editor independently inspected the same references and final SVG, confirmed its story-specific geometry, palette, accessibility and opening placement, and changed verified transport to authenticated transport so the conceptual caption cannot imply a test result. The factual reviewer independently inspected the complete final SVG and both comparison compositions and confirmed the illustration is accessible, story-specific and non-evidentiary. The caption explicitly says the original illustration is not architecture or attack evidence. Formal Chrome checks at 1280 by 900 and 390 by 844 confirmed the complete SVG and caption render without clipping or horizontal overflow; the exact approved digest remained unchanged."
+  },
+  "researchTooling": {
+    "firecrawl": "npx firecrawl-cli 1.23.3 was unauthenticated and the keyless tier returned a rate-limit error before results",
+    "fallback": "Direct live public retrieval, GitHub public API and the arXiv, A2A and A2ASecBench public pages were used. All registered URLs returned HTTP 200 between 2026-09-12T02:23:59Z and 2026-09-12T02:33:15Z."
+  }
+}
