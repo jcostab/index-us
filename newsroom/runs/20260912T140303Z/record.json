@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260912T140303Z",
+  "startedAt": "2026-09-12T14:03:03.734Z",
+  "completedAt": "2026-09-12T14:50:50Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {"start":"2026-09-10T14:03:03.734Z","end":"2026-09-12T14:03:03.734Z"},
+  "candidates": [
+    {"story":"terms.txt consent and compensation protocol","source":"https://arxiv.org/abs/2609.11152","eventDate":"2026-09-12T04:00:00Z","decision":"selected","reason":"Fresh exact-timestamped preprint with source code, a distinct machine-access decision and independent standards and economic context."},
+    {"story":"RubyGems May spam-campaign findings attributed to OpenAI agents","source":"https://blog.rubygems.org/2026/09/11/update-may-spam-publishing-campaign.html","eventDate":"unknown","decision":"defer","reason":"Potentially consequential update to existing incident coverage, but RubyGems cannot determine agent attribution and its page exposes date-level publication plus synthetic midnight metadata rather than a trustworthy exact event time."},
+    {"story":"GPT-6 Astra business-work announcement and Cognition customer story","source":"https://openai.com/index/gpt-6-astra-next-generation-work/","eventDate":"unknown","decision":"rejected","reason":"The main page says the model was introduced last week and supplies no reliable new exact event timestamp; the fresh customer story is promotional first-party material and recent site coverage is already OpenAI-heavy."},
+    {"story":"Agent Incident Registry","source":"https://arxiv.org/abs/2609.11030","eventDate":"2026-09-12T04:00:00Z","decision":"rejected","reason":"The RSS abstract exposes unresolved template placeholders; reliable coverage would require a separate artifact audit and overlaps recent incident-disclosure coverage."},
+    {"story":"Benchmark Radar","source":"https://arxiv.org/abs/2609.11115","eventDate":"2026-09-12T04:00:00Z","decision":"rejected","reason":"Verifying catalogue completeness and score histories needs an artifact audit and the site recently covered Harbor and benchmark method."},
+    {"story":"Nemotron IMO open recipe","source":"https://arxiv.org/abs/2609.10712","eventDate":"2026-09-12T04:00:00Z","decision":"rejected","reason":"The reported competition result and specialist checkpoints need full method, data and competition-condition review and offer less immediate cross-organisation consequence."},
+    {"story":"BenchShield reward-integrity instrumentation","source":"https://arxiv.org/abs/2609.11028","eventDate":"2026-09-12T04:00:00Z","decision":"rejected","reason":"The trajectory corpus and baseline comparisons need artifact-level verification and the evaluation-infrastructure theme overlaps recent benchmark coverage."}
+  ],
+  "decision": {"kind":"new","reason":"terms.txt is a fresh, non-duplicate and consequential design proposal that supports a concrete deployment decision while its preprint, prototype and benchmark limits can be stated precisely."},
+  "story": {"id":"terms-txt-agentic-web-access","eventDate":"2026-09-12T04:00:00Z","canonicalUrls":["https://arxiv.org/html/2609.11152"]},
+  "articlePath": "src/content/articles/terms-txt-agentic-web-access.md",
+  "articleSha256": "a109c3f6edf0c30a3d46d8f6b03ca7d157b8b8e2038a1c80d540d01cad5cf7f8",
+  "sources": [
+    {"id":"s1","url":"https://rss.arxiv.org/rss/cs.AI","title":"arXiv cs.AI updates RSS","publisher":"arXiv","kind":"primary","independenceGroup":"arxiv","publishedAt":"2026-09-12T04:00:00Z","eventDate":"2026-09-12T04:00:00Z","retrievedAt":"2026-09-12T14:05:38Z","locator":"Item lines 1561-1572: title, abs URL, v1 guid, categories and pubDate Sat, 12 Sep 2026 00:00:00 -0400."},
+    {"id":"s2","url":"https://arxiv.org/html/2609.11152","title":"terms.txt: A Consent and Compensation Protocol for Agentic Web Access","publisher":"Rajarshi Chowdhury","kind":"primary","independenceGroup":"terms-txt-author","publishedAt":"2026-09-10","eventDate":"2026-09-12T04:00:00Z","retrievedAt":"2026-09-12T14:05:39Z","locator":"Abstract; Sections IV-VII; Tables I-II; Sections VIII-X. Protocol, comparisons, benchmark and limitations."},
+    {"id":"s3","url":"https://github.com/rch0wdhury/terms-txt","title":"terms.txt v0.1 reference implementation","publisher":"Rajarshi Chowdhury","kind":"primary","independenceGroup":"terms-txt-author","publishedAt":"2026-09-07","eventDate":"2026-09-07T16:47:47Z","retrievedAt":"2026-09-12T14:07:20Z","locator":"README sections The file, The exchange, Files, Running and Status; release v0.1; commit b6f8d5d409ddb000149a04ac84b4e570ef9abd41."},
+    {"id":"s4","url":"https://datatracker.ietf.org/doc/draft-ietf-webbotauth-httpsig-protocol/","title":"Web Bot Auth protocol draft","publisher":"IETF Web Bot Auth Working Group","kind":"independent","independenceGroup":"ietf-webbotauth","publishedAt":"2026-09-01","eventDate":"2026-09-01","retrievedAt":"2026-09-12T14:07:20Z","locator":"Datatracker status; Status of This Memo; Sections 2.1, 4.1, 4.6 and 5.1-5.5."},
+    {"id":"s5","url":"https://datatracker.ietf.org/wg/webbotauth/about/","title":"Web Bot Auth working-group charter","publisher":"IETF Web Bot Auth Working Group","kind":"independent","independenceGroup":"ietf-webbotauth","publishedAt":"unknown","eventDate":"unknown","retrievedAt":"2026-09-12T14:07:20Z","locator":"Charter purpose, Scope, Deliverables and liaison; exclusions for end-user authentication, intent vocabulary and reputation."},
+    {"id":"s6","url":"https://datatracker.ietf.org/doc/draft-ietf-aipref-vocab/","title":"A vocabulary for AI usage preferences","publisher":"IETF AIPREF Working Group","kind":"independent","independenceGroup":"ietf-aipref","publishedAt":"2026-08-18","eventDate":"2026-08-18","retrievedAt":"2026-09-12T14:07:20Z","locator":"Datatracker status; Sections 1, 3.2 and 4. Draft status, train-ai and search vocabulary and non-enforcement boundary."},
+    {"id":"s7","url":"https://datatracker.ietf.org/doc/draft-ietf-aipref-attach/","title":"Attaching AI usage preferences to content","publisher":"IETF AIPREF Working Group","kind":"independent","independenceGroup":"ietf-aipref","publishedAt":"2026-08-18","eventDate":"2026-08-18","retrievedAt":"2026-09-12T14:07:20Z","locator":"Datatracker status; Sections 1-3. Content-Usage field and robots.txt attachment."},
+    {"id":"s8","url":"https://www.rfc-editor.org/rfc/rfc9309.html","title":"Robots Exclusion Protocol","publisher":"RFC Editor","kind":"independent","independenceGroup":"ietf-rfc9309","publishedAt":"unknown","eventDate":"unknown","retrievedAt":"2026-09-12T14:07:20Z","locator":"Published September 2022; exact day unavailable. Sections 1, 2.2 and 3. REP vocabulary and statements that it is not authorisation or an application-security substitute."},
+    {"id":"s9","url":"https://blog.cloudflare.com/introducing-pay-per-crawl/","title":"Introducing Pay Per Crawl","publisher":"Cloudflare","kind":"independent","independenceGroup":"cloudflare","publishedAt":"2025-07-01","eventDate":"2025-07-01","retrievedAt":"2026-09-12T14:07:20Z","locator":"Publisher controls; payment headers; settlement; private-beta statement. First-party product evidence only."},
+    {"id":"s10","url":"https://blog.cloudflare.com/content-independence-day-ai-options/","title":"New AI traffic options","publisher":"Cloudflare","kind":"independent","independenceGroup":"cloudflare","publishedAt":"2026-07-01","eventDate":"2026-07-01","retrievedAt":"2026-09-12T14:07:20Z","locator":"Taxonomy, 15 September defaults, BotBase, content-use preferences, Verified status and live options. First-party product evidence only."},
+    {"id":"s11","url":"https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/","title":"Google users are less likely to click on links when an AI summary appears in the results","publisher":"Pew Research Center","kind":"independent","independenceGroup":"pew","publishedAt":"2025-07-22","eventDate":"2025-07-22","retrievedAt":"2026-09-12T14:07:20Z","locator":"Method, sample and click/session findings; independent context only; reconstructed result-page limitation retained."}
+  ],
+  "claims": [
+    {"id":"c01","text":"arXiv announced terms.txt at exactly 2026-09-12T04:00:00Z.","type":"fact","sourceIds":["s1"],"sourceLocator":"RSS item pubDate and guid","status":"supported"},
+    {"id":"c02","text":"The public work is a single-author arXiv v1 preprint and its software labels itself v0.1.","type":"fact","sourceIds":["s2","s3"],"sourceLocator":"s2 header; s3 Status and release","status":"supported"},
+    {"id":"c03","text":"The proposal joins a per-path and per-purpose terms file, Web Bot Auth signatures, signed intent, optional delegation and payment, and signed receipts at an origin.","type":"attributed_claim","sourceIds":["s2","s3"],"sourceLocator":"s2 abstract and Sections V-VI; s3 The file and The exchange","status":"supported"},
+    {"id":"c04","text":"The file can describe unsigned handling and allow, charge or deny decisions by purpose, with use, price and delegation scope.","type":"attributed_claim","sourceIds":["s2","s3"],"sourceLocator":"s2 Section V example and parser description; s3 The file","status":"supported"},
+    {"id":"c05","text":"The proposed exchange returns served content and a receipt, HTTP 402 for payment, 401 for identity failures or 403 for refusal.","type":"attributed_claim","sourceIds":["s2","s3"],"sourceLocator":"s2 Section V; s3 The exchange","status":"supported"},
+    {"id":"c06","text":"A signature makes identity and a declared intent attributable, but does not prove intent truth or govern later use of delivered content.","type":"inference","sourceIds":["s2","s4"],"sourceLocator":"s2 Sections VI and VIII; s4 Sections 4.1 and 4.6","status":"qualified"},
+    {"id":"c07","text":"The repository contains a dependency-free Node.js prototype, 24 checks, raw results and a local resolver; grammar, delegation and receipt formats remain open.","type":"fact","sourceIds":["s3"],"sourceLocator":"Files, Running and Status","status":"supported"},
+    {"id":"c08","text":"RFC 9309 standardises crawler path rules but says they are not access authorisation and are not a substitute for application security.","type":"fact","sourceIds":["s8"],"sourceLocator":"Sections 1 and 3","status":"supported"},
+    {"id":"c09","text":"AIPREF vocabulary revision 07 and attachment revision 05 are active Internet-Drafts defining train-ai and search preferences and attachment through HTTP Content-Usage or robots.txt.","type":"fact","sourceIds":["s6","s7"],"sourceLocator":"s6 status and Sections 3-4; s7 status and Sections 1-3","status":"supported"},
+    {"id":"c10","text":"AIPREF does not ensure preferences are followed or decide the legal, technical or contractual compliance mechanism.","type":"fact","sourceIds":["s6"],"sourceLocator":"Section 3.2","status":"supported"},
+    {"id":"c11","text":"Web Bot Auth draft 00 uses HTTP Message Signatures and HTTPS key discovery so a verifier can associate a signed request with a published key and URL.","type":"fact","sourceIds":["s4"],"sourceLocator":"Abstract and Sections 4.1, 5.2 and 5.5","status":"supported"},
+    {"id":"c12","text":"Web Bot Auth leaves authorisation and delegation out of the protocol; its charter also excludes end-user authentication and an intent vocabulary.","type":"fact","sourceIds":["s4","s5"],"sourceLocator":"s4 Section 4.6; s5 Scope","status":"supported"},
+    {"id":"c13","text":"Identity, preference, authorisation, settlement and delivery evidence are separate mechanisms in the inspected sources; terms.txt is one proposed composition rather than an adopted unified protocol.","type":"inference","sourceIds":["s3","s4","s5","s6","s7","s8","s9","s10"],"sourceLocator":"Cross-source comparison; absence claim bounded to inspected sources","status":"qualified"},
+    {"id":"c14","text":"Cloudflare describes Pay Per Crawl as a private beta with allow, charge or block choices, 402 price negotiation and Cloudflare acting as merchant of record.","type":"attributed_claim","sourceIds":["s9"],"sourceLocator":"Named product and settlement sections","status":"supported"},
+    {"id":"c15","text":"Cloudflare says Search, Agent and Training controls are live, use signals in robots.txt remain preferences, and new-domain defaults change on 2026-09-15.","type":"attributed_claim","sourceIds":["s10"],"sourceLocator":"Taxonomy, defaults, content-use and closing sections","status":"supported"},
+    {"id":"c16","text":"Cloudflare's controls show one vendor's composition but do not establish vendor-neutral interoperability.","type":"inference","sourceIds":["s4","s5","s6","s7","s9","s10"],"sourceLocator":"Product scope compared with standards documents","status":"qualified"},
+    {"id":"c17","text":"Pew analysed 68,879 Google searches from 900 consenting US adults; traditional-result clicks were 8 per cent with AI summaries and 15 per cent without, and summary citations were clicked in 1 per cent of AI-summary visits.","type":"fact","sourceIds":["s11"],"sourceLocator":"Method and results","status":"supported"},
+    {"id":"c18","text":"Because Pew reconstructed result pages after the observed month, the study does not establish each participant's exact exposure or causation.","type":"inference","sourceIds":["s11"],"sourceLocator":"Method and stated reconstruction limitation","status":"qualified"},
+    {"id":"c19","text":"The paper reports 0.201 to 0.650 milliseconds of added median latency across its identity-to-paid scenarios.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"Table II","status":"supported"},
+    {"id":"c20","text":"The benchmark used one shared 2.1 GHz Xeon vCPU, loopback without TLS, pre-signed headers, five runs per concurrency level, 10,000 measured requests and 3,000 warm-ups.","type":"fact","sourceIds":["s2"],"sourceLocator":"Section VII and Table II","status":"supported"},
+    {"id":"c21","text":"The prototype used local discovery, mock vouchers and a local receipt chain; the inspected sources report no field deployment or multi-origin interoperability test.","type":"fact","sourceIds":["s2","s3"],"sourceLocator":"s3 Status; s2 Sections VII and IX; absence bounded to inspected evidence","status":"qualified"},
+    {"id":"c22","text":"Those benchmark conditions do not establish Internet latency, production throughput, live settlement reliability or operational cost.","type":"inference","sourceIds":["s2","s3"],"sourceLocator":"Premises in benchmark and implementation limitations","status":"qualified"},
+    {"id":"c23","text":"Index Us did not run the code or reproduce the checks or figures.","type":"fact","sourceIds":["s2","s3"],"sourceLocator":"This run's retained activity record contains no execution or reproduction test","status":"supported"},
+    {"id":"c24","text":"A site can use the proposal as a checklist separating identity, purpose, delegation, enforcement and accounting before choosing mechanisms.","type":"inference","sourceIds":["s2","s3","s4","s5","s6","s7","s8","s9","s10"],"sourceLocator":"Practical synthesis; not a standard requirement","status":"qualified"},
+    {"id":"c25","text":"Stronger evidence would include standardisation, independent interoperable implementations and real-network testing with remote discovery, TLS, settlement and misuse.","type":"inference","sourceIds":["s2","s3","s4","s5","s6","s7"],"sourceLocator":"Evidence threshold derived from documented gaps; not a forecast","status":"qualified"}
+  ],
+  "sourceUse": [
+    {"sourceId":"s1","quotedWords":0,"derivedWords":23,"handling":"Announcement identity and timestamp only."},
+    {"sourceId":"s2","quotedWords":0,"derivedWords":430,"handling":"Original synthesis of design, benchmark and limitations; no reproduced abstract, example file, tables or narrative."},
+    {"sourceId":"s3","quotedWords":0,"derivedWords":150,"handling":"Repository contents, status and prototype boundaries; no copied README passage."},
+    {"sourceId":"s4","quotedWords":0,"derivedWords":155,"handling":"Draft status, identity mechanics and scope."},
+    {"sourceId":"s5","quotedWords":0,"derivedWords":65,"handling":"Charter exclusions only."},
+    {"sourceId":"s6","quotedWords":0,"derivedWords":100,"handling":"Vocabulary and non-enforcement boundary."},
+    {"sourceId":"s7","quotedWords":0,"derivedWords":55,"handling":"Attachment mechanisms and draft status."},
+    {"sourceId":"s8","quotedWords":0,"derivedWords":75,"handling":"Original summary of REP scope and security warning."},
+    {"sourceId":"s9","quotedWords":0,"derivedWords":145,"handling":"First-party product status and flow with attribution."},
+    {"sourceId":"s10","quotedWords":0,"derivedWords":155,"handling":"First-party taxonomy, preferences and dated defaults with attribution."},
+    {"sourceId":"s11","quotedWords":0,"derivedWords":145,"handling":"Original summary of method, denominators, results and limitation."}
+  ],
+  "quotes": [{"sourceId":"s1","words":0},{"sourceId":"s2","words":0},{"sourceId":"s3","words":0},{"sourceId":"s4","words":0},{"sourceId":"s5","words":0},{"sourceId":"s6","words":0},{"sourceId":"s7","words":0},{"sourceId":"s8","words":0},{"sourceId":"s9","words":0},{"sourceId":"s10","words":0},{"sourceId":"s11","words":0}],
+  "drafting": {"agentId":"/root/newsroom_drafter","completedAt":"2026-09-12T14:08:41Z","notes":["The original draft is retained unchanged in .newsroom-work/20260912T140303Z/draft.md.","Firecrawl produced four non-empty discovery result files; two targeted queries returned no results and search feedback could not authenticate.","The article and story-specific inline SVG require distinct editorial, factual and responsive-render review."]},
+  "editorial": {
+    "agentId": "/root/newsroom_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-12T14:42:44Z",
+    "articleSha256": "a109c3f6edf0c30a3d46d8f6b03ca7d157b8b8e2038a1c80d540d01cad5cf7f8",
+    "notes": [
+      "Completed the publication edit after reading the full edit-johns-content skill and both required references; preserved the complete claim, qualification, source, metadata and testing-boundary set.",
+      "Reduced repeated opposition and generic signposting, tightened the benchmark interpretation and made the Cloudflare section more concrete without changing factual meaning or attribution.",
+      "Inspected the complete 800x560 inline SVG against ArticleArtwork.astro and three recent story-specific examples; its request, gate, refusal and receipt composition is original within the house style, accessible and explicitly labelled conceptual rather than evidentiary.",
+      "Renewed the publication edit after the factual reviewer requested the exact crawler-exact-price header and nearby primary links for the benchmark and prototype-limit passages.",
+      "Renewed the review again after the exact repository build rejected the description length; shortened only that field to 180 characters while preserving the preprint proposal, joined web-access mechanisms, useful boundary and unproved interoperability and production evidence."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/newsroom_factcheck",
+    "reviewedAt": "2026-09-12T14:46:32Z",
+    "articleSha256": "a109c3f6edf0c30a3d46d8f6b03ca7d157b8b8e2038a1c80d540d01cad5cf7f8",
+    "status": "passed",
+    "claimsCoverage": true,
+    "notes": [
+      "Confirmed by digest reconstruction and direct diff that the build fix changed only the frontmatter description from the previously approved article.",
+      "The exact 180-character description remains supported by the preprint's proposed exchange and the paper/repository limits on interoperability and production evidence.",
+      "Fresh Firecrawl 1.23.3 rechecks of s2, s3, s9 and s10 confirmed the proposal, benchmark and prototype boundaries, exact crawler-exact-price mechanism and future 15 September defaults.",
+      "All c01-c25 claims, source-use boundaries, byline/disclosure and the byte-identical accessible story-specific SVG remain approved; responsive rendering is pending separately."
+    ]
+  },
+  "quality": {"evidence":33,"context":18,"originalValue":18,"voice":13,"presentation":9},
+  "riskFlags": [],
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered the exact approved digest from the fresh static build in an isolated Codex browser at 1280 by 900. The full title, 180-character description, 8-minute metadata, Index Us Editorial byline, publication date, exact disclosure, heading hierarchy and all 11 source labels were present and readable. Document and body scroll widths both equalled 1280 pixels, no element overflow or broken image was found, and browser logs contained no warnings or errors. The original inline SVG rendered at 736 by 515.20 pixels with viewBox 0 0 800 560, role img, linked accessible title and description, its complete conceptual caption and no clipping."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered the same exact approved digest at 390 by 844. The title, description, byline, date and exact disclosure wrapped cleanly; document and body scroll widths both equalled 390 pixels with no overflowing elements or broken images. The original inline SVG rendered responsively at 350 by 245 pixels inside the 20-to-370-pixel article bounds with its accessible title, description and complete non-evidentiary caption. All 11 source labels were present. Opening the mobile menu exposed All articles, News, Analysis, Guides, About and Follow via RSS, then it closed normally. Browser logs contained no warnings or errors."
+    }
+  },
+  "artwork": {
+    "concept": "A signed cobalt machine request crosses separate identity, terms and payment gates before a sage receipt returns to a ledger, while a vermilion refusal path terminates outside the origin.",
+    "referencesInspected": [
+      "src/components/ArticleArtwork.astro",
+      "src/content/articles/a2a-protocol-security-invariants.md",
+      "src/content/articles/subagents-skills-context-contracts.md",
+      "src/content/articles/openai-agents-api-managed-harness-boundary.md"
+    ],
+    "status": "passed editorial and factual review plus formal mobile and desktop render checks",
+    "requirements": {
+      "viewBox": "0 0 800 560",
+      "selfContained": true,
+      "scriptFree": true,
+      "externalResources": false,
+      "animation": false,
+      "accessibleTitleAndDescription": true,
+      "visibleOriginalCaption": true
+    },
+    "notes": "The drafting agent created a story-specific inline SVG in the established geometric editorial style after inspecting the shared artwork component and three recent inline examples. The separate editor and factual reviewer approved its originality, relevance, accessibility and explicit non-evidentiary framing. Browser QA at 1280 by 900 and 390 by 844 confirmed the complete SVG and caption render without clipping or horizontal overflow; the article digest remained unchanged."
+  },
+  "discovery": {"firecrawl":{"globalCliAvailable":false,"npxVersion":"1.23.3","successfulSearches":[".newsroom-work/20260912T140303Z/.firecrawl/search-broad-news.json",".newsroom-work/20260912T140303Z/.firecrawl/search-primary-labs.json",".newsroom-work/20260912T140303Z/.firecrawl/search-rubygems.json",".newsroom-work/20260912T140303Z/.firecrawl/search-terms-txt.json"],"zeroResultSearches":["site:rubyhack.ai RubyGems OpenAI agents September 11 2026","site:blog.rubygems.org OpenAI agents spam publishing September 11 2026"],"feedback":"Attempted on the first search within the requested window, but the CLI opened an authentication prompt and no successful feedback event was recorded."}}
+}
