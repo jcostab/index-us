@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260912T200258Z",
+  "startedAt": "2026-09-12T20:02:58.090Z",
+  "completedAt": "2026-09-12T20:35:45Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-10T20:02:58.090Z",
+    "end": "2026-09-12T20:02:58.090Z"
+  },
+  "candidates": [
+    {"story":"OpenAI Habitat online-storage engineering account","source":"https://openai.com/index/scaling-storage-one-billion-users-part-one","eventDate":"2026-09-11T10:00:00Z","decision":"selected","reason":"The live RSS supplies an exact within-window timestamp, the post discloses concrete and testable infrastructure mechanisms, independent systems sources contextualise them, and no existing article or run uses this story identity or canonical URL. The unresolved RSS/current-page request-rate conflict is disclosed and the conclusion does not depend on either number."},
+    {"story":"Cognition helps Devin test its own work with GPT-6 Astra","source":"https://openai.com/index/cognition-devin-testing-with-astra","eventDate":"2026-09-11T16:00:00Z","decision":"rejected","reason":"The exact-timestamped page is a short customer story built around a demonstration and customer expectations. It supplies no retained test method, baseline, failure rate or independent result and overlaps recent Astra, agent and evaluation coverage."},
+    {"story":"Anthropic September 2026 threat-intelligence report","source":"https://www.anthropic.com/threat-intelligence-report-september-2026","eventDate":"unknown","decision":"rejected","reason":"The primary page and PDF are dated 10 September but accessible evidence does not establish an exact publication time and timezone, so the event may be outside the hard 48-hour gate at final review. Its threat-reporting theme overlaps recent agent-security and protocol-security coverage."},
+    {"story":"Harness State of Agent DLC 2026 survey","source":"https://www.harness.io/the-state-of-agent-dlc-2026","eventDate":"unknown","decision":"rejected","reason":"The vendor-commissioned July survey covers 700 technology professionals and is based on self-reported confidence, controls and incidents rather than observed deployment telemetry. Independent reporting supplies recency but not independent validation, and the control-gap angle overlaps recent agent-security and managed-harness coverage."},
+    {"story":"Recent Index Us newsroom coverage and corrections","source":"https://index-us.com/articles/","eventDate":"unknown","decision":"checked","reason":"All 21 current article files and all public newsroom records were checked by title, body, source URL, story identity and candidate notes. No Habitat duplicate, canonical-source collision or material correction target was found."}
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "OpenAI's exact-timestamped Habitat engineering account is fresh, non-duplicate and sufficiently substantive for a bounded infrastructure decision. Independent sources establish relevant tail-latency, overload-feedback, fixed-query, connection-pooling and partitioning context without being presented as confirmation of OpenAI's internal metrics."
+  },
+  "story": {
+    "id": "openai-habitat-bounded-work-feedback-loops",
+    "eventDate": "2026-09-11T10:00:00Z",
+    "canonicalUrls": ["https://openai.com/index/scaling-storage-one-billion-users-part-one"]
+  },
+  "articlePath": "src/content/articles/openai-habitat-bounded-work-feedback-loops.md",
+  "articleSha256": "1d71cd6259befd4b30b1742fb8aec5bb7d01e1e72cd8bd13d2770b5cb50bc955",
+  "sources": [
+    {"id":"s1","url":"https://openai.com/news/rss.xml","title":"OpenAI News RSS","publisher":"OpenAI","kind":"primary","independenceGroup":"openai","publishedAt":"2026-09-11T10:00:00Z","eventDate":"2026-09-11T10:00:00Z","retrievedAt":"2026-09-12T20:08:08Z","locator":"Live XML item title/link, pubDate Fri, 11 Sep 2026 10:00:00 GMT, and description stating 22M requests per second."},
+    {"id":"s2","url":"https://openai.com/index/scaling-storage-one-billion-users-part-one","title":"Rapidly scaling online storage to serve over 1 billion ChatGPT users","publisher":"OpenAI","kind":"primary","independenceGroup":"openai","publishedAt":"2026-09-11T10:00:00Z","eventDate":"2026-09-11T10:00:00Z","retrievedAt":"2026-09-12T20:08:08Z","locator":"Current introduction and sections What is Habitat, Build a service, Tracking the asyncio delay, Reducing a tail latency, Balancing loads, Avoiding flooding downstream resources, Why Habitat does less, and Migrate from Python to Rust. Current page says 70M+ RPS; the exact event time comes from s1."},
+    {"id":"s3","url":"https://research.google/pubs/the-tail-at-scale/","title":"The Tail at Scale","publisher":"Google Research","kind":"independent","independenceGroup":"google-research","publishedAt":"unknown","eventDate":"unknown","retrievedAt":"2026-09-12T20:09:00Z","locator":"Publication metadata and abstract: scale and utilisation can make temporary high-latency episodes dominate whole-service response. Context only; does not evaluate Habitat."},
+    {"id":"s4","url":"https://sre.google/sre-book/addressing-cascading-failures/","title":"Addressing Cascading Failures","publisher":"Google SRE","kind":"independent","independenceGroup":"google-sre","publishedAt":"unknown","eventDate":"unknown","retrievedAt":"2026-09-12T20:09:00Z","locator":"Server Overload, Resource Exhaustion, Queue Management, Load Shedding and Graceful Degradation, and Retries: positive feedback, in-flight work, early rejection and realistic overload testing."},
+    {"id":"s5","url":"https://engineering.fb.com/2014/11/14/production-engineering/solving-the-mystery-of-link-imbalance-a-metastable-failure-state-at-scale/","title":"Solving the Mystery of Link Imbalance: A Metastable Failure State at Scale","publisher":"Meta Engineering","kind":"independent","independenceGroup":"meta-engineering","publishedAt":"2014-11-14","eventDate":"2014-11-14","retrievedAt":"2026-09-12T20:09:30Z","locator":"The Clue, Unintended Consequences in a Custom MySQL Connection Pool, and Simple Fix: latency-fed MRU feedback, LRU/max-age change and manual reproduction under both policies. Different system from Habitat."},
+    {"id":"s6","url":"https://www.usenix.org/system/files/conference/atc13/atc13-bronson.pdf","title":"TAO: Facebook's Distributed Data Store for the Social Graph","publisher":"USENIX Association","kind":"independent","independenceGroup":"meta-usenix-tao","publishedAt":"unknown","eventDate":"unknown","retrievedAt":"2026-09-12T20:09:30Z","locator":"2013 USENIX ATC paper, PDF pages 1-5, especially sections 2.1, 2.2, 3.4, 4.1 and 4.2: service-side control, minimal fixed API, bounded range calls, sharding and one-cache-server request mapping."},
+    {"id":"s7","url":"https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/upstream/connection_pooling","title":"Connection pooling","publisher":"Envoy Project","kind":"independent","independenceGroup":"envoy-project","publishedAt":"unknown","eventDate":"unknown","retrievedAt":"2026-09-12T20:09:45Z","locator":"HTTP/1.1 and HTTP/2 sections: request-to-connection behaviour, multiplexing, concurrent-stream limits and pool growth. Mutable documentation; does not disclose OpenAI configuration."},
+    {"id":"s8","url":"https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/upstream/circuit_breaking","title":"Circuit breaking","publisher":"Envoy Project","kind":"independent","independenceGroup":"envoy-project","publishedAt":"unknown","eventDate":"unknown","retrievedAt":"2026-09-12T20:09:45Z","locator":"Current circuit-breaking controls for cluster connections, pending and active requests, retries and concurrent pools; mutable documentation and not OpenAI configuration evidence."},
+    {"id":"s9","url":"https://learn.microsoft.com/en-us/azure/cosmos-db/partitioning","title":"Partitioning and horizontal scaling in Azure Cosmos DB","publisher":"Microsoft Learn","kind":"independent","independenceGroup":"microsoft-azure","publishedAt":"2026-05-21","eventDate":"unknown","retrievedAt":"2026-09-12T20:09:45Z","locator":"Logical partitions, Physical partitions, Choose a partition key, Common partition key anti-patterns and read-heavy containers: transaction scope, throughput distribution, hot partitions and cross-partition trade-offs."}
+  ],
+  "claims": [
+    {"id":"c01","text":"The live OpenAI News RSS feed timestamps the Habitat engineering article at 2026-09-11T10:00:00Z.","type":"fact","sourceIds":["s1"],"sourceLocator":"s1 RSS item pubDate and canonical link","status":"supported"},
+    {"id":"c02","text":"OpenAI's current article says Habitat supports products used by more than one billion people weekly, handles more than 70 million requests per second across almost 40 regions and stores more than 500 petabytes.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"s2 opening scale summary and figure 01 labels","status":"supported"},
+    {"id":"c03","text":"The live RSS description says 22 million requests per second while the current article says more than 70 million, and the available primary evidence does not explain which state or correction produced the discrepancy.","type":"fact","sourceIds":["s1","s2"],"sourceLocator":"s1 item description compared with s2 current page introduction; the cause remains unknown","status":"qualified"},
+    {"id":"c04","text":"OpenAI says Habitat began as a Python client library for GPTs at DevDay 2023 and later became an online storage service used across ChatGPT, the API, Codex and internal services.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"s2 introduction, figure 01 and What is Habitat","status":"supported"},
+    {"id":"c05","text":"OpenAI says the client implementation had become brittle to update across dozens of services by mid-2025, prompting a move to a standalone service.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"s2 Build a service to better support multiple, complex products","status":"supported"},
+    {"id":"c06","text":"The standalone service centralises deployment, observability, routing and storage controls, creating one place to constrain request shapes and enforce policy.","type":"inference","sourceIds":["s2","s6"],"sourceLocator":"Premises: s2 service rationale and platform responsibilities; s6 service-side-control precedent. Boundary: choke-point benefit is an Index Us architecture interpretation.","status":"qualified"},
+    {"id":"c07","text":"Habitat exposes a constrained NoSQL object-and-edge API rather than arbitrary SQL, complex joins or unrestricted graph traversal.","type":"fact","sourceIds":["s2"],"sourceLocator":"s2 Why Habitat does less","status":"supported"},
+    {"id":"c08","text":"OpenAI says an object and its outgoing edges are co-located in a storage-level partition, but the remote object referenced by an edge can reside in another account or region, making multi-hop traversal inefficient.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"s2 Why Habitat does less, graph-partitioning paragraphs","status":"supported"},
+    {"id":"c09","text":"OpenAI says complex analytical and search access is served through change data capture into isolated Rockset instances owned and scaled by client teams.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"s2 Why Habitat does less, offline secondary-view paragraphs","status":"supported"},
+    {"id":"c10","text":"The TAO paper describes a minimal fixed-query object-and-association API, bounded association range calls, logical sharding and cache tiers in which one cache server completes each request.","type":"fact","sourceIds":["s6"],"sourceLocator":"s6 abstract and sections 2.2, 3.4, 4.1 and 4.2","status":"supported"},
+    {"id":"c11","text":"Current Azure Cosmos DB documentation says logical partitions are selected by partition key, uneven request distribution can create hot partitions, and keys that do not align with queries can force cross-partition work.","type":"fact","sourceIds":["s9"],"sourceLocator":"s9 Logical partitions, Physical partitions, Common partition key anti-patterns and read-heavy containers","status":"supported"},
+    {"id":"c12","text":"The Tail at Scale explains that growth and higher utilisation can make otherwise temporary latency outliers dominate the response of a large interactive service.","type":"fact","sourceIds":["s3"],"sourceLocator":"s3 abstract","status":"supported"},
+    {"id":"c13","text":"OpenAI says an average user request can trigger hundreds of database calls, making a slow constituent call visible in the overall response.","type":"attributed_claim","sourceIds":["s2","s3"],"sourceLocator":"s2 Launching a Python service at scale; s3 is general context, not confirmation of the OpenAI count","status":"qualified"},
+    {"id":"c14","text":"Habitat's Python service used asyncio for I/O concurrency while routing, compression, encryption, checksumming, health checking, shadowing and hedging consumed CPU; OpenAI says ready coroutines sometimes waited after storage had responded.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"s2 Tracking the asyncio delay and Concurrency is not CPU parallelism","status":"supported"},
+    {"id":"c15","text":"OpenAI measured event-loop scheduling delay by comparing expected and actual periodic-task execution and reports jitter of hundreds of milliseconds at high utilisation and seconds in some edge cases.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"s2 Tracking the asyncio delay, post-figure explanation","status":"supported"},
+    {"id":"c16","text":"OpenAI says it kept concurrency low per Python process and instead scaled out worker-process count to control event-loop delay.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"s2 Tracking the asyncio delay conclusion","status":"supported"},
+    {"id":"c17","text":"OpenAI says an unjittered one-minute feature-flag refresh parsed a large configuration across up to eight processes per pod, and a targeted configuration, longer interval and jitter removed that identified latency spike.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"s2 Reducing a tail latency in our feature flag configurations","status":"supported"},
+    {"id":"c18","text":"Before load-balancing changes, OpenAI says some Habitat processes handled five to ten times the average number of concurrent requests.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"s2 Balancing loads and managing connection pools","status":"supported"},
+    {"id":"c19","text":"OpenAI reports that LIFO connection reuse selected slower-returning connections more often after a burst, capping reuse duration limited the degradation, and a FIFO patch broke the feedback loop and reduced steady-state variance.","type":"attributed_claim","sourceIds":["s2","s5"],"sourceLocator":"s2 Balancing loads and figures 04A/04B; s5 is a related precedent, not confirmation of Habitat","status":"qualified"},
+    {"id":"c20","text":"OpenAI says Habitat now mostly relies on Istio and Envoy for connection pooling and server-load-aware balancing.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"s2 Balancing loads and managing connection pools conclusion","status":"supported"},
+    {"id":"c21","text":"Meta's 2014 report describes an MRU pool that preserved link congestion after the initiating event and an LRU-plus-maximum-age fix tested by repeatedly triggering old and new policies.","type":"fact","sourceIds":["s5"],"sourceLocator":"s5 Unintended Consequences in a Custom MySQL Connection Pool and Simple Fix","status":"supported"},
+    {"id":"c22","text":"Google SRE describes overload as a positive-feedback risk in which slower work increases in-flight requests and resource consumption while retries or load redistribution can amplify the failure.","type":"fact","sourceIds":["s4"],"sourceLocator":"s4 Server Overload, Resource Exhaustion and Retries","status":"supported"},
+    {"id":"c23","text":"FIFO is not universally preferable: Google SRE describes cases where LIFO request queues can prioritise still-useful work, so a pool or queue policy must be assessed against the actual workload and feedback path.","type":"inference","sourceIds":["s2","s4","s5"],"sourceLocator":"Premises: s2 Habitat pool outcome; s4 Queue Management and Load Shedding; s5 separate MRU incident. Boundary: policy-selection recommendation, not a universal benchmark result.","status":"qualified"},
+    {"id":"c24","text":"OpenAI says many low-concurrency Python processes multiplied downstream connections, and Habitat used Envoy for connection fan-in, HTTP/2 multiplexing, rate limits and circuit breakers.","type":"attributed_claim","sourceIds":["s2","s7","s8"],"sourceLocator":"s2 Avoiding flooding downstream resources; s7-s8 establish current Envoy capabilities but not OpenAI configuration","status":"qualified"},
+    {"id":"c25","text":"Current Envoy documentation says HTTP/2 pools multiplex concurrent requests on a connection and circuit breakers can limit connections, pending and active requests, retries and concurrent pools.","type":"fact","sourceIds":["s7","s8"],"sourceLocator":"s7 HTTP/2 and s8 circuit-breaking limit list","status":"supported"},
+    {"id":"c26","text":"OpenAI says two engineers using Codex and GPT-5.5 rewrote Habitat in Rust in Q2 2026; the Rust service now handles 95 per cent of production requests and is six times as CPU-efficient and 15 times as memory-efficient, with lower average and tail latency.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"s2 Migrate from Python to Rust","status":"supported"},
+    {"id":"c27","text":"The OpenAI post does not publish the matched workload, hardware baseline, benchmark method or underlying measurements needed to reproduce its Rust efficiency comparison.","type":"fact","sourceIds":["s2"],"sourceLocator":"s2 complete current article, especially Migrate from Python to Rust; limitation established by inspection","status":"qualified"},
+    {"id":"c28","text":"A practical service review should bound request fan-out, measure scheduler and queue delay, inspect per-instance concurrency and connection feedback, test overload and deployments, and align partition design with access patterns before treating a rewrite as the primary fix.","type":"inference","sourceIds":["s2","s3","s4","s5","s6","s7","s8","s9"],"sourceLocator":"Premises: documented Habitat mechanisms and independent systems guidance. Boundary: Index Us recommendation, not measured Habitat performance or a universal prescription.","status":"qualified"},
+    {"id":"c29","text":"OpenAI says ordinary deployments could create CPU churn as connections cycled and a connection leak could exhaust a NAT gateway.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"s2 Avoiding flooding downstream resources","status":"supported"},
+    {"id":"c30","text":"The public OpenAI post does not provide enough Habitat partition-key or storage-configuration detail for an external audit of its partition choices.","type":"fact","sourceIds":["s2","s9"],"sourceLocator":"s2 complete current article and Why Habitat does less; s9 provides current general partition-key criteria, not Habitat configuration. Limitation established by inspection.","status":"qualified"}
+  ],
+  "drafting": {"agentId":"/root/newsroom_draft"},
+  "editorial": {
+    "agentId": "/root/newsroom_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-12T20:24:28Z",
+    "articleSha256": "1d71cd6259befd4b30b1742fb8aec5bb7d01e1e72cd8bd13d2770b5cb50bc955",
+    "notes": [
+      "Reorganised the article around the reader's operating review rather than the source post's API-to-rewrite sequence.",
+      "Preserved attributed claims, source links, the unresolved 22M-versus-70M discrepancy and documentation-only limitations.",
+      "Removed formulaic oppositions and repeated summaries while retaining the supported FIFO caveat and practical audit.",
+      "Approved the original inline SVG as story-specific, accessible, self-contained and explicitly non-evidentiary; responsive rendering remains pending."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/newsroom_factcheck",
+    "reviewedAt": "2026-09-12T20:30:46Z",
+    "articleSha256": "1d71cd6259befd4b30b1742fb8aec5bb7d01e1e72cd8bd13d2770b5cb50bc955",
+    "status": "passed",
+    "claimsCoverage": true
+  },
+  "quality": {"evidence":33,"context":19,"originalValue":18,"voice":14,"presentation":9},
+  "riskFlags": [],
+  "quotes": [
+    {"sourceId":"s1","words":0,"estimatedDerivedWords":32,"allowance":"Item identity, exact timestamp and conflicting RSS-summary metric only; no quotation."},
+    {"sourceId":"s2","words":0,"estimatedDerivedWords":690,"allowance":"Original synthesis of current scale claims, service evolution, bounded API, scheduler delay, pool feedback, downstream protection and attributed Rust results; no quotation."},
+    {"sourceId":"s3","words":0,"estimatedDerivedWords":64,"allowance":"Original abstract-level tail-latency context; no quotation and no implication that it evaluated Habitat."},
+    {"sourceId":"s4","words":0,"estimatedDerivedWords":115,"allowance":"Original synthesis of positive feedback, overload, early rejection, queue and test guidance; no quotation."},
+    {"sourceId":"s5","words":0,"estimatedDerivedWords":135,"allowance":"Original summary of a distinct historical metastable connection-pool incident and tested fix; no quotation."},
+    {"sourceId":"s6","words":0,"estimatedDerivedWords":125,"allowance":"Original summary of fixed-query API, bounded range calls and sharded cache architecture; no quotation."},
+    {"sourceId":"s7","words":0,"estimatedDerivedWords":47,"allowance":"Original summary of current HTTP/2 pooling and multiplexing behaviour; no quotation."},
+    {"sourceId":"s8","words":0,"estimatedDerivedWords":43,"allowance":"Original summary of current circuit-breaking limits; no quotation."},
+    {"sourceId":"s9","words":0,"estimatedDerivedWords":120,"allowance":"Original summary of partition keys, hot partitions and cross-partition trade-offs; no quotation."}
+  ],
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered at 1280x900 from the exact production build. Title, byline, disclosure, article navigation, all nine source links and the original inline SVG/caption were present. The story SVG rendered at 736x515.2 CSS pixels within its 736-pixel content column, with no horizontal overflow, clipping, broken imagery or browser warnings/errors."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered at 390x844 from the exact production build. The story SVG rendered responsively at 350x245 CSS pixels between 20-pixel margins, its caption wrapped naturally, all nine source links and disclosure were present, and the six-link mobile menu expanded correctly. No horizontal overflow, clipping, broken imagery or browser warnings/errors were found."
+    }
+  },
+  "artwork": {
+    "status": "passed",
+    "concept": "A bounded field of requests passes through a service choke point. A separated cobalt/sage FIFO path distributes work across partitions while a vermilion LIFO loop returns work towards one overloaded partition.",
+    "referencesInspected": ["src/components/ArticleArtwork.astro","src/content/articles/terms-txt-agentic-web-access.md","src/content/articles/openai-agents-api-managed-harness-boundary.md","src/content/articles/chatgpt-images-2-5-workflow-evaluation.md","src/content/articles/a2a-protocol-security-invariants.md","src/content/articles/gpt-live-1-interruption-control-loop.md","src/content/articles/google-adversarial-ai-security-boundary.md","src/content/articles/openai-codex-quantum-lab-control-loop.md","src/content/articles/meta-muse-permission-scope.md","src/content/articles/subagents-skills-context-contracts.md"],
+    "implementation": "Self-contained inline SVG with viewBox 0 0 800 560, responsive dimensions, no scripts, external resources or animation, accessible title/description and visible non-evidentiary caption.",
+    "editorialReview": {
+      "agentId": "/root/newsroom_editor",
+      "reviewedAt": "2026-09-12T20:24:28Z",
+      "verdict": "passed-source-inspection",
+      "notes": "Distinct bounded-request and feedback-loop composition matches the established geometric editorial palette and conventions. The SVG has a responsive 800x560 viewBox, accessible title and description, no scripts, external resources or animation, and a visible caption that prevents readers from treating it as OpenAI architecture or measured evidence. Mobile and desktop rendering remain pending."
+    },
+    "factualReview": {
+      "agentId": "/root/newsroom_factcheck",
+      "reviewedAt": "2026-09-12T20:30:46Z",
+      "verdict": "passed-source-inspection",
+      "articleSha256": "1d71cd6259befd4b30b1742fb8aec5bb7d01e1e72cd8bd13d2770b5cb50bc955",
+      "notes": "The story-specific request-gate, distributed-path and feedback-loop composition fits the established geometric editorial system and is source-level accessible, self-contained and explicitly non-evidentiary. Its caption and accessible description prevent the stable/unstable paths from being presented as OpenAI architecture or measured data. Responsive rendering remains pending."
+    },
+    "responsiveRender": {
+      "reviewedAt": "2026-09-12T20:35:07Z",
+      "desktop": {
+        "width": 1280,
+        "height": 900,
+        "verdict": "passed"
+      },
+      "mobile": {
+        "width": 390,
+        "height": 844,
+        "verdict": "passed"
+      },
+      "notes": "The original story-specific SVG retained its complete geometry and caption at both widths without horizontal overflow or clipping. Browser console warning/error checks were empty, and the mobile navigation expanded to all six links."
+    }
+  },
+  "freshness": {"eventAgeAtRunStartSeconds":122578.09,"marginAtRunStartSeconds":50221.91,"eventAgeAtDraftCheckSeconds":123552,"marginAtDraftCheckSeconds":49248,"draftCheckedAt":"2026-09-12T20:19:12Z","eventAgeAtFactCheckSeconds":124246,"marginAtFactCheckSeconds":48554,"factCheckedAt":"2026-09-12T20:30:46Z"},
+  "duplicateCheck": "All 21 current article files and all public newsroom run records were inspected by story identity, canonical URL, title, source and body search. No Habitat duplicate or correction target was found."
+}
