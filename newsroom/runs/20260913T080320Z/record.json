@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260913T080320Z",
+  "startedAt": "2026-09-13T08:03:20.413Z",
+  "completedAt": "2026-09-13T08:38:50Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {"start": "2026-09-11T08:03:20.413Z", "end": "2026-09-13T08:03:20.413Z"},
+  "candidates": [
+    {"story":"Salesforce job-ready agents and long-horizon runtime","source":"https://www.salesforce.com/news/stories/agentforce-job-ready-ai-agents/","eventDate":"2026-09-11T12:00:00Z","decision":"selected","reason":"The canonical page carries an exact within-window timestamp and a material availability split: six named agents are generally available, while Hunter and the long-horizon runtime remain in pilot. Current Salesforce product pages, inspectable Agent Script material, independent launch reporting and independent evaluation and security context support a practical pilot-design analysis."},
+    {"story":"Anthropic embedded external-evaluator access","source":"https://darioamodei.com/post/we-must-pace-the-frontier","eventDate":"2026-09-12T14:01:10.703Z","decision":"already covered","reason":"Published in run 20260913T020228Z. No checked correction or separate event was found."},
+    {"story":"OpenAI Habitat bounded work and feedback loops","source":"https://openai.com/index/scaling-storage-one-billion-users-part-one","eventDate":"2026-09-11T10:00:00Z","decision":"already covered","reason":"Published in run 20260912T200258Z. No checked correction or separate event was found."},
+    {"story":"terms.txt agentic web-access proposal","source":"https://arxiv.org/html/2609.11152","eventDate":"2026-09-12T04:00:00Z","decision":"already covered","reason":"Published in run 20260912T140303Z. No checked correction was found."},
+    {"story":"Salesforce Trusted Enterprise AI Harness","source":"https://www.salesforce.com/news/stories/ai-agent-harness/","eventDate":"unknown","decision":"rejected","reason":"The date-only 10 September preview lacks an exact verified event time and was previously judged announcement-led and too thin for separate long-form coverage. It is adjacent governance context, not the exact-timestamped 11 September runtime event."},
+    {"story":"A2ABreak protocol-security preprint","source":"https://arxiv.org/html/2609.10871","eventDate":"2026-09-11T04:00:00Z","decision":"already covered","reason":"Published in run 20260912T021235Z. No correction signal or separate development was found."}
+  ],
+  "decision": {"kind":"new","reason":"The exact-timestamped Salesforce launch is fresh and consequential, and it is not duplicated in existing Index Us coverage. The article separates six generally available agents from Hunter's pilot-only long-horizon runtime, distinguishes calendar persistence from measured reliability, and turns the documented mechanism into a concrete, source-qualified pilot test plan."},
+  "story": {"id":"salesforce-agentforce-long-horizon-runtime","eventDate":"2026-09-11T12:00:00Z","canonicalUrls":["https://www.salesforce.com/news/stories/agentforce-job-ready-ai-agents/"]},
+  "articlePath": "src/content/articles/salesforce-agentforce-long-horizon-runtime.md",
+  "articleSha256": "8c51d0af21ff7111823771c83d793ed81c19c48b0e04056d0b93484f0efcf401",
+  "freshness": {"eventTimestampSource":"Salesforce article:published_time and NewsArticle.datePublished metadata","eventDate":"2026-09-11T12:00:00Z","ageAtRunStart":"44 hours, 3 minutes and 20.413 seconds","status":"Inside the hard 48-hour window and outside the preferred 24-hour window."},
+  "duplicateCheck": {"status":"passed","notes":"Searched current article bodies, frontmatter source URLs and public newsroom records for Salesforce, Agentforce, Hunter, Agent Script, the canonical launch URL and long-horizon coverage. No existing article or run uses this story identity or event URL. The nearest prior article covers OpenAI's Agents API managed harness, not persistent Salesforce business-process state or Hunter's pilot availability."},
+  "sources": [
+    {"id":"s1","url":"https://www.salesforce.com/news/stories/agentforce-job-ready-ai-agents/","title":"Salesforce Expands Agentforce With a New Portfolio of AI Agents Built for High-Value Work","publisher":"Salesforce","kind":"primary","independenceGroup":"salesforce","publishedAt":"2026-09-11T12:00:00Z","eventDate":"2026-09-11T12:00:00Z","retrievedAt":"2026-09-13T08:10:46Z","locator":"Open Graph article:published_time; NewsArticle datePublished/dateModified; Start with agents built for the job; Take on work that spans days and weeks; forward-looking statement"},
+    {"id":"s2","url":"https://www.salesforce.com/sales/ai-sales-agent/outbound/","title":"Meet Hunter, Your New Outbound Sales Agent","publisher":"Salesforce","kind":"primary","independenceGroup":"salesforce","publishedAt":"unknown","eventDate":"unknown","retrievedAt":"2026-09-13T08:10:46Z","locator":"Built to make every rep sell like your best rep; Turn your goal into a game plan; Ready to work wherever you do; FAQ answers on approvals, memory and the Hunter harness"},
+    {"id":"s3","url":"https://www.salesforce.com/agentforce/script/","title":"Agent Script","publisher":"Salesforce","kind":"primary","independenceGroup":"salesforce","publishedAt":"unknown","eventDate":"unknown","retrievedAt":"2026-09-13T08:10:46Z","locator":"Build agents that deliver consistent outcomes; Persistent Context; Simulate and test agents at scale; Agent Script FAQ"},
+    {"id":"s4","url":"https://github.com/salesforce/agentscript","title":"Agent Script — an open, schema-driven language for configuring agent orchestration systems","publisher":"Salesforce on GitHub","kind":"primary","independenceGroup":"salesforce","publishedAt":"unknown","eventDate":"unknown","retrievedAt":"2026-09-13T08:10:46Z","locator":"README Overview; Determinism versus Autonomy; Open Source Approach & Limitations; License"},
+    {"id":"s5","url":"https://siliconangle.com/2026/09/11/salesforce-introduces-new-ai-agents-to-automate-sales-support-tasks/","title":"Salesforce introduces new AI agents to automate sales, support tasks","publisher":"SiliconANGLE / Maria Deutscher","kind":"independent","independenceGroup":"siliconangle","publishedAt":"2026-09-11T23:40:26Z","eventDate":"2026-09-11T12:00:00Z","retrievedAt":"2026-09-13T08:10:46Z","locator":"Page metadata; launch paragraphs on Hunter, Hunter-only runtime availability at launch, the other six agents and Agent Script"},
+    {"id":"s6","url":"https://metr.org/time-horizons/","title":"Task-Completion Time Horizons of Frontier AI Models","publisher":"METR","kind":"independent","independenceGroup":"metr","publishedAt":"2026-05-08","eventDate":"2026-05-08","retrievedAt":"2026-09-13T08:10:46Z","locator":"Methodological Details; FAQs on autonomous duration, task distribution and job automation; May 8 2026 update"},
+    {"id":"s7","url":"https://genai.owasp.org/2026/05/13/memory-is-a-feature-it-is-also-an-attack-surface/","title":"Memory Is a Feature. It Is Also an Attack Surface","publisher":"OWASP Gen AI Security Project / Idan Habler","kind":"independent","independenceGroup":"owasp","publishedAt":"2026-05-13","eventDate":"2026-05-13","retrievedAt":"2026-09-13T08:10:46Z","locator":"Opening explanation of retained context, reused memory and persistent-state poisoning; ASI06 discussion"},
+    {"id":"s8","url":"https://www.nist.gov/news-events/news/2026/02/new-concept-paper-identity-and-authority-software-agents","title":"New Concept Paper on Identity and Authority of Software Agents","publisher":"NIST","kind":"independent","independenceGroup":"nist","publishedAt":"2026-02-05","eventDate":"2026-02-05","retrievedAt":"2026-09-13T08:10:46Z","locator":"Risks from agent access to data, tools and applications; identification, authorisation, auditing, non-repudiation and prompt-injection-control questions"}
+  ],
+  "claims": [
+    {"id":"c01","text":"The canonical Salesforce launch page was published at 2026-09-11T12:00:00Z and modified at 2026-09-11T15:05:06Z.","type":"fact","sourceIds":["s1"],"sourceLocator":"Open Graph article:published_time and JSON-LD NewsArticle datePublished/dateModified","status":"supported"},
+    {"id":"c02","text":"Salesforce introduced seven named job agents in the launch.","type":"fact","sourceIds":["s1","s5"],"sourceLocator":"s1 Start with agents built for the job; s5 launch list","status":"supported"},
+    {"id":"c03","text":"Casey, Paige, Carter, Marshall, Piper and Fin are labelled generally available now.","type":"fact","sourceIds":["s1","s5"],"sourceLocator":"s1 agent list; s5 launch paragraphs","status":"supported"},
+    {"id":"c04","text":"Hunter is labelled pilot now, with general availability planned for November 2026.","type":"fact","sourceIds":["s1"],"sourceLocator":"s1 Hunter list entry","status":"supported"},
+    {"id":"c05","text":"Salesforce says Hunter is the first agent using the long-horizon runtime, and independent reporting says the runtime is Hunter-only at launch.","type":"attributed_claim","sourceIds":["s1","s5"],"sourceLocator":"s1 long-horizon section; s5 launch paragraphs","status":"supported"},
+    {"id":"c06","text":"Salesforce describes the runtime as memory across sessions, durable execution that can resume or course-correct, and dynamic steering from user feedback.","type":"attributed_claim","sourceIds":["s1"],"sourceLocator":"s1 three-bullet runtime description","status":"supported"},
+    {"id":"c07","text":"Salesforce says Hunter can pursue sales goals across days, weeks or months and adjust plans as conditions change.","type":"attributed_claim","sourceIds":["s1","s2"],"sourceLocator":"s1 runtime example; s2 long-running execution and FAQ","status":"supported"},
+    {"id":"c08","text":"Salesforce says Hunter connects goals, memory and actions to CRM records, supports configured approval for customer-facing actions and logs actions.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"s2 Ready to work wherever you do; approval and memory FAQ answers","status":"qualified"},
+    {"id":"c09","text":"Persistent cross-session execution makes saved state, approval lifetime, recovery and external-effect reconciliation part of the production control surface.","type":"inference","sourceIds":["s1","s2","s7","s8"],"sourceLocator":"Inference from Salesforce persistence mechanisms, OWASP memory risks and NIST identity/authority/audit concerns; no claim about Salesforce implementation quality","status":"qualified"},
+    {"id":"c10","text":"METR's task-completion time horizon is human-expert task duration at a predicted success level, not agent wall-clock autonomy duration.","type":"fact","sourceIds":["s6"],"sourceLocator":"s6 methodology and time-horizon FAQ","status":"supported"},
+    {"id":"c11","text":"METR's current suite mainly covers self-contained software engineering, machine-learning and cybersecurity tasks and cautions against treating the metric as general job automation.","type":"fact","sourceIds":["s6"],"sourceLocator":"s6 task distribution and job-automation FAQ","status":"supported"},
+    {"id":"c12","text":"Salesforce's ability-to-persist claim does not establish a measured probability of correctly completing weeks-long sales work.","type":"inference","sourceIds":["s1","s5","s6"],"sourceLocator":"Salesforce and SiliconANGLE describe persistence; METR distinguishes calendar duration from reliability measurement; checked launch pages provide no reproducible runtime evaluation","status":"qualified"},
+    {"id":"c13","text":"OWASP identifies retained memory and persistent context as a security surface because untrusted material can affect later reasoning and actions.","type":"fact","sourceIds":["s7"],"sourceLocator":"s7 opening and ASI06 discussion","status":"supported"},
+    {"id":"c14","text":"NIST identifies agent identification, authorisation, auditing and non-repudiation as enterprise-agent questions.","type":"fact","sourceIds":["s8"],"sourceLocator":"s8 concept-paper announcement list","status":"supported"},
+    {"id":"c15","text":"Salesforce says Agent Script lets builders combine deterministic logic and model reasoning, store variables, inspect traces and simulate behaviour.","type":"attributed_claim","sourceIds":["s3"],"sourceLocator":"s3 workflow, Persistent Context and Simulate and test agents at scale sections","status":"supported"},
+    {"id":"c16","text":"Salesforce has published the Agent Script specification and tooling under Apache 2.0.","type":"fact","sourceIds":["s4"],"sourceLocator":"s4 repository overview, open-source section and licence","status":"supported"},
+    {"id":"c17","text":"The Agent Script README says its managed runtime is not open source and running agents requires Salesforce's runtime environment.","type":"fact","sourceIds":["s4"],"sourceLocator":"s4 Open Source Approach & Limitations","status":"supported"},
+    {"id":"c18","text":"Inspecting Agent Script can show intended orchestration but does not verify managed runtime scheduling, recovery or enforcement.","type":"inference","sourceIds":["s3","s4"],"sourceLocator":"Inference from the public specification and explicit managed-runtime separation; does not allege a defect","status":"qualified"},
+    {"id":"c19","text":"Salesforce reports 7 billion Agentic Work Units across Agentforce and Slack, including 3.2 billion in its second quarter.","type":"attributed_claim","sourceIds":["s1"],"sourceLocator":"s1 announcement opening","status":"supported"},
+    {"id":"c20","text":"Salesforce reports that 60 per cent of Perk's sales pipeline is built by Hunter.","type":"attributed_claim","sourceIds":["s1"],"sourceLocator":"s1 customer-results list","status":"supported"},
+    {"id":"c21","text":"The launch page does not define Agentic Work Units or publish cohort details, baselines or a reproducible method for the reported adoption and customer-outcome figures, and the independent report does not validate them.","type":"fact","sourceIds":["s1","s5"],"sourceLocator":"Bounded absence claim from complete review of the Salesforce launch and SiliconANGLE report","status":"supported"},
+    {"id":"c22","text":"A useful Hunter pilot should test terminal conditions, checkpoint recovery, stale context, permission revocation, duplicate external signals and matched business outcomes.","type":"inference","sourceIds":["s1","s2","s3","s7","s8"],"sourceLocator":"Editorial recommendation derived from the advertised persistence, approval and trace mechanisms plus independent memory and authority concerns; not a Salesforce requirement","status":"qualified"},
+    {"id":"c23","text":"Salesforce gives no date in the announcement for bringing the long-horizon runtime to other agents or customer-built agents.","type":"fact","sourceIds":["s1"],"sourceLocator":"Bounded absence claim from the final sentence of s1's long-horizon section","status":"supported"},
+    {"id":"c24","text":"The six generally available agents and Hunter's pilot-only long-horizon runtime should be treated as separate adoption decisions.","type":"inference","sourceIds":["s1","s5"],"sourceLocator":"Inference from the explicit availability split and Hunter-only runtime at launch","status":"qualified"},
+    {"id":"c25","text":"Index Us did not access or test Agentforce, Hunter, Salesforce customer environments or pilot telemetry and did not independently verify Salesforce's adoption, performance or customer-outcome claims.","type":"fact","sourceIds":["s1","s2","s3","s4","s5"],"sourceLocator":"Method limitation recorded by the newsroom run; vendor and independent pages were reviewed as documentation only","status":"supported"}
+  ],
+  "drafting": {"agentId":"/root/newsroom_drafter"},
+  "editorial": {
+    "agentId": "/root/newsroom_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-13T08:30:38Z",
+    "articleSha256": "8c51d0af21ff7111823771c83d793ed81c19c48b0e04056d0b93484f0efcf401",
+    "notes": [
+      "Shortened the frontmatter description to the 180-character schema limit while preserving attribution, pilot status, planned November release and the buyer recommendation.",
+      "Applied the factual-review corrections by removing the source phrase from quotation marks and narrowing the absence claim to the undefined work unit plus unpublished cohort, baseline and reproducibility details.",
+      "Replaced generic signposting and formulaic contrasts with direct statements about the availability split, runtime boundary and operational consequence.",
+      "Brought the persistence-versus-reliability distinction forward and made the recommended pilot evidence more explicit without changing the evidence boundary.",
+      "Removed CSP-blocked inline sizing and the explicit SVG height after desktop QA exposed distortion, while retaining the viewBox, width, aspect-ratio rule, accessibility attributes and original geometry."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/newsroom_factcheck",
+    "reviewedAt": "2026-09-13T08:32:03Z",
+    "articleSha256": "8c51d0af21ff7111823771c83d793ed81c19c48b0e04056d0b93484f0efcf401",
+    "status": "passed",
+    "claimsCoverage": true,
+    "notes": [
+      "Independently reopened all eight final-copy sources and checked the headline, description, takeaways, dates, numbers, availability boundaries, capability attributions, source locations and documentation-only limits against the underlying pages.",
+      "Requested and rechecked two factual corrections: removal of an unrecorded two-word source quotation and narrowing an overbroad absence claim that had overlooked the announcement's stated two-year and Q2 periods.",
+      "Confirmed the exact 11 September 2026 12:00 UTC event timestamp in Salesforce Open Graph and JSON-LD metadata; at run start it was 44 hours, 3 minutes and 20.413 seconds old.",
+      "Confirmed source independence boundaries: SiliconANGLE checks the launch structure but not performance, while METR, OWASP and NIST independently support the evaluation, memory and authority context rather than validating Salesforce's implementation.",
+      "Re-inspected the final inline SVG source after its CSP-safe sizing correction: the 800 by 560 viewBox, story-specific geometry, accessible title and description, self-contained markup and explicit non-evidentiary caption remain accurate and original; rendered responsive sizing is a separate pending gate."
+    ]
+  },
+  "quality": {"evidence":33,"context":19,"originalValue":19,"voice":14,"presentation":9},
+  "qualityRationale": {
+    "evidence":"Every material claim is supported, precisely vendor-attributed or bounded as inference. Exact event metadata and volatile availability were rechecked; the remaining limitation is the absence of hands-on or independent product-performance evidence, which the article states clearly.",
+    "context":"The article uses independent launch reporting, METR methodology, OWASP memory risk and NIST authority work without implying any of them tested Hunter. It separates calendar persistence from reliability and specification visibility from runtime enforcement.",
+    "originalValue":"The story converts an announcement into a concrete pilot design covering terminal states, recovery, aged context, authority expiry, duplicate signals and matched business outcomes.",
+    "voice":"The completed voice edit produces direct, calm Australian English with a specific opening, natural section development and restrained vendor attribution.",
+    "presentation":"Title, description, takeaways, byline, exact disclosure, source list, accessible inline SVG and testing limitation align with the final copy. Desktop and mobile responsive rendering passed on the exact reviewed digest."
+  },
+  "researchLimitations": [
+    "Documentation-only analysis; Index Us did not access or test Agentforce, Hunter, Salesforce customer environments or pilot telemetry.",
+    "Salesforce capability, adoption and customer-outcome figures remain attributed vendor claims.",
+    "SiliconANGLE independently confirms the launch structure and Hunter-only runtime availability at launch but does not independently test the runtime or customer results.",
+    "The open Agent Script repository exposes the specification and tooling, while its README says the managed execution runtime is not open source."
+  ],
+  "artwork": {
+    "status": "passed",
+    "notes": "Original 800 by 560 conceptual control-flow figure showing a persistent goal, three checkpoints, two approval gates, durable resume loop and terminal state. The final source has an accessible title and description, no script, external resource, event handler or animation, and a caption that explicitly says it is not Salesforce architecture, telemetry or performance evidence. Geometry and composition are unique in the repository. Root visually inspected the exact reviewed build at 1280 by 720 and 390 by 844; the SVG preserved its 10:7 ratio with no clipping or overflow at either width.",
+    "responsiveRender": {
+      "reviewedAt": "2026-09-13T08:38:50Z",
+      "articleSha256": "8c51d0af21ff7111823771c83d793ed81c19c48b0e04056d0b93484f0efcf401",
+      "desktop": {"width":1280,"height":720,"verdict":"passed","svgWidth":656,"svgHeight":459.2},
+      "mobile": {"width":390,"height":844,"verdict":"passed","svgWidth":270,"svgHeight":189},
+      "notes": "The final CSP-safe SVG retained its complete geometry, accessible title and description, visible non-evidentiary caption and exact 10:7 aspect ratio at both widths. No horizontal overflow or clipping was present, and the mobile navigation expanded to all six links."
+    }
+  },
+  "riskFlags": [],
+  "quotes": [
+    {"sourceId":"s1","words":0,"estimatedDerivedWords":360,"allowance":"Original synthesis of launch identity, exact timing, availability, runtime mechanisms and attributed scale claims; no quotation or copied structure."},
+    {"sourceId":"s2","words":0,"estimatedDerivedWords":180,"allowance":"Original summary of Hunter persistence, CRM-linked memory, approval and logging claims; no quotation."},
+    {"sourceId":"s3","words":0,"estimatedDerivedWords":120,"allowance":"Original summary of Agent Script control, variables, traces and simulation claims; no quotation."},
+    {"sourceId":"s4","words":0,"estimatedDerivedWords":110,"allowance":"Original summary of repository contents, Apache 2.0 licence and managed-runtime boundary; no quotation."},
+    {"sourceId":"s5","words":0,"estimatedDerivedWords":70,"allowance":"Independent launch structure and Hunter-only runtime context; no quotation or performance-validation implication."},
+    {"sourceId":"s6","words":0,"estimatedDerivedWords":150,"allowance":"Original methodological comparison of task-completion horizon, reliability and domain limits; no quotation."},
+    {"sourceId":"s7","words":0,"estimatedDerivedWords":55,"allowance":"Original summary of persistent memory as a security surface; no quotation and no implication that OWASP evaluated Hunter."},
+    {"sourceId":"s8","words":0,"estimatedDerivedWords":55,"allowance":"Original summary of agent identity, authorisation, audit and non-repudiation questions; no quotation and no implication that NIST evaluated Hunter."}
+  ],
+  "checks": {
+    "desktop": {"status":"passed","width":1280,"notes":"Inspected the final production build at 1280 by 720 in the Codex in-app browser. Title, byline, disclosure, article navigation, source list, story-specific SVG and caption rendered cleanly. The SVG measured 656 by 459.2 pixels at its exact 10:7 ratio; document scroll width equalled the 1280-pixel viewport, with no clipped or oversized elements."},
+    "mobile": {"status":"passed","width":390,"notes":"Inspected the final production build at 390 by 844 in the Codex in-app browser. Title, byline, disclosure, headings, source list, artwork and caption wrapped cleanly. The six-link mobile menu opened correctly. The SVG measured 270 by 189 pixels at its exact 10:7 ratio; document scroll width equalled the 390-pixel viewport, with no horizontal overflow or oversized elements."}
+  }
+}
