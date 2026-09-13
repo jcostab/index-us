@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260913T020228Z",
+  "startedAt": "2026-09-13T02:02:28.963Z",
+  "completedAt": "2026-09-13T03:04:13Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-11T02:02:28.963Z",
+    "end": "2026-09-13T02:02:28.963Z"
+  },
+  "candidates": [
+    {
+      "story": "Anthropic commits to embedded external evaluators; OpenAI says it will follow",
+      "source": "https://x.com/DarioAmodei/status/2098773920774074715",
+      "eventDate": "2026-09-12T14:01:10.703Z",
+      "decision": "selected",
+      "reason": "The public status ID supplies an exact within-window timestamp under X's documented Snowflake format; oEmbed confirms the author, text and date; Amodei's canonical essay specifies ongoing access, scope, publication and redaction terms; Sam Altman's exact-timestamped response says OpenAI will do the same; AP, Axios and METR supply independent event and evaluator-process context. No existing story or canonical URL duplicates this governance commitment."
+    },
+    {
+      "story": "terms.txt agentic web-access proposal",
+      "source": "https://arxiv.org/html/2609.11152",
+      "eventDate": "2026-09-12T04:00:00Z",
+      "decision": "already covered",
+      "reason": "Published by Index Us in run 20260912T140303Z. No correction signal was found; a new story would duplicate the existing article."
+    },
+    {
+      "story": "OpenAI Habitat online-storage engineering account",
+      "source": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+      "eventDate": "2026-09-11T10:00:00Z",
+      "decision": "already covered",
+      "reason": "Published by Index Us in run 20260912T200258Z. No correction signal was found; the source and story identity are already recorded."
+    },
+    {
+      "story": "OpenAI wiki incident and promised disclosure framework",
+      "source": "https://openai.com/hugging-face-incident-and-misalignment/",
+      "eventDate": "2026-09-05T07:09:06Z",
+      "decision": "checked for correction and overlap",
+      "reason": "The existing Index Us article covers OpenAI's incident acknowledgement and future incident-disclosure framework. No checked source materially contradicts that account. The selected 12 September event is distinct: sustained third-party organisational access, verification and evaluator publication rights, not the wiki incident chronology or the promised disclosure framework itself."
+    },
+    {
+      "story": "Anthropic September 2026 threat-intelligence report",
+      "source": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "eventDate": "unknown",
+      "decision": "rejected",
+      "reason": "The primary page is dated 10 September without an exact verified publication time and timezone; same-day AP reporting was more than 48 hours old at run start. The broad misuse theme also overlaps recent agent-security coverage."
+    },
+    {
+      "story": "A2ABreak protocol-security preprint",
+      "source": "https://arxiv.org/html/2609.10871",
+      "eventDate": "2026-09-11T04:00:00Z",
+      "decision": "already covered",
+      "reason": "Published by Index Us in run 20260912T021235Z. No correction or separate development was found."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "The exact-timestamped Anthropic commitment and Altman response are fresh, consequential and distinct from prior incident-disclosure coverage. Amodei's essay specifies unusually concrete intended access and publication terms, while AP, Axios and METR provide meaningful independent context. The implementation gap and a practical procurement checklist earn a full analysis without relying on speculative catastrophe forecasts."
+  },
+  "story": {
+    "id": "anthropic-embedded-evaluator-access",
+    "eventDate": "2026-09-12T14:01:10.703Z",
+    "canonicalUrls": [
+      "https://x.com/DarioAmodei/status/2098773920774074715",
+      "https://darioamodei.com/post/we-must-pace-the-frontier"
+    ]
+  },
+  "articlePath": "src/content/articles/anthropic-embedded-evaluator-access.md",
+  "articleSha256": "98b4fc9d6ac6e64da572b7179554a0a0bb87868e5d0b96623cab1b82c8bb92ad",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+      "title": "We Must Pace the Frontier",
+      "publisher": "Dario Amodei",
+      "kind": "primary",
+      "independenceGroup": "anthropic-amodei",
+      "publishedAt": "2026-09-12",
+      "eventDate": "2026-09-12T14:01:10.703Z",
+      "retrievedAt": "2026-09-13T02:08:43Z",
+      "locator": "Three-step plan and Embedded Evaluators sections: unilateral commitment, remit, ongoing access, desks/badges/laptops, comparable permissions, employee conversations, publication rights, narrow redaction categories and disclosure of material redaction effects. Exact event time comes from s2/s4, not the date-only essay page."
+    },
+    {
+      "id": "s2",
+      "url": "https://x.com/DarioAmodei/status/2098773920774074715",
+      "title": "Dario Amodei status announcing We Must Pace the Frontier",
+      "publisher": "Dario Amodei on X",
+      "kind": "primary",
+      "independenceGroup": "anthropic-amodei",
+      "publishedAt": "2026-09-12T14:01:10.703Z",
+      "eventDate": "2026-09-12T14:01:10.703Z",
+      "retrievedAt": "2026-09-13T02:08:43Z",
+      "locator": "Public X oEmbed author, canonical status URL, visible announcement wording and 12 September date; Snowflake status ID timestamp decoded with s4 to 2026-09-12T14:01:10.703Z."
+    },
+    {
+      "id": "s3",
+      "url": "https://x.com/sama/status/2098811563415150910",
+      "title": "Sam Altman status agreeing to independent evaluators with employee-like access",
+      "publisher": "Sam Altman on X",
+      "kind": "primary",
+      "independenceGroup": "openai-altman",
+      "publishedAt": "2026-09-12T16:30:45.408Z",
+      "eventDate": "2026-09-12T16:30:45.408Z",
+      "retrievedAt": "2026-09-13T02:08:43Z",
+      "locator": "Public X oEmbed author, canonical @sama status URL, complete visible response and 12 September date; Snowflake status ID timestamp decoded with s4 to 2026-09-12T16:30:45.408Z. The supplied /OpenAI/status URL resolves to this status."
+    },
+    {
+      "id": "s4",
+      "url": "https://docs.x.com/fundamentals/x-ids",
+      "title": "X IDs",
+      "publisher": "X",
+      "kind": "primary",
+      "independenceGroup": "x-platform",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-13T02:08:43Z",
+      "locator": "ID format: X uses 64-bit Snowflake IDs encoding timestamp, worker and sequence and recommends string/BigInt handling to avoid JavaScript precision loss. The two IDs were decoded as BigInt with the established Twitter Snowflake epoch 1288834974657 ms."
+    },
+    {
+      "id": "s5",
+      "url": "https://apnews.com/article/anthropic-ai-dario-amodei-d59552edcb27892d8ee4d98a48397706",
+      "title": "Anthropic CEO Dario Amodei says AI industry needs to give safety measures time to catch up",
+      "publisher": "Associated Press",
+      "kind": "independent",
+      "independenceGroup": "associated-press",
+      "publishedAt": "2026-09-12T16:37:39Z",
+      "eventDate": "2026-09-12T14:01:10.703Z",
+      "retrievedAt": "2026-09-13T02:08:43Z",
+      "locator": "Some of Amodei's suggestions may be more difficult to enact: ongoing outside-evaluator access, intended desks/badges/laptops and Altman's rapid commitment. Context only; not implementation evidence."
+    },
+    {
+      "id": "s6",
+      "url": "https://www.axios.com/2026/09/12/anthropic-ai-amodei-pacing",
+      "title": "Anthropic, OpenAI CEOs call for slowdown in AI development",
+      "publisher": "Axios",
+      "kind": "independent",
+      "independenceGroup": "axios",
+      "publishedAt": "2026-09-12T16:59:28Z",
+      "eventDate": "2026-09-12T14:01:10.703Z",
+      "retrievedAt": "2026-09-13T02:08:43Z",
+      "locator": "Lines 42-71: Amodei essay, Anthropic's unilateral external-evaluator measure and Altman's statement that OpenAI would also give access. Context only; not implementation evidence."
+    },
+    {
+      "id": "s7",
+      "url": "https://metr.org/blog/2026-07-28-investigating-ai-propensities-after-incidents/",
+      "title": "How independent researchers could investigate AI propensities after misalignment incidents",
+      "publisher": "METR",
+      "kind": "independent",
+      "independenceGroup": "metr",
+      "publishedAt": "2026-07-28",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-13T02:08:43Z",
+      "locator": "Access and resources needed and How the results should be shared: models, transcripts/reproducible environments, employee interviews, time/compute, possible training-data work, board access, public conclusions, engagement/redaction transparency and redaction summaries."
+    },
+    {
+      "id": "s8",
+      "url": "https://metr.org/blog/2026-05-19-frontier-risk-report/",
+      "title": "Frontier Risk Report (February to March 2026)",
+      "publisher": "METR",
+      "kind": "independent",
+      "independenceGroup": "metr",
+      "publishedAt": "2026-05-19",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-13T02:08:43Z",
+      "locator": "Appendix A pilot process and AEF-1 mapping, especially table A.1 rows on technical access/resources, conflicts, methodological and editorial autonomy, publication rights, redaction authority and sensitive-information protection; METR's disclosed lack of a formal personnel conflict policy at the pilot's start."
+    },
+    {
+      "id": "s9",
+      "url": "https://openai.com/index/trustworthy-third-party-evaluations-foundations/",
+      "title": "A shared playbook for trustworthy third party evaluations",
+      "publisher": "OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "2026-05-29",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-13T02:08:43Z",
+      "locator": "How we are supporting stronger evaluations and evaluation standards: existing access to reasoning traces/intermediate artefacts for METR and Apollo, plus required disclosure of claim, tested system, budget, elicitation and validity checks."
+    },
+    {
+      "id": "s10",
+      "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
+      "title": "An alignment assessment of recent cybersecurity incidents",
+      "publisher": "Anthropic",
+      "kind": "primary",
+      "independenceGroup": "anthropic-amodei",
+      "publishedAt": "2026-09-09",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-13T02:37:49Z",
+      "locator": "Introduction, paragraph beginning 'We have signed an agreement with METR': separate independent investigation of four cybersecurity incidents; initial eight-week term with extension by mutual agreement; wide-ranging access to transcripts beyond the incident window and employees permitted to share confidential information. The page does not identify this engagement as the permanent embedded role promised on 12 September."
+    }
+  ],
+  "claims": [
+    {"id":"c01","text":"Dario Amodei announced Anthropic's embedded-evaluator commitment at 2026-09-12T14:01:10.703Z.","type":"fact","sourceIds":["s2","s4","s5","s6"],"sourceLocator":"s2 public oEmbed author/text/date and status ID; s4 Snowflake timestamp documentation and retained BigInt calculation; s5-s6 same-day independent chronology.","status":"supported"},
+    {"id":"c02","text":"Sam Altman said at 2026-09-12T16:30:45.408Z that OpenAI would also use independent evaluators with employee-like access and would share more later.","type":"attributed_claim","sourceIds":["s3","s4","s5","s6"],"sourceLocator":"s3 public oEmbed response and status ID; s4 Snowflake documentation/calculation; s5-s6 independent reports.","status":"supported"},
+    {"id":"c03","text":"Anthropic says the embedded evaluator's remit would include verifying safety practices and commitments, reporting incidents and assessing completed models, training pipelines and processes.","type":"attributed_claim","sourceIds":["s1"],"sourceLocator":"s1 three-step-plan item 1 and Embedded Evaluators opening.","status":"supported"},
+    {"id":"c04","text":"Anthropic intends to provide desks, badges, company laptops and access to workspaces, tools, permissions and employee conversations, mostly comparable to internal risk-assessment teams.","type":"attributed_claim","sourceIds":["s1","s5"],"sourceLocator":"s1 access bullets; s5 physical-access reporting.","status":"supported"},
+    {"id":"c05","text":"Anthropic says access exceptions may apply for legal and contractual requirements and to protect customer and partner private information.","type":"attributed_claim","sourceIds":["s1"],"sourceLocator":"s1 workspace/tool/permission access bullet.","status":"supported"},
+    {"id":"c06","text":"Anthropic says the external reviewer should control publication of key findings, while Anthropic retains narrow redaction powers for security-sensitive, legally privileged, commercially sensitive and third-party confidential information, not merely unfavourable findings.","type":"attributed_claim","sourceIds":["s1"],"sourceLocator":"s1 contract and publication bullet.","status":"supported"},
+    {"id":"c07","text":"Anthropic says a reviewer may disclose publicly when a redaction removed something important to its conclusions.","type":"attributed_claim","sourceIds":["s1"],"sourceLocator":"s1 sentence following the contract/redaction bullet.","status":"supported"},
+    {"id":"c08","text":"The checked sources do not establish that either new permanent embedded programme is operating: Anthropic says it will invite a team in the near future and does not name one for that role, while Altman supplies no team, start date, mandate, contract or report.","type":"fact","sourceIds":["s1","s3","s5","s6","s10"],"sourceLocator":"s1 future-tense invitation and absence of appointment; s3 complete response; s5-s6 report commitments rather than completed engagements; s10 documents a separate time-limited incident investigation rather than appointment to the broader role.","status":"qualified"},
+    {"id":"c09","text":"METR is named only as an example of a possible permanent embedded evaluator; Anthropic's separate eight-week incident-investigation agreement does not identify METR as the appointed team for that broader role.","type":"fact","sourceIds":["s1","s10"],"sourceLocator":"s1 uses 'such as METR' and does not identify a selected team; s10 defines a separate investigation of four cybersecurity incidents.","status":"qualified"},
+    {"id":"c10","text":"Ongoing employee-like access could support longitudinal checks across training, deployment, operations, incidents and remediation that a bounded one-off model evaluation cannot establish by itself.","type":"inference","sourceIds":["s1","s7","s9"],"sourceLocator":"Premises: s1 continuous organisational remit; s7 incident-investigation access; s9 bounded-evaluation dimensions. Boundary: Index Us interpretation, not a measured effect.","status":"qualified"},
+    {"id":"c11","text":"METR says a thorough independent incident investigation may require relevant-model access, transcripts or reproducible environments, employee interviews, enough time and inference budget, and sometimes training-data analysis.","type":"attributed_claim","sourceIds":["s7"],"sourceLocator":"s7 Access and resources needed.","status":"supported"},
+    {"id":"c12","text":"METR recommends that investigation conclusions reach the board and public, with transparent engagement, access and redaction terms and a redaction summary.","type":"attributed_claim","sourceIds":["s7"],"sourceLocator":"s7 How the results should be shared.","status":"supported"},
+    {"id":"c13","text":"METR's 2026 pilot documented technical access, resources, conflicts, methodological and editorial autonomy, publication rights and redaction authority, and disclosed that it lacked a formal personnel conflict-of-interest policy at the pilot's start.","type":"fact","sourceIds":["s8"],"sourceLocator":"s8 Appendix A table A.1 and conflict disclosure.","status":"supported"},
+    {"id":"c14","text":"OpenAI says METR and Apollo have received reasoning traces and intermediate artefacts for some GPT-5-era evaluation work and argues that reports should disclose the tested claim, system, budget, elicitation and validity checks.","type":"attributed_claim","sourceIds":["s9"],"sourceLocator":"s9 stronger-evaluations and standards sections.","status":"supported"},
+    {"id":"c15","text":"OpenAI's documented prior third-party evaluation access does not by itself establish the new continuous employee-like arrangement Altman promised.","type":"inference","sourceIds":["s3","s9","s1"],"sourceLocator":"Premises: s9 selected artefact access; s3 future promise; s1 broader continuous remit. Boundary: scope comparison, not a claim that OpenAI lacks undisclosed relationships.","status":"qualified"},
+    {"id":"c16","text":"A credible external-safety-review claim should disclose evaluator selection and conflicts, mandate, actual and refused access, methodological autonomy, publication and redaction rights, incident escalation and evidence that findings changed decisions.","type":"inference","sourceIds":["s1","s7","s8","s9"],"sourceLocator":"Premises: announced terms, METR investigation/pilot criteria and OpenAI reporting dimensions. Boundary: Index Us procurement checklist, not an industry standard.","status":"qualified"},
+    {"id":"c17","text":"The selected event is distinct from Index Us's OpenAI wiki article because it concerns durable organisational access and evaluator-controlled reporting rights rather than the wiki incident chronology or OpenAI's promised incident-disclosure framework.","type":"inference","sourceIds":["s1","s3","s5","s6"],"sourceLocator":"Premises: current-event scope compared with local article and run-record inspection. Boundary: editorial duplication judgement; no material correction was found.","status":"qualified"},
+    {"id":"c18","text":"Anthropic says it signed a separate initial eight-week agreement, extendable by mutual agreement, for METR to independently investigate four cybersecurity incidents with wide-ranging access to transcripts beyond the incident window and employees permitted to share confidential information.","type":"attributed_claim","sourceIds":["s10"],"sourceLocator":"s10 Introduction, paragraph describing the signed METR agreement.","status":"supported"},
+    {"id":"c19","text":"METR says third-party evaluations of frontier AI have largely focused on individual models before public deployment.","type":"attributed_claim","sourceIds":["s8"],"sourceLocator":"s8 Pilot process opening paragraph.","status":"supported"}
+  ],
+  "drafting": {"agentId":"/root/newsroom_draft"},
+  "editorial": {
+    "agentId": "/root/newsroom_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-13T02:54:47Z",
+    "articleSha256": "98b4fc9d6ac6e64da572b7179554a0a0bb87868e5d0b96623cab1b82c8bb92ad",
+    "notes": [
+      "Applied the smallest CSP-safe markup correction to the story figure: removed the figure's inline margin style, the SVG's explicit height and its inline style attribute.",
+      "Retained the SVG's 800 by 560 viewBox, width, role, aria-labelledby, namespace and preserveAspectRatio so intrinsic sizing can preserve the 10:7 ratio under the site's global max-width rule.",
+      "Made no prose, metadata, source or claim-ledger change; all material facts, citations, caveats, byline, disclosure and the original draft remain unchanged.",
+      "Re-inspected the complete article and confirmed the unchanged artwork remains an accurate, accessible and explicitly conceptual governance illustration.",
+      "Reset factual, quality, risk-resolution and responsive approvals because the complete article digest changed."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/newsroom_factcheck",
+    "reviewedAt": "2026-09-13T02:59:23Z",
+    "articleSha256": "98b4fc9d6ac6e64da572b7179554a0a0bb87868e5d0b96623cab1b82c8bb92ad",
+    "status": "passed",
+    "claimsCoverage": true,
+    "notes": [
+      "Independently reconstructed the previously approved digest by restoring only the removed figure margin style, SVG height and SVG inline style; the result exactly matched 4da05038e3550f0cd77e4d6788abd0b42ec0bb1ca022487c998e061700a61811.",
+      "Confirmed that prose, frontmatter, ten-source ledger and nineteen-claim ledger are unchanged from the prior 93/100 factual approval.",
+      "Re-inspected the emitted SVG source: its viewBox, width, preserveAspectRatio, accessible title/description, geometry, palette and non-evidentiary caption remain intact, with no script, external resource, event handler or misleading implementation implication.",
+      "This factual and artwork approval is bound to the exact markup-corrected digest; desktop and mobile responsive rendering remain separate pending gates."
+    ]
+  },
+  "quality": {"evidence":33,"context":19,"originalValue":18,"voice":14,"presentation":9},
+  "riskFlags": [],
+  "quotes": [
+    {"sourceId":"s1","words":0,"estimatedDerivedWords":310,"allowance":"Original synthesis of commitment, remit, access, publication and redaction terms; no quotation."},
+    {"sourceId":"s2","words":0,"estimatedDerivedWords":45,"allowance":"Announcement identity and exact event timing only; no quotation."},
+    {"sourceId":"s3","words":0,"estimatedDerivedWords":55,"allowance":"Original summary of Altman's promise and missing details; no quotation."},
+    {"sourceId":"s4","words":0,"estimatedDerivedWords":35,"allowance":"Original explanation that X Snowflake IDs encode creation timestamps; no quotation."},
+    {"sourceId":"s5","words":0,"estimatedDerivedWords":35,"allowance":"Same-day independent event and physical-access context only; no quotation."},
+    {"sourceId":"s6","words":0,"estimatedDerivedWords":20,"allowance":"Same-day independent event context only; no quotation."},
+    {"sourceId":"s7","words":0,"estimatedDerivedWords":95,"allowance":"Original synthesis of investigation access, board/public reporting and redaction transparency; no quotation."},
+    {"sourceId":"s8","words":0,"estimatedDerivedWords":110,"allowance":"Original summary of the prior individual-model focus, pilot criteria and disclosed limitation; no quotation."},
+    {"sourceId":"s9","words":0,"estimatedDerivedWords":75,"allowance":"Original summary of prior evaluator access and reporting criteria; no quotation."},
+    {"sourceId":"s10","words":0,"estimatedDerivedWords":90,"allowance":"Original summary of Anthropic's separate eight-week METR incident investigation, access and role boundary; no quotation."}
+  ],
+  "checks": {
+    "desktop": {"status":"passed","width":1280,"notes":"Inspected the final production build at 1280 by 900 in the Codex in-app browser. Title, byline, disclosure, sticky primary navigation, heading hierarchy, ten-source list, story-specific SVG and caption rendered cleanly. The SVG measured 656 by 459.2 pixels at its intrinsic 10:7 ratio; document scroll width equalled the 1280-pixel viewport, with no clipped elements or console warnings/errors."},
+    "mobile": {"status":"passed","width":390,"notes":"Inspected the final production build at 390 by 844 in the Codex in-app browser. Title, byline, disclosure, headings, ten-source list, artwork and caption wrapped cleanly. The six-link mobile menu opened correctly. The SVG measured 270 by 189 pixels at its intrinsic 10:7 ratio; document scroll width equalled the 390-pixel viewport, with no horizontal overflow or console warnings/errors."}
+  },
+  "artwork": {
+    "status": "passed",
+    "concept": "A cobalt external-reviewer path crosses a narrow vermilion access gate into a layered internal system, while a separate publication channel reaches an off-white public report through a visible redaction boundary. The composition makes reviewer access, independent publication and bounded redaction legible without implying a named appointment or implemented company architecture.",
+    "referencesInspected": ["src/components/ArticleArtwork.astro","src/content/articles/terms-txt-agentic-web-access.md","src/content/articles/openai-agents-api-managed-harness-boundary.md","src/content/articles/google-adversarial-ai-security-boundary.md"],
+    "renderedReferencesReportedByRoot": ["terms.txt article artwork","A2ABreak article artwork"],
+    "implementation": "New self-contained inline SVG with viewBox 0 0 800 560, responsive dimensions, prescribed palette, technical grid and registration marks, accessible title/description, visible non-evidentiary caption, and no scripts, external resources or animation.",
+    "editorialReview": {
+      "agentId": "/root/newsroom_editor",
+      "reviewedAt": "2026-09-13T02:54:47Z",
+      "verdict": "passed-source-inspection",
+      "articleSha256": "98b4fc9d6ac6e64da572b7179554a0a0bb87868e5d0b96623cab1b82c8bb92ad",
+      "notes": "The complete revised article changes only CSP-sensitive figure/SVG presentation markup. Removing the explicit SVG height lets its retained 800 by 560 viewBox and width preserve the 10:7 intrinsic ratio when the site's global max-width rule narrows it; removing inline styles prevents the markup from relying on attributes blocked by the production CSP. The artwork content, accessible title/description, self-contained geometry, prescribed palette and explicit non-evidentiary caption are unchanged and remain accurate. Independent factual and responsive approvals are pending for this digest."
+    },
+    "factualReview": {
+      "agentId": "/root/newsroom_factcheck",
+      "reviewedAt": "2026-09-13T02:59:23Z",
+      "verdict": "passed-source-inspection",
+      "articleSha256": "98b4fc9d6ac6e64da572b7179554a0a0bb87868e5d0b96623cab1b82c8bb92ad",
+      "notes": "The only article changes from the prior factual approval are removal of the figure inline margin style, the SVG height attribute and the SVG inline style. The reconstructed prior digest matches exactly. The unchanged illustration remains an accessible, self-contained and factually non-misleading governance concept; responsive rendering remains pending."
+    },
+    "responsiveRender": {
+      "reviewedAt": "2026-09-13T03:04:13Z",
+      "articleSha256": "98b4fc9d6ac6e64da572b7179554a0a0bb87868e5d0b96623cab1b82c8bb92ad",
+      "desktop": {"width":1280,"height":900,"verdict":"passed","svgWidth":656,"svgHeight":459.2},
+      "mobile": {"width":390,"height":844,"verdict":"passed","svgWidth":270,"svgHeight":189},
+      "notes": "The final CSP-safe original SVG retained its complete geometry, accessible title and description, visible non-evidentiary caption and exact 10:7 aspect ratio at both widths. No horizontal overflow, clipping or browser console warning/error was present, and the mobile navigation expanded to all six links."
+    }
+  },
+  "freshness": {
+    "eventAgeAtRunStartSeconds": 43278.26,
+    "marginAtRunStartSeconds": 129521.74,
+    "verifiedFrom": "X Snowflake status ID with X documentation, public oEmbed author/text/date and AP/Axios same-day reporting",
+    "checkedAt": "2026-09-13T02:08:43Z"
+  },
+  "duplicateCheck": "All 21 current article files and all public newsroom run records were searched by story identity, canonical URLs, status IDs, entity, title and body terms. No duplicate or canonical collision was found. The existing OpenAI wiki incident article concerns incident disclosure; this event concerns ongoing third-party access and evaluator publication rights. No material correction target was found.",
+  "researchLimitations": [
+    "Documentation and public-source analysis only; Index Us did not inspect internal systems, contracts or evaluator access.",
+    "X page rendering failed in the web reader; public X oEmbed supplied author, text and date, while exact times were derived from status IDs under X's documented Snowflake format.",
+    "Firecrawl CLI 1.23.3 is available only through npx with /private/tmp cache and its keyless tier had already rate-limited earlier in this run; the failure was recorded and not retried. Direct live public source retrieval was used.",
+    "No private inbox, archive, client material or private voice corpus was accessed."
+  ]
+}
