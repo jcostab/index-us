@@ -11,7 +11,12 @@ test("home page keeps canonical metadata and a small first-party enhancement bud
   let scriptBytes = [...html.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/g)]
     .filter((match) => !match[1].includes('application/ld+json'))
     .reduce((total, match) => total + Buffer.byteLength(match[2]), 0);
+  const analyticsUrl = "https://analytics.ahrefs.com/analytics.js";
+  assert.equal(scripts.filter((script) => script === analyticsUrl).length, 1);
+  const head = html.match(/<head>([\s\S]*?)<\/head>/)?.[1] ?? "";
+  assert.match(head, /<script src="https:\/\/analytics\.ahrefs\.com\/analytics\.js" data-key="0OwkjJ8mdREhVrFcokKYoQ" async><\/script>/);
   for (const script of scripts) {
+    if (script === analyticsUrl) continue;
     assert.match(script, /^\/_astro\/[^/]+\.js$/, 'Client scripts must be bundled and served locally');
     scriptBytes += (await readFile(`dist${script}`)).byteLength;
   }
