@@ -1,0 +1,437 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260915T080410Z",
+  "startedAt": "2026-09-15T08:04:10.595Z",
+  "completedAt": "2026-09-15T08:22:53Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-13T08:04:10.595Z",
+    "end": "2026-09-15T08:04:10.595Z"
+  },
+  "candidates": [
+    {
+      "story": "ZGCM-1 open model and training release",
+      "source": "https://arxiv.org/abs/2609.13356",
+      "eventDate": "2026-09-15T04:00:00Z",
+      "decision": "selected",
+      "reason": "Today’s exact RSS announcement, public MIT-labelled model/code and a gated multi-license data collection create a concrete research and deployment decision."
+    },
+    {
+      "story": "Occamy-1.0 agent model",
+      "source": "https://arxiv.org/abs/2609.11977",
+      "eventDate": "2026-09-14T04:00:00Z",
+      "decision": "defer",
+      "reason": "Still within 48 hours by the prior retained RSS ledger, but its paper was submitted 4 September and HF repository created in August; ZGCM is newer and offers a clearer release/access question. Occamy remains unpublished after a prior hold."
+    },
+    {
+      "story": "Harness or Model? coding-harness study",
+      "source": "https://arxiv.org/abs/2609.11987",
+      "eventDate": "2026-09-14T04:00:00Z",
+      "decision": "already covered",
+      "reason": "Published in run 20260914T080209Z; ZGCM concerns a distinct model/training release."
+    },
+    {
+      "story": "AIM privacy-aware multi-user memory framework",
+      "source": "https://arxiv.org/abs/2609.12320",
+      "eventDate": "2026-09-14T04:00:00Z",
+      "decision": "defer",
+      "reason": "Developer-created benchmark limits immediate external validation; less testable release detail than ZGCM."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "Select the today-announced ZGCM-1 release for bounded analysis of what its public weights, code and conditional data access allow. Developer benchmark and efficiency claims remain attributed and unreplicated."
+  },
+  "story": {
+    "id": "zgcm-open-model-data-access",
+    "eventDate": "2026-09-15T04:00:00Z",
+    "canonicalUrls": [
+      "https://arxiv.org/abs/2609.13356",
+      "https://huggingface.co/zgcagi/ZGCM-1-7B",
+      "https://github.com/zgcagi/ZGCM-1"
+    ]
+  },
+  "articlePath": "src/content/articles/zgcm-open-model-data-access.md",
+  "articleSha256": "c76bd7fe8e50466e8b6f682c7c2ba1f183c3174825acdcf0eef3f36b5069d149",
+  "originalDraftSha256": "dda659663dbf1b51dfd2eb5ee1bd778f1364f81afd24b06e0447db130b466fc7",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://rss.arxiv.org/rss/cs.AI",
+      "title": "cs.AI updates on arXiv.org",
+      "publisher": "arXiv",
+      "kind": "primary",
+      "independenceGroup": "arxiv-announcement",
+      "publishedAt": "2026-09-15T04:00:00Z",
+      "eventDate": "2026-09-15T04:00:00Z",
+      "retrievedAt": "2026-09-15T08:11:00Z",
+      "locator": "RSS item 2609.13356v1; Announce Type: new; pubDate Tue, 15 Sep 2026 00:00:00 -0400. Timing only."
+    },
+    {
+      "id": "s2",
+      "url": "https://arxiv.org/abs/2609.13356",
+      "title": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
+      "publisher": "ZGCM Team",
+      "kind": "primary",
+      "independenceGroup": "zgcm-team",
+      "publishedAt": "2026-09-11T17:18:04Z",
+      "eventDate": "2026-09-11T17:18:04Z",
+      "retrievedAt": "2026-09-15T08:11:00Z",
+      "locator": "Version header; full HTML sections 2, 3.1.3, 5.1-5.3, 7.2, 11; Tables 2-4. Team claims attributed."
+    },
+    {
+      "id": "s3",
+      "url": "https://huggingface.co/zgcagi/ZGCM-1-7B",
+      "title": "ZGCM-1-7B model card and weights",
+      "publisher": "ZGCM Team",
+      "kind": "primary",
+      "independenceGroup": "zgcm-team",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-15T08:13:39Z",
+      "locator": "Model card introduction, Highlights, Quickstart, evaluation, architecture, licence; API gated=false, cardData license=mit, 16,520,401,888 usedStorage bytes, 20 siblings, lastModified 2026-09-15T07:21:04Z. Rechecked then: gated=false, licence=mit, same storage and 20 siblings."
+    },
+    {
+      "id": "s4",
+      "url": "https://huggingface.co/datasets/zgcagi/ZGCM-1-Data",
+      "title": "ZGCM-1-Data dataset card and repository",
+      "publisher": "ZGCM Team",
+      "kind": "primary",
+      "independenceGroup": "zgcm-team",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-15T08:13:40Z",
+      "locator": "Access banner, overview, six configurations, shared schema, index-only records, upstream access table, licence; API gated=manual, cardData license=other, 5,738,693,866,925 usedStorage bytes. No files downloaded. Rechecked then: gated=manual, licence=other, 4009 siblings, same storage."
+    },
+    {
+      "id": "s5",
+      "url": "https://github.com/zgcagi/ZGCM-1",
+      "title": "ZGCM-1 training repository",
+      "publisher": "ZGCM Team",
+      "kind": "primary",
+      "independenceGroup": "zgcm-team",
+      "publishedAt": "unknown",
+      "eventDate": "2026-09-15T07:26:16Z",
+      "retrievedAt": "2026-09-15T08:11:01Z",
+      "locator": "Top-level GitHub tree data-process/, pretrain/, midtrain/, sft/, rl/ and stage READMEs; API main tree SHA 39de0d58ff72d373046264e1324f9b22a5e2881e, push time 2026-09-15T07:26:16Z. W&B links not established."
+    },
+    {
+      "id": "s6",
+      "url": "https://huggingface.co/docs/hub/datasets-gated",
+      "title": "Gated datasets",
+      "publisher": "Hugging Face",
+      "kind": "independent",
+      "independenceGroup": "huggingface-platform-docs",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-15T08:11:02Z",
+      "locator": "Access requests, contact-info disclosure, manual-approval setting and user access sections. Explains platform setting, not ZGCM data contents."
+    },
+    {
+      "id": "s7",
+      "url": "https://opensource.org/ai/open-source-ai-definition",
+      "title": "The Open Source AI Definition 1.0",
+      "publisher": "Open Source Initiative",
+      "kind": "independent",
+      "independenceGroup": "osi-definition",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-15T08:11:03Z",
+      "locator": "Direct HTTPS 200 and full official page inspected at 2026-09-15T08:12Z: Preferred form to make modifications requires detailed Data Information, Code and Parameters; no requirement to redistribute all raw unshareable data. No ZGCM compliance verdict."
+    },
+    {
+      "id": "s8",
+      "url": "https://allenai.org/blog/olmo3",
+      "title": "Olmo 3 release",
+      "publisher": "Allen Institute for AI",
+      "kind": "independent",
+      "independenceGroup": "ai2-olmo",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-15T08:11:03Z",
+      "locator": "Independent release description of weights, code and data; comparison of release design only, not ZGCM validation."
+    }
+  ],
+  "claims": [
+    {
+      "id": "c01",
+      "text": "arXiv cs.AI announced 2609.13356v1 as new at 15 September 2026 04:00 UTC; manuscript v1 was submitted 11 September 17:18:04 UTC.",
+      "type": "fact",
+      "sourceIds": [
+        "s1",
+        "s2"
+      ],
+      "sourceLocator": "s1 item pubDate and Announce Type; s2 submission history.",
+      "status": "supported"
+    },
+    {
+      "id": "c02",
+      "text": "ZGCM team releases a 7.39B dense model trained from scratch with 32 layers, 27 gated SWA layers, five global layers and 262,144-token maximum context.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s2",
+        "s3"
+      ],
+      "sourceLocator": "s2 sections 1-2; s3 model specification.",
+      "status": "supported"
+    },
+    {
+      "id": "c03",
+      "text": "HF model is public ungated, MIT-labelled and contains four weight shards plus custom modelling code, with 16.52 GB of stored material.",
+      "type": "fact",
+      "sourceIds": [
+        "s3"
+      ],
+      "sourceLocator": "s3 public file list and live API metadata.",
+      "status": "supported"
+    },
+    {
+      "id": "c04",
+      "text": "The GitHub repository contains data-process, pretrain, midtrain, SFT and RL directories and stage documentation; repo push was 15 September 07:26:16 UTC.",
+      "type": "fact",
+      "sourceIds": [
+        "s5"
+      ],
+      "sourceLocator": "s5 tree and GitHub API pushed_at.",
+      "status": "supported"
+    },
+    {
+      "id": "c05",
+      "text": "The dataset has six Parquet configurations, about 5.74 TB in repository metadata, a manual access gate and top-level licence other.",
+      "type": "fact",
+      "sourceIds": [
+        "s4",
+        "s6"
+      ],
+      "sourceLocator": "s4 API metadata, card and access banner; s6 meaning of gated manual.",
+      "status": "supported"
+    },
+    {
+      "id": "c06",
+      "text": "Dataset records can carry per-item upstream licences; some index_only records provide locators without training text and upstream sources require separate terms or approval.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s4"
+      ],
+      "sourceLocator": "s4 Dataset Structure, Index-only Records, Sources Requiring Separate Upstream Access.",
+      "status": "supported"
+    },
+    {
+      "id": "c07",
+      "text": "A manual gated dataset asks users to share contact information and leaves access request approval under author control.",
+      "type": "fact",
+      "sourceIds": [
+        "s4",
+        "s6"
+      ],
+      "sourceLocator": "s4 access banner/API; s6 Access gated datasets and Manage sections.",
+      "status": "supported"
+    },
+    {
+      "id": "c08",
+      "text": "OSI AI definition distinguishes parameters, code and detailed data information and does not require redistribution of every raw item; this article does not make a ZGCM compliance finding.",
+      "type": "fact",
+      "sourceIds": [
+        "s7"
+      ],
+      "sourceLocator": "s7 version 1.0; limited to contextual standard.",
+      "status": "supported"
+    },
+    {
+      "id": "c09",
+      "text": "Ai2 Olmo 3 shows another independent weights/code/data release design, not ZGCM validation.",
+      "type": "inference",
+      "sourceIds": [
+        "s8"
+      ],
+      "sourceLocator": "s8 release description; comparison restricted to release choices.",
+      "status": "qualified"
+    },
+    {
+      "id": "c10",
+      "text": "Team reports 3.94-times throughput and 6.4-times KV-cache reduction at 256K in its architecture experiments.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s2"
+      ],
+      "sourceLocator": "s2 sections 2.2-2.3 and Figure 4; conditions of experiment preserved.",
+      "status": "supported"
+    },
+    {
+      "id": "c11",
+      "text": "Team estimates 4.2-times 16K pretraining time-to-loss against BF16/AdamW baseline by multiplying 1.4, 1.5, 1.8 and estimated 1.1 factors.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s2"
+      ],
+      "sourceLocator": "s2 section 3.1.3; this is a combined estimate, not a measured full-cycle cost.",
+      "status": "supported"
+    },
+    {
+      "id": "c12",
+      "text": "Team reports 75.00% AIME 2026, 97.13% MATH-500, 70.42% HMMT 2025 and weaker knowledge/instruction rows in its 256K SFT think-mode evaluation.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s2",
+        "s3"
+      ],
+      "sourceLocator": "s2 Table 2 and section 5.1; s3 selected benchmark table.",
+      "status": "supported"
+    },
+    {
+      "id": "c13",
+      "text": "Team reports 63.09% WebWalkerQA, 19.43% BrowseComp and 42.52% text-only GAIA with up to 64 search/read steps; many cross-model web baselines come from other reports.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s2",
+        "s3"
+      ],
+      "sourceLocator": "s2 Table 3 and sections 5.1-5.3; mixed protocol explicitly qualified.",
+      "status": "supported"
+    },
+    {
+      "id": "c14",
+      "text": "Team reports 31/50 Binary Function Search exact matches on a ten-project held-out subset under Ghidra protocol and says public benchmark release is planned.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s2",
+        "s3"
+      ],
+      "sourceLocator": "s2 section 5.3 and Table 4; s3 agentic search results.",
+      "status": "supported"
+    },
+    {
+      "id": "c15",
+      "text": "Team acknowledges difficult repository/terminal tasks and tool-format or observation brittleness.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s2"
+      ],
+      "sourceLocator": "s2 limitations section 7.2.",
+      "status": "supported"
+    },
+    {
+      "id": "c16",
+      "text": "Use-case evaluation and training reproduction require different verification plans; paper scores cannot forecast local accepted outcomes or complete cost.",
+      "type": "inference",
+      "sourceIds": [
+        "s2",
+        "s4",
+        "s5",
+        "s6"
+      ],
+      "sourceLocator": "Premises: s2 mixed protocols and developer-produced measures; s4 access/rights; s5 code/stages; s6 gate meaning. Boundary: recommendation, no test performed.",
+      "status": "qualified"
+    }
+  ],
+  "drafting": {
+    "agentId": "/root/drafter",
+    "completedAt": "2026-09-15T08:14:32Z"
+  },
+  "quotes": [
+    {
+      "sourceId": "s2",
+      "words": 2
+    }
+  ],
+  "riskFlags": [],
+  "sourceUse": {
+    "s2": {
+      "quotedWords": 2,
+      "derivedWordsEstimate": 170,
+      "note": "Only the two-word phrase fully open is quoted; numerical and method facts are paraphrased with local citations."
+    },
+    "s3": {
+      "quotedWords": 0,
+      "derivedWordsEstimate": 95
+    },
+    "s4": {
+      "quotedWords": 0,
+      "derivedWordsEstimate": 135
+    },
+    "s5": {
+      "quotedWords": 0,
+      "derivedWordsEstimate": 50
+    },
+    "s6": {
+      "quotedWords": 0,
+      "derivedWordsEstimate": 50
+    },
+    "s7": {
+      "quotedWords": 0,
+      "derivedWordsEstimate": 35
+    },
+    "s8": {
+      "quotedWords": 0,
+      "derivedWordsEstimate": 20
+    }
+  },
+  "editorial": {
+    "agentId": "/root/voice_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-15T08:18:35Z",
+    "articleSha256": "c76bd7fe8e50466e8b6f682c7c2ba1f183c3174825acdcf0eef3f36b5069d149",
+    "notes": [
+      "Led with the actual release and conditional data access, then removed repeated thesis statements and duplicate closing qualifications while retaining the explicit documentation-only limit.",
+      "Changed uniform section labels and source-by-source transitions into a clearer sequence: inspect the release, read each efficiency measure, interpret the test setup, then plan a bounded trial.",
+      "Preserved the exact event and submission timestamps, reported figures, local source links, mixed-protocol and licence caveats, Index Us Editorial byline, and required automation disclosure. Recalculated readingMinutes to 9 from 1,730 validator-counted words.",
+      "Inspected the final SVG against ArticleArtwork.astro and the Terms.txt and Salesforce inline examples: its offset weights/code/data plates and request marker are distinct, use the established grid, registration marks and palette, and imply no benchmark measurement or training proportions. Accessible title/description and visible original-illustration caption remain exact. Mobile and desktop rendering are still pending."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/factual_review",
+    "reviewedAt": "2026-09-15T08:21:49Z",
+    "articleSha256": "c76bd7fe8e50466e8b6f682c7c2ba1f183c3174825acdcf0eef3f36b5069d149",
+    "status": "passed",
+    "claimsCoverage": true,
+    "notes": [
+      "Independently reopened all eight public source locations, exact arXiv RSS timing, arXiv v1 methods and claims, live Hugging Face model/dataset APIs, GitHub API, Hugging Face gate rules, OSI and Ai2 context.",
+      "Checked every final material claim, all reported metrics and protocol caveats, headline, description, takeaways, nearby citations, byline, disclosure and actual testing limits; no unsupported material claim remains.",
+      "Verified that the two-word fully open quote is precisely attributed, developer sources share one evidence family, independent context does not validate ZGCM performance, and no W&B log, model, Parquet, benchmark task set or source-level licence was accessed.",
+      "Passed final inline SVG source inspection for style, distinct composition, accessibility and non-evidentiary interpretation; mobile and desktop rendered geometry remains a separate gate."
+    ]
+  },
+  "quality": {
+    "evidence": 31,
+    "context": 17,
+    "originalValue": 18,
+    "voice": 13,
+    "presentation": 9
+  },
+  "artwork": {
+    "factualReview": {
+      "agentId": "/root/factual_review",
+      "reviewedAt": "2026-09-15T08:21:49Z",
+      "verdict": "passed-source-inspection",
+      "articleSha256": "c76bd7fe8e50466e8b6f682c7c2ba1f183c3174825acdcf0eef3f36b5069d149",
+      "notes": "Final offset weights/code/data plate composition is distinct from inspected shared category artwork and Terms.txt, Salesforce and Harbor inline figures; the request doorway and smaller data plate are explicitly conceptual, with caption denying proportions or measured results. Accessible title, description and caption are present; root still must confirm mobile/desktop rendering."
+    },
+    "status": "passed",
+    "concept": "Three offset release plates show public weights, public code and conditional data access with a distinct source-rights compartment; no size or mark encodes model architecture, training proportions or benchmark results.",
+    "referencesInspected": [
+      "src/components/ArticleArtwork.astro",
+      "src/content/articles/terms-txt-agentic-web-access.md",
+      "src/content/articles/salesforce-agentforce-long-horizon-runtime.md",
+      "src/content/articles/harbor-agent-benchmark-versioning.md"
+    ],
+    "implementation": "Original self-contained inline 800x560 SVG with technical grid, registration marks, charcoal, off-white, vermilion, cobalt, sage and warm neutral palette; accessible title/description, responsive sizing, visible non-evidentiary caption; no scripts, animation or external resources.",
+    "responsiveRender": {
+      "reviewedAt": "2026-09-15T08:22:53Z",
+      "articleSha256": "c76bd7fe8e50466e8b6f682c7c2ba1f183c3174825acdcf0eef3f36b5069d149",
+      "desktop": "1280x900: 656x459.1875 SVG, no clipping/overflow",
+      "mobile": "390x844: 270x189 SVG, no clipping/overflow"
+    }
+  },
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Chromium local preview at 1280x900 returned 200; one H1, ordered headings, eight sources, exact byline/disclosure and seven article links were present. SVG rendered at 656x459.1875 in its 10:7 ratio with visible caption. No page errors, clipping or horizontal overflow; page and body scroll widths were 1280. Full-page and figure screenshots were visually inspected."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Chromium local preview at 390x844 returned 200; text, headings, disclosure, eight sources and caption wrapped within the column. SVG rendered at 270x189 in its 10:7 ratio with no clipping. Mobile menu opened with six links and article jump link reached #takeaways-title. No page errors or horizontal overflow; page and body scroll widths were 390. Full-page and figure screenshots were visually inspected."
+    }
+  }
+}
