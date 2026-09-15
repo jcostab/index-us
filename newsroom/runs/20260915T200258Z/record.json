@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260915T200258Z",
+  "startedAt": "2026-09-15T20:02:58.783Z",
+  "completedAt": "2026-09-15T20:19:24Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-13T20:02:58.783Z",
+    "end": "2026-09-15T20:02:58.783Z"
+  },
+  "candidates": [
+    {
+      "story": "Cloudflare Disallow AI Training for mixed-use crawlers and September migration",
+      "source": "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/",
+      "eventDate": "2026-09-15T13:00:00Z",
+      "decision": "selected",
+      "reason": "The primary post supplies an exact 13:00 UTC publication time inside the priority window and documents a live product-control change and migration. Apple, Google, Microsoft and RFC records independently bound the crawler/use claims. Existing terms.txt coverage discussed the July plan, not this September shipped choice."
+    },
+    {
+      "story": "SkillAtlas attack trace library for agent skills",
+      "source": "https://arxiv.org/html/2609.13353v1",
+      "eventDate": "2026-09-15T04:00:00Z",
+      "decision": "deferred-in-favour",
+      "reason": "The cs.CR RSS announced it as new at 04:00 UTC on 15 September, though v1 was submitted on 11 September. A curated red-team corpus and guarded benchmark are useful research but do not show deployed risk reduction. Cloudflare gives site operators a fresher, more direct policy decision with independent crawler documentation."
+    },
+    {
+      "story": "terms.txt machine-access proposal and July Cloudflare crawler plan",
+      "source": "https://arxiv.org/html/2609.11152",
+      "eventDate": "2026-09-12T04:00:00Z",
+      "decision": "already-covered",
+      "reason": "Index Us published the proposal in run 20260912T140303Z. That article cites the July Cloudflare plan as context; it does not cover the separate 15 September Cloudflare release or its migration. No correction to the terms.txt research was established in this drafting pass."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "Cloudflare published an exact-timestamped, non-duplicate mixed-use crawler setting and migration on 15 September. The article explains the actual site-operator choice between a no-training use preference with search access and access blocking that affects search, while preserving Bing and AI-summary limits."
+  },
+  "story": {
+    "id": "cloudflare-ai-training-search-crawler-choice",
+    "eventDate": "2026-09-15T13:00:00Z",
+    "canonicalUrls": [
+      "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/"
+    ]
+  },
+  "articlePath": "src/content/articles/cloudflare-ai-training-search-crawler-choice.md",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/",
+      "title": "Have it both ways: stay discoverable in search while disallowing AI training",
+      "publisher": "Cloudflare",
+      "kind": "primary",
+      "independenceGroup": "cloudflare",
+      "publishedAt": "2026-09-15T13:00:00Z",
+      "eventDate": "2026-09-15T13:00:00Z",
+      "retrievedAt": "2026-09-15T20:11:08Z",
+      "locator": "Live article metadata article:published_time and JSON-LD datePublished; New security setting options; What changes on September 15?; two migration tables; Recommendations for new domains; Applebot, Googlebot and Bingbot sections. Cloudflare product statement, not an account-level rollout check."
+    },
+    {
+      "id": "s2",
+      "url": "https://blog.cloudflare.com/content-independence-day-ai-options/",
+      "title": "Your site, your rules: new AI traffic options for all customers",
+      "publisher": "Cloudflare",
+      "kind": "primary",
+      "independenceGroup": "cloudflare",
+      "publishedAt": "2026-07-01",
+      "eventDate": "2026-07-01",
+      "retrievedAt": "2026-09-15T20:11:08Z",
+      "locator": "July 1 post, AI Search/Agent/Training categories and forecast that mixed-use crawlers would be affected by training blocking from September 15. Historical context, not evidence this September change already operated in July."
+    },
+    {
+      "id": "s3",
+      "url": "https://blog.cloudflare.com/bot-preference-sync/",
+      "title": "Say it once: introducing Bot Preference Sync",
+      "publisher": "Cloudflare",
+      "kind": "primary",
+      "independenceGroup": "cloudflare",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-15T20:11:08Z",
+      "locator": "Disallow paragraph, robots.txt preference publication and statement that generated entries are prepended to existing robots material. Product design/context; article date not exactly established in drafter pass."
+    },
+    {
+      "id": "s4",
+      "url": "https://developers.cloudflare.com/api/resources/bot_management/methods/update/",
+      "title": "Update Zone Bot Management Config",
+      "publisher": "Cloudflare Developers",
+      "kind": "primary",
+      "independenceGroup": "cloudflare",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-15T20:11:08Z",
+      "locator": "Update request schema ai_training optional disabled/disallow/block/only_on_ad_pages and bot_preference_sync_enabled boolean; API example. Existence of documented fields is not an account rollout test."
+    },
+    {
+      "id": "s5",
+      "url": "https://support.apple.com/en-us/119829",
+      "title": "About Applebot",
+      "publisher": "Apple Support",
+      "kind": "independent",
+      "independenceGroup": "apple",
+      "publishedAt": "2026-09-04",
+      "eventDate": "2026-09-04",
+      "retrievedAt": "2026-09-15T20:11:08Z",
+      "locator": "Published Date September 04, 2026; Applebot-Extended and controlling data usage; Customizing indexing rules including nosnippet; Marking paywalled content; About search rankings. Apple describes its own crawler, independent of Cloudflare announcement."
+    },
+    {
+      "id": "s6",
+      "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+      "title": "Google common crawlers — Google-Extended",
+      "publisher": "Google Developers",
+      "kind": "independent",
+      "independenceGroup": "google",
+      "publishedAt": "2026-07-14",
+      "eventDate": "2026-07-14",
+      "retrievedAt": "2026-09-15T20:11:08Z",
+      "locator": "Google-Extended entry: no separate HTTP user agent, robots product token, affected Gemini training and named grounding uses, no Google Search inclusion/ranking effect; page says last updated 2026-07-14 UTC. Google describes its own crawler."
+    },
+    {
+      "id": "s7",
+      "url": "https://blogs.bing.com/webmaster/september-2023/Announcing-new-options-for-webmasters-to-control-usage-of-their-content-in-Bing-Chat",
+      "title": "Announcing new options for webmasters to control usage of their content in Bing Chat",
+      "publisher": "Microsoft Bing Webmaster Blog",
+      "kind": "independent",
+      "independenceGroup": "microsoft-bing",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-15T20:11:08Z",
+      "locator": "September 2023 official account of NOARCHIVE exclusion from Bing Chat answers and generative-model training while ordinary Bing search indexing can remain; historical official documentation. Cloudflare s1 supplies the current claim that Bing no-training robots support is not yet available."
+    },
+    {
+      "id": "s8",
+      "url": "https://www.rfc-editor.org/rfc/rfc9309.html",
+      "title": "RFC 9309: Robots Exclusion Protocol",
+      "publisher": "RFC Editor / IETF",
+      "kind": "independent",
+      "independenceGroup": "ietf-rfc9309",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-15T20:11:08Z",
+      "locator": "Sections 1 and 3: robots rules are crawler access preferences, not access authorisation, and not an application-security substitute. Independent technical standard, not evaluation of Cloudflare implementation."
+    }
+  ],
+  "claims": [
+    {
+      "id": "c01",
+      "text": "Cloudflare published the mixed-use crawler setting announcement at 13:00 UTC on 15 September 2026.",
+      "type": "fact",
+      "sourceIds": [
+        "s1"
+      ],
+      "sourceLocator": "s1 article:published_time and datePublished",
+      "status": "supported"
+    },
+    {
+      "id": "c02",
+      "text": "Cloudflare says Disallow AI Training publishes applicable no-training preferences through Bot Preference Sync while designated mixed-use crawlers can continue ordinary search crawling.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s1",
+        "s3"
+      ],
+      "sourceLocator": "s1 New security setting options; s3 Disallow paragraph",
+      "status": "supported"
+    },
+    {
+      "id": "c03",
+      "text": "Cloudflare says Training Block and Block on pages with ads now apply to Applebot, Bingbot and Googlebot and can therefore affect search access.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s1"
+      ],
+      "sourceLocator": "s1 What changes on September 15?",
+      "status": "supported"
+    },
+    {
+      "id": "c04",
+      "text": "Cloudflare says Disallow AI Training blocks other training crawlers, including training-only crawlers from Amazon, Anthropic, Meta and OpenAI.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s1"
+      ],
+      "sourceLocator": "s1 New security setting options",
+      "status": "supported"
+    },
+    {
+      "id": "c05",
+      "text": "Cloudflare did not add a Disallow setting for Agent traffic in this release.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s1"
+      ],
+      "sourceLocator": "s1 paragraph after Training settings",
+      "status": "supported"
+    },
+    {
+      "id": "c06",
+      "text": "Cloudflare maps earlier granular Training Block and ads-only Block choices to Disallow AI Training to preserve their previous practical effect; legacy Block AI Bots settings have a separate mapping.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s1"
+      ],
+      "sourceLocator": "s1 two migration tables and explanatory paragraphs",
+      "status": "supported"
+    },
+    {
+      "id": "c07",
+      "text": "Cloudflare recommends Search Allow for both new-domain presets while Training and Agent presets vary with advertising monetisation.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s1"
+      ],
+      "sourceLocator": "s1 Recommendations for new domains table",
+      "status": "supported"
+    },
+    {
+      "id": "c08",
+      "text": "Cloudflare’s Bot Management update API documents ai_training set to disallow and bot_preference_sync_enabled.",
+      "type": "fact",
+      "sourceIds": [
+        "s4"
+      ],
+      "sourceLocator": "s4 update request schema and example",
+      "status": "supported"
+    },
+    {
+      "id": "c09",
+      "text": "Apple says Applebot-Extended controls training use of Applebot-crawled pages, makes no separate page crawl and does not affect Apple Search rankings.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s5"
+      ],
+      "sourceLocator": "s5 Applebot-Extended and About search rankings",
+      "status": "supported"
+    },
+    {
+      "id": "c10",
+      "text": "Apple describes nosnippet and paywall markup as separate page-level controls on generated outputs.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s5"
+      ],
+      "sourceLocator": "s5 Customizing indexing rules and Marking paywalled content",
+      "status": "supported"
+    },
+    {
+      "id": "c11",
+      "text": "Google says Google-Extended is a robots product token without its own HTTP user agent and governs future Gemini training plus grounding in named Gemini products, without affecting Google Search inclusion or ranking.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s6"
+      ],
+      "sourceLocator": "s6 Google-Extended entry",
+      "status": "supported"
+    },
+    {
+      "id": "c12",
+      "text": "Cloudflare says its Disallow AI Training setting does not yet convey a Bing no-training preference via robots.txt and that Microsoft is targeting early 2027 support.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s1"
+      ],
+      "sourceLocator": "s1 Bingbot section; commitment unshipped",
+      "status": "supported"
+    },
+    {
+      "id": "c13",
+      "text": "Microsoft’s older NOARCHIVE account says tagged content can remain in ordinary Bing search while being excluded from Bing Chat answers and generative-model training.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s7"
+      ],
+      "sourceLocator": "s7 NOARCHIVE section; older publication requires current-use caveat",
+      "status": "qualified"
+    },
+    {
+      "id": "c14",
+      "text": "RFC 9309 says robots.txt crawler-access rules are not access authorisation.",
+      "type": "fact",
+      "sourceIds": [
+        "s8"
+      ],
+      "sourceLocator": "s8 Sections 1 and 3",
+      "status": "supported"
+    },
+    {
+      "id": "c15",
+      "text": "A published use preference cannot by itself prove downstream training compliance; a site operator should separately verify its edge access policy, crawler controls and current account migration.",
+      "type": "inference",
+      "sourceIds": [
+        "s1",
+        "s3",
+        "s8"
+      ],
+      "sourceLocator": "s1 preference versus Block and migration; s3 robots publishing; s8 authorisation boundary. Practical inference, not measured efficacy",
+      "status": "qualified"
+    }
+  ],
+  "drafting": {
+    "agentId": "/root/drafter"
+  },
+  "articleSha256": "8370c100e6d005834e17d683762ef34d8551353ec11daff42c43a4e64b6e4bce",
+  "editorial": {
+    "agentId": "/root/editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-15T20:15:12Z",
+    "articleSha256": "8370c100e6d005834e17d683762ef34d8551353ec11daff42c43a4e64b6e4bce",
+    "notes": [
+      "Completed full skill and both voice references; clarified access versus use without adding efficacy claims.",
+      "Preserved source attribution and the 2023 Bing caveat; renewed review after final metadata change.",
+      "Verified original SVG in source and exact automated disclosure."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/factual_reviewer",
+    "reviewedAt": "2026-09-15T20:16:29Z",
+    "articleSha256": "8370c100e6d005834e17d683762ef34d8551353ec11daff42c43a4e64b6e4bce",
+    "status": "passed",
+    "claimsCoverage": true
+  },
+  "quality": {
+    "evidence": 32,
+    "context": 18,
+    "originalValue": 18,
+    "voice": 13,
+    "presentation": 8
+  },
+  "riskFlags": [],
+  "quotes": [],
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered static Astro preview: title, disclosure, original inline SVG and eight source links visible; source anchor reached the list; no horizontal overflow or artwork clipping."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered static Astro preview: title and disclosure legible; original inline 800x560 SVG fully visible, menu opened and closed, navigation present; no horizontal overflow."
+    }
+  }
+}
