@@ -1,0 +1,432 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260915T140208Z",
+  "startedAt": "2026-09-15T14:02:08.096Z",
+  "completedAt": "2026-09-15T14:25:08Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-13T14:02:08.096Z",
+    "end": "2026-09-15T14:02:08.096Z"
+  },
+  "candidates": [
+    {
+      "story": "Microsoft AI draft Code of Conduct",
+      "source": "https://microsoft.ai/news/mai-code-of-conduct/",
+      "eventDate": "2026-09-14T13:00:00Z",
+      "decision": "selected",
+      "reason": "Fresh exact-timestamped consultation, full draft, independent reporting and a distinct agent-control evidence question."
+    },
+    {
+      "story": "Meta Muse permission scope",
+      "source": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+      "eventDate": "unknown",
+      "decision": "rejected",
+      "reason": "Already covered by Index Us; no new event verified this run."
+    },
+    {
+      "story": "A2A protocol security invariants",
+      "source": "https://arxiv.org/html/2609.10871",
+      "eventDate": "unknown",
+      "decision": "rejected",
+      "reason": "Already covered by Index Us; no fresh correction or event verified this run."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "Fresh, consequential consultation supports a non-duplicate analysis of proposed agent conduct versus released evaluation and deployment evidence."
+  },
+  "story": {
+    "id": "microsoft-ai-draft-code-agent-control-evidence",
+    "eventDate": "2026-09-14T13:00:00Z",
+    "canonicalUrls": [
+      "https://microsoft.ai/news/mai-code-of-conduct/",
+      "https://microsoft.ai/code-of-conduct/"
+    ]
+  },
+  "articlePath": "src/content/articles/microsoft-ai-draft-code-agent-control-evidence.md",
+  "articleSha256": "c3e79aa6602f5b8a92a8672d56b6d8775e1ea6ec738c864eb8d4a34982ee514c",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://microsoft.ai/news/mai-code-of-conduct/",
+      "title": "Humanist AI in practice: A public consultation on our Code of Conduct for MAI Models",
+      "publisher": "Microsoft AI",
+      "kind": "primary",
+      "independenceGroup": "microsoft-ai",
+      "publishedAt": "2026-09-14T13:00:00Z",
+      "eventDate": "2026-09-14T13:00:00Z",
+      "retrievedAt": "2026-09-15T14:05:00Z",
+      "locator": "Announcement page date and JSON-LD datePublished; six-week consultation and future revision."
+    },
+    {
+      "id": "s2",
+      "url": "https://microsoft.ai/code-of-conduct/",
+      "title": "Humanist AI Code of Conduct",
+      "publisher": "Microsoft AI",
+      "kind": "primary",
+      "independenceGroup": "microsoft-ai",
+      "publishedAt": "2026-09-14",
+      "eventDate": "2026-09-14",
+      "retrievedAt": "2026-09-15T14:11:20Z",
+      "locator": "Direct HTTP full-page retrieval to ignored .newsroom-work/20260915T140208Z/mai-code-of-conduct-direct.html; Preface and About; Part 2 sections 2.2-2.4; Part 4 section 4.5; Part 5; glossary MAI Models; Appendix B Evaluations."
+    },
+    {
+      "id": "s3",
+      "url": "https://www.axios.com/2026/09/14/microsoft-ai-people-code",
+      "title": "Microsoft: People matter more than AI",
+      "publisher": "Axios / Ina Fried",
+      "kind": "independent",
+      "independenceGroup": "axios",
+      "publishedAt": "2026-09-14",
+      "eventDate": "2026-09-14",
+      "retrievedAt": "2026-09-15T14:05:00Z",
+      "locator": "Interview-based report; Between the lines, Behind the scenes and What's next: competitive tension, not implementation proof."
+    },
+    {
+      "id": "s4",
+      "url": "https://www.aisi.gov.uk/blog/how-to-evaluate-control-measures-for-ai-agents",
+      "title": "How to evaluate control measures for AI agents?",
+      "publisher": "UK AI Security Institute",
+      "kind": "independent",
+      "independenceGroup": "uk-aisi",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-15T14:12:32Z",
+      "locator": "Direct public web recheck completed 2026-09-15T14:12:32Z; What is AI control? monitoring, approval, restricted resources, termination and adversarial control evaluations."
+    },
+    {
+      "id": "s5",
+      "url": "https://www.nist.gov/artificial-intelligence/ai-research/tevv-athlon-framework-evaluating-ai-systems",
+      "title": "The TEVV-Athlon Framework for Evaluating AI Systems",
+      "publisher": "NIST",
+      "kind": "independent",
+      "independenceGroup": "nist",
+      "publishedAt": "2026-08-07",
+      "eventDate": "2026-08-07",
+      "retrievedAt": "2026-09-15T14:12:32Z",
+      "locator": "Direct public web recheck completed 2026-09-15T14:12:32Z; initial public draft announcement and abstract: customised TEVV; agentic and multimodal scope."
+    }
+  ],
+  "claims": [
+    {
+      "id": "c01",
+      "text": "The announcement page's JSON-LD dates publication to 14 September 2026 at 13:00 UTC.",
+      "type": "fact",
+      "sourceIds": [
+        "s1"
+      ],
+      "sourceLocator": "Announcement HTML JSON-LD datePublished.",
+      "status": "supported"
+    },
+    {
+      "id": "c02",
+      "text": "Microsoft AI plans a six-week public consultation, a revision later in 2026, and guidance for model development in 2027 and beyond.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s1",
+        "s2"
+      ],
+      "sourceLocator": "Announcement consultation paragraphs and code preface.",
+      "status": "qualified"
+    },
+    {
+      "id": "c03",
+      "text": "Current MAI models are not trained on this code today.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s2"
+      ],
+      "sourceLocator": "Preface and Appendix B opening.",
+      "status": "supported"
+    },
+    {
+      "id": "c04",
+      "text": "The proposed code covers models produced by Microsoft AI, including operator deployments, but not third-party models merely hosted or used by Microsoft or every product safeguard.",
+      "type": "fact",
+      "sourceIds": [
+        "s2"
+      ],
+      "sourceLocator": "Glossary MAI Models and About.",
+      "status": "supported"
+    },
+    {
+      "id": "c05",
+      "text": "Microsoft AI describes the draft as descriptive and aspirational, not a present-day performance guarantee.",
+      "type": "fact",
+      "sourceIds": [
+        "s2"
+      ],
+      "sourceLocator": "Part 5.",
+      "status": "supported"
+    },
+    {
+      "id": "c06",
+      "text": "The proposed chain places the code, absolute safety constraints and human-control requirements above operator policies and user preferences.",
+      "type": "fact",
+      "sourceIds": [
+        "s2"
+      ],
+      "sourceLocator": "Part 2 section 2.2.",
+      "status": "supported"
+    },
+    {
+      "id": "c07",
+      "text": "Operators can configure behaviour only within non-negotiable boundaries; user instructions cannot override absolute or human-control requirements.",
+      "type": "fact",
+      "sourceIds": [
+        "s2"
+      ],
+      "sourceLocator": "Part 2 sections 2.2 and 2.4.",
+      "status": "supported"
+    },
+    {
+      "id": "c08",
+      "text": "The draft says future MAI models should not initiate goals, widen scope, escalate access or treat web, file and tool-output instructions as authoritative by default.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s2"
+      ],
+      "sourceLocator": "Part 2 Human Control and Authority clarification; Part 4 Tool Use.",
+      "status": "qualified"
+    },
+    {
+      "id": "c09",
+      "text": "The draft says models should be interruptible, not restart after an agreed stop without renewed authorisation, and preserve human-legible action and failure records.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s2"
+      ],
+      "sourceLocator": "Part 2 section 2.4 and Part 4 Tool Use.",
+      "status": "qualified"
+    },
+    {
+      "id": "c10",
+      "text": "The document allows some operator implementation stringency to vary within its non-negotiable human-control boundaries.",
+      "type": "fact",
+      "sourceIds": [
+        "s2"
+      ],
+      "sourceLocator": "Part 2 section 2.4 opening.",
+      "status": "supported"
+    },
+    {
+      "id": "c11",
+      "text": "Appendix B identifies 15 initial behaviours split into sub-behaviours and says more complete evaluations will appear later.",
+      "type": "fact",
+      "sourceIds": [
+        "s2"
+      ],
+      "sourceLocator": "Appendix B introduction.",
+      "status": "supported"
+    },
+    {
+      "id": "c12",
+      "text": "Published examples are synthetic conversations generated with MAI-Thinking-1, not agentic or multimodal tests or measured pass rates.",
+      "type": "fact",
+      "sourceIds": [
+        "s2"
+      ],
+      "sourceLocator": "Appendix B Illustrative Examples.",
+      "status": "supported"
+    },
+    {
+      "id": "c13",
+      "text": "Conversational examples cannot establish whether a deployed agent stops queued work or preserves tool permission and approval boundaries.",
+      "type": "inference",
+      "sourceIds": [
+        "s2",
+        "s4",
+        "s5"
+      ],
+      "sourceLocator": "Premises: Appendix B example limits and independent system-control evaluation methods.",
+      "status": "qualified"
+    },
+    {
+      "id": "c14",
+      "text": "The UK AI Security Institute distinguishes training-time alignment from action-constraining controls and argues for adversarial control evaluations.",
+      "type": "fact",
+      "sourceIds": [
+        "s4"
+      ],
+      "sourceLocator": "What is AI control?",
+      "status": "supported"
+    },
+    {
+      "id": "c15",
+      "text": "NIST's still-draft TEVV-Athlon supports tailored system evaluation for agentic and multimodal systems but does not certify Microsoft AI.",
+      "type": "fact",
+      "sourceIds": [
+        "s5"
+      ],
+      "sourceLocator": "Announcement and abstract.",
+      "status": "supported"
+    },
+    {
+      "id": "c16",
+      "text": "Axios reported Suleyman's stated willingness to trade speed or capability for human control and identified competitive tension with rivals.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s3"
+      ],
+      "sourceLocator": "Interview; Behind the scenes; What's next.",
+      "status": "qualified"
+    },
+    {
+      "id": "c17",
+      "text": "The inspected materials do not verify a current MAI deployment's controls or a concrete capability trade-off already made.",
+      "type": "inference",
+      "sourceIds": [
+        "s2",
+        "s3"
+      ],
+      "sourceLocator": "Future-code status and prospective Axios framing; no deployment measurements in inspected material.",
+      "status": "qualified"
+    },
+    {
+      "id": "c18",
+      "text": "A buyer should request serving-model identity, operator settings, tool permissions, cancellation, records and representative evaluations before broadening access.",
+      "type": "inference",
+      "sourceIds": [
+        "s2",
+        "s4",
+        "s5"
+      ],
+      "sourceLocator": "Practical synthesis of proposed obligations and independent evaluation methods, not a code mandate.",
+      "status": "qualified"
+    },
+    {
+      "id": "c19",
+      "text": "Microsoft AI invites feedback on human flourishing, evaluability and multi-agent scenarios and does not promise to adopt individual suggestions.",
+      "type": "fact",
+      "sourceIds": [
+        "s1",
+        "s2"
+      ],
+      "sourceLocator": "Announcement feedback questions and Part 5.",
+      "status": "supported"
+    },
+    {
+      "id": "c20",
+      "text": "Index Us did not test an MAI model, inspect internal controls or unpublished evaluations, or verify a customer deployment.",
+      "type": "fact",
+      "sourceIds": [
+        "s1",
+        "s2"
+      ],
+      "sourceLocator": "Run activity record and explicit reporting limit.",
+      "status": "supported"
+    }
+  ],
+  "sourceUse": [
+    {
+      "sourceId": "s1",
+      "quotedWords": 0,
+      "derivedWords": 80,
+      "handling": "Announcement identity, exact timestamp and consultation plan only."
+    },
+    {
+      "sourceId": "s2",
+      "quotedWords": 0,
+      "derivedWords": 680,
+      "handling": "Direct HTTP full-page access, separate from web-tool excerpt limits; original synthesis of the draft's scope, controls, evaluation appendix and limits. No verbatim quotes, copied examples or narrative outline."
+    },
+    {
+      "sourceId": "s3",
+      "quotedWords": 0,
+      "derivedWords": 22,
+      "handling": "Web-tool excerpt only; 22 source-derived paraphrase words under the returned 25-word limit. Attributed interview context, not model verification. Direct HTTP to Axios returned 403."
+    },
+    {
+      "sourceId": "s4",
+      "quotedWords": 0,
+      "derivedWords": 105,
+      "handling": "Independent methodological context only."
+    },
+    {
+      "sourceId": "s5",
+      "quotedWords": 0,
+      "derivedWords": 75,
+      "handling": "Draft evaluation-method context only."
+    }
+  ],
+  "quotes": [
+    {
+      "sourceId": "s1",
+      "words": 0
+    },
+    {
+      "sourceId": "s2",
+      "words": 0
+    },
+    {
+      "sourceId": "s3",
+      "words": 0
+    },
+    {
+      "sourceId": "s4",
+      "words": 0
+    },
+    {
+      "sourceId": "s5",
+      "words": 0
+    }
+  ],
+  "drafting": {
+    "agentId": "/root/draft_research",
+    "completedAt": "2026-09-15T14:11:20Z",
+    "notes": [
+      "Original article retained byte-for-byte in .newsroom-work/20260915T140208Z/draft.md.",
+      "Research brief, preservation list and source/claim/source-use ledger retained without private material.",
+      "Firecrawl CLI was unauthenticated; public pages opened via web tool and full Microsoft draft retrieved directly over HTTP. Axios direct HTTP returned 403; its source-derived material was reduced to 22 words within the web tool's 25-word limit. No MAI model tested.",
+      "Original inline SVG requires independent editorial and factual inspection plus responsive rendered checks."
+    ]
+  },
+  "editorial": {
+    "agentId": "/root/voice_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-15T14:21:54Z",
+    "articleSha256": "c3e79aa6602f5b8a92a8672d56b6d8775e1ea6ec738c864eb8d4a34982ee514c",
+    "notes": [
+      "Read the complete skill and both complete private references; publication-edited the full draft without attributing authorship or lived experience to John.",
+      "Tightened repetitive proposal-versus-proof qualifications and signposting while preserving every material source claim, caveat, date, source link, byline and exact disclosure. No quotation added.",
+      "Inspected the final story-specific SVG against ArticleArtwork.astro and Meta Muse/A2A examples: distinct hierarchy, stop and evaluation-gap composition in house palette, accessible and expressly conceptual. Responsive checks still pending.",
+      "Renewed complete-article approval after only publishedAt/updatedAt changed to observed 2026-09-16T00:21:15+10:00 local editorial-release dateline and readingMinutes corrected to 10 for 1,949 words. Reconstructing prior metadata exactly reproduces initial reviewed SHA-256, so prose, sources and SVG are byte-for-byte unchanged. This dateline does not claim precise edge go-live time."
+    ]
+  },
+  "artwork": {
+    "concept": "A proposed rule plate and human interruption key sit above a cobalt agent loop, with a dashed evidence gap before a sage evaluation panel.",
+    "referencesInspected": [
+      "src/components/ArticleArtwork.astro",
+      "src/content/articles/meta-muse-permission-scope.md",
+      "src/content/articles/a2a-protocol-security-invariants.md"
+    ],
+    "status": "Original story-specific SVG passed editorial and factual style/originality/implication review and fresh 1280px/390px rendered checks; accessible and conceptual."
+  },
+  "riskFlags": [],
+  "factCheck": {
+    "agentId": "/root/factual_review",
+    "reviewedAt": "2026-09-15T14:24:14Z",
+    "articleSha256": "c3e79aa6602f5b8a92a8672d56b6d8775e1ea6ec738c864eb8d4a34982ee514c",
+    "status": "passed",
+    "claimsCoverage": true
+  },
+  "quality": {
+    "evidence": 32,
+    "context": 18,
+    "originalValue": 18,
+    "voice": 13,
+    "presentation": 9
+  },
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Fresh local Astro preview at 1280x900 showed the 10-minute estimate, 16 Sept dateline, byline, disclosure, heading hierarchy and all five source links. Original 800x560 SVG rendered at 736x515.2 (10:7), without clipping; document width equalled viewport width, and browser page-error log was empty."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Fresh local Astro preview at 390x844 showed the headline, 10-minute estimate, 16 Sept dateline, disclosure, source list and original SVG at 350x245 (10:7). Caption wrapped legibly, no SVG clipping or horizontal overflow (document width 390), page-error log empty; six-link mobile menu opened and closed."
+    }
+  }
+}
