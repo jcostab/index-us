@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260917T141905Z",
+  "startedAt": "2026-09-17T14:19:05.638Z",
+  "completedAt": "2026-09-17T14:47:10Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-15T14:19:05.638Z",
+    "end": "2026-09-17T14:19:05.638Z"
+  },
+  "candidates": [
+    {
+      "story": "OpenAI Sponsored Agents in ChatGPT Ads",
+      "source": "https://openai.com/index/reimagining-advertising-with-ai/",
+      "eventDate": "2026-09-16T13:00:00Z",
+      "decision": "selected",
+      "reason": "The exact RSS timestamp is within the 48-hour discovery gate. The limited alpha turns an ad click into a separate multi-turn commercial conversation, creating a consequential and non-duplicate operator decision about persistent disclosure, source identity, claim control, data boundaries, hand-off and completion."
+    },
+    {
+      "story": "AEPD notification of a breach reportedly executed by an AI agent",
+      "source": "https://www.aepd.es/prensa-y-comunicacion/blog/primera-notiviacion-brecha-datos-personales-causada-por-ataque-ejecutado-mediante-agente-ia",
+      "eventDate": "unknown",
+      "decision": "rejected",
+      "reason": "The primary page is dated 14 September 2026 without an exact event time and is outside the 48-hour gate at run start. The AEPD also says the notification still needs analysis, so no definitive incident conclusion is available."
+    },
+    {
+      "story": "Google Gemini 3.8 Live and Extended Thinking",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+      "eventDate": "2026-09-15T17:00:00Z",
+      "decision": "rejected",
+      "reason": "Google's RSS supplies an exact time inside the 48-hour gate but close to its cutoff. The control-loop angle substantially overlaps recent GPT-Live-1 coverage, and a distinct article would require a deeper benchmark and pricing reconciliation."
+    },
+    {
+      "story": "Snyk agentic-development security promotion",
+      "source": "https://snyk.io/news/agentic-ai-security-moves-into-production/",
+      "eventDate": "unknown",
+      "decision": "rejected",
+      "reason": "The current page is date-only on 17 September without a verified exact event time. It is a vendor-led product and sales-metric promotion with insufficient independent evidence for an earned long-form article."
+    },
+    {
+      "story": "Arcjet runtime-security launch report",
+      "source": "https://siliconangle.com/2026/09/17/exclusive-arcjet-launches-runtime-security-to-track-and-control-ai-agents-in-production/",
+      "eventDate": "unknown",
+      "decision": "rejected",
+      "reason": "The independent exclusive describes a consequential product category, but no exact-timestamped primary announcement or source was established. Automatic publication could not rest on the secondary report alone."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "OpenAI's exact-timestamped limited alpha is fresh, consequential and not covered by Index Us. The article adds an evidence-bounded operator framework for evaluating the entire sponsored conversation while keeping unverified product behaviour and public-documentation gaps explicit."
+  },
+  "story": {
+    "id": "openai-sponsored-agents-commercial-conversation",
+    "eventDate": "2026-09-16T13:00:00Z",
+    "canonicalUrls": [
+      "https://openai.com/index/reimagining-advertising-with-ai/"
+    ]
+  },
+  "articlePath": "src/content/articles/openai-sponsored-agents-commercial-conversation.md",
+  "articleSha256": "bfdf6e7049784cd2fae0f47b3c2c4450dcd14703abae769556f7dce734eb99e4",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://openai.com/index/reimagining-advertising-with-ai/",
+      "title": "Reimagining advertising with AI",
+      "publisher": "OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "2026-09-16T13:00:00Z",
+      "eventDate": "2026-09-16T13:00:00Z",
+      "retrievedAt": "2026-09-17T14:25:31Z",
+      "locator": "OpenAI News RSS for exact timestamp; launch opening and Being part of the AI conversation for format, separation and selected-US-advertiser test"
+    },
+    {
+      "id": "s2",
+      "url": "https://openai.com/news/rss.xml",
+      "title": "OpenAI News RSS",
+      "publisher": "OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "2026-09-16T13:00:00Z",
+      "eventDate": "2026-09-16T13:00:00Z",
+      "retrievedAt": "2026-09-17T14:25:31Z",
+      "locator": "Current item titled Reimagining advertising with AI; pubDate Wed, 16 Sep 2026 13:00:00 GMT"
+    },
+    {
+      "id": "s3",
+      "url": "https://help.openai.com/en/articles/20001524-sponsored-agents-in-chatgpt-ads",
+      "title": "Sponsored Agents in ChatGPT Ads",
+      "publisher": "OpenAI Help Center",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-17T14:25:31Z",
+      "locator": "What are Sponsored Agents; availability; early access sections"
+    },
+    {
+      "id": "s4",
+      "url": "https://openai.com/policies/ad-tools-terms/",
+      "title": "Ad Tools Terms",
+      "publisher": "OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "2026-08-24",
+      "eventDate": "2026-08-24",
+      "retrievedAt": "2026-09-17T14:25:31Z",
+      "locator": "Section 4 Sponsored Agents; Section 5 definitions"
+    },
+    {
+      "id": "s5",
+      "url": "https://openai.com/policies/advertising-terms/",
+      "title": "Advertising Terms",
+      "publisher": "OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "2026-08-25",
+      "eventDate": "2026-08-25",
+      "retrievedAt": "2026-09-17T14:25:31Z",
+      "locator": "Sections 5.3 Campaign Responsibilities, 5.4 Reporting Data and 8.3 No Guarantees"
+    },
+    {
+      "id": "s6",
+      "url": "https://openai.com/policies/service-terms/",
+      "title": "Service terms",
+      "publisher": "OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "2026-09-10",
+      "eventDate": "2026-09-10",
+      "retrievedAt": "2026-09-17T14:25:31Z",
+      "locator": "Section 5 For Builders of GPTs; Section 7 Apps and Actions"
+    },
+    {
+      "id": "s7",
+      "url": "https://openai.com/policies/ad-policies/",
+      "title": "Ad policies",
+      "publisher": "OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "2026-09-10",
+      "eventDate": "2026-09-10",
+      "retrievedAt": "2026-09-17T14:25:31Z",
+      "locator": "Baseline ad standards; advertiser identity and destination integrity"
+    },
+    {
+      "id": "s8",
+      "url": "https://openai.com/consumer-privacy/",
+      "title": "ChatGPT Privacy Settings",
+      "publisher": "OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-17T14:25:31Z",
+      "locator": "Ads controls section"
+    },
+    {
+      "id": "s9",
+      "url": "https://www.ftc.gov/business-guidance/resources/native-advertising-guide-businesses",
+      "title": "Native Advertising: A Guide for Businesses",
+      "publisher": "Federal Trade Commission",
+      "kind": "independent",
+      "independenceGroup": "ftc",
+      "publishedAt": "2015-12-22",
+      "eventDate": "2015-12-22",
+      "retrievedAt": "2026-09-17T14:25:31Z",
+      "locator": "Established principles; clear and prominent disclosure; proximity and click-into-page guidance"
+    },
+    {
+      "id": "s10",
+      "url": "https://arxiv.org/abs/2608.05008",
+      "title": "The Beginning of ChatGPT Ads",
+      "publisher": "Emma Lurie, Ro Encarnación, Sorelle A. Friedler and Danaé Metaxa",
+      "kind": "independent",
+      "independenceGroup": "lurie-et-al",
+      "publishedAt": "2026-08-05T16:13:38Z",
+      "eventDate": "2026-08-05T16:13:38Z",
+      "retrievedAt": "2026-09-17T14:25:31Z",
+      "locator": "Abstract and submission history"
+    }
+  ],
+  "claims": [
+    {"id":"c01","text":"OpenAI published Reimagining advertising with AI at 13:00 UTC on 16 September 2026.","type":"fact","sourceIds":["s1","s2"],"sourceLocator":"s2 RSS pubDate and s1 page title/date","status":"supported"},
+    {"id":"c02","text":"OpenAI says clicking an ad can open a clearly labelled conversation with a business-sponsored agent that is distinct from ChatGPT's independent answer and separate from the original conversation.","type":"attributed_claim","sourceIds":["s1"],"sourceLocator":"Being part of the AI conversation","status":"supported"},
+    {"id":"c03","text":"Sponsored Agents are in a limited alpha for selected US advertisers, and OpenAI is not accepting early-access requests.","type":"fact","sourceIds":["s1","s3"],"sourceLocator":"s1 US test; s3 availability and early access","status":"supported"},
+    {"id":"c04","text":"A click-through metric cannot establish whether a subsequent multi-turn agent preserves disclosure, answers accurately, handles data appropriately or stops correctly.","type":"inference","sourceIds":["s1","s3","s4","s5","s9"],"sourceLocator":"Inference from the documented multi-turn format, advertiser responsibility and disclosure requirements","status":"qualified"},
+    {"id":"c05","text":"OpenAI's Ad Tools Terms deem the advertiser the builder and responsible for Sponsored Agent content, configurations, Actions and output.","type":"fact","sourceIds":["s4"],"sourceLocator":"Section 4 Sponsored Agents","status":"supported"},
+    {"id":"c06","text":"OpenAI's Advertising Terms allocate responsibility for campaign settings, instructions, destinations and AI-generated outputs and require disclosures and claim substantiation.","type":"fact","sourceIds":["s5"],"sourceLocator":"Section 5.3 Campaign Responsibilities","status":"supported"},
+    {"id":"c07","text":"OpenAI's Service terms require information published about a GPT to remain complete, accurate and not misleading.","type":"fact","sourceIds":["s4","s6"],"sourceLocator":"s4 incorporation; s6 Section 5(b)","status":"supported"},
+    {"id":"c08","text":"OpenAI's ad policies prohibit misleading capability, pricing, outcome, affiliation and comparison claims and ads that imitate the ChatGPT interface.","type":"fact","sourceIds":["s7"],"sourceLocator":"Baseline ad standards","status":"supported"},
+    {"id":"c09","text":"OpenAI says advertisers cannot access a person's chats, chat history, memories or personal details, and users can manage ad personalisation.","type":"attributed_claim","sourceIds":["s8"],"sourceLocator":"Ads controls","status":"supported"},
+    {"id":"c10","text":"The inspected public launch and help pages do not specify advertiser access to sponsored-conversation content, retention, reporting, human hand-off or the alpha's action set.","type":"fact","sourceIds":["s1","s3","s4","s6"],"sourceLocator":"Scope comparison across inspected product/help pages and conditional Actions terms","status":"qualified"},
+    {"id":"c11","text":"Operators should map data at each transition and confirm undocumented boundaries rather than infer either access or isolation.","type":"inference","sourceIds":["s1","s4","s5","s6","s8"],"sourceLocator":"Recommendation from documented separation, responsibilities and public documentation gaps","status":"qualified"},
+    {"id":"c12","text":"The Beginning of ChatGPT Ads preprint used 91 controlled accounts and collected more than 3,000 ads from 186 advertisers across 335 prompts.","type":"fact","sourceIds":["s10"],"sourceLocator":"Abstract","status":"supported"},
+    {"id":"c13","text":"The preprint authors report that the earlier ads were clearly separated from ChatGPT responses and mostly directed users towards advertisers rather than specific products.","type":"attributed_claim","sourceIds":["s10"],"sourceLocator":"Abstract findings","status":"supported"},
+    {"id":"c14","text":"The preprint's February-to-August 2026 chronology means it did not evaluate Sponsored Agents announced in September.","type":"fact","sourceIds":["s1","s2","s10"],"sourceLocator":"s10 abstract and submission history compared with s2 exact launch time","status":"supported"},
+    {"id":"c15","text":"FTC native-advertising guidance says the overall impression and commercial source matter and that disclosure may need to appear again on a click-into page near the advertising message.","type":"fact","sourceIds":["s9"],"sourceLocator":"Established principles and proximity/placement guidance","status":"supported"},
+    {"id":"c16","text":"A useful Sponsored Agents pilot should test disclosure persistence, claim grounding, data boundaries, Actions and hand-off, completion states and auditability across the whole interaction.","type":"inference","sourceIds":["s1","s3","s4","s5","s6","s7","s8","s9","s10"],"sourceLocator":"Original operator framework derived from documented format, responsibilities, general disclosure guidance and earlier audit method","status":"qualified"}
+  ],
+  "drafting": {
+    "agentId": "/root/newsroom_drafter",
+    "completedAt": "2026-09-17T14:28:47Z",
+    "notes": [
+      "The untouched 1,712-word original draft is retained at .newsroom-work/20260917T141905Z/draft.md.",
+      "Research brief, source/claim/source-use ledgers, preservation list and rejected-candidate scan are retained without private material.",
+      "The article contains a new accessible 800 by 560 inline SVG showing a disclosure gate, bounded conversation, data boundary and terminal control; it is labelled as conceptual rather than product evidence.",
+      "Firecrawl completed broad discovery, while direct public HTTP/live-web fallback was used for source-level verification because the drafting shell did not expose the Firecrawl command."
+    ]
+  },
+  "editorial": {
+    "agentId": "/root/newsroom_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-17T14:35:52Z",
+    "articleSha256": "bfdf6e7049784cd2fae0f47b3c2c4450dcd14703abae769556f7dce734eb99e4",
+    "notes": [
+      "Tightened the opening analysis so the practical evaluation boundary follows directly from the documented multi-turn format.",
+      "Removed several formulaic signposts and isolated punch-line transitions while retaining the article's evidence-led structure.",
+      "Recast the disclosure and privacy passages to distinguish documented statements, documentation gaps and operator recommendations more directly.",
+      "Sharpened the closing decision without adding certainty or changing the article's testing limitation."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/newsroom_factcheck",
+    "reviewedAt": "2026-09-17T14:41:01Z",
+    "articleSha256": "bfdf6e7049784cd2fae0f47b3c2c4450dcd14703abae769556f7dce734eb99e4",
+    "status": "passed",
+    "claimsCoverage": true
+  },
+  "quality": {
+    "evidence": 33,
+    "context": 18,
+    "originalValue": 18,
+    "voice": 13,
+    "presentation": 9
+  },
+  "riskFlags": [],
+  "quotes": [],
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered the built Worker preview at 1280 by 900. Title, byline, publication date, automation disclosure, heading hierarchy, caption and ten-source list were present; the 800 by 560 SVG rendered at 1184 by 829 with the exact 10:7 ratio and no clipping or page-level horizontal overflow."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered the built Worker preview at 390 by 844. The article had no page-level horizontal overflow; the inline SVG rendered at 350 by 245 with the exact 10:7 ratio, its full composition and caption were visible without clipping, and the mobile menu expanded to show all six navigation links."
+    }
+  },
+  "visual": {
+    "kind": "original-inline-svg",
+    "viewBox": "0 0 800 560",
+    "concept": "A vermilion ad tile crosses a cobalt disclosure gate into a bounded multi-turn conversation, with a separate sage data boundary and a visible stop or hand-off control.",
+    "referencesInspected": [
+      "src/components/ArticleArtwork.astro",
+      "src/content/articles/anthropic-embedded-evaluator-access.md",
+      "src/content/articles/subagents-skills-context-contracts.md",
+      "src/content/articles/openai-agents-api-managed-harness-boundary.md",
+      "src/content/articles/gpt-live-1-interruption-control-loop.md",
+      "src/content/articles/terms-txt-agentic-web-access.md"
+    ],
+    "notes": "Self-contained SVG with no scripts, animation or external resources. Caption says it is a conceptual evaluation map, not OpenAI architecture, interface evidence or measured performance. Editorial, factual and responsive-render inspection passed; the only browser console messages were the expected localhost analytics warnings."
+  }
+}
