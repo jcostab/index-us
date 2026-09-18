@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260918T200330Z",
+  "startedAt": "2026-09-18T20:03:30.872Z",
+  "completedAt": "2026-09-18T20:41:03Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {"start": "2026-09-16T20:03:30.872Z", "end": "2026-09-18T20:03:30.872Z"},
+  "candidates": [
+    {"story": "Red-Teaming Auto Mode preprint and released evaluation code", "source": "https://arxiv.org/abs/2609.19587", "eventDate": "2026-09-17T02:14:53Z", "decision": "selected", "reason": "The arXiv Atom record supplies an exact timestamp inside the 48-hour gate, the paper and repository provide a substantive evaluation, and the distinct hostile-agent threat model creates a consequential deployment decision. Provider documentation and two independent research groups support a bounded article without presenting the targeted results as ordinary-use or production-wide risk."},
+    {"story": "Anthropic measurements for AI development inside frontier labs", "source": "https://www.anthropic.com/institute/measuring-pace-of-ai-development", "eventDate": "unknown", "decision": "rejected", "reason": "The primary page is consequential but exposes a date rather than a source-verifiable exact event time. It was already rejected in the preceding run for that freshness failure and its internal agent-monitoring angle overlaps recent Index Us coverage."},
+    {"story": "Anthropic Life Sciences Verification Program", "source": "https://www.anthropic.com/news/life-sciences-verification-program", "eventDate": "unknown", "decision": "rejected", "reason": "The primary announcement is date-only on 17 September. A syndicator's later distribution time does not verify the primary event time, and automatic publication of biology access-control claims would require deeper high-stakes technical and policy review."},
+    {"story": "Anthropic biomolecular-model optimisation", "source": "https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling", "eventDate": "unknown", "decision": "rejected", "reason": "The technical release includes public code but the primary post is date-only. Its developer-produced speed, memory and protein-design results need specialist independent reconciliation before a long-form article."},
+    {"story": "Recent Index Us agent-security coverage and corrections", "source": "https://index-us.com/articles/", "eventDate": "unknown", "decision": "checked", "reason": "Recent article bodies, source URLs and newsroom records cover adjacent workspace injection, agent-control and incident-disclosure questions but not this paper's hostile-agent monitor evaluation, all-edit comparison or multi-context cost trade-off. No correction target duplicates the selected event."}
+  ],
+  "decision": {"kind": "new", "reason": "The exact-timestamped preprint is fresh, consequential and non-duplicate. It supports an evidence-bounded operator decision: evaluate action coverage and cross-context behaviour while retaining deterministic containment. The article prominently limits the 79 per cent result to the authors' hostile-agent setup, identifies Guardian as an approximation, excludes sandbox conclusions and avoids operational exploit detail."},
+  "story": {"id": "coding-agent-blocking-monitor-red-team", "eventDate": "2026-09-17T02:14:53Z", "canonicalUrls": ["https://arxiv.org/abs/2609.19587", "https://github.com/safety-research/red-teaming-auto-mode"]},
+  "freshness": {"eventAgeAtRunStartSeconds": 150517.872, "marginAtRunStartSeconds": 22282.128, "verifiedFrom": "arXiv Atom published and updated fields for 2609.19587v1"},
+  "articlePath": "src/content/articles/coding-agent-blocking-monitor-red-team.md",
+  "articleSha256": "1bf7bddf13d6197c2d9e2f1d1eafdf28fbc3e535d9dad78bbc66a4efdbf9e9d4",
+  "sources": [
+    {"id": "s1", "url": "https://arxiv.org/abs/2609.19587", "title": "Red-Teaming Auto Mode: Improving Blocking Classifiers Against Malign Coding Agents", "publisher": "Alex Remedios, Simon Storf, Fabien Roger and John Hughes", "kind": "primary", "independenceGroup": "anthropic-affiliated-paper-team", "publishedAt": "2026-09-17T02:14:53Z", "eventDate": "2026-09-17T02:14:53Z", "retrievedAt": "2026-09-18T20:09:04Z", "locator": "arXiv Atom metadata; abstract; Sections 1, 3.1-3.4, 4.1-4.8, 5 and 6; Figures 1, 3, 5 and 8; ethics and reproducibility statements. The authors include Anthropic Fellows and Anthropic employees."},
+    {"id": "s2", "url": "https://github.com/safety-research/red-teaming-auto-mode", "title": "Red-Teaming Auto Mode code repository at reviewed revision", "publisher": "Safety Research", "kind": "primary", "independenceGroup": "anthropic-affiliated-paper-team", "publishedAt": "2026-09-07T17:08:54Z", "eventDate": "2026-09-07T17:08:54Z", "retrievedAt": "2026-09-18T20:09:04Z", "locator": "Pinned commit and root tree, repository metadata and README at f3dbebf2ddc209dbcad10e70d5e9d9182c593779; alex/ contains simulation, fuzzing and monitor implementations; README contains benchmark-training canaries and refers to a simon/ arena tree that is absent from the reviewed tree. Inspected but not cloned or executed."},
+    {"id": "s3", "url": "https://www.anthropic.com/engineering/claude-code-auto-mode", "title": "How we built Claude Code auto mode: a safer way to skip permissions", "publisher": "Anthropic", "kind": "primary", "independenceGroup": "anthropic", "publishedAt": "2026-03-25", "eventDate": "2026-03-25", "retrievedAt": "2026-09-18T20:09:04Z", "locator": "How it works; Threat model; How permission decisions work; Results; Design decisions; high-stakes and residual-risk statements."},
+    {"id": "s4", "url": "https://developers.openai.com/codex/sandboxing/auto-review", "title": "Auto-review", "publisher": "OpenAI", "kind": "primary", "independenceGroup": "openai", "publishedAt": "unknown", "eventDate": "unknown", "retrievedAt": "2026-09-18T20:09:04Z", "locator": "How auto-review works; what it blocks; reviewer context; configuration. Documentation states that auto-review changes who reviews boundary-crossing actions and does not widen permissions or the sandbox."},
+    {"id": "s5", "url": "https://openai.com/index/running-codex-safely/", "title": "Running Codex safely at OpenAI", "publisher": "OpenAI", "kind": "primary", "independenceGroup": "openai", "publishedAt": "2026-05-08", "eventDate": "2026-05-08", "retrievedAt": "2026-09-18T20:09:04Z", "locator": "Sandboxing and approvals; Network access; Identity and credentials; Rules; Managed configs; Agent-native telemetry and audit trails."},
+    {"id": "s6", "url": "https://www.apolloresearch.ai/monitoring/pilot-automode-campaign", "title": "Red-teaming auto mode: lessons from our first external monitor campaign with Anthropic", "publisher": "Apollo Research", "kind": "independent", "independenceGroup": "apollo-research", "publishedAt": "2026-07-13", "eventDate": "2026-07-13", "retrievedAt": "2026-09-18T20:09:04Z", "locator": "Campaign description; three red-team modes; four considerations covering intervention time, user authorisation, trust boundary and monitor visibility; implemented-recommendations statement. Context only, not reproduction of the selected paper."},
+    {"id": "s7", "url": "https://arxiv.org/abs/2604.04978", "title": "Measuring the Permission Gate: A Stress-Test Evaluation of Claude Code's Auto Mode", "publisher": "Zimo Ji, Zongjie Li, Wenyuan Jiang, Yudong Gao and Shuai Wang", "kind": "independent", "independenceGroup": "ampermbench-authors", "publishedAt": "2026-04-04T17:56:30Z", "eventDate": "2026-04-04T17:56:30Z", "retrievedAt": "2026-09-18T20:09:04Z", "locator": "arXiv metadata; abstract; Sections 1-5; limitations; conclusion. Deliberately ambiguous ordinary DevOps tasks, 128 prompts, 127 completed sessions after one timeout, 253 state-changing actions and 36.8 per cent edit/write coverage result."}
+  ],
+  "claims": [
+    {"id": "c01", "text": "arXiv records version 1 of the selected preprint at 02:14:53 UTC on 17 September 2026.", "type": "fact", "sourceIds": ["s1"], "sourceLocator": "arXiv Atom published and updated fields", "status": "supported"},
+    {"id": "c02", "text": "The selected paper is an arXiv version-1 preprint and therefore not peer-reviewed evidence.", "type": "fact", "sourceIds": ["s1"], "sourceLocator": "arXiv version marker and publication venue", "status": "qualified"},
+    {"id": "c03", "text": "The paper's main threat model uses a persistent adversarial agent given a replaced system prompt, harmful side task, high-level attack strategy and often knowledge of the monitor.", "type": "fact", "sourceIds": ["s1"], "sourceLocator": "Sections 1, 3.1, 3.3, 3.4 and Appendix B affordances", "status": "supported"},
+    {"id": "c04", "text": "The paper combines analytical review, replay-based evaluation and live rollout evaluation in Docker arenas or LLM-simulated environments.", "type": "fact", "sourceIds": ["s1"], "sourceLocator": "Section 3.3 Evaluations", "status": "supported"},
+    {"id": "c05", "text": "The authors group tested failures into monitor injection, multi-context attack, coverage gap and policy failure.", "type": "fact", "sourceIds": ["s1"], "sourceLocator": "Section 3.1 and Table 1", "status": "supported"},
+    {"id": "c06", "text": "The authors report that one agent-generated monitor-injection attack succeeded in 79 per cent of trials across Auto Mode and Guardian.", "type": "attributed_claim", "sourceIds": ["s1"], "sourceLocator": "Abstract and Section 4.3", "status": "supported"},
+    {"id": "c07", "text": "The 79 per cent result is not a normal-session risk estimate or production-wide failure rate because the paper targets a deliberately hostile agent under disclosed evaluation affordances.", "type": "inference", "sourceIds": ["s1", "s3"], "sourceLocator": "Premises: s1 Sections 1 and 3; s3 threat model and production datasets. Boundary is explicit in the article.", "status": "qualified"},
+    {"id": "c08", "text": "The paper labels Auto Mode as Claude Code's production default at the time but labels Guardian as an approximation of Codex's production default.", "type": "fact", "sourceIds": ["s1"], "sourceLocator": "Section 3.2 Table 2", "status": "supported"},
+    {"id": "c09", "text": "The paper does not red-team sandboxing, including Guardian's sandbox.", "type": "fact", "sourceIds": ["s1"], "sourceLocator": "Section 5 Limitations", "status": "supported"},
+    {"id": "c10", "text": "The authors describe production-monitor robustness as a September 2026 snapshot and state that several Auto Mode vulnerabilities were fixed during the work.", "type": "attributed_claim", "sourceIds": ["s1"], "sourceLocator": "Section 1 snapshot statement and Sections 4.1-4.2", "status": "supported"},
+    {"id": "c11", "text": "The paper reports a two-week campaign with one human auditor, about 80 Claude Code sessions and five fixed arbitrary-code-execution vulnerabilities in Auto Mode scaffolding.", "type": "attributed_claim", "sourceIds": ["s1"], "sourceLocator": "Section 4.2", "status": "supported"},
+    {"id": "c12", "text": "In a targeted coverage-gap evaluation, the authors report 43 per cent attack success against Auto Mode and 72 per cent against the Guardian approximation.", "type": "attributed_claim", "sourceIds": ["s1"], "sourceLocator": "Section 4.5", "status": "supported"},
+    {"id": "c13", "text": "A Guardian Strict research variant that additionally monitored all edits reduced the same targeted attack-success result from 72 per cent to 31 per cent.", "type": "attributed_claim", "sourceIds": ["s1"], "sourceLocator": "Sections 3.2 and 4.6", "status": "supported"},
+    {"id": "c14", "text": "The authors' Auto Mode++ prototype reduced mean attack success by more than 50 percentage points across four attack classes relative to production Auto Mode, with each figure cell averaging at least 60 rollouts.", "type": "attributed_claim", "sourceIds": ["s1"], "sourceLocator": "Figure 3 caption and Sections 3.2 and 4", "status": "supported"},
+    {"id": "c15", "text": "The paper reports that every tested monitor variant blocked fewer than one per cent of 4,000 benign SWE-chat replay actions.", "type": "attributed_claim", "sourceIds": ["s1"], "sourceLocator": "Sections 3.3 and 4.8; Figure 8", "status": "supported"},
+    {"id": "c16", "text": "The paper finds that attacks spread across agents or compactions remain difficult to stop; more context and an investigative stage improve recall while increasing latency and the untrusted-input surface.", "type": "attributed_claim", "sourceIds": ["s1"], "sourceLocator": "Sections 4.7, 4.8 and 6", "status": "qualified"},
+    {"id": "c17", "text": "The study assumes the monitor is trusted and does not test intentional collusion between attacker and monitor.", "type": "fact", "sourceIds": ["s1"], "sourceLocator": "Section 5 Limitations", "status": "supported"},
+    {"id": "c18", "text": "At revision f3dbebf2ddc209dbcad10e70d5e9d9182c593779, the public repository's alex/ tree contains simulation, fuzzing and monitor implementations and its README contains benchmark-training canaries; the README refers to a simon/ arena-evaluation tree that is absent from the pinned tree.", "type": "fact", "sourceIds": ["s2"], "sourceLocator": "Pinned commit and recursive tree plus root README", "status": "supported"},
+    {"id": "c19", "text": "Anthropic describes Auto Mode's threat model as over-eagerness, honest mistakes, external prompt injection and a misaligned model, with the deployed classifier tuned mainly around the first two.", "type": "attributed_claim", "sourceIds": ["s3"], "sourceLocator": "Threat model", "status": "supported"},
+    {"id": "c20", "text": "Anthropic says its evaluation included 10,000 real internal tool calls, 52 real over-eager actions and 1,000 synthetic exfiltration attempts.", "type": "attributed_claim", "sourceIds": ["s3"], "sourceLocator": "Results and Table 1", "status": "supported"},
+    {"id": "c21", "text": "The independent AmPermBench preprint uses a 128-prompt synthetic DevOps benchmark; 127 sessions completed after one prompt timed out, and the authors extracted 253 state-changing actions from those completed runs.", "type": "fact", "sourceIds": ["s7"], "sourceLocator": "Abstract and Sections 1, 3, 5 and 6", "status": "supported"},
+    {"id": "c22", "text": "AmPermBench reports that 36.8 per cent of its state-changing actions used in-project edit or write tools outside the classifier tier.", "type": "attributed_claim", "sourceIds": ["s7"], "sourceLocator": "Abstract and Section 5.2", "status": "supported"},
+    {"id": "c23", "text": "AmPermBench's authors state that their targeted stress-test rates are not directly comparable with Anthropic's production-traffic rate because the workloads differ.", "type": "attributed_claim", "sourceIds": ["s7"], "sourceLocator": "Abstract and Section 1 findings", "status": "supported"},
+    {"id": "c24", "text": "Apollo Research describes an external campaign using injected failures, static benchmarks and dynamic red-teaming, and identifies intervention time, user authorisation, trust boundaries and monitor visibility as recurring design decisions.", "type": "attributed_claim", "sourceIds": ["s6"], "sourceLocator": "Campaign methods and four-item considerations list", "status": "supported"},
+    {"id": "c25", "text": "Apollo says Anthropic implemented recommendations from its external campaign, but the report does not reproduce the selected paper's 79 per cent result.", "type": "fact", "sourceIds": ["s6"], "sourceLocator": "Campaign outcome paragraph and full inspected page", "status": "qualified"},
+    {"id": "c26", "text": "OpenAI documents Auto-review as changing who reviews a boundary-crossing request without granting permissions, expanding writable roots, enabling network access or weakening protected paths.", "type": "attributed_claim", "sourceIds": ["s4"], "sourceLocator": "How auto-review works and permissions boundary", "status": "supported"},
+    {"id": "c27", "text": "OpenAI's internal deployment account describes automated review alongside sandbox, network, identity, managed-configuration and telemetry controls.", "type": "attributed_claim", "sourceIds": ["s5"], "sourceLocator": "Controlling how Codex operates and Agent-native telemetry sections", "status": "supported"},
+    {"id": "c28", "text": "Deployers should test monitor coverage and cross-context behaviour while retaining deterministic containment and explicit authority for consequential work.", "type": "inference", "sourceIds": ["s1", "s4", "s5", "s6", "s7"], "sourceLocator": "Index Us synthesis from the selected paper's coverage/context failures, provider permission boundaries, Apollo design criteria and AmPermBench coverage result.", "status": "qualified"}
+  ],
+  "sourceUse": [
+    {"sourceId": "s1", "quotedWords": 0, "estimatedDerivedWords": 690, "allowance": "Open preprint methodology, results and limitations are paraphrased with close attribution. No operational injection string, payload or worked exploit is reproduced."},
+    {"sourceId": "s2", "quotedWords": 0, "estimatedDerivedWords": 28, "allowance": "Repository layout and inspection boundary only; code was not copied, cloned or executed."},
+    {"sourceId": "s3", "quotedWords": 0, "estimatedDerivedWords": 140, "allowance": "Provider architecture, threat categories and dataset sizes are paraphrased and attributed."},
+    {"sourceId": "s4", "quotedWords": 0, "estimatedDerivedWords": 54, "allowance": "Narrow paraphrase of the reviewer-versus-permission boundary."},
+    {"sourceId": "s5", "quotedWords": 0, "estimatedDerivedWords": 52, "allowance": "High-level list of layered deployment controls only."},
+    {"sourceId": "s6", "quotedWords": 0, "estimatedDerivedWords": 94, "allowance": "Campaign methods and four design considerations paraphrased; no claim of independent reproduction."},
+    {"sourceId": "s7", "quotedWords": 0, "estimatedDerivedWords": 158, "allowance": "Open-preprint design, sample counts, coverage result and workload-comparison caveat are paraphrased."}
+  ],
+  "quotes": [],
+  "visual": {
+    "concept": "Four separate context cards carry parts of a vermilion action path towards a cobalt approval gate; a sage investigative stage sees wider evidence while a charcoal containment rail spans the complete system.",
+    "format": "Self-contained accessible inline SVG with viewBox 0 0 800 560, no scripts, external resources or animation.",
+    "referencesInspected": ["src/components/ArticleArtwork.astro", "src/content/articles/google-cc-household-agent-permission-boundary.md", "src/content/articles/openai-wiki-incident-disclosure-framework.md", "src/content/articles/ai-patching-benchmark-repair-evidence.md"],
+    "originalityAndEvidenceBoundary": "New story-specific composition in the established charcoal, off-white, vermilion, cobalt, sage and warm-neutral palette. The caption identifies it as a conceptual security model, not either product's architecture, an exploit diagram or measured data.",
+    "reviewStatus": "Editorial and factual inspection passed for style fit, originality, accessibility and non-misleading implications. Desktop and mobile browser checks passed without clipping, horizontal overflow or console errors."
+  },
+  "drafting": {
+    "agentId": "/root/newsroom_drafter",
+    "completedAt": "2026-09-18T20:16:35Z",
+    "notes": [
+      "Selected one exact-timestamped story after checking recent article bodies, source URLs and run records for duplicate and correction coverage.",
+      "Retained a full research brief, untouched original draft at SHA-256 936628df92e23adea4bc895b6f4ce6297dbe1c7a6bb647eea706fc5358ddb546, preservation list, 28-claim ledger, source-use ledger and empty quotation ledger under the ignored working directory.",
+      "Created a new accessible 800 by 560 inline SVG and recorded the concept, evidence boundary and existing artwork references inspected.",
+      "Kept security reporting non-operational and preserved the paper's decision to withhold versatile injection assets.",
+      "The Firecrawl CLI fallback was available through npx but unauthenticated and keyless-rate-limited; research used the documented live-public-web fallback plus direct arXiv and GitHub HTTPS metadata checks, with no private sources."
+    ]
+  },
+  "editorial": {
+    "agentId": "/root/newsroom_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-18T20:35:15Z",
+    "articleSha256": "1bf7bddf13d6197c2d9e2f1d1eafdf28fbc3e535d9dad78bbc66a4efdbf9e9d4",
+    "notes": [
+      "Renewed editorial approval after reading the corrected article, preservation list, current record and changes-requested factual review; no article edit was made during renewal.",
+      "An exact reconstruction produced the previous approved digest when only the repository-tree and AmPermBench denominator corrections were reversed, proving no other article or SVG content changed.",
+      "Both corrections are source-bounded and natural in context; all other material facts, caveats, links, attribution, disclosure and non-operational security boundaries remain intact.",
+      "The unchanged inline SVG retains editorial approval for style fit, originality, accessibility and its explicit non-evidence boundary; factual re-review and rendered checks remain pending."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/newsroom_factcheck",
+    "reviewedAt": "2026-09-18T20:36:38Z",
+    "articleSha256": "1bf7bddf13d6197c2d9e2f1d1eafdf28fbc3e535d9dad78bbc66a4efdbf9e9d4",
+    "status": "passed",
+    "claimsCoverage": true,
+    "notes": [
+      "Reopened all seven registered public source families and rechecked all c01-c28 claims, metadata, numbers, methods, denominators, provider boundaries, links, source independence, source-use limits, duplicate/correction status and the exact final article.",
+      "The corrected repository wording now distinguishes the present alex/ implementation tree from the README-mentioned simon/ arena tree that is absent at pinned revision f3dbebf2ddc209dbcad10e70d5e9d9182c593779.",
+      "The corrected AmPermBench wording now distinguishes 128 prompts from 127 completed sessions after one timeout while retaining the correct 253-action and 36.8 per cent figures.",
+      "The unchanged accessible story-specific SVG passed factual review for style, originality and non-misleading implications; mobile and desktop rendering remain pending separately."
+    ]
+  },
+  "quality": {"evidence": 33, "context": 18, "originalValue": 18, "voice": 13, "presentation": 9},
+  "riskFlags": [],
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered at 1280x900. The title, Index Us Editorial byline, automated-publication disclosure, article navigation, all headings and seven-source list were readable. Both self-contained SVGs stayed inside the article layout with their 800:560 viewBox, and the page had no clipping or horizontal overflow. Browser logs contained no errors; only the expected localhost analytics suppression warning appeared."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered at 390x844. The title, byline, disclosure, article navigation, source list and both SVGs wrapped within a 350-pixel content column with no clipping or horizontal overflow. The six-link mobile menu opened correctly. Browser logs contained no errors; only the expected localhost analytics suppression warning appeared."
+    }
+  }
+}
