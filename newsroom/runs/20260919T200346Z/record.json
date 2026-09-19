@@ -1,0 +1,656 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260919T200346Z",
+  "startedAt": "2026-09-19T20:03:46.920Z",
+  "completedAt": "2026-09-19T20:30:34Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-17T20:03:46.920Z",
+    "end": "2026-09-19T20:03:46.920Z"
+  },
+  "candidates": [
+    {
+      "story": "OpenAI Australian Youth Safety Blueprint",
+      "source": "https://openai.com/index/australian-youth-safety-blueprint/",
+      "eventDate": "2026-09-18T12:00:00Z",
+      "decision": "selected",
+      "reason": "Reconsidered from held run 20260919T140203Z after a fresh Firecrawl search and direct source checks. OpenAI News RSS still timestamps the event at 12:00 UTC on 18 September, placing it 32 hours 3 minutes before this run began and inside the 48-hour gate. The launch page and PDF remain current with no correction note; repo, public-URL, site-search and GitHub PR checks found no duplicate publication."
+    },
+    {
+      "story": "Anthropic and Accenture embedded evaluation partnership",
+      "source": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+      "eventDate": "2026-09-18T00:02:35Z",
+      "decision": "rejected",
+      "reason": "Freshly reopened. Anthropic still says operating details, access standards, reporting rules and funding arrangements are unsettled, and no completed evaluation or report is available. The announcement also overlaps Index Us coverage of the embedded-evaluator commitment."
+    },
+    {
+      "story": "Reported Google Gemini testing incidents involving three companies",
+      "source": "https://www.axios.com/2026/09/19/google-safety-incidents-testing-hacks",
+      "eventDate": "unknown",
+      "decision": "rejected",
+      "reason": "The reporting page remained inaccessible through the research tool and no direct Google, evaluator or affected-entity record was located for the central facts. Without a primary timeline, model/version, scope, transcript or corrective-action record, the event is unsuitable for automatic long-form coverage."
+    },
+    {
+      "story": "OpenAI and Cooley IPO workflow case study",
+      "source": "https://openai.com/index/cooley-gopublic/",
+      "eventDate": "2026-09-17T12:00:00Z",
+      "decision": "rejected",
+      "reason": "Freshly reopened. The event is outside this run's 48-hour window and remains a vendor/customer case study rather than a documented model, product, safety or regulatory change with independent evidence sufficient for a new long-form article."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "The held story is freshly reverified, remains consequential and non-duplicate, and retains the stable story identity openai-australian-youth-safety-blueprint. The article separates OpenAI's product and policy claims from current OAIC, eSafety and Australian Government requirements, and identifies concrete evidence needed to judge deployed safeguards."
+  },
+  "story": {
+    "id": "openai-australian-youth-safety-blueprint",
+    "eventDate": "2026-09-18T12:00:00Z",
+    "canonicalUrls": [
+      "https://openai.com/index/australian-youth-safety-blueprint/",
+      "https://cdn.openai.com/pdf/7e70543d-a803-44b7-8754-ca00b3f2ff0c/australian-youth-safety-blueprint.pdf"
+    ]
+  },
+  "articlePath": "src/content/articles/openai-australian-youth-safety-blueprint.md",
+  "articleSha256": "d0388d0a02b2f13a4bd2f330435fc83d9f2afb11cfd6119b768529cba5c88711",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://openai.com/news/rss.xml",
+      "title": "OpenAI News RSS",
+      "publisher": "OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "2026-09-18T12:00:00Z",
+      "eventDate": "2026-09-18T12:00:00Z",
+      "retrievedAt": "2026-09-19T20:06:30Z",
+      "locator": "RSS item titled Introducing the Australian Youth Safety Blueprint; pubDate and canonical link"
+    },
+    {
+      "id": "s2",
+      "url": "https://openai.com/index/australian-youth-safety-blueprint/",
+      "title": "Introducing the Australian Youth Safety Blueprint",
+      "publisher": "OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "2026-09-18",
+      "eventDate": "2026-09-18T12:00:00Z",
+      "retrievedAt": "2026-09-19T20:06:30Z",
+      "locator": "Launch page paragraphs 1–5; six-pillar summary, Australian rollout statement and company framing"
+    },
+    {
+      "id": "s3",
+      "url": "https://cdn.openai.com/pdf/7e70543d-a803-44b7-8754-ca00b3f2ff0c/australian-youth-safety-blueprint.pdf",
+      "title": "An Australian Youth Safety Blueprint",
+      "publisher": "OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "2026-09-18",
+      "eventDate": "2026-09-18T12:00:00Z",
+      "retrievedAt": "2026-09-19T20:06:30Z",
+      "locator": "PDF pages 2–7; released with the 18 September launch page and exact-timestamped RSS item; six pillars, age prediction and Persona, crisis and parent-alert proposals, legislative position, independent assessments"
+    },
+    {
+      "id": "s4",
+      "url": "https://openai.com/index/chatgpt-for-teens/",
+      "title": "Introducing ChatGPT for Teens: Built for learning, backed by protections",
+      "publisher": "OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "2026-08-18",
+      "eventDate": "2026-08-18",
+      "retrievedAt": "2026-09-19T20:06:30Z",
+      "locator": "Stronger protections, Supporting healthy balanced use and Ongoing research sections"
+    },
+    {
+      "id": "s5",
+      "url": "https://openai.com/index/our-approach-to-age-prediction/",
+      "title": "Our approach to age prediction",
+      "publisher": "OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "2026-01-20",
+      "eventDate": "2026-01-20",
+      "retrievedAt": "2026-09-19T20:06:30Z",
+      "locator": "Updated 25 August 2026; How age prediction works and What is next sections"
+    },
+    {
+      "id": "s6",
+      "url": "https://openai.com/index/introducing-parental-controls/",
+      "title": "Introducing parental controls",
+      "publisher": "OpenAI",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "2025-09-29",
+      "eventDate": "2025-09-29",
+      "retrievedAt": "2026-09-19T20:06:30Z",
+      "locator": "Updated 13 July 2026; Getting started, safeguards, settings and notifications sections"
+    },
+    {
+      "id": "s7",
+      "url": "https://help.openai.com/en/articles/12652064-age-prediction-in-chatgpt",
+      "title": "Age prediction in ChatGPT",
+      "publisher": "OpenAI Help Center",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-19T20:06:30Z",
+      "locator": "How age prediction works, Verify your age, After you verify and Privacy and data use"
+    },
+    {
+      "id": "s8",
+      "url": "https://help.openai.com/en/articles/20001421",
+      "title": "ChatGPT for Teens",
+      "publisher": "OpenAI Help Center",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "unknown",
+      "eventDate": "2026-08-18",
+      "retrievedAt": "2026-09-19T20:06:30Z",
+      "locator": "Overview, Availability, Parental controls and privacy, and FAQ"
+    },
+    {
+      "id": "s14",
+      "url": "https://help.openai.com/en/articles/12315553-parental-controls-on-chatgpt-faq",
+      "title": "Managing parental controls in ChatGPT",
+      "publisher": "OpenAI Help Center",
+      "kind": "primary",
+      "independenceGroup": "openai",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-19T20:21:59Z",
+      "locator": "Overview; Link your accounts; Manage parental controls; Safety notifications; Notification review; Manage notification preferences; Unlink your accounts"
+    },
+    {
+      "id": "s9",
+      "url": "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/age-assurance-technologies-and-privacy-obligations",
+      "title": "Age assurance technologies and privacy obligations",
+      "publisher": "Office of the Australian Information Commissioner",
+      "kind": "independent",
+      "independenceGroup": "oaic",
+      "publishedAt": "2026-03-17",
+      "eventDate": "2026-03-17",
+      "retrievedAt": "2026-09-19T20:06:30Z",
+      "locator": "Key considerations; necessity, PIA, proportionality, bias, transparency, minimisation, review and destruction"
+    },
+    {
+      "id": "s10",
+      "url": "https://www.esafety.gov.au/sites/default/files/2025-12/OnlineSafetyCodesandStandardsRegulatoryGuidanceDec2025.pdf",
+      "title": "Online Safety Codes and Standards Regulatory Guidance",
+      "publisher": "eSafety Commissioner",
+      "kind": "independent",
+      "independenceGroup": "esafety",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-19T20:06:30Z",
+      "locator": "December 2025 document; exact day not stated. PDF pages 78 and 85–90; age-assurance methods, proportionality, testing, monitoring, external validation and circumvention"
+    },
+    {
+      "id": "s11",
+      "url": "https://www.esafety.gov.au/industry/codes/faq-access-to-online-porn-and-other-adult-content",
+      "title": "Accessing online porn and adult content — Age-Restricted Material Codes FAQ",
+      "publisher": "eSafety Commissioner",
+      "kind": "independent",
+      "independenceGroup": "esafety",
+      "publishedAt": "unknown",
+      "eventDate": "2026-03-09",
+      "retrievedAt": "2026-09-19T20:06:30Z",
+      "locator": "Covered services, commencement, AI companion chatbot, privacy and compliance sections"
+    },
+    {
+      "id": "s12",
+      "url": "https://www.infrastructure.gov.au/department/media/publications/exposure-draft-online-safety-amendment-digital-duty-care-bill-2026",
+      "title": "Exposure Draft — Online Safety Amendment (Digital Duty of Care) Bill 2026",
+      "publisher": "Department of Infrastructure, Transport, Regional Development, Communications, Sport and the Arts",
+      "kind": "independent",
+      "independenceGroup": "australian-government-infrastructure-department",
+      "publishedAt": "2026-09-08",
+      "eventDate": "2026-09-08",
+      "retrievedAt": "2026-09-19T20:06:30Z",
+      "locator": "Publication status, consultation instructions and closing date"
+    },
+    {
+      "id": "s13",
+      "url": "https://www.infrastructure.gov.au/sites/default/files/documents/exposure-draft-online-safety-amendment-digital-duty-of-care-bill-2026-september2026.pdf",
+      "title": "Online Safety Amendment (Digital Duty of Care) Bill 2026 — exposure draft",
+      "publisher": "Australian Government",
+      "kind": "independent",
+      "independenceGroup": "australian-government-infrastructure-department",
+      "publishedAt": "2026-09-08",
+      "eventDate": "2026-09-08",
+      "retrievedAt": "2026-09-19T20:06:30Z",
+      "locator": "PDF pages 25–37; draft Act sections 25A–26B on scope, safe environment, reasonably practicable factors, duty and risk assessments"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c01",
+      "text": "OpenAI News RSS timestamps publication of the Australian Youth Safety Blueprint at 12:00 UTC on 18 September 2026.",
+      "type": "fact",
+      "sourceIds": [
+        "s1"
+      ],
+      "sourceLocator": "RSS item title, canonical link and pubDate",
+      "status": "supported"
+    },
+    {
+      "id": "c02",
+      "text": "The blueprint contains six pillars covering responsible adoption and literacy, privacy-protective age assurance, under-18 safety policies, manipulative interactions, crisis response and parental controls.",
+      "type": "fact",
+      "sourceIds": [
+        "s2",
+        "s3"
+      ],
+      "sourceLocator": "s2 launch summary; s3 PDF pages 2–6",
+      "status": "supported"
+    },
+    {
+      "id": "c03",
+      "text": "The blueprint is an OpenAI policy contribution rather than an enacted Australian rule or independent assessment.",
+      "type": "fact",
+      "sourceIds": [
+        "s2",
+        "s3",
+        "s12"
+      ],
+      "sourceLocator": "OpenAI describes a contribution and roadmap; government source separately identifies its own exposure draft",
+      "status": "supported"
+    },
+    {
+      "id": "c04",
+      "text": "OpenAI says ChatGPT for Teens began rolling out in Australia in August 2026.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "sourceLocator": "s2 paragraph 3; s3 PDF page 2; s4 launch page",
+      "status": "supported"
+    },
+    {
+      "id": "c05",
+      "text": "OpenAI says accounts stated or predicted to belong to 13–17-year-olds receive the teen experience and uncertain cases default to the safer experience.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s3",
+        "s4",
+        "s5",
+        "s8"
+      ],
+      "sourceLocator": "s3 PDF pages 2–3; s4 opening and safeguards; s5 age prediction; s8 overview",
+      "status": "supported"
+    },
+    {
+      "id": "c06",
+      "text": "OpenAI documents stronger teen restrictions in areas including graphic violence, sexual or romantic roleplay, dangerous activities, self-harm and disordered eating.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s4",
+        "s5"
+      ],
+      "sourceLocator": "s4 Stronger protections and healthy use; s5 age prediction safeguards list",
+      "status": "supported"
+    },
+    {
+      "id": "c07",
+      "text": "Current OpenAI help material describes ChatGPT for Teens as the same service with additional protections and says rollout and features can vary by account or region.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s8"
+      ],
+      "sourceLocator": "Overview, Availability and FAQ",
+      "status": "supported"
+    },
+    {
+      "id": "c08",
+      "text": "OpenAI says age prediction uses account and behavioural signals including account age, typical activity times, usage patterns and stated age.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s5",
+        "s7"
+      ],
+      "sourceLocator": "How age prediction works",
+      "status": "supported"
+    },
+    {
+      "id": "c09",
+      "text": "OpenAI says an adult misclassified into the teen experience can verify through Persona, which may request a selfie, government ID or both depending on country, deletes uploaded identity material within seven days, and passes age-related information rather than the submitted image or document to OpenAI.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s3",
+        "s5",
+        "s7"
+      ],
+      "sourceLocator": "s3 PDF page 3; s5 verification paragraph; s7 verification and privacy sections",
+      "status": "supported"
+    },
+    {
+      "id": "c10",
+      "text": "The reviewed OpenAI materials do not publish an independent Australian error analysis for age prediction, subgroup results, appeal completion or Persona failure rates.",
+      "type": "inference",
+      "sourceIds": [
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s7",
+        "s8"
+      ],
+      "sourceLocator": "Bounded absence finding across the registered current OpenAI sources; article does not infer failure",
+      "status": "qualified"
+    },
+    {
+      "id": "c11",
+      "text": "OpenAI parental controls require linked accounts, allow selected settings and schedules, do not let a parent read conversations, and can be unlinked by either party.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s6",
+        "s8",
+        "s14"
+      ],
+      "sourceLocator": "s6 Getting started and settings; s8 Parental controls and privacy; s14 Overview, Link your accounts, Manage parental controls and Unlink your accounts",
+      "status": "supported"
+    },
+    {
+      "id": "c12",
+      "text": "OpenAI describes safety notifications for linked teen accounts as limited, enabled by default, reviewed by trained staff and not a substitute for professional care or emergency services.",
+      "type": "attributed_claim",
+      "sourceIds": [
+        "s4",
+        "s6",
+        "s14"
+      ],
+      "sourceLocator": "s4 default protections; s6 Notifications; s14 Safety notifications, Notification review and Manage notification preferences",
+      "status": "supported"
+    },
+    {
+      "id": "c13",
+      "text": "The blueprint recommends that connected parents be notified by default if a teen expresses suicidal intent, while OpenAI's current product documentation describes a narrower linked-account, detection and review workflow.",
+      "type": "fact",
+      "sourceIds": [
+        "s3",
+        "s6"
+      ],
+      "sourceLocator": "s3 PDF pages 4–6; s6 Notifications",
+      "status": "qualified"
+    },
+    {
+      "id": "c14",
+      "text": "The blueprint proposes practical independent assessments under common standards and plain-language public summaries.",
+      "type": "fact",
+      "sourceIds": [
+        "s3"
+      ],
+      "sourceLocator": "PDF page 7",
+      "status": "supported"
+    },
+    {
+      "id": "c15",
+      "text": "The blueprint does not specify assessor accreditation, mandatory metrics, pass thresholds or detailed access arrangements, so the value of an assessment depends on later implementation choices.",
+      "type": "inference",
+      "sourceIds": [
+        "s3"
+      ],
+      "sourceLocator": "Bounded reading of the assessment proposal on PDF page 7; implementation consequence is Index Us synthesis",
+      "status": "qualified"
+    },
+    {
+      "id": "c16",
+      "text": "eSafety says relevant Age-Restricted Material Codes for designated internet services, a category that includes generative AI services, commenced on 9 March 2026.",
+      "type": "fact",
+      "sourceIds": [
+        "s11"
+      ],
+      "sourceLocator": "Covered services and commencement sections",
+      "status": "supported"
+    },
+    {
+      "id": "c17",
+      "text": "eSafety guidance says age-assurance methods should be tested before and during use, monitored for circumvention, demographic effects, privacy complaints and breaches, and externally audited or independently validated where appropriate.",
+      "type": "fact",
+      "sourceIds": [
+        "s10"
+      ],
+      "sourceLocator": "PDF pages 85–90",
+      "status": "supported"
+    },
+    {
+      "id": "c18",
+      "text": "OAIC guidance calls for necessity and proportionality, privacy impact assessment, vendor due diligence, bias monitoring, low-intrusion alternatives, transparency, accessible review, minimisation and destruction or de-identification of age-assurance inputs when their purpose is complete.",
+      "type": "fact",
+      "sourceIds": [
+        "s9"
+      ],
+      "sourceLocator": "Key considerations list",
+      "status": "supported"
+    },
+    {
+      "id": "c19",
+      "text": "The Australian Government released the Digital Duty of Care exposure draft on 8 September 2026 and set 22 September 2026 as the consultation deadline; it is not enacted law.",
+      "type": "fact",
+      "sourceIds": [
+        "s12",
+        "s13"
+      ],
+      "sourceLocator": "s12 publication and consultation status; s13 marked exposure draft",
+      "status": "supported"
+    },
+    {
+      "id": "c20",
+      "text": "The exposure draft would require in-scope providers to ensure a safe online environment so far as reasonably practicable, conduct written risk assessments, document measures and expected effectiveness, reassess at least annually and before risk-adding changes, retain assessments and provide them to eSafety on request.",
+      "type": "fact",
+      "sourceIds": [
+        "s13"
+      ],
+      "sourceLocator": "Draft Act sections 25H, 26 and 26A; PDF pages 31–34",
+      "status": "supported"
+    },
+    {
+      "id": "c21",
+      "text": "Independent assessment is useful only if it tests deployed behaviour with sufficient access and publishes methods, scope, limitations and failure categories rather than checking for the existence of policies alone.",
+      "type": "inference",
+      "sourceIds": [
+        "s3",
+        "s9",
+        "s10",
+        "s13"
+      ],
+      "sourceLocator": "Premises: blueprint assessment proposal, regulator testing/privacy guidance and draft effectiveness records; recommendation is Index Us synthesis",
+      "status": "qualified"
+    },
+    {
+      "id": "c22",
+      "text": "Families and schools can check whether the teen experience and linked controls are active, but current documentation does not establish that these controls make a generative system risk-free.",
+      "type": "inference",
+      "sourceIds": [
+        "s4",
+        "s5",
+        "s6",
+        "s8"
+      ],
+      "sourceLocator": "Product availability, safeguards and OpenAI's own statement that guardrails are not foolproof; recommendation is bounded synthesis",
+      "status": "qualified"
+    }
+  ],
+  "sourceUse": [
+    {
+      "sourceId": "s1",
+      "quotedWords": 0,
+      "estimatedDerivedWords": 15,
+      "allowance": "Event identity and exact RSS timestamp only; no quotation."
+    },
+    {
+      "sourceId": "s2",
+      "quotedWords": 0,
+      "estimatedDerivedWords": 40,
+      "allowance": "Launch framing and rollout statement paraphrased; no quotation."
+    },
+    {
+      "sourceId": "s3",
+      "quotedWords": 0,
+      "estimatedDerivedWords": 250,
+      "allowance": "Six pillars and proposals synthesised across the seven-page policy paper; no structure or passage reproduced."
+    },
+    {
+      "sourceId": "s4",
+      "quotedWords": 0,
+      "estimatedDerivedWords": 110,
+      "allowance": "Rollout and teen protections paraphrased; vendor attribution preserved."
+    },
+    {
+      "sourceId": "s5",
+      "quotedWords": 0,
+      "estimatedDerivedWords": 150,
+      "allowance": "Age-prediction signals, defaults and verification path paraphrased."
+    },
+    {
+      "sourceId": "s6",
+      "quotedWords": 0,
+      "estimatedDerivedWords": 120,
+      "allowance": "Linked controls and notification workflow paraphrased with product limits."
+    },
+    {
+      "sourceId": "s7",
+      "quotedWords": 0,
+      "estimatedDerivedWords": 90,
+      "allowance": "Verification inputs, deletion period and data boundary paraphrased."
+    },
+    {
+      "sourceId": "s8",
+      "quotedWords": 0,
+      "estimatedDerivedWords": 60,
+      "allowance": "Availability and parent-access limits paraphrased."
+    },
+    {
+      "sourceId": "s9",
+      "quotedWords": 0,
+      "estimatedDerivedWords": 160,
+      "allowance": "OAIC key considerations synthesised into a privacy accountability test."
+    },
+    {
+      "sourceId": "s10",
+      "quotedWords": 0,
+      "estimatedDerivedWords": 160,
+      "allowance": "Operational testing, monitoring and improvement guidance synthesised from specified pages."
+    },
+    {
+      "sourceId": "s11",
+      "quotedWords": 0,
+      "estimatedDerivedWords": 130,
+      "allowance": "Current code coverage, commencement and AI-service context paraphrased."
+    },
+    {
+      "sourceId": "s12",
+      "quotedWords": 0,
+      "estimatedDerivedWords": 55,
+      "allowance": "Exposure-draft status and consultation dates paraphrased."
+    },
+    {
+      "sourceId": "s13",
+      "quotedWords": 0,
+      "estimatedDerivedWords": 180,
+      "allowance": "Draft scope and risk-assessment requirements paraphrased from sections 25A–26A."
+    }
+  ],
+  "quotes": [],
+  "visual": {
+    "concept": "An age-confidence junction routes an uncertain account into a cobalt under-18 channel with layered protections, while a separate sage verification branch, vermilion offline-support connection and external charcoal assessment frame keep product routing, crisis support and policy accountability distinct.",
+    "referencesInspected": [
+      "src/components/ArticleArtwork.astro",
+      "src/content/articles/openai-wiki-incident-disclosure-framework.md",
+      "src/content/articles/frontier-agent-overclaiming-file-review.md",
+      "src/content/articles/google-cc-household-agent-permission-boundary.md"
+    ],
+    "originalityAndEvidenceBoundary": "New story-specific composition in the established charcoal, off-white, vermilion, cobalt, sage and warm-neutral palette. The caption says the routing is conceptual, not OpenAI's architecture or evidence of safeguard accuracy.",
+    "accessibility": "Self-contained responsive SVG with an 800 by 560 viewBox, role img, linked title and description, visible caption, no scripts, external resources or animation."
+  },
+  "drafting": {
+    "agentId": "/root/newsroom_drafter",
+    "completedAt": "2026-09-19T20:09:30Z",
+    "notes": [
+      "The byte-identical original draft is retained at .newsroom-work/20260919T200346Z/draft.md.",
+      "Fresh research used a successful non-empty Firecrawl search plus direct live re-opening of all sources; Firecrawl search-feedback could not authenticate and is recorded in discovery.",
+      "The current-run digest is bound to the draft article only. Editorial, factual, quality and responsive-render review fields remain intentionally absent for separate agents."
+    ]
+  },
+  "editorial": {
+    "agentId": "/root/newsroom_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-19T20:25:20Z",
+    "articleSha256": "d0388d0a02b2f13a4bd2f330435fc83d9f2afb11cfd6119b768529cba5c88711",
+    "notes": [
+      "Renewed the publication edit after the factual citation repair; the final copy retains the direct product-versus-policy opening, natural section progression, restrained claims and Australian English of the first editorial pass.",
+      "Approved the new dual-source launch sentence because it states plainly that the dated ChatGPT for Teens page supplies 18 August 2026 while the Australian blueprint page supplies the Australia rollout boundary.",
+      "Approved the direct parental-controls FAQ citation and revised c11/c12 paragraph: the added source supports initiation, unlinking, settings, notification defaults and limits without turning company documentation into an Index Us finding.",
+      "Reconfirmed the byte-identical inline SVG as a distinct, accessible and story-specific composition whose title, description and caption clearly prevent it from being read as OpenAI architecture or measured evidence."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/newsroom_factcheck",
+    "reviewedAt": "2026-09-19T20:26:51Z",
+    "articleSha256": "d0388d0a02b2f13a4bd2f330435fc83d9f2afb11cfd6119b768529cba5c88711",
+    "status": "passed",
+    "claimsCoverage": true,
+    "notes": [
+      "Reopened the final source set and verified every material claim c01 through c22 against the exact final copy.",
+      "Confirmed that s14 is registered and directly linked for either-party account linking and unlinking, selected controls, notification defaults, trained review and notification limitations.",
+      "Confirmed that the 18 August rollout sentence now directly distinguishes the dated ChatGPT for Teens launch from the Australian rollout statement.",
+      "Approved the title, description, takeaways, metadata, byline, exact disclosure, documentation-only limits, source-use ledger, source independence, duplicate status and final SVG evidence boundary.",
+      "Responsive desktop and mobile rendering remains intentionally unset for the separate visual check."
+    ]
+  },
+  "quality": {
+    "evidence": 33,
+    "context": 18,
+    "originalValue": 18,
+    "voice": 14,
+    "presentation": 9
+  },
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered the exact reviewed digest at 1280 by 900. The page returned HTTP 200 with correct title, byline, disclosure, heading hierarchy and source section; there was no horizontal overflow. The original inline SVG rendered at 736 by 515.1875 with its 800 by 560 viewBox, accessible title and description, visible conceptual-not-evidence caption, no clipping, scripts or external images. No page errors occurred; the only console output was the expected localhost analytics warning."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered the exact reviewed digest at 390 by 844. The page returned HTTP 200 with correct title, byline, disclosure, headings and sources; the six-link mobile menu opened and there was no horizontal overflow. The original inline SVG rendered at 350 by 245 with its 800 by 560 viewBox and no clipping, scripts or external images. No page errors occurred; the only console output was the expected localhost analytics warning."
+    }
+  },
+  "riskFlags": [],
+  "duplicateCheck": {
+    "status": "passed",
+    "checkedAt": "2026-09-19T20:07:00Z",
+    "notes": "No matching story ID, canonical URL or article path exists in current src/content or public newsroom records. The production article URL returned HTTP 404, the production archive contained no matching text, the web search returned no Index Us result, git history had no matching path and GitHub returned no matching open or closed PR."
+  },
+  "discovery": {
+    "firecrawl": {
+      "globalCliAvailable": false,
+      "npxVersion": "1.23.3",
+      "successfulSearches": [
+        ".newsroom-work/20260919T200346Z/.firecrawl/search-openai-youth-safety.json"
+      ],
+      "resultCount": 10,
+      "selectedResults": [
+        "https://openai.com/index/australian-youth-safety-blueprint/",
+        "https://cdn.openai.com/pdf/7e70543d-a803-44b7-8754-ca00b3f2ff0c/australian-youth-safety-blueprint.pdf"
+      ],
+      "feedback": "Attempted immediately after processing the non-empty search, but the CLI requested authentication and no successful feedback event was recorded."
+    },
+    "sourceRefresh": "OpenAI RSS was downloaded at 2026-09-19T20:05:41Z. OpenAI, OAIC, eSafety and Australian Government pages/PDFs were freshly reopened through live public retrieval between 2026-09-19T20:04Z and 20:07Z.",
+    "correctionCheck": "No correction, retraction or substantive update marker was found on the OpenAI launch page, PDF or RSS item."
+  },
+  "artwork": {
+    "status": "drafted",
+    "concept": "An age-confidence junction routes an uncertain account into layered teen protections, with separate adult verification, offline support and an external assessment boundary. The diagram is conceptual and makes no performance claim.",
+    "referencesInspected": [
+      "src/components/ArticleArtwork.astro",
+      "src/content/articles/openai-wiki-incident-disclosure-framework.md",
+      "src/content/articles/google-cc-household-agent-permission-boundary.md"
+    ],
+    "requirements": "Self-contained inline SVG; responsive 800 by 560 viewBox; accessible title and description; visible original-illustration caption; charcoal, off-white, vermilion, cobalt, sage and warm neutral palette; no scripts, external resources or animation.",
+    "reviewStatus": "Editorial and factual reviewers approved the digest, and responsive checks passed at 1280 by 900 and 390 by 844 without clipping or horizontal overflow."
+  }
+}
