@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260920T020327Z",
+  "startedAt": "2026-09-20T02:03:27.497Z",
+  "completedAt": "2026-09-20T02:34:38Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-18T02:03:27.497Z",
+    "end": "2026-09-20T02:03:27.497Z"
+  },
+  "candidates": [
+    {
+      "story": "California Executive Order N-9-26 on independent AI oversight and possible frontier-model kill switch",
+      "source": "https://www.gov.ca.gov/2026/09/18/governor-newsom-issues-executive-order-to-accelerate-independent-oversight-and-advance-the-creation-of-an-ai-kill-switch/",
+      "eventDate": "2026-09-18T15:08:17Z",
+      "decision": "selected",
+      "reason": "The canonical governor-page metadata supplies an exact in-window timestamp, the signed order establishes the operative deadlines, chaptered SB 813 and AB 1405 establish the baseline law, and two independent reports provide context. No article or run record duplicates the event. The practical distinction between accelerated state implementation duties and proposed developer duties supports useful long-form analysis."
+    },
+    {
+      "story": "OpenAI Australian Youth Safety Blueprint",
+      "source": "https://openai.com/index/australian-youth-safety-blueprint/",
+      "eventDate": "2026-09-18T12:00:00Z",
+      "decision": "already covered",
+      "reason": "Published and recorded by run 20260919T200346Z. Reusing the launch would duplicate current site coverage."
+    },
+    {
+      "story": "Anthropic and Accenture embedded evaluation partnership",
+      "source": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+      "eventDate": "2026-09-18T00:02:35Z",
+      "decision": "rejected",
+      "reason": "Recent newsroom review found operating details and completed evaluation evidence absent, while the announcement substantially overlaps the existing embedded-evaluator article. The California order supplies a distinct, instrument-backed policy event."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "Executive Order N-9-26 is fresh, consequential and non-duplicate. Its exact instrument supports a bounded article explaining the immediate state-agency deadlines, the unchanged limits of SB 813 and AB 1405, and why a frontier-model kill switch remains a recommendation topic rather than a present operator mandate."
+  },
+  "story": {
+    "id": "california-ai-order-auditor-deadlines-kill-switch-study",
+    "eventDate": "2026-09-18T15:08:17Z",
+    "canonicalUrls": [
+      "https://www.gov.ca.gov/2026/09/18/governor-newsom-issues-executive-order-to-accelerate-independent-oversight-and-advance-the-creation-of-an-ai-kill-switch/",
+      "https://www.gov.ca.gov/wp-content/uploads/2026/09/FINAL-N-9-26-AI-EO-9.18.26-SIGNED.pdf"
+    ]
+  },
+  "articlePath": "src/content/articles/california-ai-order-auditor-deadlines-kill-switch-study.md",
+  "articleSha256": "1427b3ee384a2a48d7b0dbbb34ed318e27a88f3417f781046ec3ea9ead58be38",
+  "freshness": {
+    "eventTimestampSource": "Governor of California canonical page article:published_time and publishedTime metadata; signed order date",
+    "eventAgeAtRunStartSeconds": 125710.497,
+    "marginAtRunStartSeconds": 47089.503,
+    "status": "Inside the hard 48-hour discovery window and outside the preferred 24-hour window."
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://www.gov.ca.gov/2026/09/18/governor-newsom-issues-executive-order-to-accelerate-independent-oversight-and-advance-the-creation-of-an-ai-kill-switch/",
+      "title": "Governor Newsom issues executive order to accelerate independent oversight and advance the creation of an AI kill switch",
+      "publisher": "Governor of California",
+      "kind": "primary",
+      "independenceGroup": "california-executive",
+      "publishedAt": "2026-09-18T15:08:17Z",
+      "eventDate": "2026-09-18T15:08:17Z",
+      "retrievedAt": "2026-09-20T02:29:27Z",
+      "locator": "Canonical page article:published_time and publishedTime metadata; opening summary; Decisive action section; four proposed recommendation topics. Page metadata also showed modifiedTime 2026-09-19T19:56:32Z without a visible correction notice."
+    },
+    {
+      "id": "s2",
+      "url": "https://www.gov.ca.gov/wp-content/uploads/2026/09/FINAL-N-9-26-AI-EO-9.18.26-SIGNED.pdf",
+      "title": "Executive Order N-9-26",
+      "publisher": "Governor of California",
+      "kind": "primary",
+      "independenceGroup": "california-executive",
+      "publishedAt": "2026-09-18",
+      "eventDate": "2026-09-18T15:08:17Z",
+      "retrievedAt": "2026-09-20T02:29:27Z",
+      "locator": "Signed PDF pages 2–3: effective-immediately clause; operative paragraphs 1–3; four recommendation subparagraphs; signature date. Extracted with pdfplumber and visually checked from rendered pages."
+    },
+    {
+      "id": "s3",
+      "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB813",
+      "title": "SB-813 Independent verification organizations",
+      "publisher": "California Legislative Information",
+      "kind": "primary",
+      "independenceGroup": "california-legislature",
+      "publishedAt": "2026-09-09",
+      "eventDate": "2026-09-09",
+      "retrievedAt": "2026-09-20T02:29:59Z",
+      "locator": "Chaptered text; Legislative Counsel's Digest; Government Code sections 8898.1–8898.4, especially the original 1 January 2028 deadline, designation criteria and section 8898.4(a)(3)."
+    },
+    {
+      "id": "s4",
+      "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1405",
+      "title": "AB-1405 Artificial intelligence: auditors: registration",
+      "publisher": "California Legislative Information",
+      "kind": "primary",
+      "independenceGroup": "california-legislature",
+      "publishedAt": "2026-09-09",
+      "eventDate": "2026-09-09",
+      "retrievedAt": "2026-09-20T02:29:59Z",
+      "locator": "Chaptered text; Legislative Counsel's Digest; Government Code sections 11549.82, 11549.82.5 and 11549.83 for registry deadlines, separate registration prohibition, reports, records and independence standards."
+    },
+    {
+      "id": "s5",
+      "url": "https://www.latimes.com/california/story/2026-09-18/newsom-creates-panel-on-ai-safety-regulation-suggests-possible-kill-switch",
+      "title": "Newsom creates AI safety panel, suggests possible ‘kill switch’",
+      "publisher": "Los Angeles Times",
+      "kind": "independent",
+      "independenceGroup": "los-angeles-times",
+      "publishedAt": "2026-09-18",
+      "eventDate": "2026-09-18T15:08:17Z",
+      "retrievedAt": "2026-09-20T02:29:27Z",
+      "locator": "Opening description of a panel and possible rule; reporting on the governor's statement that kill switch has multiple meanings; legislative context. Updated 18 September at 3:05 PM PT."
+    },
+    {
+      "id": "s6",
+      "url": "https://www.politico.com/news/2026/09/18/newsom-california-executive-order-ai-01083826",
+      "title": "Newsom signs executive order to explore new AI rules, consider ‘kill switch’",
+      "publisher": "Politico",
+      "kind": "independent",
+      "independenceGroup": "politico",
+      "publishedAt": "2026-09-18T15:13:00Z",
+      "eventDate": "2026-09-18T15:08:17Z",
+      "retrievedAt": "2026-09-20T02:29:27Z",
+      "locator": "Published 18 September 2026 at 11:13 AM EDT; opening, accelerated-law and two-month recommendation passages; reporting that legislators expect follow-up legislation."
+    }
+  ],
+  "claims": [
+    {"id":"c01","text":"The Governor of California announcement metadata records publication at 2026-09-18T15:08:17Z, and signed Executive Order N-9-26 is dated 18 September 2026.","type":"fact","sourceIds":["s1","s2"],"sourceLocator":"s1 article:published_time and publishedTime metadata; s2 PDF page 3 signature block","status":"supported"},
+    {"id":"c02","text":"Executive Order N-9-26 became effective immediately.","type":"fact","sourceIds":["s2"],"sourceLocator":"PDF page 2, paragraph immediately before IT IS HEREBY ORDERED","status":"supported"},
+    {"id":"c03","text":"Order paragraph 1 requires Government Operations to complete and publicly post section 8898.1 IVO application requirements, procedures and criteria by 1 May 2027.","type":"fact","sourceIds":["s2"],"sourceLocator":"PDF page 2, operative paragraph 1","status":"supported"},
+    {"id":"c04","text":"SB 813 originally set 1 January 2028 for the section 8898.1 work.","type":"fact","sourceIds":["s3"],"sourceLocator":"Government Code section 8898.1 opening","status":"supported"},
+    {"id":"c05","text":"Order paragraph 2 requires Government Operations to complete section 11549.82(a) and begin section 11549.82(b) actions by 1 December 2027.","type":"fact","sourceIds":["s2"],"sourceLocator":"PDF page 2, operative paragraph 2","status":"supported"},
+    {"id":"c06","text":"AB 1405 originally set 1 January 2029 for the registry, fees, misconduct-reporting channel and listed registry actions.","type":"fact","sourceIds":["s4"],"sourceLocator":"Government Code section 11549.82(a)–(b)","status":"supported"},
+    {"id":"c07","text":"AB 1405 separately keeps 1 January 2029 as the date after which an unregistered person may not offer, sell or conduct a covered AI audit, and the order does not state a new date for that provision.","type":"fact","sourceIds":["s2","s4"],"sourceLocator":"s4 section 11549.82.5 compared with the complete operative text on s2 pages 2–3","status":"supported"},
+    {"id":"c08","text":"Government Operations, consulting with the Governor's Office of Emergency Services and national experts, must submit recommendations by 16 November 2026.","type":"fact","sourceIds":["s2"],"sourceLocator":"PDF pages 2–3, operative paragraph 3","status":"supported"},
+    {"id":"c09","text":"The specified recommendation topics are onsite IVOs for large frontier developers, independent verification of required filings, an independently verified frontier-model kill switch and broader critical-safety-incident definitions.","type":"fact","sourceIds":["s2"],"sourceLocator":"PDF page 3, paragraphs 3(a)–(d)","status":"supported"},
+    {"id":"c10","text":"The order does not itself impose those four requirements on developers; it directs officials to submit recommendations on the feasibility and efficacy of potential amendments to state law.","type":"fact","sourceIds":["s2"],"sourceLocator":"PDF pages 2–3, operative paragraph 3 and subparagraphs","status":"supported"},
+    {"id":"c11","text":"SB 813 creates IVO designation criteria addressing expertise, assessment methods, conflicts of interest, operational independence, documentation and cybersecurity.","type":"fact","sourceIds":["s3"],"sourceLocator":"Government Code sections 8898.1–8898.2","status":"supported"},
+    {"id":"c12","text":"SB 813 does not require a developer, deployer or operator to engage an IVO or undergo a covered audit as a condition of operating in California.","type":"fact","sourceIds":["s3"],"sourceLocator":"Government Code section 8898.4(a)(3)","status":"supported"},
+    {"id":"c13","text":"AB 1405 creates an auditor registry, audit-reporting and recordkeeping duties, independence rules and a misconduct-reporting path.","type":"fact","sourceIds":["s4"],"sourceLocator":"Government Code sections 11549.82–11549.84","status":"supported"},
+    {"id":"c14","text":"IVO designation or auditor registration is not evidence that a particular model passed an independent safety review.","type":"inference","sourceIds":["s3","s4"],"sourceLocator":"Premises: the schemes govern assessor designation, registration and conduct; SB 813 section 8898.4 excludes state endorsement and mandatory engagement. Conclusion is bounded Index Us synthesis.","status":"qualified"},
+    {"id":"c15","text":"Independent reporting describes the kill switch and related measures as proposals to be explored rather than obligations imposed now.","type":"fact","sourceIds":["s5","s6"],"sourceLocator":"s5 opening and governor ambiguity passage; s6 opening, recommendations and legislative follow-through passages","status":"supported"},
+    {"id":"c16","text":"Because kill switch can refer to controls at different system layers, a useful rule must define its scope, trigger authority, safe state, verification method and restoration conditions.","type":"inference","sourceIds":["s2","s5"],"sourceLocator":"Premises: s2 orders a technical-feasibility and efficacy assessment with ongoing verification; s5 reports the governor's acknowledgement that the term has multiple meanings. Control requirements are Index Us synthesis.","status":"qualified"},
+    {"id":"c17","text":"Developers can prepare without assuming a final rule by mapping emergency controls, triggers, evidence, dependencies, testing and restoration conditions.","type":"inference","sourceIds":["s2","s3","s4"],"sourceLocator":"Premises: imminent recommendation deadline and earlier assessor-framework implementation. Recommendation is Index Us operational synthesis.","status":"qualified"},
+    {"id":"c18","text":"The 16 November recommendations are the next public evidence needed to assess the proposal's technical scope and route to enforceability.","type":"inference","sourceIds":["s2"],"sourceLocator":"Based on the order's explicit report deadline and the absence of a current developer mandate; later legislative action remains uncertain.","status":"qualified"}
+  ],
+  "sourceUse": [
+    {"sourceId":"s1","quotedWords":0,"estimatedDerivedWords":45,"allowance":"Exact timestamp, headline boundary and agency summary only; no quotation."},
+    {"sourceId":"s2","quotedWords":0,"estimatedDerivedWords":280,"allowance":"Operative three-page public order paraphrased by paragraph and page; no quotation."},
+    {"sourceId":"s3","quotedWords":0,"estimatedDerivedWords":170,"allowance":"Chaptered statutory deadlines, designation criteria and express exclusions paraphrased; no quotation."},
+    {"sourceId":"s4","quotedWords":0,"estimatedDerivedWords":180,"allowance":"Chaptered registry, dates, duties and independence provisions paraphrased; no quotation."},
+    {"sourceId":"s5","quotedWords":0,"estimatedDerivedWords":45,"allowance":"Independent context and governor's stated ambiguity paraphrased; no quotation or narrative reuse."},
+    {"sourceId":"s6","quotedWords":0,"estimatedDerivedWords":55,"allowance":"Independent context on exploration and follow-up legislation paraphrased; no quotation or narrative reuse."}
+  ],
+  "quotes": [],
+  "visual": {
+    "concept": "Solid cobalt milestones feed an auditor register for current administrative deadlines, while a separate dashed recommendation route ends at an unactivated vermilion stop control for the possible frontier-model rule.",
+    "referencesInspected": ["src/components/ArticleArtwork.astro","src/content/articles/openai-wiki-incident-disclosure-framework.md","src/content/articles/frontier-agent-overclaiming-file-review.md","src/content/articles/anthropic-embedded-evaluator-access.md"],
+    "originalityAndEvidenceBoundary": "New story-specific composition in the established charcoal, off-white, vermilion, cobalt, sage and warm-neutral palette. The title, description and visible caption identify a conceptual distinction, not California's process, a model architecture or evidence that a shutdown control works.",
+    "accessibility": "Self-contained inline SVG with a responsive 800 by 560 viewBox, role img, linked title and description, visible caption, no scripts, external resources or animation."
+  },
+  "drafting": {
+    "agentId": "/root/newsroom_drafter",
+    "completedAt": "2026-09-20T02:16:32Z",
+    "notes": [
+      "The byte-identical original draft is retained at .newsroom-work/20260920T020327Z/draft.md.",
+      "Research used successful Firecrawl searches, the signed order PDF extracted with pdfplumber and visually inspected after rendering, chaptered statutory materials and two independent reports.",
+      "The global Firecrawl command was unavailable. The supported npx package was loaded through a writable private cache; search feedback requested authentication, and a later SB 53 search hit the keyless free-tier limit. Neither limitation affected the cited source set.",
+      "Article digest is intentionally not placed in the final articleSha256 field. Editorial, factual, quality and responsive-render approval remain pending for distinct agents."
+    ]
+  },
+  "editorial": {
+    "agentId": "/root/newsroom_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-20T02:25:07Z",
+    "articleSha256": "1427b3ee384a2a48d7b0dbbb34ed318e27a88f3417f781046ec3ea9ead58be38",
+    "notes": [
+      "Led with the immediate administrative effect and the absence of a present developer kill-switch mandate while preserving the article's legal and evidentiary boundaries.",
+      "Reduced repeated opposition, signposting and conclusion echoes; clarified the three agency deadlines and the distinction between assessor eligibility and a specific audit result.",
+      "Kept system-layer and preparation guidance explicitly analytical and conditional, with the documentation-only limitation and all six source links intact.",
+      "Passed the original inline SVG for Index Us style, accessibility, relevance, responsive structure and non-misleading framing; its separate solid and dashed tracks and caption do not portray the proposed kill-switch verification as current law. Rendered viewport checks remain pending."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/newsroom_factcheck",
+    "reviewedAt": "2026-09-20T02:30:10Z",
+    "articleSha256": "1427b3ee384a2a48d7b0dbbb34ed318e27a88f3417f781046ec3ea9ead58be38",
+    "status": "passed",
+    "claimsCoverage": true,
+    "notes": [
+      "Reopened every public source URL and verified claims c01 through c18 against the exact edited article; the live signed PDF matched the retained local PDF byte for byte.",
+      "Confirmed that order paragraph 2 accelerates section 11549.82(a) completion and commencement of section 11549.82(b) agency actions, while the separate section 11549.82.5 prohibition remains dated 1 January 2029.",
+      "Confirmed that the governor page's 19 September modification predates drafting, carries no visible correction notice and does not change any material passage used in the article.",
+      "Approved the system-layer, safe-state and verification examples as clearly bounded Index Us synthesis rather than California requirements, and approved the SVG as original, accessible and non-misleading.",
+      "Desktop and mobile rendered checks remain intentionally unset for the separate publication check."
+    ]
+  },
+  "quality": {
+    "evidence": 33,
+    "context": 18,
+    "originalValue": 18,
+    "voice": 14,
+    "presentation": 9
+  },
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered at 1280 by 900 in the in-app Chromium browser. Verified the full title, byline, automation disclosure, heading hierarchy, six-source list and story-specific SVG semantics and composition. Document and body widths were 1280 pixels with no clipped article elements or horizontal overflow. Console inspection found no errors; only the known localhost analytics warnings were present."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered at 390 by 844 in the in-app Chromium browser. Verified title and metadata wrapping, readable disclosure, all article headings and sources, a 350-pixel-wide responsive story SVG with accessible labelling, and the expanded mobile menu containing all six navigation links. Document and body widths were 390 pixels with no clipped article elements or horizontal overflow. Console inspection found no errors; only the known localhost analytics warnings were present."
+    }
+  },
+  "riskFlags": [],
+  "duplicateCheck": {
+    "status": "passed",
+    "checkedAt": "2026-09-20T02:11:48Z",
+    "notes": "Exhaustive repository search across src/content/articles, newsroom/runs and current working records found no matching story ID, canonical URL, Newsom order, SB 813, AB 1405 or kill-switch event. The existing Anthropic evaluator and OpenAI Australian youth-policy articles cover different entities and actions."
+  },
+  "discovery": {
+    "firecrawl": {
+      "globalCliAvailable": false,
+      "npxVersion": "1.23.3",
+      "successfulSearches": [
+        ".newsroom-work/20260920T020327Z/.firecrawl/search-california-ai-order.json",
+        ".newsroom-work/20260920T020327Z/.firecrawl/search-california-ai-context.json",
+        ".newsroom-work/20260920T020327Z/.firecrawl/search-california-ai-independent.json",
+        ".newsroom-work/20260920T020327Z/.firecrawl/search-sb813.json",
+        ".newsroom-work/20260920T020327Z/.firecrawl/search-sb813-ab1405.json"
+      ],
+      "selectedResults": [
+        "https://www.gov.ca.gov/2026/09/18/governor-newsom-issues-executive-order-to-accelerate-independent-oversight-and-advance-the-creation-of-an-ai-kill-switch/",
+        "https://www.gov.ca.gov/wp-content/uploads/2026/09/FINAL-N-9-26-AI-EO-9.18.26-SIGNED.pdf",
+        "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB813",
+        "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1405",
+        "https://www.latimes.com/california/story/2026-09-18/newsom-creates-panel-on-ai-safety-regulation-suggests-possible-kill-switch",
+        "https://www.politico.com/news/2026/09/18/newsom-california-executive-order-ai-01083826"
+      ],
+      "feedback": "Attempted after processing the first non-empty search, but the CLI requested authentication and no successful feedback event was recorded. A later SB 53 search hit the keyless free-tier limit and produced no source used in the article."
+    },
+    "sourceRefresh": "The factual reviewer independently reopened all six public URLs between 2026-09-20T02:29:27Z and 2026-09-20T02:29:59Z. The live signed PDF matched the retained local PDF SHA-256 ea398613db19dd4e6479a04a93753d8efbcbfc91e5ecb8a42786721553da3fc5.",
+    "correctionCheck": "The live governor-page metadata still showed modification at 2026-09-19T19:56:32Z. Its current material passages matched the retained evidence, no correction label was present and the byte-identical signed order remained controlling; no article change was required."
+  },
+  "artwork": {
+    "status": "drafted",
+    "concept": "Two separated tracks distinguish current administrative implementation from proposed frontier controls, ending the proposal track at an unactivated stop symbol.",
+    "referencesInspected": ["src/components/ArticleArtwork.astro","src/content/articles/openai-wiki-incident-disclosure-framework.md","src/content/articles/frontier-agent-overclaiming-file-review.md","src/content/articles/anthropic-embedded-evaluator-access.md"],
+    "requirements": "Self-contained inline SVG; responsive 800 by 560 viewBox; accessible title and description; visible original-illustration caption; charcoal, off-white, vermilion, cobalt, sage and warm-neutral palette; no scripts, external resources or animation.",
+    "reviewStatus": "Editorial and factual reviewers approved the exact article digest. Rendered desktop and mobile checks passed at 1280 and 390 pixels respectively, with accessible semantics and no horizontal overflow."
+  }
+}
