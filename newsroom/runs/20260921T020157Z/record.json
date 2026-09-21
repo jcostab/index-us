@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260921T020157Z",
+  "startedAt": "2026-09-21T02:01:57.086Z",
+  "completedAt": "2026-09-21T08:06:38Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {"start": "2026-09-19T02:01:57.086Z", "end": "2026-09-21T02:01:57.086Z"},
+  "candidates": [
+    {"story": "Qwen-Image-2.1 public release and research-to-production licence boundary", "source": "https://github.com/QwenLM/Qwen-Image-2.1/commit/96d63f2ee74e24ff2f7b6bc3373ef9fe8c6adb5e", "eventDate": "2026-09-20T01:42:56Z", "decision": "selected", "reason": "The Qwen repository supplies an exact in-window release timestamp, public model and integration records establish inspectable availability, and the Qwen Research License creates an immediate deployment decision that the launch's open-source label does not resolve. Independent reporting preserves the absence of independent benchmark confirmation, and the OSI definition supplies meaningful external context. No Index Us article or run record duplicates the event."},
+    {"story": "Anthropic measurements for understanding AI development inside frontier labs", "source": "https://www.anthropic.com/institute/measuring-pace-of-ai-development", "eventDate": "unknown", "decision": "rejected", "reason": "A fresh Firecrawl result labelled the page two hours old, but the primary page had already been reviewed in recent runs as a 17 September item without a source-verifiable exact event time. Search-result age cannot replace the required primary timestamp, and the internal agent-monitoring angle overlaps recent Index Us coverage."},
+    {"story": "Claude Code v2.1.278 Auto Mode classifier-routing changes", "source": "https://github.com/anthropics/claude-code/releases", "eventDate": "unknown", "decision": "already considered", "reason": "Run 20260920T200326Z rejected the fresh release because it changed classifier routing, billing fallback and status observability without new monitor-policy coverage, bypass evidence or independent safety testing. This run found no material evidence changing that conclusion."},
+    {"story": "TensorRT Edge-LLM result on the MLPerf Edge Agentic benchmark", "source": "https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor/", "eventDate": "unknown", "decision": "rejected", "reason": "The primary page is dated 16 September 2026 and a surfaced X repost is timestamped 2026-09-17T18:26:03Z. Both are outside this run's discovery window; renewed secondary circulation is not a new event."},
+    {"story": "MiniMax-H3 physical-world reasoning evaluation", "source": "https://arxiv.org/abs/2609.18323", "eventDate": "unknown", "decision": "rejected", "reason": "A secondary alert was published on 20 September, but the underlying arXiv preprint is dated 16 September and outside the 48-hour window. The alert does not create a new technical event, and the single-model evaluation lacks a comparator for a broader deployment conclusion."}
+  ],
+  "decision": {"kind": "new", "reason": "Qwen-Image-2.1 is a fresh, consequential and non-duplicate release with a source-verified exact event time. Public weights and day-zero integrations make evaluation practical, while the express non-commercial research licence materially changes the production decision. The article keeps capability and quality claims attributed and turns the evidence into a bounded access, evaluation, infrastructure and permission framework."},
+  "story": {"id": "qwen-image-2-1-research-licence-production-boundary", "eventDate": "2026-09-20T01:42:56Z", "canonicalUrls": ["https://github.com/QwenLM/Qwen-Image-2.1/commit/96d63f2ee74e24ff2f7b6bc3373ef9fe8c6adb5e", "https://qwen.ai/blog?id=qwen-image-2.1"]},
+  "articlePath": "src/content/articles/qwen-image-2-1-research-licence-production-boundary.md",
+  "articleSha256": "532ba6aa31ab3fbbfc8332601aed3053d1f5913175ada0a1c09eb9370d640013",
+  "draftSha256": "e5a7a2ce10055446aca19a803beb196dabc77f7128ad2f74610ada16c5e52615",
+  "freshness": {"eventTimestampSource": "Qwen GitHub release commit 96d63f2 commit.author.date and commit.committer.date", "eventAgeAtRunStartSeconds": 87541.086, "marginAtRunStartSeconds": 85258.914, "eventAgeAtFactCheckSeconds": 101669, "marginAtFactCheckSeconds": 71131, "factCheckedAt": "2026-09-21T05:57:25Z", "eventTimestampDefensible": true, "status": "Inside the hard 48-hour discovery window at run start and factual review. The fixed release commit's author and committer timestamps both record 2026-09-20T01:42:56Z, and its diff adds the substantive README and Qwen Research License."},
+  "sources": [
+    {"id": "s1", "url": "https://github.com/QwenLM/Qwen-Image-2.1/commit/96d63f2ee74e24ff2f7b6bc3373ef9fe8c6adb5e", "title": "Add README and Qwen Research License", "publisher": "Qwen on GitHub", "kind": "primary", "independenceGroup": "qwen", "publishedAt": "2026-09-20T01:42:56Z", "eventDate": "2026-09-20T01:42:56Z", "retrievedAt": "2026-09-21T05:54:48Z", "locator": "GitHub commit API commit.author.date and commit.committer.date; commit message; changed-file list; fixed README lines 15-24, 30-36, 92-94 and 139-169; fixed LICENSE lines 1-55."},
+    {"id": "s2", "url": "https://qwen.ai/blog?id=qwen-image-2.1", "title": "Qwen-Image-2.1: Compact, Efficient, and Unified Image Creation", "publisher": "Qwen", "kind": "primary", "independenceGroup": "qwen", "publishedAt": "2026-09-20", "eventDate": "2026-09-20T01:42:56Z", "retrievedAt": "2026-09-21T05:54:48Z", "locator": "The URL opened but exposed only the Qwen client shell to the review clients. Its capability claims were independently rechecked against the fixed release README at s1 and the live Qwen model card at s4; s1 supplies the exact event timestamp."},
+    {"id": "s3", "url": "https://github.com/QwenLM/Qwen-Image-2.1/blob/96d63f2ee74e24ff2f7b6bc3373ef9fe8c6adb5e/LICENSE", "title": "Qwen Research License Agreement", "publisher": "Qwen on GitHub", "kind": "primary", "independenceGroup": "qwen", "publishedAt": "2026-09-20T01:42:56Z", "eventDate": "2026-09-20T01:42:56Z", "retrievedAt": "2026-09-21T05:54:48Z", "locator": "Fixed-revision raw LICENSE lines 16, 18-20, 22-27, 29-32, 34-43, 45-51 and 53-55."},
+    {"id": "s4", "url": "https://huggingface.co/Qwen/Qwen-Image-2.1", "title": "Qwen-Image-2.1 model repository", "publisher": "Qwen on Hugging Face", "kind": "primary", "independenceGroup": "qwen", "publishedAt": "2026-09-14T03:47:26Z", "eventDate": "2026-09-20T01:42:56Z", "retrievedAt": "2026-09-21T05:54:48Z", "locator": "Live model API reports private false, gated false and revision 790c92633540aa0cb11d9abf19eb46d861714758; recursive tree has 34 entries totalling 33,134,949,212 bytes, including transformer, text encoder and VAE shards; model-card lines 99-107 and 170-180."},
+    {"id": "s5", "url": "https://github.com/Comfy-Org/ComfyUI/pull/16400", "title": "feat: Qwen-image 2.1 support (CORE-423)", "publisher": "ComfyUI on GitHub", "kind": "independent", "independenceGroup": "comfy-org", "publishedAt": "2026-09-19T22:44:03Z", "eventDate": "2026-09-19T22:44:03Z", "retrievedAt": "2026-09-21T05:54:48Z", "locator": "GitHub pull API merged_at 2026-09-19T22:44:03Z and body; rendered PR lines 131-180 describe merged status, attention, prefix cache, text encoder, VAE and nodes."},
+    {"id": "s6", "url": "https://github.com/huggingface/diffusers/pull/14804", "title": "Add Qwen-Image 2.1", "publisher": "Hugging Face Diffusers on GitHub", "kind": "independent", "independenceGroup": "hugging-face", "publishedAt": "2026-09-18T05:30:38Z", "eventDate": "2026-09-18T05:30:38Z", "retrievedAt": "2026-09-21T05:54:48Z", "locator": "GitHub pull API merged_at 2026-09-18T05:30:38Z; rendered PR lines 130-171 and 190-222 describe merged pipeline support. Contributor is a Qwen developer; merge and review occurred in the independent Diffusers project."},
+    {"id": "s7", "url": "https://the-decoder.com/alibabas-open-weight-qwen-image-2-1-claims-to-beat-closed-models-in-image-generation-with-just-7-billion-parameters/", "title": "Alibaba's open-weight Qwen-Image-2.1 claims to beat closed models in image generation with just 7 billion parameters", "publisher": "The Decoder", "kind": "independent", "independenceGroup": "the-decoder", "publishedAt": "2026-09-20T16:10:52Z", "eventDate": "2026-09-20T01:42:56Z", "retrievedAt": "2026-09-21T05:54:48Z", "locator": "NewsArticle structured-data publication time; article paragraphs 23-27 attribute the benchmark comparison to Qwen, state independent benchmarks are pending, identify distribution locations and describe the commercial-use restriction."},
+    {"id": "s8", "url": "https://opensource.org/ai/open-source-ai-definition", "title": "The Open Source AI Definition 1.0", "publisher": "Open Source Initiative", "kind": "independent", "independenceGroup": "osi", "publishedAt": "unknown", "eventDate": "unknown", "retrievedAt": "2026-09-21T05:54:48Z", "locator": "What is Open Source AI, lines 12-30: use, study, modify and share for any purpose without permission, plus preferred-form requirements for data information, code and parameters."}
+  ],
+  "claims": [
+    {"id": "c01", "text": "Qwen's release commit added the substantive README and Qwen Research License at 2026-09-20T01:42:56Z.", "type": "fact", "sourceIds": ["s1"], "sourceLocator": "s1 commit metadata and two-file diff", "status": "supported"},
+    {"id": "c02", "text": "Qwen describes Qwen-Image-2.1 as an open-source unified generation-and-editing model with a 7B, 32-layer visual generation component, native RGBA output, 2K output and support for up to 10 reference images.", "type": "attributed_claim", "sourceIds": ["s1", "s2", "s4"], "sourceLocator": "s1 fixed README lines 15-24, 92-94 and 139-169; s4 live model-card lines 99-107 and 170-180. The s2 client route did not expose article text to the review clients.", "status": "supported"},
+    {"id": "c03", "text": "The Qwen Hugging Face repository is public and ungated and distributes transformer, text encoder, VAE, processor, scheduler and configuration files.", "type": "fact", "sourceIds": ["s4"], "sourceLocator": "s4 model API metadata and recursive file tree", "status": "supported"},
+    {"id": "c04", "text": "The current listed Hugging Face repository files total 33,134,949,212 bytes, or about 33.1 GB.", "type": "fact", "sourceIds": ["s4"], "sourceLocator": "Sum of 34 live s4 recursive file-tree size fields retrieved 2026-09-21T05:54:48Z; the article's rounded 33.1 GB remains accurate despite the small post-draft tree change.", "status": "supported"},
+    {"id": "c05", "text": "The 7B figure describes the visual generation component and does not by itself state the complete download, accelerator-memory requirement or production serving cost.", "type": "inference", "sourceIds": ["s1", "s4"], "sourceLocator": "Premises: s1 fixed README line 17 scopes 7B to the visual component; s4 lists separate text encoder and VAE files. The bounded deployment conclusion is Index Us synthesis.", "status": "qualified"},
+    {"id": "c06", "text": "The Qwen Research License defines non-commercial as research or evaluation and grants use, reproduction, distribution, modification and derivative rights only for non-commercial purposes.", "type": "fact", "sourceIds": ["s3"], "sourceLocator": "s3 sections 1(i) and 2(a)", "status": "supported"},
+    {"id": "c07", "text": "Commercial use requires a separate commercial licence from Qwen.", "type": "fact", "sourceIds": ["s3"], "sourceLocator": "s3 section 2(b)", "status": "supported"},
+    {"id": "c08", "text": "Redistribution requires a copy of the agreement, notices on modified files and the specified attribution notice.", "type": "fact", "sourceIds": ["s3"], "sourceLocator": "s3 section 3(a)-(c)", "status": "supported"},
+    {"id": "c09", "text": "A distributed or available AI model created, trained, fine-tuned or improved using the materials must display the licence's specified Qwen acknowledgement.", "type": "fact", "sourceIds": ["s3"], "sourceLocator": "s3 section 4(b)", "status": "supported"},
+    {"id": "c10", "text": "The agreement contains an intellectual-property litigation termination clause, warranty exclusions, an indemnity obligation, Chinese governing law and exclusive jurisdiction in Hangzhou.", "type": "fact", "sourceIds": ["s3"], "sourceLocator": "s3 sections 5(c), 6, 7 and 8", "status": "supported"},
+    {"id": "c11", "text": "ComfyUI merged Qwen-Image-2.1 support at 2026-09-19T22:44:03Z with model-specific attention, cache, text-encoding and RGBA handling.", "type": "fact", "sourceIds": ["s5"], "sourceLocator": "s5 merged_at metadata and pull-request body", "status": "supported"},
+    {"id": "c12", "text": "Hugging Face Diffusers merged Qwen-Image-2.1 pipeline support at 2026-09-18T05:30:38Z.", "type": "fact", "sourceIds": ["s6"], "sourceLocator": "s6 merged_at metadata and pull-request body", "status": "supported"},
+    {"id": "c13", "text": "The implementation integrations establish software support, not model quality, throughput on a reader's hardware or suitability for a particular workflow.", "type": "inference", "sourceIds": ["s5", "s6"], "sourceLocator": "Premise: both sources are implementation pull requests without comparative workflow evaluation. Conclusion is bounded Index Us synthesis.", "status": "qualified"},
+    {"id": "c14", "text": "Qwen's comparative quality evidence is developer-produced and independent benchmark confirmation remains pending.", "type": "fact", "sourceIds": ["s1", "s7"], "sourceLocator": "s1 fixed release README supplies Qwen's release evidence; s7 paragraph 23 explicitly attributes the comparison to Qwen and states independent benchmarks are pending.", "status": "supported"},
+    {"id": "c15", "text": "The Open Source AI Definition requires freedom to use, study, modify and share an AI system for any purpose without permission.", "type": "fact", "sourceIds": ["s8"], "sourceLocator": "s8 definition freedoms list", "status": "supported"},
+    {"id": "c16", "text": "Open-weight under a research licence is a more precise operational description than open-source for this release because its published grant excludes commercial use.", "type": "inference", "sourceIds": ["s3", "s8"], "sourceLocator": "Premises: s3 restricts use by purpose; s8 requires use for any purpose. Classification is Index Us synthesis and not an OSI certification decision.", "status": "qualified"},
+    {"id": "c17", "text": "A production decision should assess output fitness, complete-system cost, data handling and licence permission separately.", "type": "inference", "sourceIds": ["s1", "s3", "s4", "s5", "s6"], "sourceLocator": "Premises: distinct developer claims, licence limits, package components and implementation records. The four-part decision framework is original Index Us synthesis.", "status": "qualified"},
+    {"id": "c18", "text": "Index Us did not run the model, reproduce Qwen's benchmark, inspect unselected outputs, obtain a commercial licence or provide legal advice.", "type": "fact", "sourceIds": ["s1", "s2", "s3", "s4", "s5", "s6"], "sourceLocator": "Retained run-method attestation; the cited materials are published documentation, distribution metadata and integration records rather than Index Us test evidence.", "status": "supported"}
+  ],
+  "sourceUse": [
+    {"sourceId": "s1", "quotedWords": 1, "estimatedDerivedWords": 55, "allowance": "Exact timestamp, commit action, release identity and the single hyphenated label open-source from the fixed README."},
+    {"sourceId": "s2", "quotedWords": 0, "estimatedDerivedWords": 180, "allowance": "Capability claims are attributed and independently corroborated by the fixed release README and live model card; no verbatim quotation is allocated to the unavailable client-rendered body."},
+    {"sourceId": "s3", "quotedWords": 0, "estimatedDerivedWords": 240, "allowance": "Licence provisions paraphrased by section; no legal conclusion or quotation."},
+    {"sourceId": "s4", "quotedWords": 0, "estimatedDerivedWords": 100, "allowance": "Repository state, component names and calculated file-size total; no source prose reproduced."},
+    {"sourceId": "s5", "quotedWords": 0, "estimatedDerivedWords": 55, "allowance": "Merge time and high-level implementation areas only; no code or distinctive prose reproduced."},
+    {"sourceId": "s6", "quotedWords": 0, "estimatedDerivedWords": 25, "allowance": "Merge time and pipeline existence only."},
+    {"sourceId": "s7", "quotedWords": 0, "estimatedDerivedWords": 45, "allowance": "Independent benchmark-status and licence context paraphrased; no narrative or quotation reused."},
+    {"sourceId": "s8", "quotedWords": 0, "estimatedDerivedWords": 50, "allowance": "Definition's four freedoms paraphrased and applied conservatively; no claim of formal certification."}
+  ],
+  "quotes": [{"sourceId": "s1", "words": 1}],
+  "visual": {
+    "concept": "Three offset transparent-image plates sit beyond a narrow licence gate. A cobalt research/evaluation path crosses the gate while a separate vermilion production path stops at a bar before it.",
+    "referencesInspected": ["src/components/ArticleArtwork.astro", "src/content/articles/chatgpt-images-2-5-workflow-evaluation.md", "src/content/articles/coding-agent-blocking-monitor-red-team.md", "src/content/articles/zgcm-open-model-data-access.md"],
+    "originalityAndEvidenceBoundary": "New story-specific composition in the established charcoal, off-white, vermilion, cobalt, sage and warm-neutral palette. It explains a decision boundary without depicting Qwen's architecture, output quality, file size, benchmark or a legal determination.",
+    "accessibility": "Self-contained inline SVG with a responsive 800 by 560 viewBox, role img, linked title and description, visible original-illustration caption, no scripts, external resources or animation."
+  },
+  "drafting": {
+    "agentId": "/root/newsroom_drafter",
+    "completedAt": "2026-09-21T05:41:02Z",
+    "notes": [
+      "The byte-identical untouched original draft is retained at .newsroom-work/20260921T020157Z/draft.md with SHA-256 e5a7a2ce10055446aca19a803beb196dabc77f7128ad2f74610ada16c5e52615.",
+      "The draft validates at 1,516 body words and an eight-minute reading estimate before editorial review.",
+      "No editorial, factual-review, quality-score or responsive-render approval has been performed or recorded by this agent.",
+      "The global Firecrawl executable was unavailable; the installed Firecrawl CLI JavaScript entrypoint ran successfully through Node after the documented writable-cache fallback. Search feedback requested interactive authentication and was not recorded."
+    ]
+  },
+  "editorial": {
+    "agentId": "/root/newsroom_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-21T05:51:04Z",
+    "articleSha256": "532ba6aa31ab3fbbfc8332601aed3053d1f5913175ada0a1c09eb9370d640013",
+    "notes": [
+      "Corrected the title, description, opening and artwork language to distinguish the published commercial-use restriction from production in general.",
+      "Tightened the evidence sequence and cadence while preserving every material fact, caveat, source, disclosure and method limitation.",
+      "Added the existing Diffusers source as a direct inline link beside its implementation claim without introducing a new factual claim.",
+      "Approved the original story-specific SVG for style, originality, accessibility and a non-evidentiary meaning boundary, pending factual review and responsive rendering checks."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/newsroom_fact_reviewer",
+    "reviewedAt": "2026-09-21T05:57:25Z",
+    "articleSha256": "532ba6aa31ab3fbbfc8332601aed3053d1f5913175ada0a1c09eb9370d640013",
+    "status": "passed",
+    "claimsCoverage": true
+  },
+  "quality": {"evidence": 33, "context": 18, "originalValue": 18, "voice": 13, "presentation": 9},
+  "qualityRationale": {
+    "evidence": "Every material final-text claim is supported, attributed or bounded. The release time and licence use a fixed primary revision; volatile distribution metadata was refreshed. No hands-on performance evidence exists, which is explicit.",
+    "context": "Independent implementation records, an independent release report and the OSI definition provide meaningful context. They do not independently validate model quality, and the article states that limit.",
+    "originalValue": "The article turns a release into a practical four-part decision covering output fitness, complete-system cost, data handling and permission without inflating the announcement.",
+    "voice": "The separate publication edit produced direct Australian English, a specific opening and varied section weight while preserving caveats and avoiding invented experience.",
+    "presentation": "Title, description, takeaways, source list, byline, exact disclosure, accessible original SVG and method limitation are accurate. Desktop and mobile rendering passed without clipping or horizontal overflow."
+  },
+  "riskFlags": [],
+  "duplicateCheck": {"status": "passed", "checkedAt": "2026-09-21T05:41:02Z", "notes": "Repository and run-record searches found no Qwen-Image-2.1 article, canonical URL or stable story ID. The existing ChatGPT Images 2.5 article covers a proprietary hosted model and evaluation method; the ZGCM article covers training-data access and reproduction. Neither covers this release's express non-commercial production boundary."},
+  "discovery": {
+    "firecrawl": {
+      "globalCliAvailable": false,
+      "npxVersion": "1.23.3",
+      "successfulSearches": [".firecrawl/search-ai-models-agents.json", ".firecrawl/search-labs-20260920.json", ".firecrawl/search-arxiv-agents-20260920.json", ".firecrawl/search-nvidia-edge-agentic-scraped.json", ".firecrawl/search-qwen-image-2-1-scraped.json", ".firecrawl/search-minimax-h3-scraped.json"],
+      "selectedResults": ["https://qwen.ai/blog?id=qwen-image-2.1", "https://the-decoder.com/alibabas-open-weight-qwen-image-2-1-claims-to-beat-closed-models-in-image-generation-with-just-7-billion-parameters/", "https://github.com/QwenLM/Qwen-Image-2.1/commit/96d63f2ee74e24ff2f7b6bc3373ef9fe8c6adb5e", "https://github.com/Comfy-Org/ComfyUI/pull/16400", "https://github.com/huggingface/diffusers/pull/14804", "https://opensource.org/ai/open-source-ai-definition"],
+      "feedback": "Attempted for two processed non-empty searches, but the CLI requested interactive authentication and no successful feedback event was recorded."
+    },
+    "sourceRefresh": "Qwen, GitHub, Hugging Face and OSI public sources were opened directly after Firecrawl discovery. Exact event and integration times came from GitHub API metadata; current distribution state and file sizes came from the Hugging Face API.",
+    "correctionCheck": "No correction notice was found on the Qwen launch page or repository. Later same-day repository changes added prompt-rewrite material, integration references and hardware support without changing the article's central research-licence boundary."
+  },
+  "artwork": {
+    "status": "reviewed",
+    "concept": "Offset transparent image plates remain reachable for research evaluation while a separate production path stops at the licence gate.",
+    "referencesInspected": ["src/components/ArticleArtwork.astro", "src/content/articles/chatgpt-images-2-5-workflow-evaluation.md", "src/content/articles/coding-agent-blocking-monitor-red-team.md", "src/content/articles/zgcm-open-model-data-access.md"],
+    "requirements": "Self-contained inline SVG; responsive 800 by 560 viewBox; accessible title and description; visible original-illustration caption; charcoal, off-white, vermilion, cobalt, sage and warm-neutral palette; no scripts, external resources or animation.",
+    "reviewStatus": "Editorial and factual reviews passed for the exact article digest. The final SVG is story-specific, matches the geometric editorial system, has a linked title and description, uses the approved palette, contains no scripts, external resources or animation, and clearly says it is conceptual rather than evidence or legal advice. Rendered inspection passed at 1280 by 900 and 390 by 844 without clipping or horizontal overflow."
+  },
+  "checks": {
+    "desktop": {"status": "passed", "width": 1280, "notes": "Rendered at 1280 by 900. Title, byline, disclosure, article navigation, eight sources and story-specific SVG were present. The page client width and scroll width were both 1280; the SVG kept its 10:7 ratio with no clipping or overflow. Existing rendered article artwork was inspected first for visual-system comparison. Browser diagnostics showed only known localhost analytics warnings."},
+    "mobile": {"status": "passed", "width": 390, "notes": "Rendered at 390 by 844. The article, six-link mobile navigation, headings, source list, caption and story-specific SVG remained readable. The page client width and scroll width were both 390; no element crossed the viewport and the 350 by 245 SVG kept its 10:7 ratio without clipping or overflow. Browser diagnostics showed only known localhost analytics warnings."}
+  }
+}
