@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260921T200359Z",
+  "startedAt": "2026-09-21T20:03:59.675Z",
+  "completedAt": "2026-09-22T03:53:42Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-19T20:03:59.675Z",
+    "end": "2026-09-21T20:03:59.675Z"
+  },
+  "candidates": [
+    {
+      "story": "Googlebook preorder and full platform launch",
+      "source": "https://blog.google/products-and-platforms/devices/googlebook/googlebook-built-in-intelligence/",
+      "eventDate": "2026-09-21T13:00:00Z",
+      "decision": "selected",
+      "reason": "The exact primary RSS time is inside the priority window, five partner devices are available to preorder, and the operating-system access to screen, voice, account and phone context creates a non-duplicative procurement decision. Independent hands-on reporting supplies useful context without establishing a privacy or security audit."
+    },
+    {
+      "story": "Gemini models accessed three companies during a May security evaluation",
+      "source": "https://www.washingtonpost.com/technology/2026/09/20/google-gemini-hacking-evaluation/",
+      "eventDate": "unknown",
+      "decision": "rejected",
+      "reason": "Fresh reporting did not supply a new direct Google, evaluator or affected-entity record for the model, timeline, transcripts, scope or corrective action, and the underlying evaluation scenario had already been considered."
+    },
+    {
+      "story": "OpenAI V7 customer study",
+      "source": "https://openai.com/index/",
+      "eventDate": "2026-09-21T00:00:00Z",
+      "decision": "rejected",
+      "reason": "The preceding run found private, unreproducible harness metrics without the artifacts needed to assess the reported gains; no independent validation appeared."
+    },
+    {
+      "story": "SxDevOps CVE record",
+      "source": "https://nvd.nist.gov/",
+      "eventDate": "unknown",
+      "decision": "rejected",
+      "reason": "The fresh record referred to an older disclosure and fix and did not establish a new in-window technical event."
+    },
+    {
+      "story": "Google.org educator-training expansion",
+      "source": "https://blog.google/outreach-initiatives/google-org/",
+      "eventDate": "2026-09-21T16:00:00Z",
+      "decision": "rejected",
+      "reason": "The fresh funding and training announcement was not a sufficiently consequential model, tool, agent, evaluation, security or deployment change for a technical long-form article."
+    },
+    {
+      "story": "Claude Code v2.1.278 Auto Mode classifier routing",
+      "source": "https://github.com/anthropics/claude-code/releases",
+      "eventDate": "2026-09-19T03:10:40Z",
+      "decision": "rejected",
+      "reason": "The change remained a thin routing, billing and status update without a new monitor-policy boundary, bypass evaluation or independent safety test."
+    },
+    {
+      "story": "Qwen-Image-2.1",
+      "source": "https://github.com/QwenLM/Qwen-Image-2.1/commit/96d63f2ee74e24ff2f7b6bc3373ef9fe8c6adb5e",
+      "eventDate": "2026-09-20T01:42:56Z",
+      "decision": "already covered",
+      "reason": "Published and verified in run 20260921T020157Z; no material correction or separate event was found."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "Google's exact-timestamped Googlebook launch moved screen-aware and voice-aware Gemini features into a purchasable laptop platform. Primary launch and product material plus three independent reports support a focused procurement analysis while leaving the feature-level local/cloud, retention and administration boundary explicitly unresolved."
+  },
+  "story": {
+    "id": "googlebook-screen-context-data-boundary",
+    "eventDate": "2026-09-21T13:00:00Z",
+    "canonicalUrls": [
+      "https://blog.google/products-and-platforms/devices/googlebook/googlebook-built-in-intelligence/",
+      "https://blog.google/products-and-platforms/devices/googlebook/pre-order-googlebook/",
+      "https://blog.google/products-and-platforms/devices/googlebook/first-look-googlebook/"
+    ]
+  },
+  "articlePath": "src/content/articles/googlebook-screen-context-data-boundary.md",
+  "articleSha256": "25fe2f0bbcf7a142ffd53dfc848fbb1ff725468af9b5dca3ee7518aa15fddd10",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://blog.google/rss/",
+      "title": "Google launch RSS",
+      "publisher": "Google",
+      "kind": "primary",
+      "independenceGroup": "google",
+      "publishedAt": "2026-09-21T13:00:00Z",
+      "eventDate": "2026-09-21T13:00:00Z",
+      "retrievedAt": "2026-09-21T20:08:47Z",
+      "locator": "RSS items for googlebook-built-in-intelligence, first-look-googlebook and pre-order-googlebook each carry pubDate Mon, 21 Sep 2026 13:00:00 +0000."
+    },
+    {
+      "id": "s2",
+      "url": "https://blog.google/products-and-platforms/devices/googlebook/googlebook-built-in-intelligence/",
+      "title": "Googlebook built-in intelligence",
+      "publisher": "Google",
+      "kind": "primary",
+      "independenceGroup": "google",
+      "publishedAt": "2026-09-21T13:00:00Z",
+      "eventDate": "2026-09-21T13:00:00Z",
+      "retrievedAt": "2026-09-21T20:06:00Z",
+      "locator": "Sections Work smarter with Magic Pointer, Talk naturally with Rambler, Make Googlebook your own, and Get started with Gemini and Chrome, plus pricing and availability."
+    },
+    {
+      "id": "s3",
+      "url": "https://blog.google/products-and-platforms/devices/googlebook/pre-order-googlebook/",
+      "title": "Googlebook preorder and platform details",
+      "publisher": "Google",
+      "kind": "primary",
+      "independenceGroup": "google",
+      "publishedAt": "2026-09-21T13:00:00Z",
+      "eventDate": "2026-09-21T13:00:00Z",
+      "retrievedAt": "2026-09-21T20:09:00Z",
+      "locator": "Phone setup and continuity, Helpful intelligence built into the desktop, Modern secure software architecture, and availability sections."
+    },
+    {
+      "id": "s4",
+      "url": "https://blog.google/products-and-platforms/devices/googlebook/first-look-googlebook/",
+      "title": "First look at Googlebook",
+      "publisher": "Google",
+      "kind": "primary",
+      "independenceGroup": "google",
+      "publishedAt": "2026-09-21T13:00:00Z",
+      "eventDate": "2026-09-21T13:00:00Z",
+      "retrievedAt": "2026-09-21T20:09:00Z",
+      "locator": "Five distinctive models, Silent next-gen power, and pricing and availability sections."
+    },
+    {
+      "id": "s5",
+      "url": "https://blog.google/innovation-and-ai/products/on-device-processing/",
+      "title": "An explanation of on-device processing",
+      "publisher": "Google",
+      "kind": "primary",
+      "independenceGroup": "google",
+      "publishedAt": "2024-10-14",
+      "eventDate": "2024-10-14",
+      "retrievedAt": "2026-09-21T20:09:00Z",
+      "locator": "Questions Where is off-device processing happening and Is on-device processing better than off-device."
+    },
+    {
+      "id": "s6",
+      "url": "https://googlebook.google/intl/en_uk/",
+      "title": "Googlebook product page and feature footnotes",
+      "publisher": "Google",
+      "kind": "primary",
+      "independenceGroup": "google",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-21T20:33:49Z",
+      "locator": "Current UK product page Magic Pointer feature card and footnote 4 state that an internet connection is required, access is 18-plus and results may vary."
+    },
+    {
+      "id": "s7",
+      "url": "https://9to5google.com/2026/09/21/googlebook-os-hands-on/",
+      "title": "Googlebook OS hands-on",
+      "publisher": "9to5Google",
+      "kind": "independent",
+      "independenceGroup": "9to5",
+      "publishedAt": "2026-09-21T13:01:00Z",
+      "eventDate": "2026-09-21",
+      "retrievedAt": "2026-09-21T20:06:00Z",
+      "locator": "For all Android always section and paragraphs describing Gemini Nano screenshot descriptions, the Android Gemini app and a hybrid intelligence architecture."
+    },
+    {
+      "id": "s8",
+      "url": "https://www.axios.com/2026/09/21/googlebook-899-google-laptop",
+      "title": "Google unveils Googlebook laptop platform",
+      "publisher": "Axios",
+      "kind": "independent",
+      "independenceGroup": "axios",
+      "publishedAt": "2026-09-21T13:00:05Z",
+      "eventDate": "2026-09-21",
+      "retrievedAt": "2026-09-21T20:06:00Z",
+      "locator": "Driving the news, Zoom in, The intrigue and What's next sections confirm the partner scope, premium Android positioning and relationship to Chromebook."
+    },
+    {
+      "id": "s9",
+      "url": "https://www.wired.com/story/google-launches-googlebook-laptops/",
+      "title": "Google launches Googlebook laptops",
+      "publisher": "WIRED",
+      "kind": "independent",
+      "independenceGroup": "wired",
+      "publishedAt": "unknown",
+      "eventDate": "2026-09-21",
+      "retrievedAt": "2026-09-21T20:06:00Z",
+      "locator": "Launch models and dates, Android and ChromeOS architecture, phone setup data and Magic Pointer descriptions."
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "text": "Google's 21 September launch opened preorders for five partner Googlebooks and set October retail dates; the three launch posts were published at 13:00:00 UTC.",
+      "type": "fact",
+      "sourceIds": ["s1", "s3", "s4"],
+      "sourceLocator": "s1 RSS publication times; s3 availability; s4 five-model scope.",
+      "status": "supported"
+    },
+    {
+      "id": "c2",
+      "text": "Magic Pointer can be invoked over on-screen context, Rambler restructures spoken notes, and Googlebook also includes prompt-created widgets, proactive screen suggestions and background Gemini work.",
+      "type": "attributed_claim",
+      "sourceIds": ["s2", "s3"],
+      "sourceLocator": "s2 feature sections and s3 helpful-intelligence section.",
+      "status": "supported"
+    },
+    {
+      "id": "c3",
+      "text": "Google says Magic Pointer acts only when asked, stays off otherwise and can be switched off.",
+      "type": "attributed_claim",
+      "sourceIds": ["s2", "s3"],
+      "sourceLocator": "s2 Magic Pointer paragraph and s3 Magic Pointer bullet.",
+      "status": "supported"
+    },
+    {
+      "id": "c4",
+      "text": "9to5Google reports that Gemini Nano produces AI descriptions of screenshots and that Magic Pointer, Rambler and Create My Widget operate through a hybrid intelligence architecture.",
+      "type": "attributed_claim",
+      "sourceIds": ["s7"],
+      "sourceLocator": "s7 For all Android always section and surrounding hands-on paragraphs.",
+      "status": "supported"
+    },
+    {
+      "id": "c5",
+      "text": "The public launch sources reviewed do not map, feature by feature, which screen or voice data remains local, which reaches cloud services, how long it is retained, whether it is used for model improvement, or which organisation-wide controls and logs exist.",
+      "type": "fact",
+      "sourceIds": ["s2", "s3", "s6", "s7"],
+      "sourceLocator": "Full relevant feature, security and product-page sections; the article limits the absence statement to the inspected source set and does not claim controls cannot exist elsewhere.",
+      "status": "qualified"
+    },
+    {
+      "id": "c6",
+      "text": "Google's hardware-root, malware-detection, hypervisor and encrypted-phone-setup claims concern important platform protections, but they do not by themselves specify the data path or policy for each contextual AI request.",
+      "type": "inference",
+      "sourceIds": ["s3", "s5"],
+      "sourceLocator": "Premises are s3 setup and security sections and s5's separate local/cloud processing distinction; the bounded control distinction is Index Us synthesis.",
+      "status": "qualified"
+    },
+    {
+      "id": "c7",
+      "text": "An NPU rating and the presence of Gemini Nano do not establish that every AI feature runs entirely on the laptop.",
+      "type": "inference",
+      "sourceIds": ["s4", "s5", "s6", "s7"],
+      "sourceLocator": "s4 NPU claim, s5 local/cloud distinction, s6 Magic Pointer internet requirement and s7 hybrid-architecture reporting support the narrow inference.",
+      "status": "qualified"
+    },
+    {
+      "id": "c8",
+      "text": "Google says Googlebooks reach Australian retail on 5 October 2026.",
+      "type": "attributed_claim",
+      "sourceIds": ["s2", "s3", "s4"],
+      "sourceLocator": "Pricing and availability sections in s2, s3 and s4.",
+      "status": "supported"
+    },
+    {
+      "id": "c9",
+      "text": "Teams handling confidential screens should require a per-feature data-flow and control matrix, then test the shipping device, before broad deployment.",
+      "type": "inference",
+      "sourceIds": ["s2", "s3", "s5", "s6", "s7"],
+      "sourceLocator": "Premises are the documented context access, invocation boundary, incomplete service-data map and hybrid design; the recommendation is not a finding that Googlebook is unsafe.",
+      "status": "qualified"
+    },
+    {
+      "id": "c10",
+      "text": "Current independent reporting includes hands-on use but no reproducible privacy or security evaluation of the shipping platform.",
+      "type": "fact",
+      "sourceIds": ["s7", "s8", "s9"],
+      "sourceLocator": "Scope of the three independent launch reports and the retained public-source search; the statement is limited to evidence found and reviewed in this run.",
+      "status": "qualified"
+    },
+    {
+      "id": "c11",
+      "text": "Google's current product page says Magic Pointer requires an internet connection, is available to users aged 18 and over, and can return variable results; this rules out treating Magic Pointer as fully offline but does not identify transmitted fields, processing split, retention or administration controls.",
+      "type": "attributed_claim",
+      "sourceIds": ["s6"],
+      "sourceLocator": "s6 Magic Pointer feature card and footnote 4; the narrow offline inference is bounded in the article.",
+      "status": "supported"
+    }
+  ],
+  "sourceUse": [
+    {"sourceId": "s1", "quotedWords": 0, "estimatedDerivedWords": 20, "allowance": "Exact RSS timing only."},
+    {"sourceId": "s2", "quotedWords": 0, "estimatedDerivedWords": 145, "allowance": "Feature claims paraphrased and attributed."},
+    {"sourceId": "s3", "quotedWords": 0, "estimatedDerivedWords": 175, "allowance": "Platform, security and availability claims paraphrased and attributed."},
+    {"sourceId": "s4", "quotedWords": 4, "estimatedDerivedWords": 55, "allowance": "One four-word phrase plus hardware and availability facts."},
+    {"sourceId": "s5", "quotedWords": 0, "estimatedDerivedWords": 80, "allowance": "General local/cloud distinction paraphrased."},
+    {"sourceId": "s6", "quotedWords": 0, "estimatedDerivedWords": 72, "allowance": "Current Magic Pointer prerequisites paraphrased."},
+    {"sourceId": "s7", "quotedWords": 0, "estimatedDerivedWords": 125, "allowance": "Hands-on observations paraphrased and attributed."},
+    {"sourceId": "s8", "quotedWords": 0, "estimatedDerivedWords": 55, "allowance": "Launch context only."},
+    {"sourceId": "s9", "quotedWords": 0, "estimatedDerivedWords": 65, "allowance": "Launch and OS context only."}
+  ],
+  "quotes": [
+    {"sourceId": "s4", "words": 4}
+  ],
+  "visual": {
+    "concept": "A laptop frame contains a cobalt context field and sage local-processing core opposite a vermilion cloud-side field. A cursor opens a narrow aperture while a broken route keeps the actual data path unresolved.",
+    "referencesInspected": [
+      "src/components/ArticleArtwork.astro",
+      "src/content/articles/qwen-image-2-1-research-licence-production-boundary.md",
+      "src/content/articles/california-ai-order-auditor-deadlines-kill-switch-study.md"
+    ],
+    "originalityAndEvidenceBoundary": "The story-specific laptop, context field, cursor aperture and broken route are distinct from the inspected licence and policy compositions. The caption identifies the image as a conceptual procurement map, not architecture, measured traffic or evidence of transmission.",
+    "accessibility": "Self-contained inline SVG with a responsive 800 by 560 viewBox, role img, linked title and description, visible original-illustration caption, no scripts, external resources or animation."
+  },
+  "drafting": {
+    "agentId": "/root/newsroom_drafter",
+    "completedAt": "2026-09-21T20:10:35Z",
+    "notes": [
+      "The untouched original draft is retained at .newsroom-work/20260921T200359Z/draft.md with SHA-256 6805a566f5ee1757b206a1584dd7ac4155cdeb2610314a375811db1e0a0ae446.",
+      "The researcher retained the source/claim ledger, preservation list, candidate decisions, reporting limits and illustration concept.",
+      "Firecrawl's keyless tier was rate-limited, so the documented live web, RSS and direct HTTPS fallback was used; no private source was used."
+    ]
+  },
+  "editorial": {
+    "agentId": "/root/newsroom_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-21T20:46:00Z",
+    "articleSha256": "25fe2f0bbcf7a142ffd53dfc848fbb1ff725468af9b5dca3ee7518aa15fddd10",
+    "notes": [
+      "Led with the verified preorder event and immediate buying decision while preserving the May-to-September chronology.",
+      "Reduced repeated oppositions and tightened transitions while retaining the practical three-map procurement framework.",
+      "Clarified the distinction between device protections, user invocation and AI-service data handling without changing facts, qualifications or links.",
+      "Added the current Magic Pointer internet requirement only, kept Create My Widget's boundary unresolved, and aligned the description and takeaways.",
+      "Approved the original inline SVG for style, originality, accessibility and non-evidentiary framing, pending the separate render checks."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/newsroom_fact_reviewer",
+    "reviewedAt": "2026-09-21T20:48:10Z",
+    "articleSha256": "25fe2f0bbcf7a142ffd53dfc848fbb1ff725468af9b5dca3ee7518aa15fddd10",
+    "status": "passed",
+    "claimsCoverage": true
+  },
+  "quality": {
+    "evidence": 33,
+    "context": 18,
+    "originalValue": 18,
+    "voice": 14,
+    "presentation": 9
+  },
+  "qualityRationale": {
+    "evidence": "All 11 material claim groups are supported or explicitly qualified; volatile launch time, availability and the live feature footnote were rechecked. No shipping-device test or feature-level privacy specification exists yet.",
+    "context": "Three independent reports provide launch and hands-on context; the article separates device security, invocation and service data handling and states that independent privacy or security evaluation is unavailable.",
+    "originalValue": "The three-map procurement framework turns the launch into a practical deployment decision without inflating the evidence.",
+    "voice": "The distinct publication edit produced specific Australian English, natural section weight and bounded conclusions while preserving material caveats.",
+    "presentation": "Title, metadata, inline sources, byline, exact disclosure, method limitation and accessible original SVG are accurate; desktop and mobile rendering passed without clipping or horizontal overflow."
+  },
+  "riskFlags": [],
+  "duplicateCheck": {
+    "status": "passed",
+    "checkedAt": "2026-09-21T20:10:35Z",
+    "notes": "Repository articles, frontmatter sources and newsroom records contained no Googlebook, Magic Pointer, Rambler or hybrid-intelligence story. The nearest coverage concerns Google CC household permissions, managed agent harnesses and voice-agent interruption rather than an OS-level screen-context assistant."
+  },
+  "artwork": {
+    "status": "reviewed",
+    "concept": "A laptop screen contains local context and processing fields opposite a separate cloud-side field, with a cursor aperture and unresolved broken route.",
+    "referencesInspected": [
+      "src/components/ArticleArtwork.astro",
+      "src/content/articles/qwen-image-2-1-research-licence-production-boundary.md",
+      "src/content/articles/california-ai-order-auditor-deadlines-kill-switch-study.md"
+    ],
+    "requirements": "Self-contained inline SVG; responsive 800 by 560 viewBox; linked accessible title and description; visible original-illustration caption; charcoal, off-white, vermilion, cobalt, sage and warm-neutral palette; no scripts, external resources or animation.",
+    "reviewStatus": "Editorial and factual reviewers passed the exact final illustration for style, originality, accessibility and honest meaning. Fresh rendering at 1280 by 900 and 390 by 844 showed the complete figure and caption without clipping or horizontal overflow."
+  },
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered the exact approved digest at 1280 by 900. Title, byline, disclosure, four takeaways, article navigation, nine sources and the story-specific SVG were present. Client width and scroll width were both 1280. The inline SVG rendered at 736 by 515.2 pixels, preserving the 10:7 ratio, with its caption visible and no element crossing the viewport."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered the exact approved digest at 390 by 844. Client width and scroll width were both 390, no element crossed the viewport, and the 350 by 245 pixel inline SVG preserved the 10:7 ratio with no clipping. The caption remained readable and the expanded mobile menu exposed All articles, News, Analysis, Guides, About and Follow via RSS."
+    }
+  }
+}
