@@ -1,0 +1,441 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260922T085714Z",
+  "startedAt": "2026-09-22T08:57:14.714Z",
+  "completedAt": "2026-09-22T09:43:16Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-20T08:57:14.714Z",
+    "end": "2026-09-22T08:57:14.714Z"
+  },
+  "candidates": [
+    {
+      "story": "not-a-mused local Muse macOS vulnerability",
+      "source": "https://github.com/pwardle/not-a-mused/commit/c7db3802f80d186a6ef58f2038a1395606350f14",
+      "eventDate": "2026-09-21T14:04:46Z",
+      "decision": "selected-update",
+      "reason": "The exact-timestamped researcher disclosure is inside the priority window and materially changes the existing Muse permission-scope decision. The disclosed path requires local code execution, but may amplify that foothold through authority already granted to the Mac client and Muse account."
+    },
+    {
+      "story": "Project Glasswing cumulative CVE tracker",
+      "source": "https://www.theregister.com/2026/09/21/project_glasswing_vulnerabilities/",
+      "eventDate": "unknown",
+      "decision": "rejected",
+      "reason": "The fresh report described a cumulative tracker without a source-verified exact in-window timestamp for a distinct tracker event."
+    },
+    {
+      "story": "OpenAI Academy government prompt packs",
+      "source": "https://academy.openai.com/",
+      "eventDate": "unknown",
+      "decision": "rejected",
+      "reason": "The date-only templates did not establish an exact qualifying event or a consequential model, agent, evaluation, security or deployment change."
+    },
+    {
+      "story": "Terminal-Bench 4.0 current leaderboard",
+      "source": "https://www.tbench.ai/news/terminal-bench-4-0",
+      "eventDate": "2026-08-28",
+      "decision": "rejected",
+      "reason": "The benchmark release was outside the discovery window and no separate exact-timestamped current event was established."
+    },
+    {
+      "story": "Googlebook screen-context launch",
+      "source": "https://blog.google/products-and-platforms/devices/googlebook/googlebook-built-in-intelligence/",
+      "eventDate": "2026-09-21T13:00:00Z",
+      "decision": "already covered",
+      "reason": "Published and verified in run 20260921T200359Z; no correction or distinct new event was found."
+    },
+    {
+      "story": "Qwen-Image-2.1 release",
+      "source": "https://github.com/QwenLM/Qwen-Image-2.1/commit/96d63f2ee74e24ff2f7b6bc3373ef9fe8c6adb5e",
+      "eventDate": "2026-09-20T01:42:56Z",
+      "decision": "already covered",
+      "reason": "Published and verified in run 20260921T020157Z; no correction or separate event was found."
+    }
+  ],
+  "decision": {
+    "kind": "update",
+    "reason": "Patrick Wardle's exact-timestamped disclosure supplies concrete evidence that a local process may redirect the Muse Mac client's dictation route and potentially reuse the broader authority granted to the agent. This changes the existing article's practical decision from staged minimum-permission adoption to pausing Mac expansion until an affected and fixed version is identified and verified, while preserving the strict local-code prerequisite and unresolved scope."
+  },
+  "story": {
+    "id": "meta-muse-permission-scope",
+    "eventDate": "2026-09-21T14:04:46Z",
+    "canonicalUrls": [
+      "https://github.com/pwardle/not-a-mused/commit/c7db3802f80d186a6ef58f2038a1395606350f14"
+    ]
+  },
+  "articlePath": "src/content/articles/meta-muse-permission-scope.md",
+  "articleSha256": "6175859b94f8bdc9efa8e09c9ddb502752ea62c13ac752d55746c6195ad931ca",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://github.com/pwardle/not-a-mused",
+      "title": "not-a-mused disclosure and proof of concept",
+      "publisher": "Patrick Wardle",
+      "kind": "primary",
+      "independenceGroup": "pwardle-not-a-mused",
+      "publishedAt": "2026-09-21T14:04:11Z",
+      "eventDate": "2026-09-21T14:04:46Z",
+      "retrievedAt": "2026-09-22T09:23:50Z",
+      "locator": "Current README opening, What it demonstrates and Notes; repository metadata and complete three-commit list via GitHub API."
+    },
+    {
+      "id": "s2",
+      "url": "https://github.com/pwardle/not-a-mused/commit/c7db3802f80d186a6ef58f2038a1395606350f14",
+      "title": "First public not-a-mused content commit",
+      "publisher": "Patrick Wardle via GitHub",
+      "kind": "primary",
+      "independenceGroup": "pwardle-not-a-mused",
+      "publishedAt": "2026-09-21T14:04:46Z",
+      "eventDate": "2026-09-21T14:04:46Z",
+      "retrievedAt": "2026-09-22T09:23:50Z",
+      "locator": "GitHub commit API author and committer timestamps, root-commit status, message and changed README file."
+    },
+    {
+      "id": "s3",
+      "url": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
+      "title": "Muse, Meta's extraordinarily privileged AI assistant, has a serious 0-day",
+      "publisher": "Ars Technica",
+      "kind": "independent",
+      "independenceGroup": "ars-technica",
+      "publishedAt": "2026-09-21",
+      "eventDate": "2026-09-21",
+      "retrievedAt": "2026-09-22T09:24:00Z",
+      "locator": "Publication line and paragraphs covering local setting access, endpoint redirection, account token, demonstrations, local-code precondition and Meta non-response."
+    },
+    {
+      "id": "s4",
+      "url": "https://www.theregister.com/ai-and-ml/2026/09/21/meta-muse-ai-app-flaw-lets-local-malware-redirect-dictation-traffic/5297980",
+      "title": "Meta Muse AI app flaw lets local malware redirect dictation traffic",
+      "publisher": "The Register",
+      "kind": "independent",
+      "independenceGroup": "the-register",
+      "publishedAt": "2026-09-21T19:59:52Z",
+      "eventDate": "2026-09-21",
+      "retrievedAt": "2026-09-22T09:23:52Z",
+      "locator": "Live article body covering the local-code precondition, mutable endpoint, potential impacts, privilege-amplification analysis and Meta non-response."
+    },
+    {
+      "id": "s5",
+      "url": "https://www.itnews.com.au/news/security-researcher-says-dont-install-metas-muse-ai-assistant-629088",
+      "title": "Security researcher says don't install Meta's Muse AI assistant",
+      "publisher": "iTnews",
+      "kind": "independent",
+      "independenceGroup": "itnews",
+      "publishedAt": "2026-09-22T12:52:00+10:00",
+      "eventDate": "2026-09-21",
+      "retrievedAt": "2026-09-22T09:23:54Z",
+      "locator": "Publication metadata, endpoint and local-precondition paragraphs, and linked-iPhone location and Bluetooth demonstration report."
+    },
+    {
+      "id": "s6",
+      "url": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+      "title": "Introducing Muse",
+      "publisher": "Meta",
+      "kind": "primary",
+      "independenceGroup": "meta",
+      "publishedAt": "2026-09-08T19:00:51Z",
+      "eventDate": "2026-09-08T19:00:51Z",
+      "retrievedAt": "2026-09-22T09:23:54Z",
+      "locator": "How It Works, Built to be Private Safe and Secure, and Looking Ahead sections."
+    },
+    {
+      "id": "s7",
+      "url": "https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse",
+      "title": "How We Built Safety Into Muse",
+      "publisher": "Meta Research",
+      "kind": "primary",
+      "independenceGroup": "meta",
+      "publishedAt": "2026-09-08",
+      "eventDate": "2026-09-08",
+      "retrievedAt": "2026-09-22T09:24:00Z",
+      "locator": "Clients, Muse Secure VM, A Built-In Sentinel, Human in the Loop, Least Privilege, browser and purchases, Confidential VM and data-policy sections."
+    },
+    {
+      "id": "s8",
+      "url": "https://introducing.muse.ai/",
+      "title": "How We Designed Muse",
+      "publisher": "Meta",
+      "kind": "primary",
+      "independenceGroup": "meta",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-22T09:24:01Z",
+      "locator": "Agent capabilities, background work, transparency, activity log, permission UI, memory files and hard-to-undo actions."
+    },
+    {
+      "id": "s9",
+      "url": "https://www.cyber.gov.au/business-government/secure-design/artificial-intelligence/careful-adoption-of-agentic-ai-services",
+      "title": "Careful adoption of agentic AI services",
+      "publisher": "ASD ACSC with CISA, NSA and partner agencies",
+      "kind": "independent",
+      "independenceGroup": "five-eyes-government-guidance",
+      "publishedAt": "2026-05-01",
+      "eventDate": "2026-05-01",
+      "retrievedAt": "2026-09-22T09:24:02Z",
+      "locator": "Introduction, prompt injection and attack surface, privilege compromise and scope creep, goal misalignment, visibility, oversight, least privilege and evaluation sections."
+    },
+    {
+      "id": "s10",
+      "url": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
+      "title": "Meta debuts its Muse AI agent. Will consumers trust it?",
+      "publisher": "TechCrunch",
+      "kind": "independent",
+      "independenceGroup": "techcrunch",
+      "publishedAt": "2026-09-08T19:00:00Z",
+      "eventDate": "2026-09-08T19:00:51Z",
+      "retrievedAt": "2026-09-22T09:24:02Z",
+      "locator": "Launch date, US availability, service categories, one-at-a-time connections, built-in connectors, public-API connection and browser fallback."
+    }
+  ],
+  "claims": [
+    {
+      "id": "c01",
+      "text": "The final headline and description characterise the issue as a local Muse Mac flaw and attribute endpoint redirection and possible authentication-material exposure to a researcher.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1", "s3", "s4", "s5"],
+      "sourceLocator": "s1 README and the independent reports' descriptions of Wardle's disclosure; final text retains attribution and the documentation-only limit.",
+      "status": "supported"
+    },
+    {
+      "id": "c02",
+      "text": "Wardle published a proof of concept for a local vulnerability in the Muse macOS client and says an unprivileged process already running as the user can change its dictation endpoint.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1", "s3", "s4", "s5"],
+      "sourceLocator": "s1 opening, What it demonstrates and Notes; s3-s5 local precondition and endpoint reporting.",
+      "status": "supported"
+    },
+    {
+      "id": "c03",
+      "text": "Wardle says redirection could expose dictated prompts, enable prompt injection, expose authentication material and permit abuse of access granted to Muse.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1", "s3", "s4", "s5"],
+      "sourceLocator": "s1 potential-impact list; s3 token-access report; s4-s5 endpoint and consequence reporting. Final wording remains modal.",
+      "status": "supported"
+    },
+    {
+      "id": "c04",
+      "text": "The disclosed path requires code already running locally as the Mac user and is not a reported remote entry point into an otherwise uncompromised Mac.",
+      "type": "fact",
+      "sourceIds": ["s1", "s3", "s4", "s5"],
+      "sourceLocator": "s1 Notes and s3-s5 explicit local-code precondition.",
+      "status": "supported"
+    },
+    {
+      "id": "c05",
+      "text": "Broader connected-service and cross-device authority can make the local foothold more consequential than the process's original permissions.",
+      "type": "inference",
+      "sourceIds": ["s1", "s3", "s4", "s5", "s6", "s7", "s8"],
+      "sourceLocator": "Premises are s1 and s3-s5 access-amplification discussion plus s6-s8 descriptions of Muse's connected authority; the article does not claim every permission is reachable.",
+      "status": "qualified"
+    },
+    {
+      "id": "c06",
+      "text": "The first public not-a-mused content commit was timestamped 2026-09-21T14:04:46Z.",
+      "type": "fact",
+      "sourceIds": ["s2"],
+      "sourceLocator": "s2 GitHub commit API author and committer timestamps for the root content commit.",
+      "status": "supported"
+    },
+    {
+      "id": "c07",
+      "text": "The reviewed evidence does not establish drive-by remote compromise, in-the-wild exploitation, impact on iOS Android or web clients, or escape from the cloud Muse Secure VM.",
+      "type": "fact",
+      "sourceIds": ["s1", "s3", "s4", "s5", "s7"],
+      "sourceLocator": "s1 and s3-s5 concern the Mac client and local execution; s7 describes separate cloud and client layers. The absence statement is bounded to the reviewed evidence.",
+      "status": "qualified"
+    },
+    {
+      "id": "c08",
+      "text": "Ars reports account-token access; The Register reports a local zero-day and access-amplification argument; both said Meta had not answered by their publication times.",
+      "type": "attributed_claim",
+      "sourceIds": ["s3", "s4"],
+      "sourceLocator": "s3 token and publication-time non-response paragraphs; s4 endpoint, amplification and non-response paragraphs.",
+      "status": "supported"
+    },
+    {
+      "id": "c09",
+      "text": "iTnews reports a linked-iPhone demonstration involving location and Bluetooth queries, indicating potential cross-device reach without proving universal silent control or exploitation.",
+      "type": "attributed_claim",
+      "sourceIds": ["s5"],
+      "sourceLocator": "s5 linked-device paragraph and embedded Wardle material; final copy retains the necessary negative qualifications.",
+      "status": "qualified"
+    },
+    {
+      "id": "c10",
+      "text": "Operating-system permission separation means one compromised process should not automatically inherit every authority delegated elsewhere, and concentrated agent access can amplify a client trust failure.",
+      "type": "inference",
+      "sourceIds": ["s3", "s4", "s9"],
+      "sourceLocator": "s3-s4 explain the macOS permission-separation issue; s9 documents privilege compromise, scope creep and confused-deputy amplification.",
+      "status": "qualified"
+    },
+    {
+      "id": "c11",
+      "text": "Pausing new or expanded Mac deployment until affected and fixed versions are identified, while reducing access and reviewing activity where practical, is a proportionate containment response.",
+      "type": "inference",
+      "sourceIds": ["s1", "s3", "s4", "s5", "s9"],
+      "sourceLocator": "The disclosed local boundary and unknown affected versions combine with s9 least-privilege, incremental-adoption and oversight guidance; final copy says this is not evidence that every account is compromised.",
+      "status": "qualified"
+    },
+    {
+      "id": "c12",
+      "text": "A useful remediation disclosure would identify affected and fixed versions, endpoint-write status, credential handling and linked-device reach, and independent retesting would provide stronger evidence than a version number alone.",
+      "type": "inference",
+      "sourceIds": ["s1", "s3", "s4", "s5"],
+      "sourceLocator": "The requirements follow from the unresolved technical boundaries across s1 and s3-s5 and are presented as needed evidence, not current Meta actions.",
+      "status": "qualified"
+    },
+    {
+      "id": "c13",
+      "text": "Meta says Muse has a file system, terminal, browser, background work, activity log, editable memory files and visible approved permissions, and that default browsing stops for hard-to-undo actions.",
+      "type": "attributed_claim",
+      "sourceIds": ["s6", "s8"],
+      "sourceLocator": "s6 How It Works and s8 capability, activity-log and deterministic-control sections.",
+      "status": "supported"
+    },
+    {
+      "id": "c14",
+      "text": "Meta says users choose services one at a time and can separate read and write access where supported; TechCrunch reports built-in connectors, public-API connections and browser fallback.",
+      "type": "attributed_claim",
+      "sourceIds": ["s6", "s7", "s10"],
+      "sourceLocator": "s6 access bullets; s7 Least Privilege; s10 connector and browser-fallback paragraphs.",
+      "status": "supported"
+    },
+    {
+      "id": "c15",
+      "text": "Meta says Muse is rolling out in the United States rather than globally, while TechCrunch describes rollout surfaces and connector categories without validating the security architecture.",
+      "type": "attributed_claim",
+      "sourceIds": ["s6", "s10"],
+      "sourceLocator": "s6 Looking Ahead and s10 US rollout and surface descriptions; the source-role limit is explicit.",
+      "status": "supported"
+    },
+    {
+      "id": "c16",
+      "text": "Meta describes a dedicated cloud VM, restricted runtime cell, security-sensitive services outside it, Sentinel as permission and egress authority, structured approvals and scoped grants.",
+      "type": "attributed_claim",
+      "sourceIds": ["s7"],
+      "sourceLocator": "s7 Muse Secure VM, A Built-In Sentinel and Human in the Loop sections.",
+      "status": "supported"
+    },
+    {
+      "id": "c17",
+      "text": "Meta says credentials are inserted at the network boundary and the agent works with surrogate tokens instead of passwords and service tokens.",
+      "type": "attributed_claim",
+      "sourceIds": ["s7"],
+      "sourceLocator": "s7 network-egress and credential-surrogation paragraphs; these are distinguished from the reported Muse account authentication material.",
+      "status": "supported"
+    },
+    {
+      "id": "c18",
+      "text": "The client disclosure does not itself show a cloud runtime-cell escape, but remains consequential because the client connects to an account with broader service authority.",
+      "type": "inference",
+      "sourceIds": ["s1", "s3", "s4", "s5", "s6", "s7", "s8"],
+      "sourceLocator": "s1 and s3-s5 concern a local client endpoint; s7 concerns cloud isolation; s6-s8 document broader authority. The layer boundary remains explicit.",
+      "status": "qualified"
+    },
+    {
+      "id": "c19",
+      "text": "Meta says VM conversations and data are not shared with ad systems, sanitised trajectories may train models unless the user opts out, and Confidential VM is intended for later rather than being a launch property.",
+      "type": "attributed_claim",
+      "sourceIds": ["s6", "s7"],
+      "sourceLocator": "s6 privacy and Confidential VM roadmap; s7 Our Policy Around Data and Coming Soon sections.",
+      "status": "supported"
+    },
+    {
+      "id": "c20",
+      "text": "Joint government guidance recommends low-risk non-sensitive adoption, avoiding broad sensitive access, and identifies prompt injection, privilege and scope creep, ambiguous task goals and visibility gaps.",
+      "type": "fact",
+      "sourceIds": ["s9"],
+      "sourceLocator": "s9 introduction, prompt-injection, privilege-compromise and scope-creep, goal-misalignment and visibility sections.",
+      "status": "supported"
+    },
+    {
+      "id": "c21",
+      "text": "A four-stage trial, detailed logging and contextual approval tests are a proportionate approach only after a fixed client is identified and verified.",
+      "type": "inference",
+      "sourceIds": ["s6", "s7", "s8", "s9"],
+      "sourceLocator": "Original Index Us synthesis from product controls and joint deployment guidance, expressly presented as a staged trial rather than a test result.",
+      "status": "qualified"
+    },
+    {
+      "id": "c22",
+      "text": "Email, calendars, payments, health, home and related services can carry sensitive authority and physical, financial or privacy consequences.",
+      "type": "inference",
+      "sourceIds": ["s6", "s7", "s9", "s10"],
+      "sourceLocator": "s6-s7 and s10 identify service categories and capabilities; s9 documents sensitive-data, privilege and oversight risks.",
+      "status": "qualified"
+    },
+    {
+      "id": "c23",
+      "text": "Meta says structured approval cards and friction exist for difficult-to-reverse actions; the article recommends an activity record connecting requests, actions, approvals, errors and results.",
+      "type": "inference",
+      "sourceIds": ["s7", "s8"],
+      "sourceLocator": "s8 supports approval cards, activity logs and hard-to-undo stops; s7 supports scoped approvals. The should statements are editorial evaluation criteria.",
+      "status": "qualified"
+    },
+    {
+      "id": "c24",
+      "text": "Wider trust would require transparent remediation, independent testing, connector-scope detail, reliability evidence and external Confidential VM review.",
+      "type": "inference",
+      "sourceIds": ["s1", "s7", "s9"],
+      "sourceLocator": "Editorial judgement grounded in the current disclosure gaps, Meta's roadmap and the joint evaluation and oversight guidance.",
+      "status": "qualified"
+    },
+    {
+      "id": "c25",
+      "text": "Index Us did not use Muse, connect an account, run or audit the proof of concept, inspect the app or independently verify capability, privacy, reliability or remediation.",
+      "type": "fact",
+      "sourceIds": ["s1", "s6", "s7", "s8"],
+      "sourceLocator": "Run method and explicit documentation-only limitation; no contrary test claim appears in the article or retained artifacts.",
+      "status": "supported"
+    }
+  ],
+  "drafting": {
+    "agentId": "/root/drafter"
+  },
+  "editorial": {
+    "agentId": "/root/voice_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-22T09:38:15Z",
+    "articleSha256": "6175859b94f8bdc9efa8e09c9ddb502752ea62c13ac752d55746c6195ad931ca",
+    "notes": [
+      "Moved the local-code prerequisite and practical permission consequence into a clearer opening without weakening the remote-entry boundary.",
+      "Reduced repeated caveats, source-by-source cadence, mirrored contrast and generic signposting while preserving facts, qualifications, links and dates.",
+      "Tightened the deployment advice into a pause, contain and retest sequence.",
+      "Retained the exact byline, disclosure, testing limits and accessible non-evidentiary illustration.",
+      "Renewed the complete edit after the validator-required visible update label changed to ISO date format; no substantive wording changed."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/factual_review",
+    "reviewedAt": "2026-09-22T09:40:41Z",
+    "articleSha256": "6175859b94f8bdc9efa8e09c9ddb502752ea62c13ac752d55746c6195ad931ca",
+    "status": "passed",
+    "claimsCoverage": true
+  },
+  "quality": {
+    "evidence": 32,
+    "context": 18,
+    "originalValue": 18,
+    "voice": 14,
+    "presentation": 10
+  },
+  "riskFlags": [],
+  "quotes": [
+    {
+      "sourceId": "s7",
+      "words": 3
+    }
+  ],
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered the exact approved digest at 1280 by 900. The title, 12-minute estimate, Index Us Editorial byline, exact disclosure, dated update note, heading hierarchy and ten source labels were present. The retained story SVG rendered at 736 by 515.2 pixels with its 10:7 ratio, role, title, description and complete conceptual-art caption; no element crossed the viewport and document and body scroll widths were 1280. Browser logs contained only the expected localhost analytics suppression warning."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered the exact approved digest at 390 by 844. The title, description, byline, disclosure, update note, headings, source list and caption wrapped inside the viewport. The retained story SVG rendered at 350 by 245 pixels with its 10:7 ratio and no clipping; document and body scroll widths were 390 with no overflowing elements. The mobile menu expanded to All articles, News, Analysis, Guides, About and Follow via RSS. Browser logs contained only the expected localhost analytics suppression warning."
+    }
+  }
+}
