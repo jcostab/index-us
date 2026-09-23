@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260923T200455Z",
+  "startedAt": "2026-09-23T20:04:55.187Z",
+  "completedAt": "2026-09-23T20:57:56Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-21T20:04:55.187Z",
+    "end": "2026-09-23T20:04:55.187Z"
+  },
+  "candidates": [
+    {
+      "story": "Google Private AI Compute secure server-side memory",
+      "source": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+      "eventDate": "2026-09-23T16:00:57.674Z",
+      "decision": "selected",
+      "reason": "The exact-timestamped architecture change moves private cloud inference from ephemeral processing to persistent per-user state. Google's technical brief and a commissioned Trail of Bits code and threat-model review support a non-duplicate privacy and procurement decision with explicit unresolved limits."
+    },
+    {
+      "story": "Microsoft Research offloaded inference for physical AI robotics",
+      "source": "https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/",
+      "eventDate": "2026-09-23T16:01:36Z",
+      "decision": "deferred",
+      "reason": "Fresh and potentially useful, but the bounded pass found first-party research rather than independent reproduction, and its robotics deployment decision was narrower than the selected audited privacy architecture."
+    },
+    {
+      "story": "OpenAI priorities and principles for third-party assessments",
+      "source": "https://openai.com/index/priorities-principles-third-party-assessments/",
+      "eventDate": "2026-09-22",
+      "decision": "deferred-update",
+      "reason": "The policy develops OpenAI's promise in existing Index Us coverage, but the primary page exposed only a date in this pass and still reports intended structures rather than a named completed engagement or result. Revisit as an update under the existing story identity when implementation evidence appears."
+    },
+    {
+      "story": "Cloudflare Worker Previews for agent-made changes",
+      "source": "https://blog.cloudflare.com/",
+      "eventDate": "2026-09-22",
+      "decision": "rejected",
+      "reason": "The release is an agent-oriented deployment feature, but no meaningful independent evaluation was found and the evidence did not earn a separate long-form story ahead of the selected development."
+    },
+    {
+      "story": "GPT-6 Astra HealthBench correction",
+      "source": "https://deploymentsafety.openai.com/gpt-6-astra/protocolqa-open-ended",
+      "eventDate": "2026-09-22",
+      "decision": "rejected",
+      "reason": "The live card records corrected HealthBench values after a misconfiguration, but no current Index Us article relies on those figures and the isolated correction is too thin for a standalone article."
+    },
+    {
+      "story": "Claude Opus 5.5, Grok 4.7 and the Meta Muse Mac flaw",
+      "source": "https://index-us.com/articles/",
+      "eventDate": "unknown",
+      "decision": "already-covered",
+      "reason": "Recent articles and run records cover the exact releases and disclosure. No substantive correction was found."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "Google's exact-timestamped Private AI Compute update introduces persistent per-user cloud memory and publishes unusually useful architecture and audit evidence. The article explains the operational boundary created by device-held keys, attested enclaves, stateful identity, unresolved deletion rollback and response-derived hashes, without claiming product availability or complete security assurance."
+  },
+  "story": {
+    "id": "google-private-ai-memory-verification-boundary",
+    "eventDate": "2026-09-23T16:00:57.674Z",
+    "canonicalUrls": [
+      "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/"
+    ]
+  },
+  "articlePath": "src/content/articles/google-private-ai-memory-verification-boundary.md",
+  "articleSha256": "a44d3f81d8a12c6c4396f97b0353fe02c123270b59a765fdebb2848897e4c0db",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+      "title": "Advancing Private AI Compute with secure, server-side memory",
+      "publisher": "Google DeepMind",
+      "kind": "primary",
+      "independenceGroup": "google",
+      "publishedAt": "2026-09-23T16:00:57.674Z",
+      "eventDate": "2026-09-23T16:00:57.674Z",
+      "retrievedAt": "2026-09-23T20:10:00Z",
+      "locator": "HTML article:published_time and JSON-LD datePublished; announcement status, high-level design claims, future-tense availability and technical-brief link."
+    },
+    {
+      "id": "s2",
+      "url": "https://services.google.com/fh/files/misc/private_ai_compute_technical_brief.pdf",
+      "title": "Google Private AI Compute: Enabled with Secure Server-Side Memory",
+      "publisher": "Google",
+      "kind": "primary",
+      "independenceGroup": "google",
+      "publishedAt": "unknown",
+      "eventDate": "2026-09-23",
+      "retrievedAt": "2026-09-23T20:10:00Z",
+      "locator": "Pages 2 and 9–14: architecture, key management, per-user identifier, non-targetability boundary, audits, external verifiability and future work."
+    },
+    {
+      "id": "s3",
+      "url": "https://github.com/trailofbits/publications/blob/master/reviews/2026-09-google-secure-memory-securityreview.pdf",
+      "title": "Google Private AI Compute, Secure Server-Side Memory Security Assessment",
+      "publisher": "Trail of Bits",
+      "kind": "independent",
+      "independenceGroup": "trail-of-bits",
+      "publishedAt": "2026-09-21",
+      "eventDate": "2026-09-21",
+      "retrievedAt": "2026-09-23T20:10:00Z",
+      "locator": "Pages 3–8 and 48–50: project scope/timeline, assessment of headline claims, limitations, finding counts, Google context and fix-review results. Commissioned by Google."
+    },
+    {
+      "id": "s4",
+      "url": "https://github.com/project-oak/oak/tree/main/oak_private_memory",
+      "title": "Project Oak private memory source",
+      "publisher": "Google Project Oak",
+      "kind": "primary",
+      "independenceGroup": "google",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-23T20:10:00Z",
+      "locator": "Public source-tree presence only; Index Us did not audit or execute the code."
+    }
+  ],
+  "claims": [
+    {"id":"c01","text":"Google published the selected page at 16:00:57 UTC on 23 September 2026.","type":"fact","sourceIds":["s1"],"sourceLocator":"HTML article:published_time and JSON-LD datePublished.","status":"supported"},
+    {"id":"c02","text":"Google says PAIC will add persistent per-user memory whose keys are held on personal devices and whose plaintext is available only inside protected workloads.","type":"attributed_claim","sourceIds":["s1","s2"],"sourceLocator":"s1 opening and design section; s2 pp. 2 and 9–11.","status":"qualified"},
+    {"id":"c03","text":"The announcement does not identify the first shipping consumer feature or launch date.","type":"fact","sourceIds":["s1"],"sourceLocator":"Complete announcement and future-tense wording at retrieval.","status":"supported"},
+    {"id":"c04","text":"The design uses a per-user database in a hardware TEE and mutually attested encrypted channels among memory, orchestration and inference components.","type":"attributed_claim","sourceIds":["s2"],"sourceLocator":"s2 pp. 9–11.","status":"qualified"},
+    {"id":"c05","text":"The stateful memory design does not claim network-level non-targetability because a stable per-user identifier is required.","type":"fact","sourceIds":["s2"],"sourceLocator":"s2 p. 11 threat model for persistent data.","status":"supported"},
+    {"id":"c06","text":"Google commissioned four Trail of Bits consultants for five engineer-weeks of review followed by a fix review and a final report on 21 September.","type":"fact","sourceIds":["s3"],"sourceLocator":"s3 pp. 3–4 and 48.","status":"supported"},
+    {"id":"c07","text":"Trail of Bits found no mechanism for employee plaintext access in the reviewed code.","type":"attributed_claim","sourceIds":["s3"],"sourceLocator":"s3 pp. 4–5, bounded to reviewed code.","status":"qualified"},
+    {"id":"c08","text":"The review did not completely assess PAIC, the hardened TPU platform or Oak infrastructure.","type":"fact","sourceIds":["s3"],"sourceLocator":"s3 p. 4 scope limits.","status":"supported"},
+    {"id":"c09","text":"The audit reported ten findings and marked eight resolved at fix review.","type":"fact","sourceIds":["s3"],"sourceLocator":"s3 pp. 7 and 48–50.","status":"supported"},
+    {"id":"c10","text":"An unresolved low-severity rollback issue could allow deleted memories to return with persistent privileged storage access and a later user session.","type":"fact","sourceIds":["s3"],"sourceLocator":"s3 pp. 24–25 and 48–49.","status":"supported"},
+    {"id":"c11","text":"Truncated 96-bit response-derived hashes left the TCB for recitation checking; Trail of Bits rated the issue high and left it unresolved.","type":"fact","sourceIds":["s3"],"sourceLocator":"s3 pp. 5, 8, 40–41, 48 and 50.","status":"supported"},
+    {"id":"c12","text":"Google planned an in-enclave Bloom-filter pre-check, but the final fix review did not mark the hash issue resolved.","type":"fact","sourceIds":["s3"],"sourceLocator":"s3 pp. 8 and 50.","status":"supported"},
+    {"id":"c13","text":"The audit was point-in-time, and parts of the wider system remained outside public source and review scope.","type":"fact","sourceIds":["s3"],"sourceLocator":"s3 pp. 6 and 54.","status":"supported"},
+    {"id":"c14","text":"Client-side attestation verification and independently witnessed transparency are future work in Google's brief.","type":"fact","sourceIds":["s2"],"sourceLocator":"s2 p. 14.","status":"supported"},
+    {"id":"c15","text":"A deployment decision should bind the actual product, client and binary to the reviewed design and test its memory lifecycle controls.","type":"inference","sourceIds":["s1","s2","s3"],"sourceLocator":"Premises: unknown product availability, audit scope and point-in-time/roadmap boundaries.","status":"qualified"}
+  ],
+  "drafting": {
+    "agentId": "/root/newsroom_drafter"
+  },
+  "editorial": {
+    "agentId": "/root/newsroom_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-23T20:40:37Z",
+    "articleSha256": "a44d3f81d8a12c6c4396f97b0353fe02c123270b59a765fdebb2848897e4c0db",
+    "notes": [
+      "Clarified the headline and description so the work reads as a design rather than a shipping product claim.",
+      "Added the source-backed exact Google page publication time beside the primary-source link without implying product availability.",
+      "Removed an unsupported-sounding value judgement and replaced generic signposts with evidence boundaries or procurement consequences.",
+      "Reduced repeated opposition while preserving the separate deletion rollback, response-hash and plaintext-access boundaries.",
+      "Preserved the byline, exact disclosure, metadata, links, dates, numbers, audit scope, commissioning relationship, finding counts, future-tense availability and testing limits."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/newsroom_fact_checker",
+    "reviewedAt": "2026-09-23T20:48:00Z",
+    "articleSha256": "a44d3f81d8a12c6c4396f97b0353fe02c123270b59a765fdebb2848897e4c0db",
+    "status": "passed",
+    "claimsCoverage": true
+  },
+  "quality": {
+    "evidence": 33,
+    "context": 18,
+    "originalValue": 18,
+    "voice": 13,
+    "presentation": 9
+  },
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered the exact approved digest at 1280 by 900 in a fresh local Astro site. The title, ten-minute estimate, Index Us Editorial byline, exact disclosure, heading hierarchy and all four sources were present. The original 800 by 560 inline SVG rendered at 736 by 515.195 pixels with its accessible title and description, complete conceptual-art caption, no scripts or external resources, no clipping and no horizontal overflow."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered the exact approved digest at 390 by 844 in a fresh local Astro site. Title, metadata, byline, disclosure, headings, sources and caption wrapped inside the viewport. The inline SVG rendered at 350 by 245 pixels with its exact 10:7 ratio and no clipping; document and body scroll width equalled the 390-pixel viewport. The menu expanded to all six navigation links and collapsed normally."
+    }
+  },
+  "riskFlags": [],
+  "quotes": []
+}
