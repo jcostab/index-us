@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260922T140310Z",
+  "startedAt": "2026-09-22T14:03:10.033Z",
+  "completedAt": "2026-09-23T02:08:52Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-20T14:03:10.033Z",
+    "end": "2026-09-22T14:03:10.033Z"
+  },
+  "candidates": [
+    {
+      "story": "Grok 4.7 launch and independent evaluation",
+      "source": "https://x.com/SpaceXAI/status/2102069815225586149",
+      "eventDate": "2026-09-21T16:17:53.175Z",
+      "decision": "selected",
+      "reason": "The exact-timestamped launch and same-day independent evaluation expose a current upgrade decision: unchanged per-token rates alongside materially different output use and uneven, configuration-specific gains."
+    },
+    {
+      "story": "Transformers support for llama.cpp quantisations",
+      "source": "https://huggingface.co/blog",
+      "eventDate": "2026-09-22T10:36:26Z",
+      "decision": "reserved",
+      "reason": "The integration is fresh and useful, but current architecture and platform coverage is narrow and direct independent validation is weaker than for the selected story."
+    },
+    {
+      "story": "DUMA-Bench",
+      "source": "https://arxiv.org/abs/2609.24911",
+      "eventDate": "2026-09-21T14:28:05Z",
+      "decision": "rejected",
+      "reason": "The paper and repository report different aggregate figures, part of the evaluation uses an LLM user simulator and judge, and no independent replication was found."
+    },
+    {
+      "story": "Et Tu, Brute? Economic Misalignment in Personal AI Agents",
+      "source": "https://arxiv.org/abs/2609.24927",
+      "eventDate": "2026-09-21T17:22:44Z",
+      "decision": "rejected",
+      "reason": "The preprint is substantial, but the discovery pass did not establish sufficiently direct independent context for an earned operational conclusion."
+    },
+    {
+      "story": "Who Does What in AI Auditing?",
+      "source": "https://arxiv.org/abs/2609.24986",
+      "eventDate": "2026-09-21T17:57:22Z",
+      "decision": "rejected",
+      "reason": "The preprint is relevant, but its independent support and immediate deployment decision were weaker than the selected story."
+    },
+    {
+      "story": "UN thematic brief on the OpenAI and Hugging Face incident",
+      "source": "https://www.un.org/",
+      "eventDate": "2026-09-21",
+      "decision": "rejected-duplicate",
+      "reason": "The brief mainly re-analyses an incident already covered and does not materially change the site's containment or disclosure guidance."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "Grok 4.7 is a fresh, exact-timestamped model release with current primary documentation and genuinely independent evaluation context. The article gives teams a concrete cost-per-accepted-result upgrade method instead of repeating the provider announcement or transferring a benchmark result to an untested workload."
+  },
+  "story": {
+    "id": "grok-4-7-task-cost-evaluation",
+    "eventDate": "2026-09-21T16:17:53.175Z",
+    "canonicalUrls": [
+      "https://x.com/SpaceXAI/status/2102069815225586149"
+    ]
+  },
+  "articlePath": "src/content/articles/grok-4-7-task-cost-evaluation.md",
+  "articleSha256": "55655249bb64ea48a03272569f10c66e71050da19a687fbb8e7fb21249375024",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://x.com/SpaceXAI/status/2102069815225586149",
+      "title": "Grok 4.7 launch post",
+      "publisher": "SpaceXAI",
+      "kind": "primary",
+      "independenceGroup": "spacexai",
+      "publishedAt": "2026-09-21T16:17:53.175Z",
+      "eventDate": "2026-09-21T16:17:53.175Z",
+      "retrievedAt": "2026-09-22T14:39:46Z",
+      "locator": "Public X syndication response for status 2102069815225586149 and deterministic status-ID timestamp decoding; the article reports the supported whole-second time."
+    },
+    {
+      "id": "s2",
+      "url": "https://x.ai/news/grok-4-7",
+      "title": "Introducing Grok 4.7",
+      "publisher": "SpaceXAI",
+      "kind": "primary",
+      "independenceGroup": "spacexai",
+      "publishedAt": "2026-09-21",
+      "eventDate": "2026-09-21",
+      "retrievedAt": "2026-09-22T14:39:46Z",
+      "locator": "Model Improvements, benchmark table and footnote, Safety and Cybersecurity, and Pricing and availability sections."
+    },
+    {
+      "id": "s3",
+      "url": "https://docs.x.ai/developers/grok-4-7",
+      "title": "Grok 4.7 API documentation",
+      "publisher": "SpaceXAI",
+      "kind": "primary",
+      "independenceGroup": "spacexai",
+      "publishedAt": "2026-09-21",
+      "eventDate": "2026-09-21",
+      "retrievedAt": "2026-09-22T14:39:46Z",
+      "locator": "At a glance and Important details sections for 500k context, effort settings, cache routing, compaction, encrypted reasoning, Fast surface limits and regional pricing."
+    },
+    {
+      "id": "s4",
+      "url": "https://docs.x.ai/developers/release-notes",
+      "title": "SpaceXAI API release notes",
+      "publisher": "SpaceXAI",
+      "kind": "primary",
+      "independenceGroup": "spacexai",
+      "publishedAt": "2026-09-21",
+      "eventDate": "2026-09-21",
+      "retrievedAt": "2026-09-22T14:39:46Z",
+      "locator": "21 September Grok 4.7 and 12 August Grok 4.6 entries, including standard price tiers, context, effort and availability."
+    },
+    {
+      "id": "s5",
+      "url": "https://artificialanalysis.ai/articles/benchmarking-grok-4-7",
+      "title": "Benchmarking Grok 4.7",
+      "publisher": "Artificial Analysis",
+      "kind": "independent",
+      "independenceGroup": "artificial-analysis",
+      "publishedAt": "2026-09-21",
+      "eventDate": "2026-09-21",
+      "retrievedAt": "2026-09-22T14:39:46Z",
+      "locator": "Intelligence Index, AA-Briefcase, Coding Agent Index, component movement and token-use sections; includes 46 and plus two, 81k versus 38k at xhigh, and 56 versus 47 with Grok Build."
+    },
+    {
+      "id": "p1",
+      "url": "https://docs.x.ai/developers/pricing",
+      "title": "SpaceXAI API pricing",
+      "publisher": "SpaceXAI",
+      "kind": "primary",
+      "independenceGroup": "spacexai",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-22T14:45:00Z",
+      "locator": "Text API, Grok 4.7 Fast pricing for Cursor and Grok Build, and US Regional Endpoint Pricing tables. The Fast prose says twice standard while the displayed long-context tier is 1.5 times the standard long-context schedule."
+    }
+  ],
+  "claims": [
+    {
+      "id": "c01",
+      "text": "The official SpaceXAI launch post was published at 16:17:53 UTC on 21 September 2026, inside the run's priority window.",
+      "type": "fact",
+      "sourceIds": ["s1"],
+      "sourceLocator": "X syndication supplies the whole-second time and the deterministic status-ID decoding supplies 2026-09-21T16:17:53.175Z.",
+      "status": "supported"
+    },
+    {
+      "id": "c02",
+      "text": "Grok 4.7 is available through the xAI API and selected product and agent surfaces.",
+      "type": "fact",
+      "sourceIds": ["s2", "s3", "s4"],
+      "sourceLocator": "Provider launch availability, API documentation and the 21 September release-note entry.",
+      "status": "supported"
+    },
+    {
+      "id": "c03",
+      "text": "Grok 4.7 and Grok 4.6 have the same listed standard schedule: $2 input, $0.50 cached input and $6 output per million tokens below 200,000 prompt tokens, doubling to $4, $1 and $12 above the threshold.",
+      "type": "fact",
+      "sourceIds": ["s4", "p1"],
+      "sourceLocator": "Release-note entries for both model versions and the current Text API price table.",
+      "status": "supported"
+    },
+    {
+      "id": "c04",
+      "text": "Grok 4.7 has a 500,000-token context window and supports low, medium, high default and xhigh reasoning effort.",
+      "type": "fact",
+      "sourceIds": ["s3", "s4"],
+      "sourceLocator": "At a glance and the Grok 4.7 release-note entry.",
+      "status": "supported"
+    },
+    {
+      "id": "c05",
+      "text": "Artificial Analysis reports an Intelligence Index score of 46 for Grok 4.7, two points above Grok 4.6, with 4.7 evaluated at xhigh effort.",
+      "type": "attributed_claim",
+      "sourceIds": ["s5"],
+      "sourceLocator": "Article headline, opening and Key takeaways; the final article does not convert the result into a production forecast.",
+      "status": "supported"
+    },
+    {
+      "id": "c06",
+      "text": "Artificial Analysis measured approximately 81,000 output tokens per Intelligence Index task for Grok 4.7 xhigh versus 38,000 for Grok 4.6 xhigh.",
+      "type": "attributed_claim",
+      "sourceIds": ["s5"],
+      "sourceLocator": "High token use section's like-for-like xhigh comparison; distinct from the separate 36k high-effort figure.",
+      "status": "supported"
+    },
+    {
+      "id": "c07",
+      "text": "Artificial Analysis reports improvements on Terminal-Bench and GDP.pdf and regressions on AA-LCR and AutomationBench-AA, with some comparisons using different effort settings.",
+      "type": "attributed_claim",
+      "sourceIds": ["s5"],
+      "sourceLocator": "Key takeaways and Intelligence Index breakdown; the final article preserves the effort-setting qualification.",
+      "status": "qualified"
+    },
+    {
+      "id": "c08",
+      "text": "In Artificial Analysis's native Grok Build Coding Agent Index, Grok 4.7 xhigh scored 56 versus 47 for Grok 4.6 xhigh.",
+      "type": "attributed_claim",
+      "sourceIds": ["s5"],
+      "sourceLocator": "Coding Agent Index section, which explicitly separates Grok Build from the standardised Intelligence Index harness.",
+      "status": "supported"
+    },
+    {
+      "id": "c09",
+      "text": "SpaceXAI's launch table generally compares Grok 4.7 xHigh with Grok 4.6 High, while the marked Grok 4.7 DeepSWE result used high effort.",
+      "type": "attributed_claim",
+      "sourceIds": ["s2"],
+      "sourceLocator": "Model-improvement table headings and the DeepSWE high-effort asterisk.",
+      "status": "supported"
+    },
+    {
+      "id": "c10",
+      "text": "SpaceXAI says a conversation cache key makes cache hits reliable and that without it requests often pay the full input price on a cache-cold server.",
+      "type": "attributed_claim",
+      "sourceIds": ["s3"],
+      "sourceLocator": "Important details guidance for prompt_cache_key and the corresponding conversation header.",
+      "status": "supported"
+    },
+    {
+      "id": "c11",
+      "text": "SpaceXAI recommends compaction for long loops and says encrypted Responses API reasoning items should be passed back unchanged on the next request.",
+      "type": "attributed_claim",
+      "sourceIds": ["s3"],
+      "sourceLocator": "Important details guidance for context compaction and encrypted reasoning content.",
+      "status": "supported"
+    },
+    {
+      "id": "c12",
+      "text": "Grok 4.7 Fast is limited to Cursor and Grok Build rather than the public xAI API; the provider describes twice-standard rates but displays a long-context tier that is 1.5 times the standard long-context schedule.",
+      "type": "attributed_claim",
+      "sourceIds": ["s3", "s4", "p1"],
+      "sourceLocator": "Fast availability documentation and current Fast pricing prose and table; the article exposes the contradiction and advises billing verification.",
+      "status": "qualified"
+    },
+    {
+      "id": "c13",
+      "text": "The US regional endpoint carries a 10 per cent token-price premium.",
+      "type": "fact",
+      "sourceIds": ["s3", "p1"],
+      "sourceLocator": "Regional endpoint documentation and the current US Regional Endpoint Pricing table.",
+      "status": "supported"
+    },
+    {
+      "id": "c14",
+      "text": "Unchanged unit token rates do not establish unchanged task cost because usage, tools, retries and review can differ.",
+      "type": "inference",
+      "sourceIds": ["s4", "s5"],
+      "sourceLocator": "Inference from the unchanged provider tariff and the independent usage measurement; the article presents it as a decision framework rather than a universal result.",
+      "status": "qualified"
+    },
+    {
+      "id": "c15",
+      "text": "A native-harness evaluation result should not be transferred to a different wrapper or workload without testing.",
+      "type": "inference",
+      "sourceIds": ["s5"],
+      "sourceLocator": "Artificial Analysis explicitly separates Grok Build from its standardised harness; the article translates that boundary into a local trial rule.",
+      "status": "qualified"
+    },
+    {
+      "id": "c16",
+      "text": "SpaceXAI says Grok 4.7 uses a larger base model, longer reinforcement learning and new safeguards, but those claims were not independently validated by Index Us.",
+      "type": "attributed_claim",
+      "sourceIds": ["s2"],
+      "sourceLocator": "Model Improvements and Safety and Cybersecurity sections; the article explicitly preserves the provider-claim and no-independent-validation boundary.",
+      "status": "qualified"
+    },
+    {
+      "id": "c17",
+      "text": "The article's proposed upgrade trial pins effort, harness, tools, context construction, caching, timeout and retry policy, then compares total cost per accepted result.",
+      "type": "inference",
+      "sourceIds": ["s3", "s4", "s5"],
+      "sourceLocator": "The trial design follows from the documented configuration controls, price tiers and configuration-bound independent measurements; it is operational advice, not a claimed test result.",
+      "status": "qualified"
+    }
+  ],
+  "drafting": {
+    "agentId": "/root/newsroom_draft"
+  },
+  "editorial": {
+    "agentId": "/root/newsroom_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-22T14:44:38Z",
+    "articleSha256": "55655249bb64ea48a03272569f10c66e71050da19a687fbb8e7fb21249375024",
+    "notes": [
+      "Tightened the opening around the actual Grok 4.6-to-4.7 upgrade decision and removed repeated setup without changing the central comparison.",
+      "Reworked repeated mirrored contrasts, punch-line constructions and source-by-source cadence into direct explanations of tariff, task cost, harness and caching.",
+      "Preserved every material date, figure, effort and harness boundary, source relationship, trial control, byline and exact automation disclosure.",
+      "Renewed the publication edit after the factual reviewer identified the live Fast-pricing contradiction, exposing both provider statements and preserving the unchanged illustration."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/newsroom_factcheck",
+    "reviewedAt": "2026-09-22T14:46:12Z",
+    "articleSha256": "55655249bb64ea48a03272569f10c66e71050da19a687fbb8e7fb21249375024",
+    "status": "passed",
+    "claimsCoverage": true
+  },
+  "quality": {
+    "evidence": 32,
+    "context": 18,
+    "originalValue": 19,
+    "voice": 14,
+    "presentation": 10
+  },
+  "riskFlags": [],
+  "quotes": [],
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered the exact approved digest at 1280 by 900. The title, 11-minute estimate, Index Us Editorial byline, exact disclosure, heading hierarchy, sources and original inline artwork were present. The 800 by 560 SVG rendered responsively without clipping; its accessible title, description and complete conceptual-art caption were present. Document scroll width equalled the 1280-pixel viewport, with no horizontal overflow."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered the exact approved digest at 390 by 844. The title, description, byline, disclosure, headings, sources and caption wrapped inside the viewport. The inline SVG rendered at 350 pixels wide with its 10:7 ratio and no clipping; document scroll width equalled the 390-pixel viewport. The mobile menu expanded to All articles, News, Analysis, Guides, About and Follow via RSS."
+    }
+  }
+}
