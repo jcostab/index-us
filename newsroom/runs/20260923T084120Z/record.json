@@ -1,0 +1,359 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260923T084120Z",
+  "startedAt": "2026-09-23T08:41:20.723Z",
+  "completedAt": "2026-09-23T09:37:26Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-21T08:41:20.723Z",
+    "end": "2026-09-23T08:41:20.723Z"
+  },
+  "candidates": [
+    {
+      "story": "Claude Opus 5.5 launch and API migration",
+      "source": "https://x.com/AnthropicAI/status/2102435703535939725",
+      "eventDate": "2026-09-22T16:31:47Z",
+      "decision": "selected",
+      "reason": "The exact-timestamped release combines lower token rates with documented request, response, effort, tool and safeguard-routing changes. Independent Artificial Analysis and Sonar evaluations provide current task-level context for a controlled migration decision."
+    },
+    {
+      "story": "Synthetic-persona prediction preprint",
+      "source": "https://arxiv.org/abs/2609.25010",
+      "eventDate": "2026-09-23T04:00:00Z",
+      "decision": "deferred",
+      "reason": "The artifact-backed study is promising, but the selected model migration has wider immediate operator consequence and stronger current independent context."
+    },
+    {
+      "story": "Hugging Face and UK AISI EvalEval reproducibility post",
+      "source": "https://huggingface.co/blog",
+      "eventDate": "2026-09-22",
+      "decision": "rejected",
+      "reason": "The feed supplied a date-normalised value rather than a reliable exact event time, and the immediate deployment consequence was narrower."
+    },
+    {
+      "story": "Transformers support for llama.cpp quantisations",
+      "source": "https://huggingface.co/blog",
+      "eventDate": "2026-09-22",
+      "decision": "rejected",
+      "reason": "An exact event time was not established and the bounded pass found no sufficiently strong independent deployment evidence."
+    },
+    {
+      "story": "Prismor open-source agent runtime control plane",
+      "source": "https://www.helpnetsecurity.com/2026/09/23/prismor-open-source-ai-agent-security/",
+      "eventDate": "unknown",
+      "decision": "rejected",
+      "reason": "Discovery material was promotional and no independently produced evaluation cleared the evidence gate."
+    },
+    {
+      "story": "Python Workers general availability",
+      "source": "https://blog.cloudflare.com/python-workers-ga/",
+      "eventDate": "2026-09-21T13:00:00Z",
+      "decision": "rejected",
+      "reason": "The event was outside the priority window and did not present a stronger non-duplicate AI deployment decision for this run."
+    },
+    {
+      "story": "Fresh cs.AI papers on agent habits, governed runtimes and RAG poisoning",
+      "source": "https://rss.arxiv.org/rss/cs.AI",
+      "eventDate": "2026-09-23T04:00:00Z",
+      "decision": "deferred",
+      "reason": "Abstracts alone did not establish method quality, reproducibility or independent context during the bounded run."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "Claude Opus 5.5 is a fresh, exact-timestamped release whose lower tariff arrives with breaking request forms, changed default effort and response behaviour, provider-specific computer-use compatibility and configurable safeguard fallback. The article supplies a practical migration test grounded in primary documentation and two independent evaluations rather than repeating the launch announcement."
+  },
+  "story": {
+    "id": "claude-opus-5-5-api-migration-controls",
+    "eventDate": "2026-09-22T16:31:47Z",
+    "canonicalUrls": [
+      "https://x.com/AnthropicAI/status/2102435703535939725"
+    ]
+  },
+  "articlePath": "src/content/articles/claude-opus-5-5-api-migration-controls.md",
+  "articleSha256": "ed733d10b03a09fbf0f7003dbed399c0ac10a5f8cf0a1eaede2d8f127bfab5e2",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://x.com/AnthropicAI/status/2102435703535939725",
+      "title": "Claude Opus 5.5 availability",
+      "publisher": "Anthropic",
+      "kind": "primary",
+      "independenceGroup": "anthropic",
+      "publishedAt": "2026-09-22T16:31:47Z",
+      "eventDate": "2026-09-22T16:31:47Z",
+      "retrievedAt": "2026-09-23T08:45:00Z",
+      "locator": "Official X post text and date through X oEmbed, retained public snapshot and deterministic status-ID timestamp decoding; the article reports the supported whole-second time."
+    },
+    {
+      "id": "s2",
+      "url": "https://www.anthropic.com/claude-opus-5-5",
+      "title": "Introducing Claude Opus 5.5",
+      "publisher": "Anthropic",
+      "kind": "primary",
+      "independenceGroup": "anthropic",
+      "publishedAt": "2026-09-22",
+      "eventDate": "2026-09-22",
+      "retrievedAt": "2026-09-23T08:44:00Z",
+      "locator": "Introduction, performance and cost-effectiveness, safety, benchmark-configuration footnotes and availability sections."
+    },
+    {
+      "id": "s3",
+      "url": "https://platform.claude.com/docs/en/models/opus-5-5/whats-new-opus-5-5",
+      "title": "What's new in Claude Opus 5.5",
+      "publisher": "Anthropic",
+      "kind": "primary",
+      "independenceGroup": "anthropic",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-23T08:47:00Z",
+      "locator": "Summary, all four breaking-change sections, behaviour differences, refusals and fallback, pricing, availability and migration checklist."
+    },
+    {
+      "id": "s4",
+      "url": "https://anthropic.com/claude-opus-5-5-system-card",
+      "title": "System Card: Claude Opus 5.5",
+      "publisher": "Anthropic",
+      "kind": "primary",
+      "independenceGroup": "anthropic",
+      "publishedAt": "2026-09-22",
+      "eventDate": "2026-09-22",
+      "retrievedAt": "2026-09-23T08:45:00Z",
+      "locator": "Sections 1.5, 3.2, 5.2.1 and 5.2.2.1, including Figure 5.2.1.A and Table 5.2.2.1.A discussion."
+    },
+    {
+      "id": "s5",
+      "url": "https://artificialanalysis.ai/articles/claude-opus-5-5",
+      "title": "Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index",
+      "publisher": "Artificial Analysis",
+      "kind": "independent",
+      "independenceGroup": "artificial-analysis",
+      "publishedAt": "2026-09-22",
+      "eventDate": "2026-09-22",
+      "retrievedAt": "2026-09-23T08:47:00Z",
+      "locator": "Key takeaways, ten-evaluation Intelligence Index, output-token comparison, task-cost parity and intelligence-versus-cost frontier."
+    },
+    {
+      "id": "s6",
+      "url": "https://artificialanalysis.ai/models/claude-opus-5-5",
+      "title": "Claude Opus 5.5 model page",
+      "publisher": "Artificial Analysis",
+      "kind": "independent",
+      "independenceGroup": "artificial-analysis",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-23T08:47:00Z",
+      "locator": "Max adaptive-reasoning and default-fallback configuration, score 58, $5.98 weighted average cost per task and Intelligence Index composition."
+    },
+    {
+      "id": "s7",
+      "url": "https://www.sonarsource.com/blog/claude-opus-5-5-an-evaluation/",
+      "title": "Claude Opus 5.5: An evaluation review and metrics benchmarks",
+      "publisher": "Sonar",
+      "kind": "independent",
+      "independenceGroup": "sonar",
+      "publishedAt": "2026-09-22",
+      "eventDate": "2026-09-22",
+      "retrievedAt": "2026-09-23T08:46:00Z",
+      "locator": "Method, 4,444-task corpus, 544 executable-task subset, pass rates, generated code, token use, absolute findings, densities and concurrency breakdown."
+    }
+  ],
+  "claims": [
+    {
+      "id": "c01",
+      "text": "Anthropic made Claude Opus 5.5 available at 16:31:47 UTC on 22 September 2026, inside the priority window.",
+      "type": "fact",
+      "sourceIds": ["s1"],
+      "sourceLocator": "Official X oEmbed and retained snapshot confirm the public post; status-ID decoding supplies the millisecond timestamp consistent with the reported second.",
+      "status": "supported"
+    },
+    {
+      "id": "c02",
+      "text": "Claude Opus 5.5 is available across the Claude API, Amazon Bedrock, Google Cloud and Microsoft Foundry under documented model IDs.",
+      "type": "fact",
+      "sourceIds": ["s2", "s3"],
+      "sourceLocator": "Launch availability and platform documentation.",
+      "status": "supported"
+    },
+    {
+      "id": "c03",
+      "text": "Standard prices are $4 per million input tokens, $20 per million output tokens and $0.20 per million cache reads, down from Opus 5's $5, $25 and $0.50.",
+      "type": "fact",
+      "sourceIds": ["s2", "s3"],
+      "sourceLocator": "Live launch pricing table and current platform pricing section, rechecked during factual review.",
+      "status": "supported"
+    },
+    {
+      "id": "c04",
+      "text": "Disabled thinking and manual thinking-token budgets return a 400 invalid_request_error because Opus 5.5 requires adaptive thinking.",
+      "type": "fact",
+      "sourceIds": ["s3"],
+      "sourceLocator": "Thinking can't be disabled breaking-change section.",
+      "status": "supported"
+    },
+    {
+      "id": "c05",
+      "text": "Forced tool-choice values any and a named tool return a 400 error, while auto and none remain supported.",
+      "type": "fact",
+      "sourceIds": ["s3"],
+      "sourceLocator": "Forced tool use breaking-change section.",
+      "status": "supported"
+    },
+    {
+      "id": "c06",
+      "text": "The computer_20251124 tool is rejected on the Claude API and Google Cloud, while Amazon Bedrock continues to accept it.",
+      "type": "fact",
+      "sourceIds": ["s3"],
+      "sourceLocator": "Computer-use breaking-change section and provider note.",
+      "status": "supported"
+    },
+    {
+      "id": "c07",
+      "text": "Opus 5.5 defaults to medium effort where Opus 5 defaulted to high, and equal effort labels do not establish equal thinking use across versions.",
+      "type": "fact",
+      "sourceIds": ["s3"],
+      "sourceLocator": "Behaviour differences and effort-calibration guidance.",
+      "status": "supported"
+    },
+    {
+      "id": "c08",
+      "text": "Text between tool calls moves into thinking blocks and the default omitted display can leave a streaming interface quiet without a request error.",
+      "type": "fact",
+      "sourceIds": ["s3"],
+      "sourceLocator": "Summary and behaviour-differences sections for between-tool-call text and display omitted.",
+      "status": "supported"
+    },
+    {
+      "id": "c09",
+      "text": "Thinking blocks are model and conversation bound; incompatible model switches can drop prior reasoning, and newer accounts enforce prefix binding.",
+      "type": "fact",
+      "sourceIds": ["s3"],
+      "sourceLocator": "Thinking blocks are tied to the model and conversation section.",
+      "status": "supported"
+    },
+    {
+      "id": "c10",
+      "text": "A safeguard refusal can be an HTTP 200 response with stop_reason refusal and structured stop details; API fallback must be configured rather than assumed.",
+      "type": "fact",
+      "sourceIds": ["s3", "s4"],
+      "sourceLocator": "Refusals and fallback documentation and system-card deployment description.",
+      "status": "supported"
+    },
+    {
+      "id": "c11",
+      "text": "Anthropic's first-party products can automatically route named high-risk request categories to another model, while Claude API developers must opt in to server-side fallback.",
+      "type": "fact",
+      "sourceIds": ["s3", "s4"],
+      "sourceLocator": "System-card sections 1.5 and 3.2 plus platform fallback documentation.",
+      "status": "supported"
+    },
+    {
+      "id": "c12",
+      "text": "In Gray Swan's static indirect-prompt-injection configuration, 18 per cent of rollouts were fallback-served, 46 per cent in coding, and none of 1,310 fallback-served rollouts succeeded.",
+      "type": "attributed_claim",
+      "sourceIds": ["s4"],
+      "sourceLocator": "System-card section 5.2.1 and Figure 5.2.1.A discussion; the article states that these are evaluation figures, not production rates.",
+      "status": "supported"
+    },
+    {
+      "id": "c13",
+      "text": "In Gray Swan's adaptive coding evaluation without prompt-injection probes, 64 per cent of valid requests were fallback-served, that subset had 85.73 per cent attack success, none of 2,872 direct Opus 5.5 requests succeeded, and all successes with probes again came from fallback-served requests.",
+      "type": "attributed_claim",
+      "sourceIds": ["s4"],
+      "sourceLocator": "System-card section 5.2.2.1 and Table 5.2.2.1.A discussion; the article keeps the configuration and production-rate boundaries explicit.",
+      "status": "supported"
+    },
+    {
+      "id": "c14",
+      "text": "The opposing evaluation results support treating the routed deployment as the unit of testing and do not support a universal claim that fallback is safe or unsafe.",
+      "type": "inference",
+      "sourceIds": ["s3", "s4"],
+      "sourceLocator": "Inference from the documented routed deployment and the two configuration-specific Gray Swan results.",
+      "status": "qualified"
+    },
+    {
+      "id": "c15",
+      "text": "Artificial Analysis measured Opus 5.5 max with default fallback at 58 on its ten-evaluation Intelligence Index and $5.98 average cost per task.",
+      "type": "attributed_claim",
+      "sourceIds": ["s5", "s6"],
+      "sourceLocator": "Release article for score and index context; directly cited model page for max adaptive-reasoning configuration, default fallback and $5.98 weighted average task cost.",
+      "status": "supported"
+    },
+    {
+      "id": "c16",
+      "text": "Artificial Analysis reports about 119,000 output tokens per index task for Opus 5.5 max versus about 73,000 for Opus 5 max, leaving max-effort task cost level despite lower token rates.",
+      "type": "attributed_claim",
+      "sourceIds": ["s5"],
+      "sourceLocator": "Release analysis output-token and cost-per-task comparison; retained as configuration-bound.",
+      "status": "supported"
+    },
+    {
+      "id": "c17",
+      "text": "Sonar reports 87.68 per cent versus 88.6 per cent pass rates across 544 executable Java tasks, with 40 per cent fewer output tokens and 27.5 per cent less generated code for Opus 5.5.",
+      "type": "attributed_claim",
+      "sourceIds": ["s7"],
+      "sourceLocator": "Sonar method, executable-task pass-rate subset, output-token and generated-line comparisons.",
+      "status": "supported"
+    },
+    {
+      "id": "c18",
+      "text": "Sonar reports lower absolute findings and several blocker-level improvements, alongside 11.8 per cent higher bug density and 44 per cent more concurrency findings per million lines.",
+      "type": "attributed_claim",
+      "sourceIds": ["s7"],
+      "sourceLocator": "Sonar finding counts, density table and concurrency breakdown; the article preserves the Java and static-analysis limits.",
+      "status": "qualified"
+    },
+    {
+      "id": "c19",
+      "text": "A production migration should preflight request compatibility, pin surface and explicit effort, inspect tool-loop, streaming, refusal and fallback paths, compare accepted-result quality and total task cost, and stage rollout with a tested rollback route.",
+      "type": "inference",
+      "sourceIds": ["s2", "s3", "s4", "s5", "s6", "s7"],
+      "sourceLocator": "Operational recommendation derived from the documented compatibility changes, routed safeguards and configuration-bound independent evaluations; no local test result is claimed.",
+      "status": "qualified"
+    }
+  ],
+  "drafting": {
+    "agentId": "/root/newsroom_drafter_20260923"
+  },
+  "editorial": {
+    "agentId": "/root/newsroom_editor_20260923",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-23T09:34:02Z",
+    "articleSha256": "ed733d10b03a09fbf0f7003dbed399c0ac10a5f8cf0a1eaede2d8f127bfab5e2",
+    "notes": [
+      "Reworked the opening around the concrete migration risk and removed newsroom-process wording while preserving the exact launch time, prices and upgrade boundary.",
+      "Replaced repeated enumerated and mirrored structures with a natural explanation of the four documented breaking changes without changing API identifiers or provider distinctions.",
+      "Preserved every material claim, qualification, source boundary, byline, exact disclosure and the original accessible story-specific illustration.",
+      "Renewed the publication edit after factual review identified the missing Artificial Analysis model-page citation, adding that source directly beside the $5.98 figure and to frontmatter.",
+      "Renewed the review after moving the metadata timestamp forward one second so it falls 277 milliseconds after the recorded run start; the article body, figure, claims and citations were unchanged."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/newsroom_factcheck_20260923",
+    "reviewedAt": "2026-09-23T09:36:15Z",
+    "articleSha256": "ed733d10b03a09fbf0f7003dbed399c0ac10a5f8cf0a1eaede2d8f127bfab5e2",
+    "status": "passed",
+    "claimsCoverage": true
+  },
+  "quality": {
+    "evidence": 35,
+    "context": 19,
+    "originalValue": 18,
+    "voice": 14,
+    "presentation": 9
+  },
+  "riskFlags": [],
+  "quotes": [],
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered the exact approved digest at 1280 by 900 from a freshly restarted Astro server. The title, 11-minute estimate, Index Us Editorial byline, exact disclosure, heading hierarchy and all seven sources were present. The original 800 by 560 inline SVG rendered responsively at a 10:7 ratio with title, description and complete conceptual-art caption, no clipping and no horizontal overflow."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered the exact approved digest at 390 by 844 from a freshly restarted Astro server. The title, description, byline, disclosure, headings, seven sources and caption wrapped inside the viewport. The SVG rendered at 350 by 245 pixels with its 10:7 ratio and no clipping; document scroll width equalled the viewport. The menu expanded to All articles, News, Analysis, Guides, About and Follow via RSS."
+    }
+  }
+}
