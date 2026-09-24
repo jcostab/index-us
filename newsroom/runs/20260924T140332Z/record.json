@@ -1,0 +1,366 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260924T140332Z",
+  "startedAt": "2026-09-24T14:03:32.692Z",
+  "completedAt": "2026-09-24T14:30:55Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-22T14:03:32.692Z",
+    "end": "2026-09-24T14:03:32.692Z"
+  },
+  "candidates": [
+    {
+      "story": "Anthropic ART enzyme-system research",
+      "source": "https://x.com/AnthropicAI/status/2102824959827742916",
+      "eventDate": "2026-09-23T18:18:33.678Z",
+      "decision": "selected",
+      "reason": "The exact-timestamped announcement is inside the priority window and the 40-page company preprint discloses a consequential, non-duplicate evaluation result: ten reruns missed the defining array because the relevant upstream DNA never reached model context. Earlier independent phage studies and an independent methodological reading support a bounded deployment analysis without claiming biological replication."
+    },
+    {
+      "story": "GPT-6 Sol and Luna",
+      "source": "https://openai.com/",
+      "eventDate": "2026-09-22",
+      "decision": "deferred",
+      "reason": "The release is inside the 48-hour discovery window but outside the 24-hour priority window. It is consequential, but the fresher ART evidence offers a clearer non-duplicate operational lesson; future coverage would require current independent task-level evaluation and migration analysis."
+    },
+    {
+      "story": "Proofpoint and start-up agent-security announcements",
+      "source": "https://www.proofpoint.com/",
+      "eventDate": "unknown",
+      "decision": "rejected-thin",
+      "reason": "Discovery results were marketing and funding coverage without enough primary technical evidence or independent measurement to support a 1,200-word article."
+    },
+    {
+      "story": "Google private memory, Gemini TTS and Australian OpenAI incident",
+      "source": "https://indexus.au/articles/",
+      "eventDate": "2026-09-24",
+      "decision": "already-covered",
+      "reason": "Recent Index Us articles and public run records already cover these developments. No correction or materially new primary evidence was found in this run."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "Anthropic's ART campaign is fresh, consequential and not already covered. The article turns the disclosed reproducibility failure into a bounded operator decision: research-agent evaluations should measure the route from stored evidence to model context, repeat the end-to-end campaign and preserve independent validation, while keeping the company-authored, unreviewed biological result and its unknown function explicit."
+  },
+  "story": {
+    "id": "anthropic-art-agent-context-evidence",
+    "eventDate": "2026-09-23T18:18:33.678Z",
+    "canonicalUrls": [
+      "https://x.com/AnthropicAI/status/2102824959827742916",
+      "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
+    ]
+  },
+  "articlePath": "src/content/articles/anthropic-art-agent-context-evidence.md",
+  "articleSha256": "d2814e58aefa53a3fb2d29dbb2b092c75bcfafde45db86535b77bd9cffc7d19d",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://x.com/AnthropicAI/status/2102824959827742916",
+      "title": "Anthropic on X — ART announcement",
+      "publisher": "Anthropic",
+      "kind": "primary",
+      "independenceGroup": "anthropic",
+      "publishedAt": "2026-09-23T18:18:33.678Z",
+      "eventDate": "2026-09-23T18:18:33.678Z",
+      "retrievedAt": "2026-09-24T14:04:44Z",
+      "locator": "Retained public post metadata and announcement text; exact timestamp independently recoverable from public post ID 2102824959827742916 as an X snowflake."
+    },
+    {
+      "id": "s2",
+      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+      "publisher": "Anthropic",
+      "kind": "primary",
+      "independenceGroup": "anthropic",
+      "publishedAt": "2026-09-23",
+      "eventDate": "2026-09-23T18:18:33.678Z",
+      "retrievedAt": "2026-09-24T14:05:32Z",
+      "locator": "Announcement sections on the laboratory, campaign, ART, human experimental work and the unknown biological function."
+    },
+    {
+      "id": "s3",
+      "url": "https://www-cdn.anthropic.com/22573675ada52a8ca8a97a1a4b4326b2f208a071.pdf",
+      "title": "Autonomous AI agents discover reverse transcriptases with tandem repeat arrays",
+      "publisher": "Anthropic researchers",
+      "kind": "primary",
+      "independenceGroup": "anthropic",
+      "publishedAt": "unknown",
+      "eventDate": "2026-09-23T18:18:33.678Z",
+      "retrievedAt": "2026-09-24T14:06:18Z",
+      "locator": "Complete 40-page PDF: abstract; Results pages 2–14; Discussion pages 13–14; references pages 22–26; Methods pages 28–40; Figures 1–4."
+    },
+    {
+      "id": "s4",
+      "url": "https://www.ksl.com/article/51627805/anthropic-says-claude-ai-helped-discover-novel-enzyme-system",
+      "title": "Anthropic says Claude AI helped discover novel enzyme system",
+      "publisher": "Reuters via KSL",
+      "kind": "independent",
+      "independenceGroup": "reuters",
+      "publishedAt": "2026-09-23",
+      "eventDate": "2026-09-23T18:18:33.678Z",
+      "retrievedAt": "2026-09-24T14:04:44Z",
+      "locator": "Independent announcement context and explicit unknown-function boundary; the report does not reproduce the work."
+    },
+    {
+      "id": "s5",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8428398/",
+      "title": "Comparative genomics of three novel jumbo bacteriophages",
+      "publisher": "Journal of Virology",
+      "kind": "independent",
+      "independenceGroup": "texas-am-jumbo-phage-authors",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-24T14:07:42Z",
+      "locator": "MarsHill genome analysis, predicted RNA-dependent DNA polymerase and the earlier statement that its function was unclear."
+    },
+    {
+      "id": "s6",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9414953/",
+      "title": "Interactions between jumbo phage SA1 and Staphylococcus",
+      "publisher": "Microorganisms",
+      "kind": "independent",
+      "independenceGroup": "sa1-transcriptomics-authors",
+      "publishedAt": "2022-08-07",
+      "eventDate": "2022-08-07",
+      "retrievedAt": "2026-09-24T14:07:42Z",
+      "locator": "Original SA1 infection transcriptomic experiment, PRJNA836150 dataset and early, middle and late infection analysis later reanalysed by Anthropic."
+    },
+    {
+      "id": "s7",
+      "url": "https://gautamparab.com/writing/one-campaign-in-eleven/",
+      "title": "Claude found the enzyme system in one campaign out of eleven",
+      "publisher": "Gautam Parab",
+      "kind": "independent",
+      "independenceGroup": "gautam-parab",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-24T14:10:33Z",
+      "locator": "Independent close reading of the campaign, ten reruns, fixed-input benchmark and division between autonomous discovery and later human-directed work."
+    }
+  ],
+  "claims": [
+    {
+      "id": "c01",
+      "text": "Anthropic's ART announcement was posted at 18:18:33.678 UTC on 23 September 2026, inside the run's priority window.",
+      "type": "fact",
+      "sourceIds": ["s1"],
+      "sourceLocator": "s1 retained post metadata and public X snowflake timestamp.",
+      "status": "supported"
+    },
+    {
+      "id": "c02",
+      "text": "The broad campaign used Mythos 5, 949 agent sessions, 119 tasks, 76.9 agent-hours, 215.6 million tokens and 21.5 hours of wall time.",
+      "type": "fact",
+      "sourceIds": ["s3"],
+      "sourceLocator": "s3 Results pages 2–3 and Methods pages 28–30.",
+      "status": "supported"
+    },
+    {
+      "id": "c03",
+      "text": "The campaign surveyed about 1.9 billion protein clusters, retained 198,290 reverse-transcriptase clusters and produced 19 reports.",
+      "type": "fact",
+      "sourceIds": ["s3"],
+      "sourceLocator": "s3 abstract, Results pages 2–4 and Methods pages 28–30.",
+      "status": "supported"
+    },
+    {
+      "id": "c04",
+      "text": "A worker rejected the initial gene association but queued the reverse transcriptase for follow-up; its supervisor directed the next worker to inspect the upstream region, where the defining array was noticed after the DNA entered model context.",
+      "type": "fact",
+      "sourceIds": ["s3"],
+      "sourceLocator": "s3 Results pages 3–5, Supplementary Figure 2 and transcript-analysis method page 30; supported as the authors' retained-session reconstruction.",
+      "status": "qualified"
+    },
+    {
+      "id": "c05",
+      "text": "Human-directed analysis identified 95 ART-family clusters and detectable upstream arrays in 28.",
+      "type": "fact",
+      "sourceIds": ["s3"],
+      "sourceLocator": "s3 Results pages 5–7 and Methods pages 31–32.",
+      "status": "supported"
+    },
+    {
+      "id": "c06",
+      "text": "Earlier independent papers described the MarsHill reverse transcriptase and the SA1 transcriptomic dataset, but did not independently verify Anthropic's ART interpretation.",
+      "type": "fact",
+      "sourceIds": ["s3", "s5", "s6"],
+      "sourceLocator": "s5 MarsHill genomic analysis; s6 SA1 abstract and methods; s3 Discussion page 14 and RNA-seq method page 34.",
+      "status": "qualified"
+    },
+    {
+      "id": "c07",
+      "text": "ART's biological function remains unknown; the work did not establish reverse-transcriptase activity, RNA substrates, reverse-transcriptase–partner interaction or a gene-editing capability.",
+      "type": "fact",
+      "sourceIds": ["s2", "s3", "s4"],
+      "sourceLocator": "s2 ART section; s3 Discussion page 13; s4 independent announcement summary.",
+      "status": "supported"
+    },
+    {
+      "id": "c08",
+      "text": "Ten reruns missed the defining array because none read the relevant upstream DNA, despite most completed reruns sampling ART loci.",
+      "type": "fact",
+      "sourceIds": ["s3"],
+      "sourceLocator": "s3 Results pages 8–10; the identifier-bounded search limitation remains stated in the review.",
+      "status": "qualified"
+    },
+    {
+      "id": "c09",
+      "text": "The fixed-input tests covered seven Claude models, five information levels and 100 attempts per model and level, judged by Mythos 5 against ten curated features.",
+      "type": "fact",
+      "sourceIds": ["s3"],
+      "sourceLocator": "s3 Figure 4 and Methods pages 37–39.",
+      "status": "supported"
+    },
+    {
+      "id": "c10",
+      "text": "The four most capable models recognised the array in at least 90 per cent of direct-context attempts; file-and-tool conditions could fall to 32 per cent; 39 per cent of relevant file attempts never read 200 contiguous nucleotides; reading at least 200 nucleotides raised recognition by 16–32 percentage points per model.",
+      "type": "fact",
+      "sourceIds": ["s3"],
+      "sourceLocator": "s3 Results pages 9–10 and Figure 4; scoped to Anthropic's internal benchmark.",
+      "status": "qualified"
+    },
+    {
+      "id": "c11",
+      "text": "Tool availability does not guarantee evidence access, so evidence-access instrumentation should be part of research-agent evaluation.",
+      "type": "inference",
+      "sourceIds": ["s3"],
+      "sourceLocator": "Index Us operational synthesis from c08–c10, presented as an operator recommendation rather than a universal experimental result.",
+      "status": "qualified"
+    },
+    {
+      "id": "c12",
+      "text": "Independent biological replication, peer review and enough campaign artefacts to test the original discovery path would materially strengthen the finding.",
+      "type": "inference",
+      "sourceIds": ["s3", "s4", "s5", "s6"],
+      "sourceLocator": "Editorial judgement derived from the primary report's limits and the independent-source boundary.",
+      "status": "qualified"
+    },
+    {
+      "id": "c13",
+      "text": "Index Us did not run the campaign, access Mythos 5, analyse the sequence data, reproduce the benchmark or perform laboratory work.",
+      "type": "fact",
+      "sourceIds": ["s3"],
+      "sourceLocator": "Run process fact, with s3 identifying the external campaign, model, analyses, benchmark and experiments reviewed.",
+      "status": "supported"
+    },
+    {
+      "id": "c14",
+      "text": "Eleven campaigns are too few to estimate a stable discovery rate; the evidence establishes one observed success and the mechanism of the misses, not a transferable probability.",
+      "type": "inference",
+      "sourceIds": ["s3", "s7"],
+      "sourceLocator": "s3 rerun evidence and s7 independent methodological reading; no numerical success-rate estimate is published.",
+      "status": "qualified"
+    }
+  ],
+  "sourceUse": [
+    {
+      "sourceId": "s1",
+      "quotedWords": 0,
+      "estimatedDerivedWords": 18,
+      "allowance": "Exact event timestamp and announcement identity only."
+    },
+    {
+      "sourceId": "s2",
+      "quotedWords": 0,
+      "estimatedDerivedWords": 95,
+      "allowance": "High-level company framing, laboratory division of labour and unknown-function boundary, all paraphrased."
+    },
+    {
+      "sourceId": "s3",
+      "quotedWords": 0,
+      "estimatedDerivedWords": 1250,
+      "allowance": "Primary technical evidence synthesised across the report in an original structure; no figure, table, transcript passage or source narrative reproduced."
+    },
+    {
+      "sourceId": "s4",
+      "quotedWords": 0,
+      "estimatedDerivedWords": 25,
+      "allowance": "Independent announcement context and unknown-function boundary; no Reuters wording reproduced."
+    },
+    {
+      "sourceId": "s5",
+      "quotedWords": 0,
+      "estimatedDerivedWords": 65,
+      "allowance": "Prior MarsHill provenance and reverse-transcriptase annotation only."
+    },
+    {
+      "sourceId": "s6",
+      "quotedWords": 0,
+      "estimatedDerivedWords": 75,
+      "allowance": "Prior SA1 transcriptomic provenance and experiment scope only."
+    },
+    {
+      "sourceId": "s7",
+      "quotedWords": 0,
+      "estimatedDerivedWords": 35,
+      "allowance": "Independent rerun-sample framing only; no wording or structure reproduced."
+    }
+  ],
+  "quotes": [],
+  "visual": {
+    "concept": "A charcoal sequence archive passes through a cobalt context aperture into a sage human-run laboratory check. Vermilion repeat markers are legible only inside the aperture, while dotted paths stop before it without encoding a run count.",
+    "referencesInspected": [
+      "src/components/ArticleArtwork.astro",
+      "src/content/articles/gemini-3-8-tts-voice-replication-controls.md",
+      "src/content/articles/google-private-ai-memory-verification-boundary.md",
+      "src/content/articles/claude-opus-5-5-api-migration-controls.md"
+    ],
+    "originalityAndEvidenceBoundary": "Original story-specific composition in the established charcoal, off-white, vermilion, cobalt, sage and warm-neutral palette. The visible caption says it is a conceptual evidence-access graphic, not Anthropic's workflow diagram, a DNA sequence, a success-rate chart or proof of biological function.",
+    "accessibility": "Self-contained responsive SVG with an 800 by 560 viewBox, role img, linked title and description, visible caption, no scripts, external resources or animation."
+  },
+  "drafting": {
+    "agentId": "/root/newsroom_drafter",
+    "completedAt": "2026-09-24T14:16:34Z",
+    "notes": [
+      "Selected one fresh, exact-timestamped development after checking current articles and run records for duplicate and correction coverage.",
+      "Retained the source and claim ledgers, source-use boundaries, untouched original draft, preservation list, source PDF and editorial notes in the ignored working directory.",
+      "Created a new accessible 800 by 560 inline SVG and recorded the concept, evidence boundary and existing artwork references inspected.",
+      "Firecrawl returned discovery results before further calls required authentication; direct public pages, the retained public preprint and web-index results supplied the verification evidence."
+    ]
+  },
+  "editorial": {
+    "agentId": "/root/newsroom_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-24T14:25:15Z",
+    "articleSha256": "d2814e58aefa53a3fb2d29dbb2b092c75bcfafde45db86535b77bd9cffc7d19d",
+    "notes": [
+      "Applied the complete edit-johns-content skill and both reference files in a separate publication pass, tightening the opening, reducing generic signposting and preserving the deliberate CRISPR boundary because it prevents a material overclaim.",
+      "Preserved every material date, figure, attribution, caveat, source, biological unknown, benchmark limit, process disclosure and the untouched original draft; no quotation, anecdote, result or personal detail was introduced.",
+      "Renewed the full preservation approval after changing only the factual review's actor attribution: the worker queued the RT follow-up, its supervisor directed the next worker, and that worker loaded the upstream DNA into context.",
+      "Approved the distinct archive–aperture–laboratory SVG for style, originality, accessibility and its explicit conceptual-not-evidentiary caption after inspecting ArticleArtwork.astro and three recent story-specific inline examples."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/newsroom_factual_review",
+    "reviewedAt": "2026-09-24T14:26:18Z",
+    "articleSha256": "d2814e58aefa53a3fb2d29dbb2b092c75bcfafde45db86535b77bd9cffc7d19d",
+    "status": "passed",
+    "claimsCoverage": true,
+    "notes": [
+      "Independently opened the public sources and reviewed the complete 40-page preprint, including campaign methods, ART analysis, reruns, fixed-input tests and biological limits.",
+      "Required correction of the discovery-path actor attribution, then mechanically verified that the renewed digest changed only that passage and rechecked every material claim against the corrected article.",
+      "Confirmed the company-source, independent-context and non-replication boundaries, no external quotation, no copied source structure and no duplicate Index Us coverage.",
+      "Approved the final inline SVG for established style, story-specific originality, accessibility, non-misleading implications and a visible evidence boundary."
+    ]
+  },
+  "quality": {
+    "evidence": 34,
+    "context": 19,
+    "originalValue": 19,
+    "voice": 14,
+    "presentation": 9
+  },
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered the exact approved digest at 1280 by 900 from the local site. The title, Index Us Editorial byline, exact automation disclosure, article navigation, seven source links and the story-specific inline SVG were present. The 800-by-560 SVG rendered at 736 by 515.2 pixels with its linked title and description, complete caption, no clipping and no horizontal overflow; the document scroll width equalled the 1280-pixel viewport. Visual inspection confirmed the full composition and its transition into the next section."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered the exact approved digest at 390 by 844 from the local site. The title, byline, disclosure, article text, seven sources and caption wrapped within the viewport. The inline SVG rendered at 350 by 245 pixels with its exact 10:7 ratio and no clipping; document scroll width equalled the 390-pixel viewport. The six-link mobile menu opened correctly, and visual inspection confirmed the complete illustration and following section without overflow."
+    }
+  },
+  "riskFlags": []
+}
