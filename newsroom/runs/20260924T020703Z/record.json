@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260924T020703Z",
+  "startedAt": "2026-09-24T02:07:03.050Z",
+  "completedAt": "2026-09-24T02:38:17Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-22T02:07:03.050Z",
+    "end": "2026-09-24T02:07:03.050Z"
+  },
+  "candidates": [
+    {
+      "story": "Gemini 3.8 Flash TTS and Flash-Lite TTS voice replication",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
+      "eventDate": "2026-09-23T15:15:00Z",
+      "decision": "selected",
+      "reason": "The exact-timestamped release exposes a consequential deployment choice between a one-year Google-managed voice profile and a seven-day client-managed key, with separate consent, provenance, migration and pricing controls. Current Google documentation and independent FTC and VoiceEQ context support an original operational analysis without relying on launch benchmarks."
+    },
+    {
+      "story": "Perplexity Escaping SPACE sandbox-network findings",
+      "source": "https://www.perplexity.ai/hub/blog/escaping-space-part-i",
+      "eventDate": "unknown",
+      "decision": "deferred",
+      "reason": "The technical issue may be consequential, but the primary page exposed no verifiable exact event time and was bot-gated outside search excerpts. The freshness gate could not be established safely."
+    },
+    {
+      "story": "New Gemini Connected Apps",
+      "source": "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/",
+      "eventDate": "2026-09-23T16:00:00Z",
+      "decision": "deferred",
+      "reason": "Fresh, but the public evidence did not yet expose enough connector-specific permission, write-action and audit detail to support a distinct long-form deployment analysis."
+    },
+    {
+      "story": "Gemini Omni in Google Vids",
+      "source": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-in-google-vids/",
+      "eventDate": "2026-09-23T19:00:00Z",
+      "decision": "rejected",
+      "reason": "The product integration is fresh, but no meaningful independent evaluation or broad deployment decision was available to earn long-form coverage."
+    },
+    {
+      "story": "Google Beam expansion and Android Enterprise updates",
+      "source": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion/",
+      "eventDate": "2026-09-23T18:00:00Z",
+      "decision": "rejected",
+      "reason": "These are narrower product announcements with less practical AI deployment consequence than the selected voice-control story."
+    },
+    {
+      "story": "Gemini 3.8 Flash and Flash Cyber listing",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+      "eventDate": "2026-09-02",
+      "decision": "rejected",
+      "reason": "The linked primary article is dated 2 September 2026, outside the discovery window, and no separate fresh event was verified."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "Google's exact-timestamped Gemini 3.8 TTS release makes replicated voices governable project assets with a mandatory enrolment check and materially different storage lifecycles. The article explains the consent-versus-authority boundary, provider-managed versus client-managed retention, provenance limits, migration changes and the January price change without claiming hands-on testing or independent validation of model quality."
+  },
+  "story": {
+    "id": "gemini-3-8-tts-voice-replication-controls",
+    "eventDate": "2026-09-23T15:15:00Z",
+    "canonicalUrls": [
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/"
+    ]
+  },
+  "articlePath": "src/content/articles/gemini-3-8-tts-voice-replication-controls.md",
+  "articleSha256": "539501be1661691322aac573b0247711bca322c1f357244658f0c602388bcea6",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
+      "title": "Gemini 3.8 text-to-speech says hello",
+      "publisher": "Google",
+      "kind": "primary",
+      "independenceGroup": "google",
+      "publishedAt": "2026-09-23T15:15:00Z",
+      "eventDate": "2026-09-23T15:15:00Z",
+      "retrievedAt": "2026-09-24T02:25:44Z",
+      "locator": "HTML datePublished metadata and sections Create and customize your own voices, Build with trust consent and transparency, Start using our latest Gemini Audio models, and the AI Studio geography footnote."
+    },
+    {
+      "id": "s2",
+      "url": "https://ai.google.dev/gemini-api/docs/voice-replication",
+      "title": "Voice replication",
+      "publisher": "Google AI for Developers",
+      "kind": "primary",
+      "independenceGroup": "google",
+      "publishedAt": "unknown",
+      "eventDate": "2026-09-23",
+      "retrievedAt": "2026-09-24T02:26:21Z",
+      "locator": "Stateful versus stateless storage modes; retention table; Audio and consent requirements; Manage stored replicated voices; and the stateless client-managed voice-key section."
+    },
+    {
+      "id": "s3",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "title": "Gemini API release notes",
+      "publisher": "Google AI for Developers",
+      "kind": "primary",
+      "independenceGroup": "google",
+      "publishedAt": "2026-09-22",
+      "eventDate": "2026-09-22",
+      "retrievedAt": "2026-09-24T02:33:49Z",
+      "locator": "22 September 2026 entry labelling both TTS models generally available and naming the Voices endpoint path as /v1beta/voices."
+    },
+    {
+      "id": "s4",
+      "url": "https://ai.google.dev/gemini-api/docs/speech-generation",
+      "title": "Text-to-speech generation",
+      "publisher": "Google AI for Developers",
+      "kind": "primary",
+      "independenceGroup": "google",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-24T02:33:49Z",
+      "locator": "Migration guide items 1, 3 and 5 covering structured speech_metadata, explicit speaker identification and default unary WAV output with a RIFF header."
+    },
+    {
+      "id": "s5",
+      "url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "title": "Gemini Developer API pricing",
+      "publisher": "Google AI for Developers",
+      "kind": "primary",
+      "independenceGroup": "google",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-24T02:33:49Z",
+      "locator": "Gemini 3.8 Flash TTS and Flash-Lite TTS Standard pricing tables, 1 January 2027 rate change and audio-token footnote."
+    },
+    {
+      "id": "s6",
+      "url": "https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2024/04/approaches-address-ai-enabled-voice-cloning",
+      "title": "Approaches to Address AI-enabled Voice Cloning",
+      "publisher": "US Federal Trade Commission",
+      "kind": "independent",
+      "independenceGroup": "us-ftc",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-24T02:33:49Z",
+      "locator": "Intervention-point overview, watermarking limitations, false-authenticity example and Looking forward section; general context only, not an assessment of Gemini."
+    },
+    {
+      "id": "s7",
+      "url": "https://arxiv.org/abs/2607.14846",
+      "title": "Real-World VoiceEQ: Measuring the Human Quality of Voice AI",
+      "publisher": "arXiv",
+      "kind": "independent",
+      "independenceGroup": "hume-voiceeq-authors",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-09-24T02:33:49Z",
+      "locator": "Abstract and submission history; the abstract identifies naturalness, expressiveness, identity stability and reliability as largely independent TTS evaluation dimensions."
+    }
+  ],
+  "claims": [
+    {
+      "id": "c01",
+      "text": "Google published the selected launch post at 15:15 UTC on 23 September 2026.",
+      "type": "fact",
+      "sourceIds": ["s1"],
+      "sourceLocator": "S1 HTML datePublished structured metadata.",
+      "status": "supported"
+    },
+    {
+      "id": "c02",
+      "text": "Google labels Gemini 3.8 Flash TTS and Flash-Lite TTS generally available and exposes voice management under /v1beta/voices.",
+      "type": "fact",
+      "sourceIds": ["s3"],
+      "sourceLocator": "S3 22 September 2026 release-note entry; the article states the path fact without inferring a separate endpoint lifecycle status.",
+      "status": "supported"
+    },
+    {
+      "id": "c03",
+      "text": "The documented replication flow requires a 10 to 30 second reference recording plus a separate prescribed consent recording from the same adult speaker.",
+      "type": "fact",
+      "sourceIds": ["s1", "s2"],
+      "sourceLocator": "S2 Audio and consent requirements; S1 voice-owner matching and consent-verification description.",
+      "status": "supported"
+    },
+    {
+      "id": "c04",
+      "text": "Google's enrolment check does not establish continuing authority, contract scope or a later revocation process for every use of the voice.",
+      "type": "inference",
+      "sourceIds": ["s2"],
+      "sourceLocator": "S2 documents creation inputs and voice management but not continuing use authority, contract fields or generated-output recall; the article assigns those operational records to the deployer.",
+      "status": "qualified"
+    },
+    {
+      "id": "c05",
+      "text": "With store=true, the documented default, Google stores a reusable voice profile, allows up to 200 project profiles and gives the profile a one-year time to live.",
+      "type": "fact",
+      "sourceIds": ["s2"],
+      "sourceLocator": "S2 stateful versus stateless modes and retention table.",
+      "status": "supported"
+    },
+    {
+      "id": "c06",
+      "text": "With store=false, Google documents a client-managed encrypted voicekey value, no persisted server-side profile and a seven-day time to live.",
+      "type": "attributed_claim",
+      "sourceIds": ["s2"],
+      "sourceLocator": "S2 stateless client-managed voice-key section; Index Us did not test persistence or key behaviour.",
+      "status": "qualified"
+    },
+    {
+      "id": "c07",
+      "text": "The API documents list, get and delete operations for stored voice profiles but does not say deletion recalls audio already generated from a profile.",
+      "type": "fact",
+      "sourceIds": ["s2"],
+      "sourceLocator": "S2 Manage stored replicated voices and complete guide at retrieval; absence is stated as a documentation limit.",
+      "status": "qualified"
+    },
+    {
+      "id": "c08",
+      "text": "Availability is route-specific: the launch lists Gemini API and AI Studio, adds product-specific Notebook and Vids routes, describes the Enterprise API as coming soon, and applies named geography exclusions to AI Studio replication.",
+      "type": "fact",
+      "sourceIds": ["s1"],
+      "sourceLocator": "S1 Start using section and AI Studio geography footnote; the article explicitly does not generalise the exclusions to every API route.",
+      "status": "supported"
+    },
+    {
+      "id": "c09",
+      "text": "Google says every Gemini Audio clip carries SynthID and mentions C2PA with replication safeguards, while the public evidence does not clearly document route-by-route C2PA verification coverage.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1", "s2"],
+      "sourceLocator": "S1 trust and transparency section; comparison with the more detailed S2 consent and profile lifecycle documentation.",
+      "status": "qualified"
+    },
+    {
+      "id": "c10",
+      "text": "The FTC says harmful voice cloning has no single technical solution, watermarks may be removed or distorted, and false authenticity signals can be harmful in sensitive settings.",
+      "type": "fact",
+      "sourceIds": ["s6"],
+      "sourceLocator": "S6 intervention-point overview, watermark limitations and bank or healthcare false-authenticity example; not represented as a Gemini assessment.",
+      "status": "supported"
+    },
+    {
+      "id": "c11",
+      "text": "Migration from the earlier preview moves turn direction into structured speech_metadata, requires a speaker on every multi-speaker turn and changes default unary output from raw PCM to WAV with a RIFF header.",
+      "type": "fact",
+      "sourceIds": ["s4"],
+      "sourceLocator": "S4 Migration guide items 1, 3 and 5.",
+      "status": "supported"
+    },
+    {
+      "id": "c12",
+      "text": "Ignored direction, missing speaker mappings and manually wrapping an already wrapped WAV are integration failure modes that regression tests should cover.",
+      "type": "inference",
+      "sourceIds": ["s4"],
+      "sourceLocator": "Premises are the schema and output-format changes in S4; the failure modes and test advice are operational inferences.",
+      "status": "qualified"
+    },
+    {
+      "id": "c13",
+      "text": "The VoiceEQ paper treats TTS naturalness, expressiveness, identity stability and reliability as largely independent evaluation dimensions.",
+      "type": "fact",
+      "sourceIds": ["s7"],
+      "sourceLocator": "S7 abstract; used as an evaluation framework, not as a result for Gemini 3.8 TTS.",
+      "status": "supported"
+    },
+    {
+      "id": "c14",
+      "text": "Google's standard launch-period audio-output prices are US$9 per million tokens for Flash and US$6 for Flash-Lite through 31 December 2026, rising to US$18 and US$12 from 1 January 2027.",
+      "type": "fact",
+      "sourceIds": ["s5"],
+      "sourceLocator": "S5 Standard pricing tables for both models and effective-date rows; prices were rechecked during factual review.",
+      "status": "supported"
+    },
+    {
+      "id": "c15",
+      "text": "At 25 audio tokens per second, the launch-period audio-output rates equal about 1.35 US cents per generated minute for Flash and 0.9 US cents for Flash-Lite, before text input and other system costs.",
+      "type": "inference",
+      "sourceIds": ["s5"],
+      "sourceLocator": "S5 audio-token footnote and rates; 1,500 tokens per minute multiplied by each per-million-token price.",
+      "status": "qualified"
+    },
+    {
+      "id": "c16",
+      "text": "A deployment decision should bind voice authority, storage duration, credential access, revocation, audience disclosure, migration testing and the post-launch price before production use.",
+      "type": "inference",
+      "sourceIds": ["s1", "s2", "s4", "s5", "s6", "s7"],
+      "sourceLocator": "Operational synthesis from the documented consent and storage choices, provenance limits, migration changes, pricing change and independent evaluation context.",
+      "status": "qualified"
+    }
+  ],
+  "drafting": {
+    "agentId": "/root/newsroom_drafter"
+  },
+  "editorial": {
+    "agentId": "/root/newsroom_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-24T02:32:42Z",
+    "articleSha256": "539501be1661691322aac573b0247711bca322c1f357244658f0c602388bcea6",
+    "notes": [
+      "Reworked the opening and transitions into direct operational prose while preserving the exact event, consent, retention, availability, provenance, migration and pricing boundaries.",
+      "Removed repeated formulaic oppositions and clarified the difference between Google's enrolment check and the deployer's continuing authority record without inventing a retained provider consent record.",
+      "Added exact clause-level sources for the Google migration guide and the VoiceEQ paper, then replaced unsupported beta-status language with the verified /v1beta/voices path fact.",
+      "Preserved the byline, exact automation disclosure, all material numbers and dates, seven-source frontmatter, testing limitation and the original story-specific SVG.",
+      "Inspected the SVG against ArticleArtwork.astro and the three named recent inline examples; it passed style, originality, accessibility and misleading-implication review unchanged."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/newsroom_fact_checker",
+    "reviewedAt": "2026-09-24T02:33:49Z",
+    "articleSha256": "539501be1661691322aac573b0247711bca322c1f357244658f0c602388bcea6",
+    "status": "passed",
+    "claimsCoverage": true
+  },
+  "quality": {
+    "evidence": 33,
+    "context": 18,
+    "originalValue": 18,
+    "voice": 14,
+    "presentation": 10
+  },
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered the exact approved digest from the production build at 1280 by 900. Title, ten-minute estimate, Index Us Editorial byline, exact disclosure, headings and all seven sources were present. The original inline SVG rendered at 736 by 515.1875 pixels with its accessible title and description, complete conceptual-art caption, no scripts or external resources, no clipping and no horizontal overflow; the document and body scroll widths were 1280 pixels. Visual inspection confirmed the complete composition and caption."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered the exact approved digest from the production build at 390 by 844. The title, metadata, byline, disclosure, headings, seven sources and caption wrapped within the viewport. The inline SVG rendered at 350 by 245 pixels with the exact 10:7 ratio and no clipping; document and body scroll widths both equalled the 390-pixel viewport. The menu exposed the publication navigation links and the complete illustration and caption were visually inspected."
+    }
+  },
+  "riskFlags": [],
+  "quotes": []
+}
