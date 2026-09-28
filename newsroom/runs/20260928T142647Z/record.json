@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260928T142647Z",
+  "startedAt": "2026-09-28T14:26:47.643Z",
+  "completedAt": "2026-09-28T20:18:00Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-26T14:26:47.643Z",
+    "end": "2026-09-28T14:26:47.643Z"
+  },
+  "candidates": [
+    {
+      "story": "NVIDIA Open Agent Safety Platform: OpenShell and Sentry",
+      "source": "https://www.globenewswire.com/news-release/2026/09/28/3369606/0/en/nvidia-launches-open-agent-safety-platform-to-secure-agents-from-testing-to-deployment.html",
+      "eventDate": "2026-09-28T09:00:00Z",
+      "decision": "selected",
+      "reason": "The exact-timestamped announcement is inside the 24-hour priority window. A versioned OpenShell release, detailed support matrix and independent context support a consequential, non-duplicate deployment analysis that separates software available for evaluation from a hardware-backed reference design whose standalone availability was not established."
+    },
+    {
+      "story": "Cloudflare cf agentic CLI open beta",
+      "source": "https://blog.cloudflare.com/",
+      "eventDate": "2026-09-28T14:50:37.828Z",
+      "decision": "deferred",
+      "reason": "The event is fresh, but independent context was too limited for a source-diverse long-form article in this run, and the NVIDIA release offered a stronger operator decision."
+    },
+    {
+      "story": "Cloudflare Kitesurf update",
+      "source": "https://blog.cloudflare.com/",
+      "eventDate": "2026-09-28T13:00:00Z",
+      "decision": "rejected-duplicate",
+      "reason": "The development materially overlaps existing legacy Kitesurf coverage. That article lacks an automated newsroom provenance record, so an automated update is not permitted, while a separate article would duplicate the topic."
+    },
+    {
+      "story": "UNCTAD API analysis",
+      "source": "https://unctad.org/",
+      "eventDate": "2026-09-26",
+      "decision": "rejected-freshness",
+      "reason": "Only a calendar date could be established, so the story could not clear the exact-time freshness gate. This was also the strongest rejected lead in the immediately preceding skipped run."
+    },
+    {
+      "story": "Cloudflare annual founders letter",
+      "source": "https://blog.cloudflare.com/",
+      "eventDate": "2026-09-27T17:00:00Z",
+      "decision": "rejected-thin",
+      "reason": "The AI material was high-level and did not support a distinct, consequential 1,200-word operational article."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "NVIDIA's announcement is fresh, consequential and not already covered. The article gives operators a bounded deployment decision: OpenShell v0.1.2 is released software that can be inspected and tested now, while Sentry is presently evidenced as a BlueField-4 and DOCA reference design rather than a separately verified generally available product."
+  },
+  "story": {
+    "id": "nvidia-openshell-sentry-deployment-boundary",
+    "eventDate": "2026-09-28T09:00:00Z",
+    "canonicalUrls": [
+      "https://www.globenewswire.com/news-release/2026/09/28/3369606/0/en/nvidia-launches-open-agent-safety-platform-to-secure-agents-from-testing-to-deployment.html",
+      "https://developer.nvidia.com/blog/add-runtime-controls-to-ai-agents-with-nvidia-openshell/"
+    ]
+  },
+  "articlePath": "src/content/articles/nvidia-openshell-sentry-deployment-boundary.md",
+  "articleSha256": "5ba8c8784fc3703a3d81cb5673f9a7d0e4fc67e4e6a026fabc3060ed01753577",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://www.globenewswire.com/news-release/2026/09/28/3369606/0/en/nvidia-launches-open-agent-safety-platform-to-secure-agents-from-testing-to-deployment.html",
+      "title": "NVIDIA launches open agent safety platform to secure agents from testing to deployment",
+      "publisher": "NVIDIA via GlobeNewswire",
+      "kind": "primary",
+      "independenceGroup": "nvidia",
+      "publishedAt": "2026-09-28T09:00:00Z",
+      "eventDate": "2026-09-28T09:00:00Z",
+      "retrievedAt": "2026-09-28T15:34:03Z",
+      "locator": "Announcement body, OpenShell and Sentry descriptions, ecosystem statements, availability section and forward-looking disclaimer."
+    },
+    {
+      "id": "s2",
+      "url": "https://developer.nvidia.com/blog/add-runtime-controls-to-ai-agents-with-nvidia-openshell/",
+      "title": "Add runtime controls to AI agents with NVIDIA OpenShell",
+      "publisher": "NVIDIA Technical Blog",
+      "kind": "primary",
+      "independenceGroup": "nvidia",
+      "publishedAt": "2026-09-28",
+      "eventDate": "2026-09-28T09:00:00Z",
+      "retrievedAt": "2026-09-28T15:34:03Z",
+      "locator": "Architecture, policy proposal and review, credential substitution, protocol inspection, policy prover and deployment backends."
+    },
+    {
+      "id": "s3",
+      "url": "https://github.com/NVIDIA/OpenShell/releases/tag/v0.1.2",
+      "title": "OpenShell v0.1.2",
+      "publisher": "NVIDIA on GitHub",
+      "kind": "primary",
+      "independenceGroup": "nvidia",
+      "publishedAt": "2026-09-28T03:58:00Z",
+      "eventDate": "2026-09-28T03:58:00Z",
+      "retrievedAt": "2026-09-28T15:34:03Z",
+      "locator": "Latest release metadata and packaged CLI, gateway, prover, sandbox and supervisor artefacts."
+    },
+    {
+      "id": "s4",
+      "url": "https://docs.nvidia.com/openshell/latest/about/support-matrix",
+      "title": "OpenShell support matrix",
+      "publisher": "NVIDIA",
+      "kind": "primary",
+      "independenceGroup": "nvidia",
+      "publishedAt": "unknown",
+      "eventDate": "2026-09-28T03:58:00Z",
+      "retrievedAt": "2026-09-28T15:34:03Z",
+      "locator": "Stable-track production scope, supported and experimental platforms, runtime requirements and Linux kernel facilities."
+    },
+    {
+      "id": "s5",
+      "url": "https://www.cnbc.com/2026/09/28/nvidia-releases.html",
+      "title": "Nvidia releases agent security technology",
+      "publisher": "CNBC",
+      "kind": "independent",
+      "independenceGroup": "cnbc",
+      "publishedAt": "2026-09-28T09:00:00Z",
+      "eventDate": "2026-09-28T09:00:00Z",
+      "retrievedAt": "2026-09-28T15:34:03Z",
+      "locator": "Independent announcement context and statement that reference-design partners are intended to bring products to market."
+    },
+    {
+      "id": "s6",
+      "url": "https://www.wired.com/story/nvidias-answer-to-rogue-agents-is-an-open-source-ai-security-system/",
+      "title": "Nvidia's answer to rogue agents is an open source AI security system",
+      "publisher": "WIRED",
+      "kind": "independent",
+      "independenceGroup": "wired",
+      "publishedAt": "2026-09-28",
+      "eventDate": "2026-09-28T09:00:00Z",
+      "retrievedAt": "2026-09-28T15:34:03Z",
+      "locator": "Independent OpenShell/Sentry distinction, BlueField context and unresolved adoption boundary."
+    }
+  ],
+  "claims": [
+    {
+      "id": "c01",
+      "text": "NVIDIA announced the Open Agent Safety Platform at 09:00 UTC on 28 September 2026, inside the priority window.",
+      "type": "fact",
+      "sourceIds": ["s1"],
+      "sourceLocator": "s1 exact publication timestamp.",
+      "status": "supported"
+    },
+    {
+      "id": "c02",
+      "text": "The platform pairs a software runtime with a hardware-backed reference design.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1"],
+      "sourceLocator": "s1 platform and product descriptions; availability categories remain separate.",
+      "status": "supported"
+    },
+    {
+      "id": "c03",
+      "text": "OpenShell v0.1.2 was the latest stable release checked and was published at 03:58 UTC on 28 September 2026.",
+      "type": "fact",
+      "sourceIds": ["s3"],
+      "sourceLocator": "s3 GitHub release metadata at retrieval time; latest status must be rechecked before approval.",
+      "status": "qualified"
+    },
+    {
+      "id": "c04",
+      "text": "The v0.1.2 release includes packaged CLI, gateway, prover, sandbox and supervisor artefacts.",
+      "type": "fact",
+      "sourceIds": ["s3"],
+      "sourceLocator": "s3 release asset list.",
+      "status": "supported"
+    },
+    {
+      "id": "c05",
+      "text": "NVIDIA labels the stable OpenShell track for production use within the documented support matrix.",
+      "type": "attributed_claim",
+      "sourceIds": ["s4"],
+      "sourceLocator": "s4 release-level table and production-scope language.",
+      "status": "qualified"
+    },
+    {
+      "id": "c06",
+      "text": "The support matrix covers Linux amd64 and arm64 plus Apple-silicon macOS with Docker Desktop, while Windows WSL2 is experimental.",
+      "type": "fact",
+      "sourceIds": ["s4"],
+      "sourceLocator": "s4 platform table.",
+      "status": "supported"
+    },
+    {
+      "id": "c07",
+      "text": "Linux enforcement depends on documented runtime and kernel facilities including Landlock and seccomp.",
+      "type": "fact",
+      "sourceIds": ["s4"],
+      "sourceLocator": "s4 requirements and kernel-feature rows.",
+      "status": "supported"
+    },
+    {
+      "id": "c08",
+      "text": "OpenShell separates gateway, supervisor and sandbox responsibilities.",
+      "type": "attributed_claim",
+      "sourceIds": ["s2"],
+      "sourceLocator": "s2 architecture section.",
+      "status": "supported"
+    },
+    {
+      "id": "c09",
+      "text": "NVIDIA says the supervisor can apply controls to HTTP, GraphQL and MCP traffic.",
+      "type": "attributed_claim",
+      "sourceIds": ["s2"],
+      "sourceLocator": "s2 network-control description; not treated as independent validation.",
+      "status": "qualified"
+    },
+    {
+      "id": "c10",
+      "text": "NVIDIA says credential substitution is designed to keep secrets outside the workload.",
+      "type": "attributed_claim",
+      "sourceIds": ["s2"],
+      "sourceLocator": "s2 credential handling description.",
+      "status": "qualified"
+    },
+    {
+      "id": "c11",
+      "text": "Agent-proposed policy changes remain pending for human review by default and self-approval is barred.",
+      "type": "attributed_claim",
+      "sourceIds": ["s2"],
+      "sourceLocator": "s2 policy proposal and approval workflow.",
+      "status": "supported"
+    },
+    {
+      "id": "c12",
+      "text": "The policy prover checks permissions represented in its model rather than proving every runtime behaviour.",
+      "type": "inference",
+      "sourceIds": ["s2"],
+      "sourceLocator": "s2 policy prover scope plus bounded editorial interpretation.",
+      "status": "qualified"
+    },
+    {
+      "id": "c13",
+      "text": "NVIDIA says Sentry uses BlueField-4 and DOCA and can quarantine suspicious actions in milliseconds.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1"],
+      "sourceLocator": "s1 Sentry description; performance language remains explicitly attributed.",
+      "status": "qualified"
+    },
+    {
+      "id": "c14",
+      "text": "The checked NVIDIA availability material did not establish a standalone Sentry release or release date.",
+      "type": "inference",
+      "sourceIds": ["s1", "s2", "s3", "s4"],
+      "sourceLocator": "Bounded finding from the announcement availability section and linked OpenShell materials.",
+      "status": "qualified"
+    },
+    {
+      "id": "c15",
+      "text": "CNBC reports that reference-design partners are intended to bring products to market.",
+      "type": "attributed_claim",
+      "sourceIds": ["s5"],
+      "sourceLocator": "s5 partner and market context; not proof of current product availability.",
+      "status": "qualified"
+    },
+    {
+      "id": "c16",
+      "text": "WIRED independently describes OpenShell as generally released and Sentry as the BlueField layer while noting uncertain adoption.",
+      "type": "attributed_claim",
+      "sourceIds": ["s6"],
+      "sourceLocator": "s6 product and adoption discussion.",
+      "status": "qualified"
+    },
+    {
+      "id": "c17",
+      "text": "Teams can evaluate OpenShell now but should assess Sentry as a separate procurement and integration path.",
+      "type": "inference",
+      "sourceIds": ["s1", "s3", "s4", "s5", "s6"],
+      "sourceLocator": "Operational synthesis from release, support, availability and market evidence.",
+      "status": "qualified"
+    },
+    {
+      "id": "c18",
+      "text": "Index Us did not install, benchmark or penetration-test OpenShell or Sentry.",
+      "type": "fact",
+      "sourceIds": ["s1", "s2", "s3", "s4", "s5", "s6"],
+      "sourceLocator": "Reporting-method disclosure: all retained evidence consists of public documentation, release metadata and reporting rather than an Index Us product test.",
+      "status": "supported"
+    }
+  ],
+  "drafting": {
+    "agentId": "/root/newsroom_drafter"
+  },
+  "editorial": {
+    "agentId": "/root/newsroom_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-09-28T15:46:06Z",
+    "articleSha256": "5ba8c8784fc3703a3d81cb5673f9a7d0e4fc67e4e6a026fabc3060ed01753577",
+    "notes": [
+      "Applied the complete edit-johns-content skill and both required references in a separate publication pass, tightening the opening and removing repeated mirrored contrasts while preserving the central software-versus-reference-design decision.",
+      "Preserved every material fact, date, number, source link, attribution, caveat, testing limitation, byline, disclosure and item in the preservation list; the original draft remains unchanged.",
+      "Retained the deliberate modelled-policy-versus-runtime-security distinction because it prevents a material overclaim, and introduced no new factual claim, quotation, anecdote, result or personal detail.",
+      "Approved the inline SVG editorially for established geometric style, story-specific originality, accessibility and its explicit conceptual-not-evidentiary caption; mobile and desktop rendered checks remain pending."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/newsroom_factcheck",
+    "reviewedAt": "2026-09-28T15:50:18Z",
+    "status": "passed",
+    "claimsCoverage": true,
+    "articleSha256": "5ba8c8784fc3703a3d81cb5673f9a7d0e4fc67e4e6a026fabc3060ed01753577"
+  },
+  "quality": {
+    "evidence": 33,
+    "context": 18,
+    "originalValue": 18,
+    "voice": 14,
+    "presentation": 9
+  },
+  "riskFlags": [],
+  "quotes": [
+    {"sourceId": "s1", "words": 2},
+    {"sourceId": "s2", "words": 0},
+    {"sourceId": "s3", "words": 0},
+    {"sourceId": "s4", "words": 0},
+    {"sourceId": "s5", "words": 0},
+    {"sourceId": "s6", "words": 0}
+  ],
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered at 1280x900. Title, metadata, disclosure, headings, source links and the original inline SVG were readable; the 800x560 artwork preserved its aspect ratio without clipping or page-level horizontal overflow."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered at 390x844. The article, caption and responsive SVG fit the viewport without page-level horizontal overflow; the mobile menu expanded to all six destinations."
+    }
+  }
+}
