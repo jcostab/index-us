@@ -1,0 +1,379 @@
+{
+  "schemaVersion": 1,
+  "runId": "20261001T080344Z",
+  "startedAt": "2026-10-01T08:03:44.901Z",
+  "completedAt": "2026-10-01T08:50:19.111Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-29T08:03:44.901Z",
+    "end": "2026-10-01T08:03:44.901Z"
+  },
+  "candidates": [
+    {
+      "story": "Google Gemini 4 Argon independent evaluation and restricted rollout",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "eventDate": "2026-09-30T20:00:00Z",
+      "decision": "selected",
+      "reason": "Fresh exact-timestamped primary launch evidence, an independently operated Vals evaluation and the restricted-access boundary support a consequential, non-duplicate procurement analysis without relying on Google's internal results as proof."
+    },
+    {
+      "story": "OpenAI GPT-6.1 Sol",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "eventDate": "2026-09-29T18:51:35Z",
+      "decision": "deferred-stronger-candidate",
+      "reason": "The model is consequential and within the discovery window, but Argon is newer and offers the stronger independent-evaluation-versus-access decision. Only one article can be selected in this run."
+    },
+    {
+      "story": "OpenAI Dots persistent agents",
+      "source": "https://apnews.com/article/77b6b8888145869206996d7509d24256",
+      "eventDate": "2026-09-29T18:51:35Z",
+      "decision": "deferred-stronger-candidate",
+      "reason": "The event remained fresh but Argon had clearer independent technical evidence. Earlier closed Dots drafts are historical and were not reused."
+    },
+    {
+      "story": "OpenAI GPT-6.1 Astra release delay",
+      "source": "https://apnews.com/article/5afb865b2cddc439efdcf31ebdc406a5",
+      "eventDate": "2026-09-29T01:45:14Z",
+      "decision": "rejected-freshness-and-primary-evidence",
+      "reason": "The reported decision preceded this run's discovery window and no direct public primary decision record was found."
+    },
+    {
+      "story": "Claude Sonnet 5.5",
+      "source": "https://www.anthropic.com/news",
+      "eventDate": "2026-09-28",
+      "decision": "rejected-freshness",
+      "reason": "The release was outside the 48-hour discovery window at run start."
+    },
+    {
+      "story": "NVIDIA Open Agent Safety Platform",
+      "source": "https://developer.nvidia.com/blog/add-runtime-controls-to-ai-agents-with-nvidia-openshell/",
+      "eventDate": "2026-09-28T09:00:00Z",
+      "decision": "already-covered",
+      "reason": "Run 20260928T142647Z already published verified OpenShell and Sentry coverage; no corrective evidence was found."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "Google's exact-timestamped Argon launch is fresh and not already covered. Vals independently ran the model across a broad suite, while Google's restricted Fairwind rollout and absent public Argon API listing prevent most teams from validating it. The article turns that boundary into a practical evaluation and procurement decision."
+  },
+  "story": {
+    "id": "gemini-4-argon-evaluation-access-boundary",
+    "eventDate": "2026-09-30T20:00:00Z",
+    "canonicalUrls": [
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+    ]
+  },
+  "articlePath": "src/content/articles/gemini-4-argon-evaluation-access-boundary.md",
+  "articleSha256": "d285f3c42dbc6fbc61b5534cc9699e6e054c020601df8f54abe9719508957183",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "title": "Gemini 4 Argon: our next era of frontier intelligence",
+      "publisher": "Google",
+      "kind": "primary",
+      "independenceGroup": "google",
+      "publishedAt": "2026-09-30T20:00:00Z",
+      "eventDate": "2026-09-30T20:00:00Z",
+      "retrievedAt": "2026-10-01T08:08:10Z",
+      "locator": "JSON-LD datePublished and article sections Introducing Gemini 4 Argon, Changing how we work and build at Google, Working harder on your most complex problems, Enabling coding and enterprise workflows, Leading in defensive cybersecurity, Strengthening frontier safeguards and Rolling out soon, plus pricing footnote."
+    },
+    {
+      "id": "s2",
+      "url": "https://deepmind.google/fairwind-program/",
+      "title": "Fairwind Program",
+      "publisher": "Google DeepMind",
+      "kind": "primary",
+      "independenceGroup": "google",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-10-01T08:10:52Z",
+      "locator": "Sections The technology behind the program, Governance and trust, Apply for access and Frequently asked questions."
+    },
+    {
+      "id": "s3",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
+      "title": "Models — Gemini API",
+      "publisher": "Google AI for Developers",
+      "kind": "primary",
+      "independenceGroup": "google",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-10-01T08:10:52Z",
+      "locator": "Current Gemini 3 stable, preview and all-model endpoint tables; searched complete page for Gemini 4 and Argon with no matching public endpoint."
+    },
+    {
+      "id": "s4",
+      "url": "https://www.vals.ai/models/google_gemini-4-argon",
+      "title": "Gemini 4 Argon benchmarks, cost and capabilities",
+      "publisher": "Vals AI",
+      "kind": "independent",
+      "independenceGroup": "vals",
+      "publishedAt": "2026-09-30",
+      "eventDate": "2026-09-30",
+      "retrievedAt": "2026-10-01T08:10:52Z",
+      "locator": "Model summary, aggregate and component score table, hyperparameter settings and 30 September update."
+    },
+    {
+      "id": "s5",
+      "url": "https://www.vals.ai/benchmarks/vals_index",
+      "title": "Vals Index leaderboard and methodology",
+      "publisher": "Vals AI",
+      "kind": "independent",
+      "independenceGroup": "vals",
+      "publishedAt": "2026-09-30",
+      "eventDate": "2026-09-30",
+      "retrievedAt": "2026-10-01T08:10:52Z",
+      "locator": "Version 2.1 leaderboard, Motivation, Benchmark selection economic weighting and formula, Component scores and Updates."
+    },
+    {
+      "id": "s6",
+      "url": "https://www.vals.ai/methodology",
+      "title": "AI evaluation methodology",
+      "publisher": "Vals AI",
+      "kind": "independent",
+      "independenceGroup": "vals",
+      "publishedAt": "unknown",
+      "eventDate": "unknown",
+      "retrievedAt": "2026-10-01T08:10:52Z",
+      "locator": "Task Design, Public and Private Sets, Metrics and Evaluation, Error Bars and Evaluating models agents and products."
+    },
+    {
+      "id": "s7",
+      "url": "https://www.axios.com/2026/09/30/google-gemini-4",
+      "title": "Google unveils long-awaited Gemini 4",
+      "publisher": "Axios",
+      "kind": "independent",
+      "independenceGroup": "axios",
+      "publishedAt": "2026-09-30T20:00:05Z",
+      "eventDate": "2026-09-30T20:00:00Z",
+      "retrievedAt": "2026-10-01T08:10:52Z",
+      "locator": "Lines 42-56 on partner access, later expansion, company capability claims and benchmark boundary."
+    },
+    {
+      "id": "s8",
+      "url": "https://arstechnica.com/google/2026/09/google-announces-gemini-4-argon-ai-model-but-you-cant-use-it-yet/",
+      "title": "Google announces Gemini 4 Argon AI model, but you cannot use it yet",
+      "publisher": "Ars Technica",
+      "kind": "independent",
+      "independenceGroup": "ars",
+      "publishedAt": "2026-09-30",
+      "eventDate": "2026-09-30T20:00:00Z",
+      "retrievedAt": "2026-10-01T08:10:52Z",
+      "locator": "Lines 20-31 on Google claims, limited testing, pricing, Fairwind access and undated later availability."
+    }
+  ],
+  "claims": [
+    {
+      "id": "c01",
+      "text": "Google published the Gemini 4 Argon launch at 20:00 UTC on 30 September 2026.",
+      "type": "fact",
+      "sourceIds": ["s1"],
+      "sourceLocator": "s1 JSON-LD datePublished.",
+      "status": "supported"
+    },
+    {
+      "id": "c02",
+      "text": "Vals displayed a 68.90 per cent score with a 0.97-point standard error and rank 1 of 41 for Gemini 4 Argon on its composite index.",
+      "type": "fact",
+      "sourceIds": ["s4"],
+      "sourceLocator": "s4 model summary and Vals Index row.",
+      "status": "supported"
+    },
+    {
+      "id": "c03",
+      "text": "Argon's component results vary, including first on Finance Agent v2, second on several coding and cyber evaluations, seventh of eight on CUA-bench and fifteenth on MedScribe.",
+      "type": "fact",
+      "sourceIds": ["s4"],
+      "sourceLocator": "s4 component score and ranking table.",
+      "status": "supported"
+    },
+    {
+      "id": "c04",
+      "text": "Vals Index version 2.1 combines finance, coding, legal and tax evaluations weighted by their share of US GDP and includes six private and two public component benchmarks.",
+      "type": "fact",
+      "sourceIds": ["s5"],
+      "sourceLocator": "s5 Motivation and Benchmark Selection sections.",
+      "status": "supported"
+    },
+    {
+      "id": "c05",
+      "text": "Vals distinguishes fixed controlled model harnesses from agent evaluations that may use native agents or custom scaffolds, and keeps proprietary test sets private to reduce leakage.",
+      "type": "fact",
+      "sourceIds": ["s6"],
+      "sourceLocator": "s6 Public and Private Sets and Evaluating models agents and products, including native and custom scaffold paths.",
+      "status": "supported"
+    },
+    {
+      "id": "c06",
+      "text": "Vals says its standard errors do not cover variability across prompts, seeds, deployment settings or the stochastic nature of generation.",
+      "type": "fact",
+      "sourceIds": ["s6"],
+      "sourceLocator": "s6 Error Bars, single-run benchmarks.",
+      "status": "supported"
+    },
+    {
+      "id": "c07",
+      "text": "The displayed 1.86-point lead over Claude Sonnet 5.5 is a result for this version and configuration of the Vals suite, not proof that Argon is generally superior.",
+      "type": "inference",
+      "sourceIds": ["s4", "s5", "s6"],
+      "sourceLocator": "Premises are s4 scores and settings, s5 index construction and s6 uncertainty exclusions.",
+      "status": "qualified"
+    },
+    {
+      "id": "c08",
+      "text": "Google says Argon is initially rolling out to selected cyber defenders through Fairwind and broader release will begin later with paid API customers and Google AI Ultra subscribers, without a stated date.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1", "s2"],
+      "sourceLocator": "s1 opening and Rolling out soon; s2 technology and FAQ sections.",
+      "status": "supported"
+    },
+    {
+      "id": "c09",
+      "text": "The public Gemini API catalogue did not list a Gemini 4 Argon endpoint at 08:10:52 UTC on 1 October 2026.",
+      "type": "fact",
+      "sourceIds": ["s3"],
+      "sourceLocator": "s3 complete current model endpoint tables at retrieval.",
+      "status": "supported"
+    },
+    {
+      "id": "c10",
+      "text": "The absence of Argon from the public catalogue does not establish that no approved partner can access a private endpoint.",
+      "type": "inference",
+      "sourceIds": ["s2", "s3"],
+      "sourceLocator": "s2 documents exclusive partner access while s3 documents the public catalogue.",
+      "status": "qualified"
+    },
+    {
+      "id": "c11",
+      "text": "Fairwind limits eligibility and use, requires named access controls and tracked employee use, and prohibits sharing or resale of model access.",
+      "type": "fact",
+      "sourceIds": ["s2"],
+      "sourceLocator": "s2 Governance and trust and FAQ sections.",
+      "status": "supported"
+    },
+    {
+      "id": "c12",
+      "text": "Google says selected cyber defenders receive an Argon variant without cyber guardrails for authorised defensive work.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1", "s2"],
+      "sourceLocator": "s1 Leading in defensive cybersecurity and s2 program technology/governance sections.",
+      "status": "supported"
+    },
+    {
+      "id": "c13",
+      "text": "Axios and Ars independently reported that the launch begins with restricted partner access and that broader availability lacks a firm date.",
+      "type": "fact",
+      "sourceIds": ["s7", "s8"],
+      "sourceLocator": "s7 lines 42-49 and s8 lines 27-31.",
+      "status": "supported"
+    },
+    {
+      "id": "c14",
+      "text": "Google advertises introductory rates of US$2 per million input tokens and US$10 per million output tokens, with cached input discounted by 95 per cent.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1"],
+      "sourceLocator": "s1 opening pricing paragraph.",
+      "status": "supported"
+    },
+    {
+      "id": "c15",
+      "text": "Google says the rates will later become US$4 per million input tokens and US$20 per million output tokens but gives no end date for the introductory period.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1"],
+      "sourceLocator": "s1 pricing footnote and absence of a stated end date.",
+      "status": "qualified"
+    },
+    {
+      "id": "c16",
+      "text": "Vals displayed US$15.68 per composite test using US$4 and US$20 token rates; the Argon model page lists high reasoning effort, temperature 1 and 262,144 maximum output tokens as defaults and warns that some benchmarks may use different providers or parameters.",
+      "type": "fact",
+      "sourceIds": ["s4", "s5"],
+      "sourceLocator": "s4 model summary, hyperparameter defaults and per-benchmark variation warning; s5 leaderboard row.",
+      "status": "supported"
+    },
+    {
+      "id": "c17",
+      "text": "Google's advertised one-million-token output limit and the Argon page's 262,144-token default maximum-output setting are distinct configuration records requiring benchmark, provider, endpoint and version verification rather than a demonstrated contradiction.",
+      "type": "inference",
+      "sourceIds": ["s1", "s4"],
+      "sourceLocator": "Premises are s1 advertised maximum and s4 recorded test configuration.",
+      "status": "qualified"
+    },
+    {
+      "id": "c18",
+      "text": "Google reports that Argon-assisted optimisations freed more than 300 TiB of memory after rollout and that Argon assisted substantial internal C++-to-Rust migration work.",
+      "type": "attributed_claim",
+      "sourceIds": ["s1"],
+      "sourceLocator": "s1 Changing how we work and build at Google.",
+      "status": "supported"
+    },
+    {
+      "id": "c19",
+      "text": "The available public evidence does not provide a reproducible basis for another organisation to forecast Google's internal outcome.",
+      "type": "inference",
+      "sourceIds": ["s1", "s6"],
+      "sourceLocator": "s1 supplies outcome claims without a reproducible external study; s6 supplies evaluation criteria and variability boundaries.",
+      "status": "qualified"
+    },
+    {
+      "id": "c20",
+      "text": "Teams should prepare a workload-specific evaluation contract now and defer migration until a named, supported access route can be tested under their own harness and billing conditions.",
+      "type": "inference",
+      "sourceIds": ["s1", "s2", "s3", "s4", "s5", "s6"],
+      "sourceLocator": "Premises are restricted access, no public endpoint, independent but scoped results and stated evaluation limits.",
+      "status": "qualified"
+    }
+  ],
+  "drafting": {
+    "agentId": "/root/newsroom_drafter"
+  },
+  "editorial": {
+    "agentId": "/root/newsroom_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-10-01T08:42:09Z",
+    "articleSha256": "d285f3c42dbc6fbc61b5534cc9699e6e054c020601df8f54abe9719508957183",
+    "notes": [
+      "Renewed the complete edit-johns-content publication and preservation pass after the independent reviewer identified a material Vals configuration-boundary overstatement.",
+      "Scoped high reasoning effort, temperature 1 and 262,144 maximum output tokens to the Argon page's displayed defaults, retained its warning that benchmark providers or parameters may differ, and distinguished controlled model harnesses from permitted native or custom agent scaffolds.",
+      "Preserved every unrelated fact, qualification, citation, source boundary, byline, disclosure and the unchanged story-specific illustration; factual approval and rendered mobile and desktop checks remain pending."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/newsroom_factcheck",
+    "reviewedAt": "2026-10-01T08:45:03Z",
+    "articleSha256": "d285f3c42dbc6fbc61b5534cc9699e6e054c020601df8f54abe9719508957183",
+    "status": "passed",
+    "claimsCoverage": true
+  },
+  "quality": {
+    "evidence": 32,
+    "context": 18,
+    "originalValue": 18,
+    "voice": 14,
+    "presentation": 9
+  },
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered the exact approved digest at 1280x900. The article had no page-level horizontal overflow (scrollWidth and clientWidth both 1280). The inline story SVG rendered at 736x515.1953125 with its exact 800x560 viewBox and 10:7 ratio, with no clipping; its title, six-vane description and non-evidentiary caption were present. Title, byline, 10-minute metadata, disclosure, heading hierarchy, all eight source links, desktop navigation and related content rendered correctly."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered the exact approved digest at 390x844. The article had no page-level horizontal overflow (scrollWidth and clientWidth both 390). The inline story SVG rendered at 350x245 with its exact 800x560 viewBox and 10:7 ratio, with no clipping; the complete caption wrapped within the article column. The disclosure, article navigation, takeaways, headings and source links remained readable. The mobile menu opened and exposed all six destinations: All articles, News, Analysis, Guides, About and Follow via RSS."
+    }
+  },
+  "riskFlags": [],
+  "quotes": [
+    {"sourceId": "s1", "words": 0},
+    {"sourceId": "s2", "words": 0},
+    {"sourceId": "s3", "words": 0},
+    {"sourceId": "s4", "words": 0},
+    {"sourceId": "s5", "words": 0},
+    {"sourceId": "s6", "words": 0},
+    {"sourceId": "s7", "words": 0},
+    {"sourceId": "s8", "words": 0}
+  ]
+}
