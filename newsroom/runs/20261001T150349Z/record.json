@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "runId": "20261001T150349Z",
+  "startedAt": "2026-10-01T15:03:49.568Z",
+  "completedAt": "2026-10-02T08:07:35Z",
+  "timeZone": "Australia/Melbourne",
+  "window": {
+    "start": "2026-09-29T15:03:49.568Z",
+    "end": "2026-10-01T15:03:49.568Z"
+  },
+  "candidates": [
+    {
+      "story": "cua-speedrun whole-system computer-use-agent evaluation",
+      "source": "https://arxiv.org/abs/2609.40284",
+      "eventDate": "2026-09-30T17:48:06Z",
+      "decision": "selected",
+      "reason": "The exact-timestamped v1 preprint is fresh, non-duplicate and technically consequential. It supports a practical configuration-level evaluation decision with independently produced benchmark context while retaining the unreproduced-preprint boundary."
+    },
+    {
+      "story": "OpenAI GPT-6.1 Sol launch",
+      "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "eventDate": "2026-09-29T17:00:00Z",
+      "decision": "rejected-freshness",
+      "reason": "The verified DevDay keynote event crossed the mandatory 48-hour publication boundary before selection; a later retrieval or recap cannot replace the launch event."
+    },
+    {
+      "story": "HydraFusion Visual Studio Code expansion",
+      "source": "https://github.blog/changelog/2026-09-30-hydrafusion-model-routing-is-now-available-in-visual-studio-code/",
+      "eventDate": "2026-09-30T14:31:19Z",
+      "decision": "already-covered-incremental",
+      "reason": "Index Us already covers HydraFusion routing. An additional editor surface and administrator preview controls do not materially change the existing deployment decision or earn a separate long-form article."
+    },
+    {
+      "story": "Loss-of-control audit preprint",
+      "source": "https://arxiv.org/abs/2609.38411",
+      "eventDate": "2026-09-29T19:04:21Z",
+      "decision": "deferred-overlap-and-freshness",
+      "reason": "The paper was nearing the freshness boundary and overlapped recent Index Us agent-control coverage. It was weaker than the selected fresh evaluation story."
+    }
+  ],
+  "decision": {
+    "kind": "new",
+    "reason": "cua-speedrun supplies fresh, exact-timestamped evidence that desktop timing, reasoning and harness choices can materially change success, task time and cost. The article turns the paper's narrow findings and independent benchmark context into a configuration-level deployment test without claiming peer review, reproduction or hands-on Index Us testing."
+  },
+  "story": {
+    "id": "computer-use-agent-speed-evaluation",
+    "eventDate": "2026-09-30T17:48:06Z",
+    "canonicalUrls": [
+      "https://arxiv.org/abs/2609.40284"
+    ]
+  },
+  "articlePath": "src/content/articles/computer-use-agent-speed-evaluation.md",
+  "articleSha256": "2f4a1bcd6e90f3fbb2f05c9fdc9e40fc8300e08b33aa94ae0776426b97395a26",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://arxiv.org/abs/2609.40284",
+      "title": "cua-speedrun: Standardized Benchmarking of the Speed of Computer-Use Agents",
+      "publisher": "arXiv",
+      "kind": "primary",
+      "independenceGroup": "cua-speedrun-authors",
+      "publishedAt": "2026-09-30T17:48:06Z",
+      "eventDate": "2026-09-30T17:48:06Z",
+      "retrievedAt": "2026-10-02T02:18:49Z",
+      "locator": "Submission history and abstract; live record remained v1 at factual review and the pre-publication recheck."
+    },
+    {
+      "id": "s2",
+      "url": "https://arxiv.org/html/2609.40284",
+      "title": "cua-speedrun full HTML preprint",
+      "publisher": "arXiv",
+      "kind": "primary",
+      "independenceGroup": "cua-speedrun-authors",
+      "publishedAt": "2026-09-30T17:48:06Z",
+      "eventDate": "2026-09-30T17:48:06Z",
+      "retrievedAt": "2026-10-02T02:18:49Z",
+      "locator": "Sections 2.1-2.3 and 3.1-3.3; Figures 3 and 5; Appendices A, B, D, E, F and G."
+    },
+    {
+      "id": "s3",
+      "url": "https://arxiv.org/abs/2506.16042",
+      "title": "OSWorld-Human: Benchmarking the Efficiency of Computer-Use Agents",
+      "publisher": "arXiv",
+      "kind": "independent",
+      "independenceGroup": "osworld-human-authors",
+      "publishedAt": "2026-05-18T17:55:59Z",
+      "eventDate": "2026-05-18T17:55:59Z",
+      "retrievedAt": "2026-10-02T02:18:49Z",
+      "locator": "v2 abstract and submission history; latency source and 2.7-4.3x step-count finding."
+    },
+    {
+      "id": "s4",
+      "url": "https://arxiv.org/abs/2404.07972",
+      "title": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+      "publisher": "arXiv",
+      "kind": "independent",
+      "independenceGroup": "osworld-authors",
+      "publishedAt": "2024-05-30T08:55:12Z",
+      "eventDate": "2024-05-30T08:55:12Z",
+      "retrievedAt": "2026-10-02T02:18:49Z",
+      "locator": "v2 abstract; 369-task scope, real applications, file I/O, multi-application workflows and execution-based evaluation."
+    },
+    {
+      "id": "s5",
+      "url": "https://arxiv.org/abs/2606.29537",
+      "title": "OSWorld 2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks",
+      "publisher": "arXiv",
+      "kind": "independent",
+      "independenceGroup": "osworld2-authors",
+      "publishedAt": "2026-07-13T10:30:17Z",
+      "eventDate": "2026-07-13T10:30:17Z",
+      "retrievedAt": "2026-10-02T02:18:49Z",
+      "locator": "v2 abstract and primary 500-step result; 20.6 per cent binary completion and 54.8 per cent partial score."
+    }
+  ],
+  "claims": [
+    {
+      "id": "c01",
+      "text": "The cua-speedrun v1 preprint was submitted at 2026-09-30T17:48:06Z.",
+      "type": "fact",
+      "sourceIds": ["s1"],
+      "sourceLocator": "s1 submission history.",
+      "status": "supported"
+    },
+    {
+      "id": "c02",
+      "text": "The project standardises a virtual-machine setup, execution pipeline and common agent interface across OSWorld, OSWorld2, CUA-World and MyPCBench.",
+      "type": "fact",
+      "sourceIds": ["s1", "s2"],
+      "sourceLocator": "s1 abstract and s2 sections 2.1-2.3.",
+      "status": "supported"
+    },
+    {
+      "id": "c03",
+      "text": "The paper reports mean verifier score, mean task time and mean model cost per task for complete configurations.",
+      "type": "fact",
+      "sourceIds": ["s2"],
+      "sourceLocator": "s2 section 3.1 metrics.",
+      "status": "supported"
+    },
+    {
+      "id": "c04",
+      "text": "Task timing begins when the instruction reaches the agent and excludes provisioning, setup, initialisation and verification.",
+      "type": "fact",
+      "sourceIds": ["s2"],
+      "sourceLocator": "s2 section 2.1 and Appendix B.1.",
+      "status": "supported"
+    },
+    {
+      "id": "c05",
+      "text": "The v1 evaluation uses 50 of 295 OSWorld tasks and 52 of 63 OSWorld2 tasks, with 56 and 21 agent configurations respectively.",
+      "type": "fact",
+      "sourceIds": ["s2"],
+      "sourceLocator": "s2 sections 2.2 and 3.1 and Table 13.",
+      "status": "supported"
+    },
+    {
+      "id": "c06",
+      "text": "In one five-seed GPT-6 Astra low-effort comparison, fast I/O reduced mean environment processing from 12.68 seconds to 0.34 seconds per task while total mean task time rose from 89.5 seconds to 99.0 seconds.",
+      "type": "fact",
+      "sourceIds": ["s2"],
+      "sourceLocator": "s2 section 3.2, Figure 5 and Appendices B and F.",
+      "status": "supported"
+    },
+    {
+      "id": "c07",
+      "text": "The paper's authors attribute the fast-I/O slowdown to early screenshots, extra interaction and waits.",
+      "type": "attributed_claim",
+      "sourceIds": ["s2"],
+      "sourceLocator": "s2 section 3.2 faster-infrastructure analysis.",
+      "status": "supported"
+    },
+    {
+      "id": "c08",
+      "text": "For Gemini 3 Flash Preview on OSWorld, moving from low to medium reasoning changed mean score from 33.6 to 57.6 per cent and mean task time from 492 to 268 seconds, while generated tokens per task increased.",
+      "type": "fact",
+      "sourceIds": ["s2"],
+      "sourceLocator": "s2 section 3.2, Figure 3 and Appendix E.",
+      "status": "supported"
+    },
+    {
+      "id": "c09",
+      "text": "Changing the agent harness altered both task score and time for the same model and reasoning setting, and neither tested harness was uniformly better.",
+      "type": "fact",
+      "sourceIds": ["s2"],
+      "sourceLocator": "s2 section 3.2 harness comparison.",
+      "status": "supported"
+    },
+    {
+      "id": "c10",
+      "text": "OSWorld-Human reported that model calls accounted for most latency and that its 16 evaluated agents used 2.7-4.3 times more steps than the human-derived trajectories.",
+      "type": "fact",
+      "sourceIds": ["s3"],
+      "sourceLocator": "s3 abstract.",
+      "status": "supported"
+    },
+    {
+      "id": "c11",
+      "text": "The original OSWorld paper describes 369 tasks spanning real web and desktop applications, file operations and multi-application workflows.",
+      "type": "fact",
+      "sourceIds": ["s4"],
+      "sourceLocator": "s4 abstract.",
+      "status": "supported"
+    },
+    {
+      "id": "c12",
+      "text": "OSWorld 2.0 reports 20.6 per cent binary completion and a 54.8 per cent partial score for its strongest tested configuration under the primary 500-step setting.",
+      "type": "fact",
+      "sourceIds": ["s5"],
+      "sourceLocator": "s5 abstract and primary-result description.",
+      "status": "supported"
+    },
+    {
+      "id": "c13",
+      "text": "A model name alone is not an adequate procurement or evaluation unit for a computer-use agent.",
+      "type": "inference",
+      "sourceIds": ["s2"],
+      "sourceLocator": "Premises are the measured changes under harness, reasoning and environment timing variations in s2; the article presents this as an operational conclusion.",
+      "status": "qualified"
+    },
+    {
+      "id": "c14",
+      "text": "Teams should version the complete configuration and measure accepted completion, end-to-end elapsed time, cost and review or recovery work on their own workload.",
+      "type": "inference",
+      "sourceIds": ["s2", "s3", "s5"],
+      "sourceLocator": "The recommendation is original synthesis grounded in the timing boundary, loop length, run variation and binary-versus-partial distinction.",
+      "status": "qualified"
+    },
+    {
+      "id": "c15",
+      "text": "Success, task time and model cost do not establish safety, permission compliance, ambiguity handling or absence of harmful side effects.",
+      "type": "inference",
+      "sourceIds": ["s2"],
+      "sourceLocator": "This is a scope boundary derived from the paper's defined metrics, not an allegation that a tested system was unsafe.",
+      "status": "qualified"
+    }
+  ],
+  "drafting": {
+    "agentId": "/root/newsroom_drafter"
+  },
+  "editorial": {
+    "agentId": "/root/newsroom_editor",
+    "skill": "edit-johns-content",
+    "reviewedAt": "2026-10-02T02:06:12Z",
+    "articleSha256": "2f4a1bcd6e90f3fbb2f05c9fdc9e40fc8300e08b33aa94ae0776426b97395a26",
+    "notes": [
+      "Reworked the opening around the operational decision and preserved the preprint status, exact event time and no-testing boundary.",
+      "Removed repeated signposting and formulaic contrast, tightened transitions across the fast-I/O, reasoning and harness evidence, and varied paragraph cadence without changing material facts or caveats.",
+      "Clarified the procurement consequence and local evaluation recommendation while preserving all citations, byline, disclosure and the complete story-specific illustration.",
+      "Inspected the final illustration against ArticleArtwork.astro and two rendered article examples; approved its distinct composition, house style, accessibility and explicitly non-evidentiary meaning."
+    ]
+  },
+  "factCheck": {
+    "agentId": "/root/newsroom_factcheck",
+    "reviewedAt": "2026-10-02T02:18:49Z",
+    "articleSha256": "2f4a1bcd6e90f3fbb2f05c9fdc9e40fc8300e08b33aa94ae0776426b97395a26",
+    "status": "passed",
+    "claimsCoverage": true
+  },
+  "quality": {
+    "evidence": 34,
+    "context": 18,
+    "originalValue": 17,
+    "voice": 14,
+    "presentation": 9
+  },
+  "checks": {
+    "desktop": {
+      "status": "passed",
+      "width": 1280,
+      "notes": "Rendered the exact approved digest at 1280x900. Page scrollWidth and clientWidth were both 1280, with one H1 and a coherent H2 hierarchy. The inline story SVG rendered at 736x515.1953125 with its exact 800x560 viewBox and 10:7 ratio, no clipping or overflow, an accessible title and description, no scripts or external resources, and its full non-evidentiary caption. Byline, disclosure, article navigation, takeaways, sources and related content rendered correctly."
+    },
+    "mobile": {
+      "status": "passed",
+      "width": 390,
+      "notes": "Rendered the exact approved digest at 390x844. Page scrollWidth and clientWidth were both 390. The inline story SVG rendered at 350x245 with its exact 800x560 viewBox and 10:7 ratio, no clipping or overflow, and the complete caption wrapped within the article column. Disclosure, headings, takeaways, article navigation and five source links remained readable. The mobile menu opened and exposed all six destinations: All articles, News, Analysis, Guides, About and Follow via RSS."
+    }
+  },
+  "riskFlags": [],
+  "quotes": [
+    {"sourceId": "s1", "words": 0},
+    {"sourceId": "s2", "words": 0},
+    {"sourceId": "s3", "words": 0},
+    {"sourceId": "s4", "words": 0},
+    {"sourceId": "s5", "words": 0}
+  ]
+}
